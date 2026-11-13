@@ -601,3 +601,35 @@ Not verified: browser tests or screenshots, real Safari flags and Home Screen la
 and two deployed sibling sites copying progress on one origin. No browser or network
 was used, no audio was regenerated and no commit was made. The existing bundle-size
 warning remains nonfatal.
+
+### 2026-11-13: M16, readable pips and missing-pattern outlines
+
+Dice pictures now use a centred square with standard faces for one through six.
+Scattered pictures keep their wide, irregular layout, with margins and separated dots.
+Domi's halves use larger standard pips; count questions use navy on both halves and
+addition keeps coral and navy. The other pals share the spacing checks. Plain questions
+restore the travelling pal's own pattern, and facts that do not fit leave it visible.
+Muddled pals show empty navy marks at the resting positions, with empty tiles for Tenny.
+Delivery fills those marks. Map and reward transitions use the same drawing path.
+Fast feedback is "That was quick!" The two within-five tags use the standard wording
+and wider plates; other tags keep their widths.
+
+Verified: `pnpm lint && pnpm test`, `pnpm build`, and `pnpm speech:lines` pass. All 286
+unit tests pass, including 27 new geometry and renderer cases. They cover standard
+faces, symmetry, card and panel margins, non-overlap, readable pips, count colours,
+resting/model transitions, missing outlines and wider tags. Production checks pass.
+Speech export has 900 lines, with only `ui-quick` changed and no ids added or removed.
+Playwright discovers 22 tests; the two new pattern cases and the screenshot script
+capture Domi, Twoot, small dice counts, modeled facts and restored pals. The script
+also captures early questions after introductions and passes its syntax check.
+
+Cloud audit: no cream rectangle overlapping the cloud was found. Introduction and
+question labels have transparent backgrounds; the introduction label is destroyed
+before the question. Cards, tray, slot circles and text bounds stay clear even during
+cloud wobble. Eyelids remain on the pal, scenery strips are below, and bursts use no
+cream. No draw-order cause was identified, so the brief clipping is not claimed fixed.
+
+Browser tests and screenshots were not run. The reviewer still needs to check the
+new pips, outlines, tags and early cloud frames. The `ui-quick` recording needs updating
+outside this task. No audio was regenerated, no network was used and no commit was made.
+The existing bundle-size warning remains nonfatal.

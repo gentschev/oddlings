@@ -63,6 +63,7 @@ export class EncounterScene extends BaseScene {
       meter: this.encounter.meter, initialMeter: this.encounter.initialMeter,
       slots: slotStates(this.encounter.initialMeter, this.encounter.meter),
       wild: this.wildId, partner: this.helperId, savedPartner: this.runtime.save.team.partner, partnerPattern: ODDLING_PATTERNS[this.helperId],
+      helperPatternMode: this.partner.patternMode, wildPatternMode: this.wild.patternMode,
       onScreen: this.introActive ? this.onScreen : this.encounter.phase === 'complete' ? [STRINGS.clear] :
         [this.question.text, this.message.text, STRINGS.hint, ...this.pad.buttons.map(b => b.label.text)].filter(Boolean),
       layout: encounterLayout(this.helperId, this.wildId, this.encounter.initialMeter, this.previousModel),
@@ -89,7 +90,7 @@ export class EncounterScene extends BaseScene {
     const geometry = encounterLayout(this.helperId, this.wildId, this.encounter.initialMeter);
     this.partner = this.standingPal(this.helperId, l.partnerX, l.feetY, l.creatureW);
     this.wild = this.standingPal(this.wildId, l.wildX, l.feetY, l.creatureW);
-    this.wild.showCount(0); this.wild.muddled = true;
+    this.wild.setMuddled(true);
     if (this.stop?.groundRing) {
       this.add.image(l.ringX, l.ringY, 'ring-mark').setDisplaySize(l.ringW, l.ringH).setAlpha(l.ringAlpha);
     }
@@ -215,7 +216,7 @@ export class EncounterScene extends BaseScene {
     for (const b of this.pad.buttons) b.setVisible(false);
     const geometry = encounterLayout(this.partner.id, this.wild.id, this.encounter.initialMeter);
     this.meter.deliver(geometry.wildFeatures.target, () => {
-      this.wild.restorePattern(); this.wild.muddled = false; this.friendRestored = true;
+      this.wild.restorePattern(); this.friendRestored = true;
       this.wild.hop(this.runtime.elapsed, true); this.runtime.audio.play('pop');
       this.tweens.killTweensOf(this.cloud); burst(this, this.cloud.x, this.cloud.y);
       this.tweens.add({ targets: this.cloud, alpha: 0, scale: 0, duration: MUDDLE_TIMING.cloudPop });

@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import type { Fact, Model } from '../core';
 import { FONT, INK, PALETTE, UI } from '../game/constants';
 
-import { dotGeometry } from './patternGeometry';
+import { dotCardGeometry, dotGeometry } from './patternGeometry';
 
 export function drawDots(g: Phaser.GameObjects.Graphics, count: number, x: number, y: number,
   w: number, h: number, colour: number = INK.navy, scattered = false, radius = h / 10): void {
@@ -46,11 +46,10 @@ export class DotCard extends Phaser.GameObjects.Container {
   constructor(scene: Phaser.Scene, x: number, y: number, fact: Fact) {
     super(scene, x, y); scene.add.existing(this);
     const g = scene.add.graphics(); this.add(g);
-    const { dotWidth, dotHeight, dot, dotPadding } = UI.model;
-    const w = dotWidth + dotPadding * 2, h = dotHeight + dotPadding * 2;
-    g.fillStyle(INK.cream).fillRoundedRect(-w / 2, -h / 2, w, h, 12);
-    g.lineStyle(UI.stroke, INK.navy).strokeRoundedRect(-w / 2, -h / 2, w, h, 12);
-    drawDots(g, fact.a, -dotWidth / 2, -dotHeight / 2, dotWidth, dotHeight, INK.navy, fact.layout === 'scattered', dot);
+    const { card, dots } = dotCardGeometry(fact.a, fact.layout === 'scattered'), inset = UI.stroke / 2;
+    g.fillStyle(INK.cream).fillRoundedRect(card.x + inset, card.y + inset, card.width - UI.stroke, card.height - UI.stroke, 12);
+    g.lineStyle(UI.stroke, INK.navy).strokeRoundedRect(card.x + inset, card.y + inset, card.width - UI.stroke, card.height - UI.stroke, 12);
+    for (const dot of dots) g.fillStyle(INK.navy).fillCircle(dot.x, dot.y, dot.radius);
   }
 }
 export class Domino extends Phaser.GameObjects.Container {

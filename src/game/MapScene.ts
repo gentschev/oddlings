@@ -68,7 +68,7 @@ export class MapScene extends BaseScene {
         this.drawRing(ring, value.progress, layout.radiusX, layout.radiusY);
         const pal = this.pal(stop.pal, p.x, p.y, l.friendW);
         if (state.state === 'locked' && !state.completed) { pal.setSilhouette(); pal.root.setAlpha(l.lockedOpacity); }
-        else if (state.state === 'current') pal.showCount(0);
+        else if (state.state === 'current' || state.needsHelp && state.state === 'complete') pal.setMuddled(true);
         if (state.state === 'current' || state.needsHelp && state.state === 'complete') {
           const cloud = centre(layout.cloud);
           this.add.image(cloud.x, cloud.y, 'muddle-cloud').setDisplaySize(layout.cloud.width, layout.cloud.height);

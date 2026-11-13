@@ -16,6 +16,7 @@ export interface Snapshot {
   pendingSaves: number; saveError: boolean; nextStop: string;
   profile: { partner: string; tapBaseline: number };
   partner?: string; partnerPattern?: string;
+  helperPatternMode: string; wildPatternMode: string;
   returning: boolean; replay: boolean; reviewOnly: boolean; completed: string[]; markerIndex: number; wild: string;
   cards?: { id: string; met: boolean; partner: boolean; progress: { total: number; review: number; fluent: number } | null }[];
   controls: { id: string; x: number; y: number; width: number; height: number; enabled: boolean }[];

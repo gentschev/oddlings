@@ -23,7 +23,7 @@ export const MUDDLE_TIMING = { dotPop: 240, flight: 360, stagger: 24, cloudPop: 
 export const UI = { minTouch: 88, stroke: 4, radius: 24, buttonFont: 32, bodyFont: 32,
   titleFont: 64, subheadingFont: 42, smallFont: 25, selectedStroke: 7,
   pad: { x: 322, y: 514, width: 96, height: 96, gapX: 106, gapY: 106, font: 48 },
-  model: { cell: 56, gap: 0, dot: 24, dotWidth: 260, dotHeight: 108, dotPadding: 4, lineWidth: 4, frameGap: 16, lineLength: 520,
+  model: { cell: 56, gap: 0, dot: 22, dotWidth: 260, dotHeight: 108, dotPadding: 4, dieSide: 128, lineWidth: 4, frameGap: 16, lineLength: 520,
     tick: 12, arc: 34, dominoWidth: 320, dominoHeight: 112 },
   burstCount: 14, burstRadius: 9, burstDistance: 110, burstStart: 0.66, burstTravel: 38 } as const;
 /** Scene layout in logical pixels. */
@@ -41,13 +41,13 @@ export const LAYOUT = {
     pulseScale: 1.12, helpPulseScale: 1.06, friendW: 58, friendH: 45, cloudW: 32, cloudH: 20, cloudOffsetY: 48, iconOpacity: 0.85,
     starOffset: 34, starPoints: 5, starInner: 8, starOuter: 17, starStroke: 2, gateStroke: 6, gatePulseAlpha: 0.3,
     ringSegments: 96, progressRadius: 48, progressScaleY: 0.62, progressStroke: 10,
-    tagW: 100, tagH: 34, tagOffsetY: 52, tagOffsetsX: [0, 0, 0, 0, 0, 0, 0, -36, 0, 0, 0], tagFont: 20, tagCell: 13, tagDot: 4,
+    tagW: 100, withinTagW: 160, tagH: 34, tagOffsetY: 52, tagOffsetsX: [0, 0, 0, 0, 0, 0, 0, -36, 0, 0, 0], tagFont: 20, tagCell: 13, tagDot: 4,
     homeSignW: 72, homeSignH: 44 },
   encounter: { partnerX: 170, wildX: 1110, feetY: 430, creatureW: 240,
     cloudRatio: 0.45, cloudAlpha: 0.85, cloudGap: 16, cloudMinScale: 0.55,
     meterY: 45, meterGap: 62, slotW: 44, dotW: 26,
     cardX: 640, cardY: 265, cardW: 620, cardH: 330, questionY: 176, questionSize: 112, countSize: 64,
-    questionW: 596, questionH: 144, modelX: 640, modelY: 314, modelW: 580, modelH: 120,
+    questionW: 596, questionH: 144, modelX: 640, modelY: 314, modelW: 580, modelH: 128,
     correctionY: 400, correctionSize: 30, messageH: 40, hintX: 140, hintY: 620, hintW: 200,
     hintIconX: -72, hintLabelX: 16, hintIconSize: 26, introSize: 48, introTextH: 180,
     speakerX: 1140, speakerY: 620, speakerW: 96,
@@ -78,6 +78,12 @@ export const LAYOUT = {
 export const MOTION = { breath: 0.018, bob: 4, hop: 38, quickHop: 72, tilt: 9,
   blinkRadius: 15, blinkLine: 5, cloudWobble: 3,
   panelInset: 0.08, segmentRadius: 20, demoSteps: 10, hintPulse: 0.06 } as const;
+/** Pip spacing is shared by picture models and the pals' source-image panels. */
+export const PATTERN = { margin: 6, gap: 4, fitSteps: 32, panelMargin: 0.04, pipRadius: 1 / 6,
+  dividerGap: 8, dividerStroke: 3, outline: 5, segmentOutline: 3, cross: 4, minDotCross: 3, dotCross: 1 / 3, capacity: 10, dieCapacity: 6,
+  pairLeft: 0.3, pairRight: 0.7, tileWidth: 5.4, tileHeight: 2.2, tileGap: 0.08,
+  tileStroke: 0.06, tileCorner: 0.1, tileDot: 0.33, tileCrossInset: 0.18, tileCrossStroke: 0.09,
+  segmentFill: 0.75, segmentCross: 13 } as const;
 /** Fade colour as camera RGB components. */
 export const FADE_RGB = [255, 248, 234] as const;
 

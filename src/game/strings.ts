@@ -16,7 +16,7 @@ export const STRINGS = {
   muddle: (name: string) => `${name} is in a muddle!\nFill the dots to help.`,
   muddleAgain: (name: string) => `${name} is in a muddle again!`,
   warmup: 'Wake up the pad!', tap: (n: number) => `Tap ${n}`, warmupStep: (n: number) => `${n} / 5`,
-  correct: 'You worked it out!', quick: 'A big hop!', clear: 'The muddle is gone!',
+  correct: 'You worked it out!', quick: 'That was quick!', clear: 'The muddle is gone!',
   next: 'Next', keepGoing: 'Keep going', stop: 'Stop for now', camp: 'Good stopping place.',
   clearedStops: (n: number) => `You cleared ${n} ${n === 1 ? 'stop' : 'stops'}!`,
   better: (name: string) => `${name} is getting better!`,
@@ -51,5 +51,5 @@ export const ODDLING_LINES = { tenny: 'Tenny knows tens.', domi: 'Domi knows dou
 /** Map labels are symbols, not speech lines. */
 export const STOP_TAGS: Record<string, string> = { 'see-dots': 'dots', 'see-frame': 'ten-frame',
   'add-plus0': '+0', 'add-plus1': '+1', 'sub-minus01': '−1', 'add-plus2': '+2',
-  'add-within5': '+ to 5', 'sub-within5': '− to 5', 'sub-minus2-all': '−2', 'add-doubles-small': 'doubles',
+  'add-within5': '+ within 5', 'sub-within5': '− within 5', 'sub-minus2-all': '−2', 'add-doubles-small': 'doubles',
   'add-near-doubles-small': 'double + 1', 'sub-halves-small': 'halves' };

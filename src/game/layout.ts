@@ -94,12 +94,14 @@ export function mapPoint(x: number, y: number, area = 1) {
 /** Tags sit under the oval rings, including the two lowest skill stones. */
 export function mapStopLayout(index: number, area = 1) {
   const l = LAYOUT.map, style = mapStyle(area), source = mapArt(area).stops[index]!;
+  const stop = getArea(area).stops[index]!;
+  const tagWidth = stop.type === 'skill' && (stop.set === 'add-within5' || stop.set === 'sub-within5') ? l.withinTagW : style.tagW;
   const p = mapPoint(source.x, source.y, area), scale = mapTransform(area).scale;
   const radiusX = style.nativeRings ? source.rx * scale + UI.stroke : l.progressRadius;
   const radiusY = style.nativeRings ? source.ry * scale + UI.stroke : radiusX * l.progressScaleY;
   return { point: p, touch: mapStopTarget(p.x, p.y), radiusX, radiusY,
     ring: rectAt(p.x, p.y, radiusX * 2 + l.progressStroke, style.nativeRings ? radiusY * 2 + l.progressStroke : (radiusX * 2 + l.progressStroke) * l.progressScaleY),
-    tag: rectAt(p.x + style.tagOffsetsX[index]!, p.y + style.tagOffsetsY[index]!, style.tagW, l.tagH),
+    tag: rectAt(p.x + style.tagOffsetsX[index]!, p.y + style.tagOffsetsY[index]!, tagWidth, l.tagH),
     cloud: rectAt(p.x, p.y - l.cloudOffsetY, l.cloudW, l.cloudH) };
 }
 export function mapHomeRect(area = 1): Rect {

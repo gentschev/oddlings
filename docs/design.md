@@ -93,7 +93,8 @@ behind an unseen story is saved, but its stars appear only after that story is s
 - Complete skills show coloured pals, stars and full rings. A small cloud and gentle
   pulse return only for learning facts or at least three confirmed facts due now.
 - Story stones use speech bubbles and gain stars when seen.
-- Tags under every skill show dots, a ten frame, or +0, +1, −1, +2, + to 5, − to 5, −2.
+- Tags under every skill show dots, a ten frame, or +0, +1, −1, +2, + within 5,
+  − within 5, −2. Only the two within-5 tags need wider plates.
 
 Tapping a current or completed skill starts that pal's encounter. The planner still
 chooses the questions across available facts. A completed stop is a review replay.
@@ -136,6 +137,8 @@ child advances every line, so the game never cuts speech off automatically.
 Layout (landscape):
 - Left: partner Oddling. Right: muddled Oddling with a small wobbly scribble above its
   head. The scribble is about 45% of its width and clears the face and pattern panel.
+  The muddled pal shows its own resting marks as empty navy outlines, with outlined
+  tiles for Tenny. Those marks keep the same positions when earned dots fill them.
 - Top centre: one 44 px cream circle with a navy outline per point of initial work.
   Earned coral dots fill the circles from the left. The engine's meter counts work left.
 - Centre: the question card. Large numerals. Example: `7 + 3 = ?`
@@ -154,12 +157,25 @@ Joining through placement does not count as being helped. Completed-stop replays
 do not need help skip the intro.
 Response timing starts only after the first question is fully shown.
 
+Dice count pictures use a centred square card and standard faces for one through six,
+with pips on a three-by-three grid inside a margin. Scattered counts keep the wide card
+and irregular positions. Every dot stays inside the margin and clear of other dots;
+the curriculum's one-to-five pictures keep dots at least 44 px across.
+
+The travelling pal shows its resting pattern during plain questions. Its panel changes
+to the current fact only while the picture model is visible and the fact fits the
+pattern. It returns to its own marks for the next plain question. Domi uses the same
+standard pip layouts in each domino half, with larger pips. Count pictures use navy
+on both halves; addition uses coral and navy. Twoot keeps side-by-side pairs, Fivel
+uses a die five and Bix uses standard dice pips in its two panels. Unsupported facts
+leave the resting pattern visible.
+
 Turn flow:
 1. Question appears, with a short voiced read ("seven plus three") the first time a
    question format is seen and whenever the speaker button is tapped.
 2. Child taps an answer.
 3. **Correct and quick**: partner does a big move, two earned dots pop into the slots.
-   The card shows and reads "A big hop!"
+   The card shows and reads "That was quick!"
 4. **Correct**: partner does a move, one dot pops in. The card shows the effort line
    that the voice reads. The scribble above the friend shrinks as the meter falls.
 5. **Wrong**: no buzzer, no red X. The partner tilts its head. The card shows the fact
@@ -167,7 +183,7 @@ Turn flow:
    hops), the right answer is shown and voiced, then the child taps the right answer to
    go on. The same fact comes back within the next 2 to 4 questions.
 6. When no work remains, the earned dots fly to the friend in a short stagger, under
-   700 ms. Then its pattern snaps into place, its cloud pops, and it hops. Only the clear
+   700 ms. Then its empty outlines fill, its cloud pops, and it hops. Only the clear
    line is spoken after the final answer. If the engine adds work, the last earned dot
    empties from its slot.
 

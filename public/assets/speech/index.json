@@ -6452,11 +6452,11 @@
   "rev": "e063ddb3"
  },
  "ui-quick": {
-  "text": "A big hop!",
+  "text": "That was quick!",
   "voice": "af_heart",
   "file": "ui-quick.m4a",
-  "ms": 914,
-  "rev": "8317d4e6"
+  "ms": 934,
+  "rev": "9f86e396"
  },
  "ui-saveError": {
   "text": "Tap to keep your place.",

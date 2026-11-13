@@ -54,7 +54,9 @@ let modeled = false, plain = false, corrected = false, correct = false, cleared 
 async function encounter(p, name) {
   await ready(p, 'encounter');
   if ((await state(p)).intro) {
-    await shot(p, `muddle-intro-${name}`); await click(p, 'intro-continue', 400);
+    await shot(p, `muddle-intro-${name}`); await click(p, 'intro-continue', 520);
+    // About 300 ms after the question finishes appearing, for the cloud-clipping review.
+    await shot(p, `early-question-${name}`);
   }
   let deliberateMiss = false;
   for (let i = 0; i < 140; i++) {
@@ -159,6 +161,8 @@ async function captureAll() {
     ['number-line', 'add:4+1', 'inch'], ['domino', 'add:4+4', 'domi'],
     ['double-ten-frame', 'add:10+4', 'tenny'], ['dots-dice', 'dots:5:dice', 'bix'],
     ['dots-scattered', 'dots:5:scattered', 'fivel'], ['paired-pips', 'add:4+2', 'twoot'],
+    ['resting-domi', 'sub:5-5', 'domi'], ['resting-twoot', 'sub:5-5', 'twoot'],
+    ['domi-count-two', 'dots:2:dice', 'domi'], ['domi-count-four', 'dots:4:dice', 'domi'],
   ]) {
     const fixture = structuredClone(original);
     fixture.responses = [];

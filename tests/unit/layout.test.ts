@@ -4,7 +4,7 @@ import { CANVAS, LAYOUT, MOTION, PATH_TIMING, SCENERY, UI } from '../../src/game
 import { campTeamLayout, centre, contains, encounterLayout, mapHomeRect, mapMarkerRect, mapStopLayout, mapBookRect, mapPoint, mapStopTarget, mapTransform, meadowTransform, oddbookLayout, overlaps, rectAt, standingRect, titleOfflineLayout } from '../../src/game/layout';
 import { ODDLING_IDS } from '../../src/core';
 import { PEBBLE_STOPS } from '../../src/core/story/pebblePath';
-import { dotGeometry } from '../../src/ui/patternGeometry';
+import { dotCardGeometry, dotGeometry } from '../../src/ui/patternGeometry';
 import { advanceWithoutIntermediateRenders } from '../../src/game/manualClock';
 import { deliveryDuration, filledSlotCount, slotStates } from '../../src/ui/muddleSlots';
 
@@ -66,8 +66,9 @@ describe('encounter geometry shared with the scenes', () => {
     expect(UI.model.cell * 2 + UI.model.gap).toBeLessThanOrEqual(LAYOUT.encounter.modelH);
     expect(UI.model.dotHeight + UI.model.dotPadding * 2 + UI.stroke).toBeLessThanOrEqual(LAYOUT.encounter.modelH);
     for (const scattered of [true, false]) for (let n = 1; n <= 5; n++) {
-      const box = { x: 0, y: 0, width: UI.model.dotWidth, height: UI.model.dotHeight };
-      for (const dot of dotGeometry(n, box, UI.model.dot, scattered)) {
+      const { card: box, dots } = dotCardGeometry(n, scattered);
+      expect(box.height).toBeLessThanOrEqual(LAYOUT.encounter.modelH);
+      for (const dot of dots) {
         expect(dot.radius * 2).toBeGreaterThanOrEqual(44);
         expect(contains(box, rectAt(dot.x, dot.y, dot.radius * 2, dot.radius * 2))).toBe(true);
       }

@@ -26,7 +26,7 @@ export class RewardScene extends BaseScene {
     if (content.facts) text(this, CENTER_X, l.progressY, content.facts.text, UI.bodyFont);
     for (const { id, rect } of layout.pals) {
       const c = centre(rect), pal = this.pal(id, c.x, c.y, rect.width);
-      pal.showCount(0);
+      pal.setMuddled(true);
       this.time.delayedCall(TIMING.question, () => {
         pal.restorePattern(); pal.hop(this.runtime.elapsed); burstAround(this, rect);
       });
