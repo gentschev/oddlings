@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+*.log
+.codex-runs/
+.cache/
+docs/art-tests/area2/*.png
+private/

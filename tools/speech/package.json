@@ -1,0 +1,7 @@
+{
+  "name": "oddlings-speech-tools",
+  "private": true,
+  "type": "module",
+  "description": "Offline speech generation for Oddlings. Separate from the game so its dependencies never ship.",
+  "dependencies": { "kokoro-js": "1.2.1" }
+}

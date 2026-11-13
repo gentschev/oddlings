@@ -1,0 +1,10 @@
+html, body, #game { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #fff8ea; }
+body { font-family: 'Baloo 2', sans-serif; overscroll-behavior: none; }
+canvas { display: block; touch-action: none; }
+html, body { touch-action: none; overscroll-behavior: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+body { box-sizing: border-box; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+#orientation { display: none; position: fixed; inset: 0; z-index: 100; box-sizing: border-box; padding: max(24px, env(safe-area-inset-top)); background: #FFF8EA; color: #1B2A4A; align-content: center; justify-items: center; gap: 30px; font-size: 36px; text-align: center; }
+.tablet-glyph { display: block; width: 90px; height: 130px; border: 8px solid #1B2A4A; border-radius: 18px; background: #F9C22E; animation: turn-tablet 2.4s ease-in-out infinite; }
+@keyframes turn-tablet { 0%, 20% { transform: rotate(0); } 60%, 100% { transform: rotate(90deg); } }
+@media (orientation: portrait) { #orientation { display: grid; } #game { visibility: hidden; } }
+@media (prefers-reduced-motion: reduce) { .tablet-glyph { animation: none; transform: rotate(90deg); } }

@@ -1,0 +1,253 @@
+{
+  "source": "https://github.com/withmarbleapp/os-taxonomy",
+  "sourceCommit": "df2d6ae43c45d75e8018252b18ae009a803fc984",
+  "licence": "Data: ODbL 1.0. Text: CC BY-SA 4.0. (c) Marble.",
+  "topics": [
+    {
+      "id": "mt_t9BICauBSI",
+      "name": "Subitising to 5",
+      "sourceName": "Subitising to 5",
+      "description": "Recognise and name the number of objects in a collection of up to 5 instantly, without counting one by one (subitising), using dot patterns, dice faces, fingers and small groups of objects",
+      "domain": "Counting & Cardinality",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 8,
+      "evidence": [
+        "Say how many dots are on a dice face showing 4 after a one-second glimpse, without counting",
+        "Show 3 fingers quickly without counting them up one at a time",
+        "Name the number in a flashed group of 2 or 5 counters arranged in different layouts"
+      ],
+      "commonCore": []
+    },
+    {
+      "id": "mt_BK5xwkrD5C",
+      "name": "Seeing parts within 10",
+      "sourceName": "Seeing parts within 10",
+      "description": "Use subitising to recognise and name the parts of a collection up to 10 and combine them — e.g. seeing 7 on a ten frame as 5 and 2, or a domino as 3 and 3 — connecting part-part-whole thinking to quick recognition",
+      "domain": "Counting & Cardinality",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 6,
+      "evidence": [
+        "Look at a ten frame showing 7 and say 'five and two more makes seven' without counting every dot",
+        "Name the two parts on a domino showing 4 and 2 and say the total is 6",
+        "Show 8 as two groups (e.g. 4 and 4, or 5 and 3) and name the parts quickly"
+      ],
+      "commonCore": []
+    },
+    {
+      "id": "mt_ghF3Vv6taM",
+      "name": "Fluent adding and subtracting within 5",
+      "sourceName": "Fluent adding and subtracting within 5",
+      "description": "Fluently add and subtract within 5",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 4,
+      "ageRangeEnd": 6,
+      "evidence": [
+        "Answer 2 + 3 quickly without counting on fingers",
+        "Answer 5 – 2 from recall or with minimal counting",
+        "Complete a set of within-5 addition/subtraction facts accurately and quickly"
+      ],
+      "commonCore": [
+        "K.OA.5"
+      ]
+    },
+    {
+      "id": "mt_7XcCG43ZZW",
+      "name": "Numbers up to 10 into pairs",
+      "sourceName": "Numbers up to 10 into pairs",
+      "description": "Decompose numbers up to 10 into pairs in more than one way (part-part-whole)",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 4,
+      "ageRangeEnd": 7,
+      "evidence": [
+        "Show that 5 = 1 + 4, 5 = 2 + 3, 5 = 0 + 5 etc.",
+        "Use objects or drawings to find all pairs that make a given number",
+        "Record decompositions as equations"
+      ],
+      "commonCore": [
+        "K.OA.3"
+      ]
+    },
+    {
+      "id": "mt_e8CZ7E5qW7",
+      "name": "Number bonds to 10",
+      "sourceName": "Number bonds to 9",
+      "description": "Find the number that makes 10 when added to a given number from 1 to 9 (number bonds to 10)",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 4,
+      "ageRangeEnd": 7,
+      "evidence": [
+        "Given 7, respond '3' to make 10",
+        "Use a ten-frame to find the complement to 10",
+        "Record pairs that make 10 as equations (e.g. 6 + 4 = 10)"
+      ],
+      "commonCore": [
+        "K.OA.4"
+      ]
+    },
+    {
+      "id": "mt_PpWSHA-0kv",
+      "name": "Counting on and back",
+      "sourceName": "Addition and subtraction strategies",
+      "description": "Use counting on and counting back as strategies for addition and subtraction",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 8,
+      "evidence": [
+        "Add 8 + 3 by starting at 8 and counting on 3 (9, 10, 11)",
+        "Subtract 12 − 3 by counting back 3 from 12 (11, 10, 9)",
+        "Explain that counting on is a way to add"
+      ],
+      "commonCore": [
+        "1.OA.5"
+      ]
+    },
+    {
+      "id": "mt_ezc2m_0dzN",
+      "name": "Finding a missing number in addition",
+      "sourceName": "Finding a missing number in addition",
+      "description": "Understand subtraction as finding an unknown addend (e.g. 10 − 8 = ? is the same as 8 + ? = 10)",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "evidence": [
+        "Solve 10 − 8 by thinking 'what do I add to 8 to make 10?'",
+        "Explain that subtraction can be thought of as a missing-addend problem",
+        "Use known addition facts to solve related subtraction problems"
+      ],
+      "commonCore": [
+        "1.OA.4"
+      ]
+    },
+    {
+      "id": "mt__we2TDqnJx",
+      "name": "Fluent adding and subtracting within 10",
+      "sourceName": "Fluent adding and subtracting within 10",
+      "description": "Fluently add and subtract within 10",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 7,
+      "evidence": [
+        "Answer any addition fact within 10 quickly from memory",
+        "Answer any subtraction fact within 10 quickly from memory",
+        "Complete a timed set of within-10 facts with high accuracy"
+      ],
+      "commonCore": [
+        "1.OA.6"
+      ]
+    },
+    {
+      "id": "mt_xmmgAzxe5j",
+      "name": "The teen numbers",
+      "sourceName": "The teen numbers",
+      "description": "Understand that the teen numbers (11–19) are composed of ten ones and some further ones (early place value)",
+      "domain": "Number Representation & Place Value",
+      "ageRangeStart": 5,
+      "ageRangeEnd": 7,
+      "evidence": [
+        "Compose 14 as a group of ten and four ones using objects",
+        "Decompose 17 into 10 + 7 and record as an equation",
+        "Explain that 13 is 'one ten and three ones'"
+      ],
+      "commonCore": [
+        "1.NBT.2.b",
+        "K.NBT.1"
+      ]
+    },
+    {
+      "id": "mt_m1W6nTQJ2b",
+      "name": "Addition and subtraction within 20",
+      "sourceName": "Addition and subtraction within 20",
+      "description": "Add and subtract within 20 using strategies such as making ten, decomposing a number leading to ten, and using known facts",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 6,
+      "ageRangeEnd": 8,
+      "evidence": [
+        "Solve 8 + 6 using making ten, e.g. on a real or on-screen double ten frame: 8 + 2 + 4 = 14",
+        "Solve 13 − 4 by decomposing: 13 − 3 − 1 = 9",
+        "Use a known fact (8 + 4 = 12) to derive 12 − 8 = 4"
+      ],
+      "commonCore": [
+        "1.OA.6"
+      ]
+    },
+    {
+      "id": "mt__t4afSyZRm",
+      "name": "Fluent adding and subtracting within 20",
+      "sourceName": "Fluent adding and subtracting within 20",
+      "description": "Fluently add and subtract within 20 using mental strategies; know from memory all sums of two one-digit numbers",
+      "domain": "Addition & Subtraction",
+      "ageRangeStart": 7,
+      "ageRangeEnd": 11,
+      "evidence": [
+        "Answer any single-digit addition fact within 3 seconds",
+        "Recall subtraction facts within 20 from memory (e.g. 15 − 8 = 7)",
+        "Use known addition facts to derive related subtraction facts rapidly"
+      ],
+      "commonCore": [
+        "2.OA.2"
+      ]
+    }
+  ],
+  "prerequisites": [
+    {
+      "topicId": "mt_BK5xwkrD5C",
+      "prerequisiteId": "mt_7XcCG43ZZW",
+      "strength": "soft",
+      "reason": "Partitioning numbers to 10 into pairs supports naming the parts"
+    },
+    {
+      "topicId": "mt_BK5xwkrD5C",
+      "prerequisiteId": "mt_t9BICauBSI",
+      "strength": "hard",
+      "reason": "Recognising the parts of a collection quickly requires subitising small groups"
+    },
+    {
+      "topicId": "mt_e8CZ7E5qW7",
+      "prerequisiteId": "mt_7XcCG43ZZW",
+      "strength": "hard",
+      "reason": "Making 10 is a specific application of decomposing numbers into pairs"
+    },
+    {
+      "topicId": "mt_m1W6nTQJ2b",
+      "prerequisiteId": "mt_BK5xwkrD5C",
+      "strength": "soft",
+      "reason": "Recognising the parts of numbers within 10 supports adding and subtracting within 20"
+    },
+    {
+      "topicId": "mt_m1W6nTQJ2b",
+      "prerequisiteId": "mt_e8CZ7E5qW7",
+      "strength": "hard",
+      "reason": "Making-ten strategy requires knowing bonds to 10"
+    },
+    {
+      "topicId": "mt_m1W6nTQJ2b",
+      "prerequisiteId": "mt__we2TDqnJx",
+      "strength": "hard",
+      "reason": "Strategies for within-20 calculation build on fluent within-10 knowledge"
+    },
+    {
+      "topicId": "mt__t4afSyZRm",
+      "prerequisiteId": "mt_m1W6nTQJ2b",
+      "strength": "hard",
+      "reason": "Fluency within 20 requires prior strategy-based adding/subtracting within 20"
+    },
+    {
+      "topicId": "mt__t4afSyZRm",
+      "prerequisiteId": "mt__we2TDqnJx",
+      "strength": "hard",
+      "reason": "Fluency within 20 builds on fluency within 10"
+    },
+    {
+      "topicId": "mt__we2TDqnJx",
+      "prerequisiteId": "mt_e8CZ7E5qW7",
+      "strength": "hard",
+      "reason": "Fluency within 10 requires knowing number bonds to 10"
+    },
+    {
+      "topicId": "mt__we2TDqnJx",
+      "prerequisiteId": "mt_ghF3Vv6taM",
+      "strength": "hard",
+      "reason": "Fluency within 10 extends from fluency within 5"
+    }
+  ]
+}

@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "answer-add-0-0",
+    "text": "zero plus zero makes zero"
+  },
+  {
+    "id": "answer-add-0-1",
+    "text": "zero plus one makes one"
+  },
+  {
+    "id": "answer-add-0-10",
+    "text": "zero plus ten makes ten"
+  },
+  {
+    "id": "answer-add-0-2",
+    "text": "zero plus two makes two"
+  },
+  {
+    "id": "answer-add-0-3",
+    "text": "zero plus three makes three"
+  },
+  {
+    "id": "answer-add-0-4",
+    "text": "zero plus four makes four"
+  },
+  {
+    "id": "answer-add-0-5",
+    "text": "zero plus five makes five"
+  },
+  {
+    "id": "answer-add-0-6",
+    "text": "zero plus six makes six"
+  },
+  {
+    "id": "answer-add-0-7",
+    "text": "zero plus seven makes seven"
+  },
+  {
+    "id": "answer-add-0-8",
+    "text": "zero plus eight makes eight"
+  },
+  {
+    "id": "answer-add-0-9",
+    "text": "zero plus nine makes nine"
+  },
+  {
+    "id": "answer-add-1-0",
+    "text": "one plus zero makes one"
+  },
+  {
+    "id": "answer-add-1-1",
+    "text": "one plus one makes two"
+  },
+  {
+    "id": "answer-add-1-10",
+    "text": "one plus ten makes eleven"
+  },
+  {
+    "id": "answer-add-1-2",
+    "text": "one plus two makes three"
+  },
+  {
+    "id": "answer-add-1-3",
+    "text": "one plus three makes four"
+  },
+  {
+    "id": "answer-add-1-4",
+    "text": "one plus four makes five"
+  },
+  {
+    "id": "answer-add-1-5",
+    "text": "one plus five makes six"
+  },
+  {
+    "id": "answer-add-1-6",
+    "text": "one plus six makes seven"
+  },
+  {
+    "id": "answer-add-1-7",
+    "text": "one plus seven makes eight"
+  },
+  {
+    "id": "answer-add-1-8",
+    "text": "one plus eight makes nine"
+  },
+  {
+    "id": "answer-add-1-9",
+    "text": "one plus nine makes ten"
+  },
+  {
+    "id": "answer-add-10-0",
+    "text": "ten plus zero makes ten"
+  },
+  {
+    "id": "answer-add-10-1",
+    "text": "ten plus one makes eleven"
+  },
+  {
+    "id": "answer-add-10-10",
+    "text": "ten plus ten makes twenty"
+  },
+  {
+    "id": "answer-add-10-2",
+    "text": "ten plus two makes twelve"
+  },
+  {
+    "id": "answer-add-10-3",
+    "text": "ten plus three makes thirteen"
+  },
+  {
+    "id": "answer-add-10-4",
+    "text": "ten plus four makes fourteen"
+  },
+  {
+    "id": "answer-add-10-5",
+    "text": "ten plus five makes fifteen"
+  },
+  {
+    "id": "answer-add-10-6",
+    "text": "ten plus six makes sixteen"
+  },
+  {
+    "id": "answer-add-10-7",
+    "text": "ten plus seven makes seventeen"
+  },
+  {
+    "id": "answer-add-10-8",
+    "text": "ten plus eight makes eighteen"
+  },
+  {
+    "id": "answer-add-10-9",
+    "text": "ten plus nine makes nineteen"
+  },
+  {
+    "id": "answer-add-2-0",
+    "text": "two plus zero makes two"
+  },
+  {
+    "id": "answer-add-2-1",
+    "text": "two plus one makes three"
+  },
+  {
+    "id": "answer-add-2-10",
+    "text": "two plus ten makes twelve"
+  },
+  {
+    "id": "answer-add-2-2",
+    "text": "two plus two makes four"
+  },
+  {
+    "id": "answer-add-2-3",
+    "text": "two plus three makes five"
+  },
+  {
+    "id": "answer-add-2-4",
+    "text": "two plus four makes six"
+  },
+  {
+    "id": "answer-add-2-5",
+    "text": "two plus five makes seven"
+  },
+  {
+    "id": "answer-add-2-6",
+    "text": "two plus six makes eight"
+  },
+  {
+    "id": "answer-add-2-7",
+    "text": "two plus seven makes nine"
+  },
+  {
+    "id": "answer-add-2-8",
+    "text": "two plus eight makes ten"
+  },
+  {
+    "id": "answer-add-2-9",
+    "text": "two plus nine makes eleven"
+  },
+  {
+    "id": "answer-add-3-0",
+    "text": "three plus zero makes three"
+  },
+  {
+    "id": "answer-add-3-1",
+    "text": "three plus one makes four"
+  },
+  {
+    "id": "answer-add-3-10",
+    "text": "three plus ten makes thirteen"
+  },
+  {
+    "id": "answer-add-3-2",
+    "text": "three plus two makes five"
+  },
+  {
+    "id": "answer-add-3-3",
+    "text": "three plus three makes six"
+  },
+  {
+    "id": "answer-add-3-4",
+    "text": "three plus four makes seven"
+  },
+  {
+    "id": "answer-add-3-5",
+    "text": "three plus five makes eight"
+  },
+  {
+    "id": "answer-add-3-6",
+    "text": "three plus six makes nine"
+  },
+  {
+    "id": "answer-add-3-7",
+    "text": "three plus seven makes ten"
+  },
+  {
+    "id": "answer-add-3-8",
+    "text": "three plus eight makes eleven"
+  },
+  {
+    "id": "answer-add-3-9",
+    "text": "three plus nine makes twelve"
+  },
+  {
+    "id": "answer-add-4-0",
+    "text": "four plus zero makes four"
+  },
+  {
+    "id": "answer-add-4-1",
+    "text": "four plus one makes five"
+  },
+  {
+    "id": "answer-add-4-10",
+    "text": "four plus ten makes fourteen"
+  },
+  {
+    "id": "answer-add-4-2",
+    "text": "four plus two makes six"
+  },
+  {
+    "id": "answer-add-4-3",
+    "text": "four plus three makes seven"
+  },
+  {
+    "id": "answer-add-4-4",
+    "text": "four plus four makes eight"
+  },
+  {
+    "id": "answer-add-4-5",
+    "text": "four plus five makes nine"
+  },
+  {
+    "id": "answer-add-4-6",
+    "text": "four plus six makes ten"
+  },
+  {
+    "id": "answer-add-4-7",
+    "text": "four plus seven makes eleven"
+  },
+  {
+    "id": "answer-add-4-8",
+    "text": "four plus eight makes twelve"
+  },
+  {
+    "id": "answer-add-4-9",
+    "text": "four plus nine makes thirteen"
+  },
+  {
+    "id": "answer-add-5-0",
+    "text": "five plus zero makes five"
+  },
+  {
+    "id": "answer-add-5-1",
+    "text": "five plus one makes six"
+  },
+  {
+    "id": "answer-add-5-10",
+    "text": "five plus ten makes fifteen"
+  },
+  {
+    "id": "answer-add-5-2",
+    "text": "five plus two makes seven"
+  },
+  {
+    "id": "answer-add-5-3",
+    "text": "five plus three makes eight"
+  },
+  {
+    "id": "answer-add-5-4",
+    "text": "five plus four makes nine"
+  },
+  {
+    "id": "answer-add-5-5",
+    "text": "five plus five makes ten"
+  },
+  {
+    "id": "answer-add-5-6",
+    "text": "five plus six makes eleven"
+  },
+  {
+    "id": "answer-add-5-7",
+    "text": "five plus seven makes twelve"
+  },
+  {
+    "id": "answer-add-5-8",
+    "text": "five plus eight makes thirteen"
+  },
+  {
+    "id": "answer-add-5-9",
+    "text": "five plus nine makes fourteen"
+  },
+  {
+    "id": "answer-add-6-0",
+    "text": "six plus zero makes six"
+  },
+  {
+    "id": "answer-add-6-1",
+    "text": "six plus one makes seven"
+  },
+  {
+    "id": "answer-add-6-10",
+    "text": "six plus ten makes sixteen"
+  },
+  {
+    "id": "answer-add-6-2",
+    "text": "six plus two makes eight"
+  },
+  {
+    "id": "answer-add-6-3",
+    "text": "six plus three makes nine"
+  },
+  {
+    "id": "answer-add-6-4",
+    "text": "six plus four makes ten"
+  },
+  {
+    "id": "answer-add-6-5",
+    "text": "six plus five makes eleven"
+  },
+  {
+    "id": "answer-add-6-6",
+    "text": "six plus six makes twelve"
+  },
+  {
+    "id": "answer-add-6-7",
+    "text": "six plus seven makes thirteen"
+  },
+  {
+    "id": "answer-add-6-8",
+    "text": "six plus eight makes fourteen"
+  },
+  {
+    "id": "answer-add-6-9",
+    "text": "six plus nine makes fifteen"
+  },
+  {
+    "id": "answer-add-7-0",
+    "text": "seven plus zero makes seven"
+  },
+  {
+    "id": "answer-add-7-1",
+    "text": "seven plus one makes eight"
+  },
+  {
+    "id": "answer-add-7-10",
+    "text": "seven plus ten makes seventeen"
+  },
+  {
+    "id": "answer-add-7-2",
+    "text": "seven plus two makes nine"
+  },
+  {
+    "id": "answer-add-7-3",
+    "text": "seven plus three makes ten"
+  },
+  {
+    "id": "answer-add-7-4",
+    "text": "seven plus four makes eleven"
+  },
+  {
+    "id": "answer-add-7-5",
+    "text": "seven plus five makes twelve"
+  },
+  {
+    "id": "answer-add-7-6",
+    "text": "seven plus six makes thirteen"
+  },
+  {
+    "id": "answer-add-7-7",
+    "text": "seven plus seven makes fourteen"
+  },
+  {
+    "id": "answer-add-7-8",
+    "text": "seven plus eight makes fifteen"
+  },
+  {
+    "id": "answer-add-7-9",
+    "text": "seven plus nine makes sixteen"
+  },
+  {
+    "id": "answer-add-8-0",
+    "text": "eight plus zero makes eight"
+  },
+  {
+    "id": "answer-add-8-1",
+    "text": "eight plus one makes nine"
+  },
+  {
+    "id": "answer-add-8-10",
+    "text": "eight plus ten makes eighteen"
+  },
+  {
+    "id": "answer-add-8-2",
+    "text": "eight plus two makes ten"
+  },
+  {
+    "id": "answer-add-8-3",
+    "text": "eight plus three makes eleven"
+  },
+  {
+    "id": "answer-add-8-4",
+    "text": "eight plus four makes twelve"
+  },
+  {
+    "id": "answer-add-8-5",
+    "text": "eight plus five makes thirteen"
+  },
+  {
+    "id": "answer-add-8-6",
+    "text": "eight plus six makes fourteen"
+  },
+  {
+    "id": "answer-add-8-7",
+    "text": "eight plus seven makes fifteen"
+  },
+  {
+    "id": "answer-add-8-8",
+    "text": "eight plus eight makes sixteen"
+  },
+  {
+    "id": "answer-add-8-9",
+    "text": "eight plus nine makes seventeen"
+  },
+  {
+    "id": "answer-add-9-0",
+    "text": "nine plus zero makes nine"
+  },
+  {
+    "id": "answer-add-9-1",
+    "text": "nine plus one makes ten"
+  },
+  {
+    "id": "answer-add-9-10",
+    "text": "nine plus ten makes nineteen"
+  },
+  {
+    "id": "answer-add-9-2",
+    "text": "nine plus two makes eleven"
+  },
+  {
+    "id": "answer-add-9-3",
+    "text": "nine plus three makes twelve"
+  },
+  {
+    "id": "answer-add-9-4",
+    "text": "nine plus four makes thirteen"
+  },
+  {
+    "id": "answer-add-9-5",
+    "text": "nine plus five makes fourteen"
+  },
+  {
+    "id": "answer-add-9-6",
+    "text": "nine plus six makes fifteen"
+  },
+  {
+    "id": "answer-add-9-7",
+    "text": "nine plus seven makes sixteen"
+  },
+  {
+    "id": "answer-add-9-8",
+    "text": "nine plus eight makes seventeen"
+  },
+  {
+    "id": "answer-add-9-9",
+    "text": "nine plus nine makes eighteen"
+  },
+  {
+    "id": "answer-dots-1-dice",
+    "text": "one"
+  },
+  {
+    "id": "answer-dots-1-scattered",
+    "text": "one"
+  },
+  {
+    "id": "answer-dots-2-dice",
+    "text": "two"
+  },
+  {
+    "id": "answer-dots-2-scattered",
+    "text": "two"
+  },
+  {
+    "id": "answer-dots-3-dice",
+    "text": "three"
+  },
+  {
+    "id": "answer-dots-3-scattered",
+    "text": "three"
+  },
+  {
+    "id": "answer-dots-4-dice",
+    "text": "four"
+  },
+  {
+    "id": "answer-dots-4-scattered",
+    "text": "four"
+  },
+  {
+    "id": "answer-dots-5-dice",
+    "text": "five"
+  },
+  {
+    "id": "answer-dots-5-scattered",
+    "text": "five"
+  },
+  {
+    "id": "answer-frame-0",
+    "text": "zero"
+  },
+  {
+    "id": "answer-frame-1",
+    "text": "one"
+  },
+  {
+    "id": "answer-frame-10",
+    "text": "ten"
+  },
+  {
+    "id": "answer-frame-2",
+    "text": "two"
+  },
+  {
+    "id": "answer-frame-3",
+    "text": "three"
+  },
+  {
+    "id": "answer-frame-4",
+    "text": "four"
+  },
+  {
+    "id": "answer-frame-5",
+    "text": "five"
+  },
+  {
+    "id": "answer-frame-6",
+    "text": "six"
+  },
+  {
+    "id": "answer-frame-7",
+    "text": "seven"
+  },
+  {
+    "id": "answer-frame-8",
+    "text": "eight"
+  },
+  {
+    "id": "answer-frame-9",
+    "text": "nine"
+  },
+  {
+    "id": "answer-miss-0-0",
+    "text": "zero plus zero makes zero"
+  },
+  {
+    "id": "answer-miss-0-1",
+    "text": "zero plus one makes one"
+  },
+  {
+    "id": "answer-miss-0-10",
+    "text": "zero plus ten makes ten"
+  },
+  {
+    "id": "answer-miss-0-2",
+    "text": "zero plus two makes two"
+  },
+  {
+    "id": "answer-miss-0-3",
+    "text": "zero plus three makes three"
+  },
+  {
+    "id": "answer-miss-0-4",
+    "text": "zero plus four makes four"
+  },
+  {
+    "id": "answer-miss-0-5",
+    "text": "zero plus five makes five"
+  },
+  {
+    "id": "answer-miss-0-6",
+    "text": "zero plus six makes six"
+  },
+  {
+    "id": "answer-miss-0-7",
+    "text": "zero plus seven makes seven"
+  },
+  {
+    "id": "answer-miss-0-8",
+    "text": "zero plus eight makes eight"
+  },
+  {
+    "id": "answer-miss-0-9",
+    "text": "zero plus nine makes nine"
+  },
+  {
+    "id": "answer-miss-1-1",
+    "text": "one plus zero makes one"
+  },
+  {
+    "id": "answer-miss-1-10",
+    "text": "one plus nine makes ten"
+  },
+  {
+    "id": "answer-miss-1-2",
+    "text": "one plus one makes two"
+  },
+  {
+    "id": "answer-miss-1-3",
+    "text": "one plus two makes three"
+  },
+  {
+    "id": "answer-miss-1-4",
+    "text": "one plus three makes four"
+  },
+  {
+    "id": "answer-miss-1-5",
+    "text": "one plus four makes five"
+  },
+  {
+    "id": "answer-miss-1-6",
+    "text": "one plus five makes six"
+  },
+  {
+    "id": "answer-miss-1-7",
+    "text": "one plus six makes seven"
+  },
+  {
+    "id": "answer-miss-1-8",
+    "text": "one plus seven makes eight"
+  },
+  {
+    "id": "answer-miss-1-9",
+    "text": "one plus eight makes nine"
+  },
+  {
+    "id": "answer-miss-10-10",
+    "text": "ten plus zero makes ten"
+  },
+  {
+    "id": "answer-miss-2-10",
+    "text": "two plus eight makes ten"
+  },
+  {
+    "id": "answer-miss-2-2",
+    "text": "two plus zero makes two"
+  },
+  {
+    "id": "answer-miss-2-3",
+    "text": "two plus one makes three"
+  },
+  {
+    "id": "answer-miss-2-4",
+    "text": "two plus two makes four"
+  },
+  {
+    "id": "answer-miss-2-5",
+    "text": "two plus three makes five"
+  },
+  {
+    "id": "answer-miss-2-6",
+    "text": "two plus four makes six"
+  },
+  {
+    "id": "answer-miss-2-7",
+    "text": "two plus five makes seven"
+  },
+  {
+    "id": "answer-miss-2-8",
+    "text": "two plus six makes eight"
+  },
+  {
+    "id": "answer-miss-2-9",
+    "text": "two plus seven makes nine"
+  },
+  {
+    "id": "answer-miss-3-10",
+    "text": "three plus seven makes ten"
+  },
+  {
+    "id": "answer-miss-3-3",
+    "text": "three plus zero makes three"
+  },
+  {
+    "id": "answer-miss-3-4",
+    "text": "three plus one makes four"
+  },
+  {
+    "id": "answer-miss-3-5",
+    "text": "three plus two makes five"
+  },
+  {
+    "id": "answer-miss-3-6",
+    "text": "three plus three makes six"
+  },
+  {
+    "id": "answer-miss-3-7",
+    "text": "three plus four makes seven"
+  },
+  {
+    "id": "answer-miss-3-8",
+    "text": "three plus five makes eight"
+  },
+  {
+    "id": "answer-miss-3-9",
+    "text": "three plus six makes nine"
+  },
+  {
+    "id": "answer-miss-4-10",
+    "text": "four plus six makes ten"
+  },
+  {
+    "id": "answer-miss-4-4",
+    "text": "four plus zero makes four"
+  },
+  {
+    "id": "answer-miss-4-5",
+    "text": "four plus one makes five"
+  },
+  {
+    "id": "answer-miss-4-6",
+    "text": "four plus two makes six"
+  },
+  {
+    "id": "answer-miss-4-7",
+    "text": "four plus three makes seven"
+  },
+  {
+    "id": "answer-miss-4-8",
+    "text": "four plus four makes eight"
+  },
+  {
+    "id": "answer-miss-4-9",
+    "text": "four plus five makes nine"
+  },
+  {
+    "id": "answer-miss-5-10",
+    "text": "five plus five makes ten"
+  },
+  {
+    "id": "answer-miss-5-5",
+    "text": "five plus zero makes five"
+  },
+  {
+    "id": "answer-miss-5-6",
+    "text": "five plus one makes six"
+  },
+  {
+    "id": "answer-miss-5-7",
+    "text": "five plus two makes seven"
+  },
+  {
+    "id": "answer-miss-5-8",
+    "text": "five plus three makes eight"
+  },
+  {
+    "id": "answer-miss-5-9",
+    "text": "five plus four makes nine"
+  },
+  {
+    "id": "answer-miss-6-10",
+    "text": "six plus four makes ten"
+  },
+  {
+    "id": "answer-miss-6-6",
+    "text": "six plus zero makes six"
+  },
+  {
+    "id": "answer-miss-6-7",
+    "text": "six plus one makes seven"
+  },
+  {
+    "id": "answer-miss-6-8",
+    "text": "six plus two makes eight"
+  },
+  {
+    "id": "answer-miss-6-9",
+    "text": "six plus three makes nine"
+  },
+  {
+    "id": "answer-miss-7-10",
+    "text": "seven plus three makes ten"
+  },
+  {
+    "id": "answer-miss-7-7",
+    "text": "seven plus zero makes seven"
+  },
+  {
+    "id": "answer-miss-7-8",
+    "text": "seven plus one makes eight"
+  },
+  {
+    "id": "answer-miss-7-9",
+    "text": "seven plus two makes nine"
+  },
+  {
+    "id": "answer-miss-8-10",
+    "text": "eight plus two makes ten"
+  },
+  {
+    "id": "answer-miss-8-8",
+    "text": "eight plus zero makes eight"
+  },
+  {
+    "id": "answer-miss-8-9",
+    "text": "eight plus one makes nine"
+  },
+  {
+    "id": "answer-miss-9-10",
+    "text": "nine plus one makes ten"
+  },
+  {
+    "id": "answer-miss-9-9",
+    "text": "nine plus zero makes nine"
+  },
+  {
+    "id": "answer-sub-0-0",
+    "text": "zero take away zero makes zero"
+  },
+  {
+    "id": "answer-sub-1-0",
+    "text": "one take away zero makes one"
+  },
+  {
+    "id": "answer-sub-1-1",
+    "text": "one take away one makes zero"
+  },
+  {
+    "id": "answer-sub-10-0",
+    "text": "ten take away zero makes ten"
+  },
+  {
+    "id": "answer-sub-10-1",
+    "text": "ten take away one makes nine"
+  },
+  {
+    "id": "answer-sub-10-10",
+    "text": "ten take away ten makes zero"
+  },
+  {
+    "id": "answer-sub-10-2",
+    "text": "ten take away two makes eight"
+  },
+  {
+    "id": "answer-sub-10-3",
+    "text": "ten take away three makes seven"
+  },
+  {
+    "id": "answer-sub-10-4",
+    "text": "ten take away four makes six"
+  },
+  {
+    "id": "answer-sub-10-5",
+    "text": "ten take away five makes five"
+  },
+  {
+    "id": "answer-sub-10-6",
+    "text": "ten take away six makes four"
+  },
+  {
+    "id": "answer-sub-10-7",
+    "text": "ten take away seven makes three"
+  },
+  {
+    "id": "answer-sub-10-8",
+    "text": "ten take away eight makes two"
+  },
+  {
+    "id": "answer-sub-10-9",
+    "text": "ten take away nine makes one"
+  },
+  {
+    "id": "answer-sub-11-1",
+    "text": "eleven take away one makes ten"
+  },
+  {
+    "id": "answer-sub-11-10",
+    "text": "eleven take away ten makes one"
+  },
+  {
+    "id": "answer-sub-11-2",
+    "text": "eleven take away two makes nine"
+  },
+  {
+    "id": "answer-sub-11-3",
+    "text": "eleven take away three makes eight"
+  },
+  {
+    "id": "answer-sub-11-4",
+    "text": "eleven take away four makes seven"
+  },
+  {
+    "id": "answer-sub-11-5",
+    "text": "eleven take away five makes six"
+  },
+  {
+    "id": "answer-sub-11-6",
+    "text": "eleven take away six makes five"
+  },
+  {
+    "id": "answer-sub-11-7",
+    "text": "eleven take away seven makes four"
+  },
+  {
+    "id": "answer-sub-11-8",
+    "text": "eleven take away eight makes three"
+  },
+  {
+    "id": "answer-sub-11-9",
+    "text": "eleven take away nine makes two"
+  },
+  {
+    "id": "answer-sub-12-10",
+    "text": "twelve take away ten makes two"
+  },
+  {
+    "id": "answer-sub-12-2",
+    "text": "twelve take away two makes ten"
+  },
+  {
+    "id": "answer-sub-12-3",
+    "text": "twelve take away three makes nine"
+  },
+  {
+    "id": "answer-sub-12-4",
+    "text": "twelve take away four makes eight"
+  },
+  {
+    "id": "answer-sub-12-5",
+    "text": "twelve take away five makes seven"
+  },
+  {
+    "id": "answer-sub-12-6",
+    "text": "twelve take away six makes six"
+  },
+  {
+    "id": "answer-sub-12-7",
+    "text": "twelve take away seven makes five"
+  },
+  {
+    "id": "answer-sub-12-8",
+    "text": "twelve take away eight makes four"
+  },
+  {
+    "id": "answer-sub-12-9",
+    "text": "twelve take away nine makes three"
+  },
+  {
+    "id": "answer-sub-13-10",
+    "text": "thirteen take away ten makes three"
+  },
+  {
+    "id": "answer-sub-13-3",
+    "text": "thirteen take away three makes ten"
+  },
+  {
+    "id": "answer-sub-13-4",
+    "text": "thirteen take away four makes nine"
+  },
+  {
+    "id": "answer-sub-13-5",
+    "text": "thirteen take away five makes eight"
+  },
+  {
+    "id": "answer-sub-13-6",
+    "text": "thirteen take away six makes seven"
+  },
+  {
+    "id": "answer-sub-13-7",
+    "text": "thirteen take away seven makes six"
+  },
+  {
+    "id": "answer-sub-13-8",
+    "text": "thirteen take away eight makes five"
+  },
+  {
+    "id": "answer-sub-13-9",
+    "text": "thirteen take away nine makes four"
+  },
+  {
+    "id": "answer-sub-14-10",
+    "text": "fourteen take away ten makes four"
+  },
+  {
+    "id": "answer-sub-14-4",
+    "text": "fourteen take away four makes ten"
+  },
+  {
+    "id": "answer-sub-14-5",
+    "text": "fourteen take away five makes nine"
+  },
+  {
+    "id": "answer-sub-14-6",
+    "text": "fourteen take away six makes eight"
+  },
+  {
+    "id": "answer-sub-14-7",
+    "text": "fourteen take away seven makes seven"
+  },
+  {
+    "id": "answer-sub-14-8",
+    "text": "fourteen take away eight makes six"
+  },
+  {
+    "id": "answer-sub-14-9",
+    "text": "fourteen take away nine makes five"
+  },
+  {
+    "id": "answer-sub-15-10",
+    "text": "fifteen take away ten makes five"
+  },
+  {
+    "id": "answer-sub-15-5",
+    "text": "fifteen take away five makes ten"
+  },
+  {
+    "id": "answer-sub-15-6",
+    "text": "fifteen take away six makes nine"
+  },
+  {
+    "id": "answer-sub-15-7",
+    "text": "fifteen take away seven makes eight"
+  },
+  {
+    "id": "answer-sub-15-8",
+    "text": "fifteen take away eight makes seven"
+  },
+  {
+    "id": "answer-sub-15-9",
+    "text": "fifteen take away nine makes six"
+  },
+  {
+    "id": "answer-sub-16-10",
+    "text": "sixteen take away ten makes six"
+  },
+  {
+    "id": "answer-sub-16-6",
+    "text": "sixteen take away six makes ten"
+  },
+  {
+    "id": "answer-sub-16-7",
+    "text": "sixteen take away seven makes nine"
+  },
+  {
+    "id": "answer-sub-16-8",
+    "text": "sixteen take away eight makes eight"
+  },
+  {
+    "id": "answer-sub-16-9",
+    "text": "sixteen take away nine makes seven"
+  },
+  {
+    "id": "answer-sub-17-10",
+    "text": "seventeen take away ten makes seven"
+  },
+  {
+    "id": "answer-sub-17-7",
+    "text": "seventeen take away seven makes ten"
+  },
+  {
+    "id": "answer-sub-17-8",
+    "text": "seventeen take away eight makes nine"
+  },
+  {
+    "id": "answer-sub-17-9",
+    "text": "seventeen take away nine makes eight"
+  },
+  {
+    "id": "answer-sub-18-10",
+    "text": "eighteen take away ten makes eight"
+  },
+  {
+    "id": "answer-sub-18-8",
+    "text": "eighteen take away eight makes ten"
+  },
+  {
+    "id": "answer-sub-18-9",
+    "text": "eighteen take away nine makes nine"
+  },
+  {
+    "id": "answer-sub-19-10",
+    "text": "nineteen take away ten makes nine"
+  },
+  {
+    "id": "answer-sub-19-9",
+    "text": "nineteen take away nine makes ten"
+  },
+  {
+    "id": "answer-sub-2-0",
+    "text": "two take away zero makes two"
+  },
+  {
+    "id": "answer-sub-2-1",
+    "text": "two take away one makes one"
+  },
+  {
+    "id": "answer-sub-2-2",
+    "text": "two take away two makes zero"
+  },
+  {
+    "id": "answer-sub-20-10",
+    "text": "twenty take away ten makes ten"
+  },
+  {
+    "id": "answer-sub-3-0",
+    "text": "three take away zero makes three"
+  },
+  {
+    "id": "answer-sub-3-1",
+    "text": "three take away one makes two"
+  },
+  {
+    "id": "answer-sub-3-2",
+    "text": "three take away two makes one"
+  },
+  {
+    "id": "answer-sub-3-3",
+    "text": "three take away three makes zero"
+  },
+  {
+    "id": "answer-sub-4-0",
+    "text": "four take away zero makes four"
+  },
+  {
+    "id": "answer-sub-4-1",
+    "text": "four take away one makes three"
+  },
+  {
+    "id": "answer-sub-4-2",
+    "text": "four take away two makes two"
+  },
+  {
+    "id": "answer-sub-4-3",
+    "text": "four take away three makes one"
+  },
+  {
+    "id": "answer-sub-4-4",
+    "text": "four take away four makes zero"
+  },
+  {
+    "id": "answer-sub-5-0",
+    "text": "five take away zero makes five"
+  },
+  {
+    "id": "answer-sub-5-1",
+    "text": "five take away one makes four"
+  },
+  {
+    "id": "answer-sub-5-2",
+    "text": "five take away two makes three"
+  },
+  {
+    "id": "answer-sub-5-3",
+    "text": "five take away three makes two"
+  },
+  {
+    "id": "answer-sub-5-4",
+    "text": "five take away four makes one"
+  },
+  {
+    "id": "answer-sub-5-5",
+    "text": "five take away five makes zero"
+  },
+  {
+    "id": "answer-sub-6-0",
+    "text": "six take away zero makes six"
+  },
+  {
+    "id": "answer-sub-6-1",
+    "text": "six take away one makes five"
+  },
+  {
+    "id": "answer-sub-6-2",
+    "text": "six take away two makes four"
+  },
+  {
+    "id": "answer-sub-6-3",
+    "text": "six take away three makes three"
+  },
+  {
+    "id": "answer-sub-6-4",
+    "text": "six take away four makes two"
+  },
+  {
+    "id": "answer-sub-6-5",
+    "text": "six take away five makes one"
+  },
+  {
+    "id": "answer-sub-6-6",
+    "text": "six take away six makes zero"
+  },
+  {
+    "id": "answer-sub-7-0",
+    "text": "seven take away zero makes seven"
+  },
+  {
+    "id": "answer-sub-7-1",
+    "text": "seven take away one makes six"
+  },
+  {
+    "id": "answer-sub-7-2",
+    "text": "seven take away two makes five"
+  },
+  {
+    "id": "answer-sub-7-3",
+    "text": "seven take away three makes four"
+  },
+  {
+    "id": "answer-sub-7-4",
+    "text": "seven take away four makes three"
+  },
+  {
+    "id": "answer-sub-7-5",
+    "text": "seven take away five makes two"
+  },
+  {
+    "id": "answer-sub-7-6",
+    "text": "seven take away six makes one"
+  },
+  {
+    "id": "answer-sub-7-7",
+    "text": "seven take away seven makes zero"
+  },
+  {
+    "id": "answer-sub-8-0",
+    "text": "eight take away zero makes eight"
+  },
+  {
+    "id": "answer-sub-8-1",
+    "text": "eight take away one makes seven"
+  },
+  {
+    "id": "answer-sub-8-2",
+    "text": "eight take away two makes six"
+  },
+  {
+    "id": "answer-sub-8-3",
+    "text": "eight take away three makes five"
+  },
+  {
+    "id": "answer-sub-8-4",
+    "text": "eight take away four makes four"
+  },
+  {
+    "id": "answer-sub-8-5",
+    "text": "eight take away five makes three"
+  },
+  {
+    "id": "answer-sub-8-6",
+    "text": "eight take away six makes two"
+  },
+  {
+    "id": "answer-sub-8-7",
+    "text": "eight take away seven makes one"
+  },
+  {
+    "id": "answer-sub-8-8",
+    "text": "eight take away eight makes zero"
+  },
+  {
+    "id": "answer-sub-9-0",
+    "text": "nine take away zero makes nine"
+  },
+  {
+    "id": "answer-sub-9-1",
+    "text": "nine take away one makes eight"
+  },
+  {
+    "id": "answer-sub-9-2",
+    "text": "nine take away two makes seven"
+  },
+  {
+    "id": "answer-sub-9-3",
+    "text": "nine take away three makes six"
+  },
+  {
+    "id": "answer-sub-9-4",
+    "text": "nine take away four makes five"
+  },
+  {
+    "id": "answer-sub-9-5",
+    "text": "nine take away five makes four"
+  },
+  {
+    "id": "answer-sub-9-6",
+    "text": "nine take away six makes three"
+  },
+  {
+    "id": "answer-sub-9-7",
+    "text": "nine take away seven makes two"
+  },
+  {
+    "id": "answer-sub-9-8",
+    "text": "nine take away eight makes one"
+  },
+  {
+    "id": "answer-sub-9-9",
+    "text": "nine take away nine makes zero"
+  },
+  {
+    "id": "area-twinFalls",
+    "text": "Twin Falls"
+  },
+  {
+    "id": "better-bix",
+    "text": "Bix is getting better!"
+  },
+  {
+    "id": "better-domi",
+    "text": "Domi is getting better!"
+  },
+  {
+    "id": "better-fivel",
+    "text": "Fivel is getting better!"
+  },
+  {
+    "id": "better-inch",
+    "text": "Inch is getting better!"
+  },
+  {
+    "id": "better-tenny",
+    "text": "Tenny is getting better!"
+  },
+  {
+    "id": "better-twoot",
+    "text": "Twoot is getting better!"
+  },
+  {
+    "id": "cleared-stops-1",
+    "text": "You cleared 1 stop!"
+  },
+  {
+    "id": "cleared-stops-10",
+    "text": "You cleared 10 stops!"
+  },
+  {
+    "id": "cleared-stops-11",
+    "text": "You cleared 11 stops!"
+  },
+  {
+    "id": "cleared-stops-12",
+    "text": "You cleared 12 stops!"
+  },
+  {
+    "id": "cleared-stops-2",
+    "text": "You cleared 2 stops!"
+  },
+  {
+    "id": "cleared-stops-3",
+    "text": "You cleared 3 stops!"
+  },
+  {
+    "id": "cleared-stops-4",
+    "text": "You cleared 4 stops!"
+  },
+  {
+    "id": "cleared-stops-5",
+    "text": "You cleared 5 stops!"
+  },
+  {
+    "id": "cleared-stops-6",
+    "text": "You cleared 6 stops!"
+  },
+  {
+    "id": "cleared-stops-7",
+    "text": "You cleared 7 stops!"
+  },
+  {
+    "id": "cleared-stops-8",
+    "text": "You cleared 8 stops!"
+  },
+  {
+    "id": "cleared-stops-9",
+    "text": "You cleared 9 stops!"
+  },
+  {
+    "id": "correction-tap-0",
+    "text": "Tap 0 to go on."
+  },
+  {
+    "id": "correction-tap-1",
+    "text": "Tap 1 to go on."
+  },
+  {
+    "id": "correction-tap-10",
+    "text": "Tap 10 to go on."
+  },
+  {
+    "id": "correction-tap-11",
+    "text": "Tap 11 to go on."
+  },
+  {
+    "id": "correction-tap-12",
+    "text": "Tap 12 to go on."
+  },
+  {
+    "id": "correction-tap-13",
+    "text": "Tap 13 to go on."
+  },
+  {
+    "id": "correction-tap-14",
+    "text": "Tap 14 to go on."
+  },
+  {
+    "id": "correction-tap-15",
+    "text": "Tap 15 to go on."
+  },
+  {
+    "id": "correction-tap-16",
+    "text": "Tap 16 to go on."
+  },
+  {
+    "id": "correction-tap-17",
+    "text": "Tap 17 to go on."
+  },
+  {
+    "id": "correction-tap-18",
+    "text": "Tap 18 to go on."
+  },
+  {
+    "id": "correction-tap-19",
+    "text": "Tap 19 to go on."
+  },
+  {
+    "id": "correction-tap-2",
+    "text": "Tap 2 to go on."
+  },
+  {
+    "id": "correction-tap-20",
+    "text": "Tap 20 to go on."
+  },
+  {
+    "id": "correction-tap-3",
+    "text": "Tap 3 to go on."
+  },
+  {
+    "id": "correction-tap-4",
+    "text": "Tap 4 to go on."
+  },
+  {
+    "id": "correction-tap-5",
+    "text": "Tap 5 to go on."
+  },
+  {
+    "id": "correction-tap-6",
+    "text": "Tap 6 to go on."
+  },
+  {
+    "id": "correction-tap-7",
+    "text": "Tap 7 to go on."
+  },
+  {
+    "id": "correction-tap-8",
+    "text": "Tap 8 to go on."
+  },
+  {
+    "id": "correction-tap-9",
+    "text": "Tap 9 to go on."
+  },
+  {
+    "id": "fact-add-0-0",
+    "text": "zero plus zero"
+  },
+  {
+    "id": "fact-add-0-1",
+    "text": "zero plus one"
+  },
+  {
+    "id": "fact-add-0-10",
+    "text": "zero plus ten"
+  },
+  {
+    "id": "fact-add-0-2",
+    "text": "zero plus two"
+  },
+  {
+    "id": "fact-add-0-3",
+    "text": "zero plus three"
+  },
+  {
+    "id": "fact-add-0-4",
+    "text": "zero plus four"
+  },
+  {
+    "id": "fact-add-0-5",
+    "text": "zero plus five"
+  },
+  {
+    "id": "fact-add-0-6",
+    "text": "zero plus six"
+  },
+  {
+    "id": "fact-add-0-7",
+    "text": "zero plus seven"
+  },
+  {
+    "id": "fact-add-0-8",
+    "text": "zero plus eight"
+  },
+  {
+    "id": "fact-add-0-9",
+    "text": "zero plus nine"
+  },
+  {
+    "id": "fact-add-1-0",
+    "text": "one plus zero"
+  },
+  {
+    "id": "fact-add-1-1",
+    "text": "one plus one"
+  },
+  {
+    "id": "fact-add-1-10",
+    "text": "one plus ten"
+  },
+  {
+    "id": "fact-add-1-2",
+    "text": "one plus two"
+  },
+  {
+    "id": "fact-add-1-3",
+    "text": "one plus three"
+  },
+  {
+    "id": "fact-add-1-4",
+    "text": "one plus four"
+  },
+  {
+    "id": "fact-add-1-5",
+    "text": "one plus five"
+  },
+  {
+    "id": "fact-add-1-6",
+    "text": "one plus six"
+  },
+  {
+    "id": "fact-add-1-7",
+    "text": "one plus seven"
+  },
+  {
+    "id": "fact-add-1-8",
+    "text": "one plus eight"
+  },
+  {
+    "id": "fact-add-1-9",
+    "text": "one plus nine"
+  },
+  {
+    "id": "fact-add-10-0",
+    "text": "ten plus zero"
+  },
+  {
+    "id": "fact-add-10-1",
+    "text": "ten plus one"
+  },
+  {
+    "id": "fact-add-10-10",
+    "text": "ten plus ten"
+  },
+  {
+    "id": "fact-add-10-2",
+    "text": "ten plus two"
+  },
+  {
+    "id": "fact-add-10-3",
+    "text": "ten plus three"
+  },
+  {
+    "id": "fact-add-10-4",
+    "text": "ten plus four"
+  },
+  {
+    "id": "fact-add-10-5",
+    "text": "ten plus five"
+  },
+  {
+    "id": "fact-add-10-6",
+    "text": "ten plus six"
+  },
+  {
+    "id": "fact-add-10-7",
+    "text": "ten plus seven"
+  },
+  {
+    "id": "fact-add-10-8",
+    "text": "ten plus eight"
+  },
+  {
+    "id": "fact-add-10-9",
+    "text": "ten plus nine"
+  },
+  {
+    "id": "fact-add-2-0",
+    "text": "two plus zero"
+  },
+  {
+    "id": "fact-add-2-1",
+    "text": "two plus one"
+  },
+  {
+    "id": "fact-add-2-10",
+    "text": "two plus ten"
+  },
+  {
+    "id": "fact-add-2-2",
+    "text": "two plus two"
+  },
+  {
+    "id": "fact-add-2-3",
+    "text": "two plus three"
+  },
+  {
+    "id": "fact-add-2-4",
+    "text": "two plus four"
+  },
+  {
+    "id": "fact-add-2-5",
+    "text": "two plus five"
+  },
+  {
+    "id": "fact-add-2-6",
+    "text": "two plus six"
+  },
+  {
+    "id": "fact-add-2-7",
+    "text": "two plus seven"
+  },
+  {
+    "id": "fact-add-2-8",
+    "text": "two plus eight"
+  },
+  {
+    "id": "fact-add-2-9",
+    "text": "two plus nine"
+  },
+  {
+    "id": "fact-add-3-0",
+    "text": "three plus zero"
+  },
+  {
+    "id": "fact-add-3-1",
+    "text": "three plus one"
+  },
+  {
+    "id": "fact-add-3-10",
+    "text": "three plus ten"
+  },
+  {
+    "id": "fact-add-3-2",
+    "text": "three plus two"
+  },
+  {
+    "id": "fact-add-3-3",
+    "text": "three plus three"
+  },
+  {
+    "id": "fact-add-3-4",
+    "text": "three plus four"
+  },
+  {
+    "id": "fact-add-3-5",
+    "text": "three plus five"
+  },
+  {
+    "id": "fact-add-3-6",
+    "text": "three plus six"
+  },
+  {
+    "id": "fact-add-3-7",
+    "text": "three plus seven"
+  },
+  {
+    "id": "fact-add-3-8",
+    "text": "three plus eight"
+  },
+  {
+    "id": "fact-add-3-9",
+    "text": "three plus nine"
+  },
+  {
+    "id": "fact-add-4-0",
+    "text": "four plus zero"
+  },
+  {
+    "id": "fact-add-4-1",
+    "text": "four plus one"
+  },
+  {
+    "id": "fact-add-4-10",
+    "text": "four plus ten"
+  },
+  {
+    "id": "fact-add-4-2",
+    "text": "four plus two"
+  },
+  {
+    "id": "fact-add-4-3",
+    "text": "four plus three"
+  },
+  {
+    "id": "fact-add-4-4",
+    "text": "four plus four"
+  },
+  {
+    "id": "fact-add-4-5",
+    "text": "four plus five"
+  },
+  {
+    "id": "fact-add-4-6",
+    "text": "four plus six"
+  },
+  {
+    "id": "fact-add-4-7",
+    "text": "four plus seven"
+  },
+  {
+    "id": "fact-add-4-8",
+    "text": "four plus eight"
+  },
+  {
+    "id": "fact-add-4-9",
+    "text": "four plus nine"
+  },
+  {
+    "id": "fact-add-5-0",
+    "text": "five plus zero"
+  },
+  {
+    "id": "fact-add-5-1",
+    "text": "five plus one"
+  },
+  {
+    "id": "fact-add-5-10",
+    "text": "five plus ten"
+  },
+  {
+    "id": "fact-add-5-2",
+    "text": "five plus two"
+  },
+  {
+    "id": "fact-add-5-3",
+    "text": "five plus three"
+  },
+  {
+    "id": "fact-add-5-4",
+    "text": "five plus four"
+  },
+  {
+    "id": "fact-add-5-5",
+    "text": "five plus five"
+  },
+  {
+    "id": "fact-add-5-6",
+    "text": "five plus six"
+  },
+  {
+    "id": "fact-add-5-7",
+    "text": "five plus seven"
+  },
+  {
+    "id": "fact-add-5-8",
+    "text": "five plus eight"
+  },
+  {
+    "id": "fact-add-5-9",
+    "text": "five plus nine"
+  },
+  {
+    "id": "fact-add-6-0",
+    "text": "six plus zero"
+  },
+  {
+    "id": "fact-add-6-1",
+    "text": "six plus one"
+  },
+  {
+    "id": "fact-add-6-10",
+    "text": "six plus ten"
+  },
+  {
+    "id": "fact-add-6-2",
+    "text": "six plus two"
+  },
+  {
+    "id": "fact-add-6-3",
+    "text": "six plus three"
+  },
+  {
+    "id": "fact-add-6-4",
+    "text": "six plus four"
+  },
+  {
+    "id": "fact-add-6-5",
+    "text": "six plus five"
+  },
+  {
+    "id": "fact-add-6-6",
+    "text": "six plus six"
+  },
+  {
+    "id": "fact-add-6-7",
+    "text": "six plus seven"
+  },
+  {
+    "id": "fact-add-6-8",
+    "text": "six plus eight"
+  },
+  {
+    "id": "fact-add-6-9",
+    "text": "six plus nine"
+  },
+  {
+    "id": "fact-add-7-0",
+    "text": "seven plus zero"
+  },
+  {
+    "id": "fact-add-7-1",
+    "text": "seven plus one"
+  },
+  {
+    "id": "fact-add-7-10",
+    "text": "seven plus ten"
+  },
+  {
+    "id": "fact-add-7-2",
+    "text": "seven plus two"
+  },
+  {
+    "id": "fact-add-7-3",
+    "text": "seven plus three"
+  },
+  {
+    "id": "fact-add-7-4",
+    "text": "seven plus four"
+  },
+  {
+    "id": "fact-add-7-5",
+    "text": "seven plus five"
+  },
+  {
+    "id": "fact-add-7-6",
+    "text": "seven plus six"
+  },
+  {
+    "id": "fact-add-7-7",
+    "text": "seven plus seven"
+  },
+  {
+    "id": "fact-add-7-8",
+    "text": "seven plus eight"
+  },
+  {
+    "id": "fact-add-7-9",
+    "text": "seven plus nine"
+  },
+  {
+    "id": "fact-add-8-0",
+    "text": "eight plus zero"
+  },
+  {
+    "id": "fact-add-8-1",
+    "text": "eight plus one"
+  },
+  {
+    "id": "fact-add-8-10",
+    "text": "eight plus ten"
+  },
+  {
+    "id": "fact-add-8-2",
+    "text": "eight plus two"
+  },
+  {
+    "id": "fact-add-8-3",
+    "text": "eight plus three"
+  },
+  {
+    "id": "fact-add-8-4",
+    "text": "eight plus four"
+  },
+  {
+    "id": "fact-add-8-5",
+    "text": "eight plus five"
+  },
+  {
+    "id": "fact-add-8-6",
+    "text": "eight plus six"
+  },
+  {
+    "id": "fact-add-8-7",
+    "text": "eight plus seven"
+  },
+  {
+    "id": "fact-add-8-8",
+    "text": "eight plus eight"
+  },
+  {
+    "id": "fact-add-8-9",
+    "text": "eight plus nine"
+  },
+  {
+    "id": "fact-add-9-0",
+    "text": "nine plus zero"
+  },
+  {
+    "id": "fact-add-9-1",
+    "text": "nine plus one"
+  },
+  {
+    "id": "fact-add-9-10",
+    "text": "nine plus ten"
+  },
+  {
+    "id": "fact-add-9-2",
+    "text": "nine plus two"
+  },
+  {
+    "id": "fact-add-9-3",
+    "text": "nine plus three"
+  },
+  {
+    "id": "fact-add-9-4",
+    "text": "nine plus four"
+  },
+  {
+    "id": "fact-add-9-5",
+    "text": "nine plus five"
+  },
+  {
+    "id": "fact-add-9-6",
+    "text": "nine plus six"
+  },
+  {
+    "id": "fact-add-9-7",
+    "text": "nine plus seven"
+  },
+  {
+    "id": "fact-add-9-8",
+    "text": "nine plus eight"
+  },
+  {
+    "id": "fact-add-9-9",
+    "text": "nine plus nine"
+  },
+  {
+    "id": "fact-dots-1-dice",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-1-scattered",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-2-dice",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-2-scattered",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-3-dice",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-3-scattered",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-4-dice",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-4-scattered",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-5-dice",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-dots-5-scattered",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-0",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-1",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-10",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-2",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-3",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-4",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-5",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-6",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-7",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-8",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-frame-9",
+    "text": "How many dots?"
+  },
+  {
+    "id": "fact-miss-0-0",
+    "text": "zero plus what makes zero"
+  },
+  {
+    "id": "fact-miss-0-1",
+    "text": "zero plus what makes one"
+  },
+  {
+    "id": "fact-miss-0-10",
+    "text": "zero plus what makes ten"
+  },
+  {
+    "id": "fact-miss-0-2",
+    "text": "zero plus what makes two"
+  },
+  {
+    "id": "fact-miss-0-3",
+    "text": "zero plus what makes three"
+  },
+  {
+    "id": "fact-miss-0-4",
+    "text": "zero plus what makes four"
+  },
+  {
+    "id": "fact-miss-0-5",
+    "text": "zero plus what makes five"
+  },
+  {
+    "id": "fact-miss-0-6",
+    "text": "zero plus what makes six"
+  },
+  {
+    "id": "fact-miss-0-7",
+    "text": "zero plus what makes seven"
+  },
+  {
+    "id": "fact-miss-0-8",
+    "text": "zero plus what makes eight"
+  },
+  {
+    "id": "fact-miss-0-9",
+    "text": "zero plus what makes nine"
+  },
+  {
+    "id": "fact-miss-1-1",
+    "text": "one plus what makes one"
+  },
+  {
+    "id": "fact-miss-1-10",
+    "text": "one plus what makes ten"
+  },
+  {
+    "id": "fact-miss-1-2",
+    "text": "one plus what makes two"
+  },
+  {
+    "id": "fact-miss-1-3",
+    "text": "one plus what makes three"
+  },
+  {
+    "id": "fact-miss-1-4",
+    "text": "one plus what makes four"
+  },
+  {
+    "id": "fact-miss-1-5",
+    "text": "one plus what makes five"
+  },
+  {
+    "id": "fact-miss-1-6",
+    "text": "one plus what makes six"
+  },
+  {
+    "id": "fact-miss-1-7",
+    "text": "one plus what makes seven"
+  },
+  {
+    "id": "fact-miss-1-8",
+    "text": "one plus what makes eight"
+  },
+  {
+    "id": "fact-miss-1-9",
+    "text": "one plus what makes nine"
+  },
+  {
+    "id": "fact-miss-10-10",
+    "text": "ten plus what makes ten"
+  },
+  {
+    "id": "fact-miss-2-10",
+    "text": "two plus what makes ten"
+  },
+  {
+    "id": "fact-miss-2-2",
+    "text": "two plus what makes two"
+  },
+  {
+    "id": "fact-miss-2-3",
+    "text": "two plus what makes three"
+  },
+  {
+    "id": "fact-miss-2-4",
+    "text": "two plus what makes four"
+  },
+  {
+    "id": "fact-miss-2-5",
+    "text": "two plus what makes five"
+  },
+  {
+    "id": "fact-miss-2-6",
+    "text": "two plus what makes six"
+  },
+  {
+    "id": "fact-miss-2-7",
+    "text": "two plus what makes seven"
+  },
+  {
+    "id": "fact-miss-2-8",
+    "text": "two plus what makes eight"
+  },
+  {
+    "id": "fact-miss-2-9",
+    "text": "two plus what makes nine"
+  },
+  {
+    "id": "fact-miss-3-10",
+    "text": "three plus what makes ten"
+  },
+  {
+    "id": "fact-miss-3-3",
+    "text": "three plus what makes three"
+  },
+  {
+    "id": "fact-miss-3-4",
+    "text": "three plus what makes four"
+  },
+  {
+    "id": "fact-miss-3-5",
+    "text": "three plus what makes five"
+  },
+  {
+    "id": "fact-miss-3-6",
+    "text": "three plus what makes six"
+  },
+  {
+    "id": "fact-miss-3-7",
+    "text": "three plus what makes seven"
+  },
+  {
+    "id": "fact-miss-3-8",
+    "text": "three plus what makes eight"
+  },
+  {
+    "id": "fact-miss-3-9",
+    "text": "three plus what makes nine"
+  },
+  {
+    "id": "fact-miss-4-10",
+    "text": "four plus what makes ten"
+  },
+  {
+    "id": "fact-miss-4-4",
+    "text": "four plus what makes four"
+  },
+  {
+    "id": "fact-miss-4-5",
+    "text": "four plus what makes five"
+  },
+  {
+    "id": "fact-miss-4-6",
+    "text": "four plus what makes six"
+  },
+  {
+    "id": "fact-miss-4-7",
+    "text": "four plus what makes seven"
+  },
+  {
+    "id": "fact-miss-4-8",
+    "text": "four plus what makes eight"
+  },
+  {
+    "id": "fact-miss-4-9",
+    "text": "four plus what makes nine"
+  },
+  {
+    "id": "fact-miss-5-10",
+    "text": "five plus what makes ten"
+  },
+  {
+    "id": "fact-miss-5-5",
+    "text": "five plus what makes five"
+  },
+  {
+    "id": "fact-miss-5-6",
+    "text": "five plus what makes six"
+  },
+  {
+    "id": "fact-miss-5-7",
+    "text": "five plus what makes seven"
+  },
+  {
+    "id": "fact-miss-5-8",
+    "text": "five plus what makes eight"
+  },
+  {
+    "id": "fact-miss-5-9",
+    "text": "five plus what makes nine"
+  },
+  {
+    "id": "fact-miss-6-10",
+    "text": "six plus what makes ten"
+  },
+  {
+    "id": "fact-miss-6-6",
+    "text": "six plus what makes six"
+  },
+  {
+    "id": "fact-miss-6-7",
+    "text": "six plus what makes seven"
+  },
+  {
+    "id": "fact-miss-6-8",
+    "text": "six plus what makes eight"
+  },
+  {
+    "id": "fact-miss-6-9",
+    "text": "six plus what makes nine"
+  },
+  {
+    "id": "fact-miss-7-10",
+    "text": "seven plus what makes ten"
+  },
+  {
+    "id": "fact-miss-7-7",
+    "text": "seven plus what makes seven"
+  },
+  {
+    "id": "fact-miss-7-8",
+    "text": "seven plus what makes eight"
+  },
+  {
+    "id": "fact-miss-7-9",
+    "text": "seven plus what makes nine"
+  },
+  {
+    "id": "fact-miss-8-10",
+    "text": "eight plus what makes ten"
+  },
+  {
+    "id": "fact-miss-8-8",
+    "text": "eight plus what makes eight"
+  },
+  {
+    "id": "fact-miss-8-9",
+    "text": "eight plus what makes nine"
+  },
+  {
+    "id": "fact-miss-9-10",
+    "text": "nine plus what makes ten"
+  },
+  {
+    "id": "fact-miss-9-9",
+    "text": "nine plus what makes nine"
+  },
+  {
+    "id": "fact-sub-0-0",
+    "text": "zero take away zero"
+  },
+  {
+    "id": "fact-sub-1-0",
+    "text": "one take away zero"
+  },
+  {
+    "id": "fact-sub-1-1",
+    "text": "one take away one"
+  },
+  {
+    "id": "fact-sub-10-0",
+    "text": "ten take away zero"
+  },
+  {
+    "id": "fact-sub-10-1",
+    "text": "ten take away one"
+  },
+  {
+    "id": "fact-sub-10-10",
+    "text": "ten take away ten"
+  },
+  {
+    "id": "fact-sub-10-2",
+    "text": "ten take away two"
+  },
+  {
+    "id": "fact-sub-10-3",
+    "text": "ten take away three"
+  },
+  {
+    "id": "fact-sub-10-4",
+    "text": "ten take away four"
+  },
+  {
+    "id": "fact-sub-10-5",
+    "text": "ten take away five"
+  },
+  {
+    "id": "fact-sub-10-6",
+    "text": "ten take away six"
+  },
+  {
+    "id": "fact-sub-10-7",
+    "text": "ten take away seven"
+  },
+  {
+    "id": "fact-sub-10-8",
+    "text": "ten take away eight"
+  },
+  {
+    "id": "fact-sub-10-9",
+    "text": "ten take away nine"
+  },
+  {
+    "id": "fact-sub-11-1",
+    "text": "eleven take away one"
+  },
+  {
+    "id": "fact-sub-11-10",
+    "text": "eleven take away ten"
+  },
+  {
+    "id": "fact-sub-11-2",
+    "text": "eleven take away two"
+  },
+  {
+    "id": "fact-sub-11-3",
+    "text": "eleven take away three"
+  },
+  {
+    "id": "fact-sub-11-4",
+    "text": "eleven take away four"
+  },
+  {
+    "id": "fact-sub-11-5",
+    "text": "eleven take away five"
+  },
+  {
+    "id": "fact-sub-11-6",
+    "text": "eleven take away six"
+  },
+  {
+    "id": "fact-sub-11-7",
+    "text": "eleven take away seven"
+  },
+  {
+    "id": "fact-sub-11-8",
+    "text": "eleven take away eight"
+  },
+  {
+    "id": "fact-sub-11-9",
+    "text": "eleven take away nine"
+  },
+  {
+    "id": "fact-sub-12-10",
+    "text": "twelve take away ten"
+  },
+  {
+    "id": "fact-sub-12-2",
+    "text": "twelve take away two"
+  },
+  {
+    "id": "fact-sub-12-3",
+    "text": "twelve take away three"
+  },
+  {
+    "id": "fact-sub-12-4",
+    "text": "twelve take away four"
+  },
+  {
+    "id": "fact-sub-12-5",
+    "text": "twelve take away five"
+  },
+  {
+    "id": "fact-sub-12-6",
+    "text": "twelve take away six"
+  },
+  {
+    "id": "fact-sub-12-7",
+    "text": "twelve take away seven"
+  },
+  {
+    "id": "fact-sub-12-8",
+    "text": "twelve take away eight"
+  },
+  {
+    "id": "fact-sub-12-9",
+    "text": "twelve take away nine"
+  },
+  {
+    "id": "fact-sub-13-10",
+    "text": "thirteen take away ten"
+  },
+  {
+    "id": "fact-sub-13-3",
+    "text": "thirteen take away three"
+  },
+  {
+    "id": "fact-sub-13-4",
+    "text": "thirteen take away four"
+  },
+  {
+    "id": "fact-sub-13-5",
+    "text": "thirteen take away five"
+  },
+  {
+    "id": "fact-sub-13-6",
+    "text": "thirteen take away six"
+  },
+  {
+    "id": "fact-sub-13-7",
+    "text": "thirteen take away seven"
+  },
+  {
+    "id": "fact-sub-13-8",
+    "text": "thirteen take away eight"
+  },
+  {
+    "id": "fact-sub-13-9",
+    "text": "thirteen take away nine"
+  },
+  {
+    "id": "fact-sub-14-10",
+    "text": "fourteen take away ten"
+  },
+  {
+    "id": "fact-sub-14-4",
+    "text": "fourteen take away four"
+  },
+  {
+    "id": "fact-sub-14-5",
+    "text": "fourteen take away five"
+  },
+  {
+    "id": "fact-sub-14-6",
+    "text": "fourteen take away six"
+  },
+  {
+    "id": "fact-sub-14-7",
+    "text": "fourteen take away seven"
+  },
+  {
+    "id": "fact-sub-14-8",
+    "text": "fourteen take away eight"
+  },
+  {
+    "id": "fact-sub-14-9",
+    "text": "fourteen take away nine"
+  },
+  {
+    "id": "fact-sub-15-10",
+    "text": "fifteen take away ten"
+  },
+  {
+    "id": "fact-sub-15-5",
+    "text": "fifteen take away five"
+  },
+  {
+    "id": "fact-sub-15-6",
+    "text": "fifteen take away six"
+  },
+  {
+    "id": "fact-sub-15-7",
+    "text": "fifteen take away seven"
+  },
+  {
+    "id": "fact-sub-15-8",
+    "text": "fifteen take away eight"
+  },
+  {
+    "id": "fact-sub-15-9",
+    "text": "fifteen take away nine"
+  },
+  {
+    "id": "fact-sub-16-10",
+    "text": "sixteen take away ten"
+  },
+  {
+    "id": "fact-sub-16-6",
+    "text": "sixteen take away six"
+  },
+  {
+    "id": "fact-sub-16-7",
+    "text": "sixteen take away seven"
+  },
+  {
+    "id": "fact-sub-16-8",
+    "text": "sixteen take away eight"
+  },
+  {
+    "id": "fact-sub-16-9",
+    "text": "sixteen take away nine"
+  },
+  {
+    "id": "fact-sub-17-10",
+    "text": "seventeen take away ten"
+  },
+  {
+    "id": "fact-sub-17-7",
+    "text": "seventeen take away seven"
+  },
+  {
+    "id": "fact-sub-17-8",
+    "text": "seventeen take away eight"
+  },
+  {
+    "id": "fact-sub-17-9",
+    "text": "seventeen take away nine"
+  },
+  {
+    "id": "fact-sub-18-10",
+    "text": "eighteen take away ten"
+  },
+  {
+    "id": "fact-sub-18-8",
+    "text": "eighteen take away eight"
+  },
+  {
+    "id": "fact-sub-18-9",
+    "text": "eighteen take away nine"
+  },
+  {
+    "id": "fact-sub-19-10",
+    "text": "nineteen take away ten"
+  },
+  {
+    "id": "fact-sub-19-9",
+    "text": "nineteen take away nine"
+  },
+  {
+    "id": "fact-sub-2-0",
+    "text": "two take away zero"
+  },
+  {
+    "id": "fact-sub-2-1",
+    "text": "two take away one"
+  },
+  {
+    "id": "fact-sub-2-2",
+    "text": "two take away two"
+  },
+  {
+    "id": "fact-sub-20-10",
+    "text": "twenty take away ten"
+  },
+  {
+    "id": "fact-sub-3-0",
+    "text": "three take away zero"
+  },
+  {
+    "id": "fact-sub-3-1",
+    "text": "three take away one"
+  },
+  {
+    "id": "fact-sub-3-2",
+    "text": "three take away two"
+  },
+  {
+    "id": "fact-sub-3-3",
+    "text": "three take away three"
+  },
+  {
+    "id": "fact-sub-4-0",
+    "text": "four take away zero"
+  },
+  {
+    "id": "fact-sub-4-1",
+    "text": "four take away one"
+  },
+  {
+    "id": "fact-sub-4-2",
+    "text": "four take away two"
+  },
+  {
+    "id": "fact-sub-4-3",
+    "text": "four take away three"
+  },
+  {
+    "id": "fact-sub-4-4",
+    "text": "four take away four"
+  },
+  {
+    "id": "fact-sub-5-0",
+    "text": "five take away zero"
+  },
+  {
+    "id": "fact-sub-5-1",
+    "text": "five take away one"
+  },
+  {
+    "id": "fact-sub-5-2",
+    "text": "five take away two"
+  },
+  {
+    "id": "fact-sub-5-3",
+    "text": "five take away three"
+  },
+  {
+    "id": "fact-sub-5-4",
+    "text": "five take away four"
+  },
+  {
+    "id": "fact-sub-5-5",
+    "text": "five take away five"
+  },
+  {
+    "id": "fact-sub-6-0",
+    "text": "six take away zero"
+  },
+  {
+    "id": "fact-sub-6-1",
+    "text": "six take away one"
+  },
+  {
+    "id": "fact-sub-6-2",
+    "text": "six take away two"
+  },
+  {
+    "id": "fact-sub-6-3",
+    "text": "six take away three"
+  },
+  {
+    "id": "fact-sub-6-4",
+    "text": "six take away four"
+  },
+  {
+    "id": "fact-sub-6-5",
+    "text": "six take away five"
+  },
+  {
+    "id": "fact-sub-6-6",
+    "text": "six take away six"
+  },
+  {
+    "id": "fact-sub-7-0",
+    "text": "seven take away zero"
+  },
+  {
+    "id": "fact-sub-7-1",
+    "text": "seven take away one"
+  },
+  {
+    "id": "fact-sub-7-2",
+    "text": "seven take away two"
+  },
+  {
+    "id": "fact-sub-7-3",
+    "text": "seven take away three"
+  },
+  {
+    "id": "fact-sub-7-4",
+    "text": "seven take away four"
+  },
+  {
+    "id": "fact-sub-7-5",
+    "text": "seven take away five"
+  },
+  {
+    "id": "fact-sub-7-6",
+    "text": "seven take away six"
+  },
+  {
+    "id": "fact-sub-7-7",
+    "text": "seven take away seven"
+  },
+  {
+    "id": "fact-sub-8-0",
+    "text": "eight take away zero"
+  },
+  {
+    "id": "fact-sub-8-1",
+    "text": "eight take away one"
+  },
+  {
+    "id": "fact-sub-8-2",
+    "text": "eight take away two"
+  },
+  {
+    "id": "fact-sub-8-3",
+    "text": "eight take away three"
+  },
+  {
+    "id": "fact-sub-8-4",
+    "text": "eight take away four"
+  },
+  {
+    "id": "fact-sub-8-5",
+    "text": "eight take away five"
+  },
+  {
+    "id": "fact-sub-8-6",
+    "text": "eight take away six"
+  },
+  {
+    "id": "fact-sub-8-7",
+    "text": "eight take away seven"
+  },
+  {
+    "id": "fact-sub-8-8",
+    "text": "eight take away eight"
+  },
+  {
+    "id": "fact-sub-9-0",
+    "text": "nine take away zero"
+  },
+  {
+    "id": "fact-sub-9-1",
+    "text": "nine take away one"
+  },
+  {
+    "id": "fact-sub-9-2",
+    "text": "nine take away two"
+  },
+  {
+    "id": "fact-sub-9-3",
+    "text": "nine take away three"
+  },
+  {
+    "id": "fact-sub-9-4",
+    "text": "nine take away four"
+  },
+  {
+    "id": "fact-sub-9-5",
+    "text": "nine take away five"
+  },
+  {
+    "id": "fact-sub-9-6",
+    "text": "nine take away six"
+  },
+  {
+    "id": "fact-sub-9-7",
+    "text": "nine take away seven"
+  },
+  {
+    "id": "fact-sub-9-8",
+    "text": "nine take away eight"
+  },
+  {
+    "id": "fact-sub-9-9",
+    "text": "nine take away nine"
+  },
+  {
+    "id": "friend-bix",
+    "text": "Bix feels better!"
+  },
+  {
+    "id": "friend-domi",
+    "text": "Domi feels better!"
+  },
+  {
+    "id": "friend-fivel",
+    "text": "Fivel feels better!"
+  },
+  {
+    "id": "friend-inch",
+    "text": "Inch feels better!"
+  },
+  {
+    "id": "friend-moss",
+    "text": "Moss feels better!"
+  },
+  {
+    "id": "friend-nought",
+    "text": "Nought feels better!"
+  },
+  {
+    "id": "friend-tenny",
+    "text": "Tenny feels better!"
+  },
+  {
+    "id": "friend-twoot",
+    "text": "Twoot feels better!"
+  },
+  {
+    "id": "join-bix",
+    "text": "Bix joins your team!"
+  },
+  {
+    "id": "join-domi",
+    "text": "Domi joins your team!"
+  },
+  {
+    "id": "join-fivel",
+    "text": "Fivel joins your team!"
+  },
+  {
+    "id": "join-inch",
+    "text": "Inch joins your team!"
+  },
+  {
+    "id": "join-moss",
+    "text": "Moss joins your team!"
+  },
+  {
+    "id": "join-nought",
+    "text": "Nought joins your team!"
+  },
+  {
+    "id": "join-tenny",
+    "text": "Tenny joins your team!"
+  },
+  {
+    "id": "join-twoot",
+    "text": "Twoot joins your team!"
+  },
+  {
+    "id": "joined-pals-2",
+    "text": "2 pals join your team!"
+  },
+  {
+    "id": "joined-pals-3",
+    "text": "3 pals join your team!"
+  },
+  {
+    "id": "joined-pals-4",
+    "text": "4 pals join your team!"
+  },
+  {
+    "id": "joined-pals-5",
+    "text": "5 pals join your team!"
+  },
+  {
+    "id": "muddle-again-bix",
+    "text": "Bix is in a muddle again!"
+  },
+  {
+    "id": "muddle-again-domi",
+    "text": "Domi is in a muddle again!"
+  },
+  {
+    "id": "muddle-again-fivel",
+    "text": "Fivel is in a muddle again!"
+  },
+  {
+    "id": "muddle-again-inch",
+    "text": "Inch is in a muddle again!"
+  },
+  {
+    "id": "muddle-again-tenny",
+    "text": "Tenny is in a muddle again!"
+  },
+  {
+    "id": "muddle-again-twoot",
+    "text": "Twoot is in a muddle again!"
+  },
+  {
+    "id": "muddle-bix",
+    "text": "Bix is in a muddle!\nFill the dots to help."
+  },
+  {
+    "id": "muddle-domi",
+    "text": "Domi is in a muddle!\nFill the dots to help."
+  },
+  {
+    "id": "muddle-fivel",
+    "text": "Fivel is in a muddle!\nFill the dots to help."
+  },
+  {
+    "id": "muddle-inch",
+    "text": "Inch is in a muddle!\nFill the dots to help."
+  },
+  {
+    "id": "muddle-tenny",
+    "text": "Tenny is in a muddle!\nFill the dots to help."
+  },
+  {
+    "id": "muddle-twoot",
+    "text": "Twoot is in a muddle!\nFill the dots to help."
+  },
+  {
+    "id": "name-bix",
+    "text": "Bix"
+  },
+  {
+    "id": "name-domi",
+    "text": "Domi"
+  },
+  {
+    "id": "name-fivel",
+    "text": "Fivel"
+  },
+  {
+    "id": "name-inch",
+    "text": "Inch"
+  },
+  {
+    "id": "name-moss",
+    "text": "Moss"
+  },
+  {
+    "id": "name-nought",
+    "text": "Nought"
+  },
+  {
+    "id": "name-tenny",
+    "text": "Tenny"
+  },
+  {
+    "id": "name-twoot",
+    "text": "Twoot"
+  },
+  {
+    "id": "new-facts-0",
+    "text": "0 new facts!"
+  },
+  {
+    "id": "new-facts-1",
+    "text": "1 new fact!"
+  },
+  {
+    "id": "new-facts-10",
+    "text": "10 new facts!"
+  },
+  {
+    "id": "new-facts-11",
+    "text": "11 new facts!"
+  },
+  {
+    "id": "new-facts-12",
+    "text": "12 new facts!"
+  },
+  {
+    "id": "new-facts-13",
+    "text": "13 new facts!"
+  },
+  {
+    "id": "new-facts-14",
+    "text": "14 new facts!"
+  },
+  {
+    "id": "new-facts-15",
+    "text": "15 new facts!"
+  },
+  {
+    "id": "new-facts-16",
+    "text": "16 new facts!"
+  },
+  {
+    "id": "new-facts-17",
+    "text": "17 new facts!"
+  },
+  {
+    "id": "new-facts-18",
+    "text": "18 new facts!"
+  },
+  {
+    "id": "new-facts-19",
+    "text": "19 new facts!"
+  },
+  {
+    "id": "new-facts-2",
+    "text": "2 new facts!"
+  },
+  {
+    "id": "new-facts-20",
+    "text": "20 new facts!"
+  },
+  {
+    "id": "new-facts-3",
+    "text": "3 new facts!"
+  },
+  {
+    "id": "new-facts-4",
+    "text": "4 new facts!"
+  },
+  {
+    "id": "new-facts-5",
+    "text": "5 new facts!"
+  },
+  {
+    "id": "new-facts-6",
+    "text": "6 new facts!"
+  },
+  {
+    "id": "new-facts-7",
+    "text": "7 new facts!"
+  },
+  {
+    "id": "new-facts-8",
+    "text": "8 new facts!"
+  },
+  {
+    "id": "new-facts-9",
+    "text": "9 new facts!"
+  },
+  {
+    "id": "new-facts-many",
+    "text": "So many new facts!"
+  },
+  {
+    "id": "number-0",
+    "text": "zero"
+  },
+  {
+    "id": "number-1",
+    "text": "one"
+  },
+  {
+    "id": "number-10",
+    "text": "ten"
+  },
+  {
+    "id": "number-11",
+    "text": "eleven"
+  },
+  {
+    "id": "number-12",
+    "text": "twelve"
+  },
+  {
+    "id": "number-13",
+    "text": "thirteen"
+  },
+  {
+    "id": "number-14",
+    "text": "fourteen"
+  },
+  {
+    "id": "number-15",
+    "text": "fifteen"
+  },
+  {
+    "id": "number-16",
+    "text": "sixteen"
+  },
+  {
+    "id": "number-17",
+    "text": "seventeen"
+  },
+  {
+    "id": "number-18",
+    "text": "eighteen"
+  },
+  {
+    "id": "number-19",
+    "text": "nineteen"
+  },
+  {
+    "id": "number-2",
+    "text": "two"
+  },
+  {
+    "id": "number-20",
+    "text": "twenty"
+  },
+  {
+    "id": "number-3",
+    "text": "three"
+  },
+  {
+    "id": "number-4",
+    "text": "four"
+  },
+  {
+    "id": "number-5",
+    "text": "five"
+  },
+  {
+    "id": "number-6",
+    "text": "six"
+  },
+  {
+    "id": "number-7",
+    "text": "seven"
+  },
+  {
+    "id": "number-8",
+    "text": "eight"
+  },
+  {
+    "id": "number-9",
+    "text": "nine"
+  },
+  {
+    "id": "pal-bix",
+    "text": "Bix knows dots."
+  },
+  {
+    "id": "pal-domi",
+    "text": "Domi knows doubles."
+  },
+  {
+    "id": "pal-fivel",
+    "text": "Fivel knows five."
+  },
+  {
+    "id": "pal-inch",
+    "text": "Inch can count on."
+  },
+  {
+    "id": "pal-tenny",
+    "text": "Tenny knows tens."
+  },
+  {
+    "id": "pal-twoot",
+    "text": "Twoot knows twos."
+  },
+  {
+    "id": "praise-0",
+    "text": "You worked it out!"
+  },
+  {
+    "id": "praise-1",
+    "text": "You kept trying!"
+  },
+  {
+    "id": "praise-2",
+    "text": "You found a way!"
+  },
+  {
+    "id": "praise-3",
+    "text": "Good counting!"
+  },
+  {
+    "id": "praise-4",
+    "text": "You gave it a go!"
+  },
+  {
+    "id": "praise-5",
+    "text": "You took your time."
+  },
+  {
+    "id": "review-facts-0",
+    "text": "0 facts grew strong!"
+  },
+  {
+    "id": "review-facts-1",
+    "text": "1 fact grew strong!"
+  },
+  {
+    "id": "review-facts-10",
+    "text": "10 facts grew strong!"
+  },
+  {
+    "id": "review-facts-11",
+    "text": "11 facts grew strong!"
+  },
+  {
+    "id": "review-facts-12",
+    "text": "12 facts grew strong!"
+  },
+  {
+    "id": "review-facts-13",
+    "text": "13 facts grew strong!"
+  },
+  {
+    "id": "review-facts-14",
+    "text": "14 facts grew strong!"
+  },
+  {
+    "id": "review-facts-15",
+    "text": "15 facts grew strong!"
+  },
+  {
+    "id": "review-facts-16",
+    "text": "16 facts grew strong!"
+  },
+  {
+    "id": "review-facts-17",
+    "text": "17 facts grew strong!"
+  },
+  {
+    "id": "review-facts-18",
+    "text": "18 facts grew strong!"
+  },
+  {
+    "id": "review-facts-19",
+    "text": "19 facts grew strong!"
+  },
+  {
+    "id": "review-facts-2",
+    "text": "2 facts grew strong!"
+  },
+  {
+    "id": "review-facts-20",
+    "text": "20 facts grew strong!"
+  },
+  {
+    "id": "review-facts-3",
+    "text": "3 facts grew strong!"
+  },
+  {
+    "id": "review-facts-4",
+    "text": "4 facts grew strong!"
+  },
+  {
+    "id": "review-facts-5",
+    "text": "5 facts grew strong!"
+  },
+  {
+    "id": "review-facts-6",
+    "text": "6 facts grew strong!"
+  },
+  {
+    "id": "review-facts-7",
+    "text": "7 facts grew strong!"
+  },
+  {
+    "id": "review-facts-8",
+    "text": "8 facts grew strong!"
+  },
+  {
+    "id": "review-facts-9",
+    "text": "9 facts grew strong!"
+  },
+  {
+    "id": "review-facts-many",
+    "text": "So many facts grew strong!"
+  },
+  {
+    "id": "story-den-0",
+    "text": "Look! A den behind the falls."
+  },
+  {
+    "id": "story-den-1",
+    "text": "Ring marks. All over the walls."
+  },
+  {
+    "id": "story-den-2",
+    "text": "And a page from the Count Book!"
+  },
+  {
+    "id": "story-den-3",
+    "text": "It counts past nine. Ten. Eleven. Twelve."
+  },
+  {
+    "id": "story-den-4",
+    "text": "Why did the counts stop at nine?"
+  },
+  {
+    "id": "story-falls-0",
+    "text": "Hoo! You made it to Twin Falls."
+  },
+  {
+    "id": "story-falls-1",
+    "text": "We have two of everything here."
+  },
+  {
+    "id": "story-falls-2",
+    "text": "Two falls. Two trees. Two big rocks."
+  },
+  {
+    "id": "story-falls-3",
+    "text": "But our counts come out wrong too."
+  },
+  {
+    "id": "story-falls-4",
+    "text": "Help my pals. Then look for clues."
+  },
+  {
+    "id": "story-mist-0",
+    "text": "Shh. Look at the falls."
+  },
+  {
+    "id": "story-mist-1",
+    "text": "A round shape, in the mist."
+  },
+  {
+    "id": "story-mist-2",
+    "text": "It looks at us. It looks sad."
+  },
+  {
+    "id": "story-mist-3",
+    "text": "Wait! Do not go!"
+  },
+  {
+    "id": "story-mist-4",
+    "text": "It is gone. We must find it."
+  },
+  {
+    "id": "story-ring-0",
+    "text": "Stop! Look at the ground."
+  },
+  {
+    "id": "story-ring-1",
+    "text": "A ring mark. Right here."
+  },
+  {
+    "id": "story-ring-2",
+    "text": "A bun sat here. Now it is gone."
+  },
+  {
+    "id": "story-ring-3",
+    "text": "Who made the ring? Odd. Very odd."
+  },
+  {
+    "id": "story-welcome-0",
+    "text": "Oh! A new face. Hello."
+  },
+  {
+    "id": "story-welcome-1",
+    "text": "I am Moss. I keep the Count Book."
+  },
+  {
+    "id": "story-welcome-2",
+    "text": "We had six buns. Now we have five."
+  },
+  {
+    "id": "story-welcome-3",
+    "text": "The count is wrong. It makes us muddled."
+  },
+  {
+    "id": "story-welcome-4",
+    "text": "Pick a pal. Go and help."
+  },
+  {
+    "id": "tap-0",
+    "text": "Tap 0"
+  },
+  {
+    "id": "tap-1",
+    "text": "Tap 1"
+  },
+  {
+    "id": "tap-10",
+    "text": "Tap 10"
+  },
+  {
+    "id": "tap-11",
+    "text": "Tap 11"
+  },
+  {
+    "id": "tap-12",
+    "text": "Tap 12"
+  },
+  {
+    "id": "tap-13",
+    "text": "Tap 13"
+  },
+  {
+    "id": "tap-14",
+    "text": "Tap 14"
+  },
+  {
+    "id": "tap-15",
+    "text": "Tap 15"
+  },
+  {
+    "id": "tap-16",
+    "text": "Tap 16"
+  },
+  {
+    "id": "tap-17",
+    "text": "Tap 17"
+  },
+  {
+    "id": "tap-18",
+    "text": "Tap 18"
+  },
+  {
+    "id": "tap-19",
+    "text": "Tap 19"
+  },
+  {
+    "id": "tap-2",
+    "text": "Tap 2"
+  },
+  {
+    "id": "tap-20",
+    "text": "Tap 20"
+  },
+  {
+    "id": "tap-3",
+    "text": "Tap 3"
+  },
+  {
+    "id": "tap-4",
+    "text": "Tap 4"
+  },
+  {
+    "id": "tap-5",
+    "text": "Tap 5"
+  },
+  {
+    "id": "tap-6",
+    "text": "Tap 6"
+  },
+  {
+    "id": "tap-7",
+    "text": "Tap 7"
+  },
+  {
+    "id": "tap-8",
+    "text": "Tap 8"
+  },
+  {
+    "id": "tap-9",
+    "text": "Tap 9"
+  },
+  {
+    "id": "ui-assetError",
+    "text": "A picture could not load."
+  },
+  {
+    "id": "ui-bePal",
+    "text": "Be my pal"
+  },
+  {
+    "id": "ui-camp",
+    "text": "Good stopping place."
+  },
+  {
+    "id": "ui-choose",
+    "text": "Pick a pal."
+  },
+  {
+    "id": "ui-clear",
+    "text": "The muddle is gone!"
+  },
+  {
+    "id": "ui-clearKey",
+    "text": "Clear"
+  },
+  {
+    "id": "ui-close",
+    "text": "Back"
+  },
+  {
+    "id": "ui-comingSoon",
+    "text": "More here soon."
+  },
+  {
+    "id": "ui-correct",
+    "text": "You worked it out!"
+  },
+  {
+    "id": "ui-gateClosed",
+    "text": "The gate is shut.\nHelp the pals on the path."
+  },
+  {
+    "id": "ui-gateOpen",
+    "text": "The path is clear!"
+  },
+  {
+    "id": "ui-gateSoon",
+    "text": "A new path will come soon."
+  },
+  {
+    "id": "ui-go",
+    "text": "Go"
+  },
+  {
+    "id": "ui-grownups",
+    "text": "For grown-ups"
+  },
+  {
+    "id": "ui-hint",
+    "text": "Show me"
+  },
+  {
+    "id": "ui-hold",
+    "text": "Hold to open."
+  },
+  {
+    "id": "ui-howMany",
+    "text": "How many dots?"
+  },
+  {
+    "id": "ui-keepGoing",
+    "text": "Keep going"
+  },
+  {
+    "id": "ui-loading",
+    "text": "Waking up the vale…"
+  },
+  {
+    "id": "ui-map",
+    "text": "Pebble Path"
+  },
+  {
+    "id": "ui-mute",
+    "text": "Sound on"
+  },
+  {
+    "id": "ui-next",
+    "text": "Next"
+  },
+  {
+    "id": "ui-pick",
+    "text": "Pick"
+  },
+  {
+    "id": "ui-play",
+    "text": "Play"
+  },
+  {
+    "id": "ui-practice",
+    "text": "You helped a pal today."
+  },
+  {
+    "id": "ui-quick",
+    "text": "A big hop!"
+  },
+  {
+    "id": "ui-saveError",
+    "text": "Tap to keep your place."
+  },
+  {
+    "id": "ui-saving",
+    "text": "Keeping your place…"
+  },
+  {
+    "id": "ui-sideways",
+    "text": "Turn me sideways"
+  },
+  {
+    "id": "ui-stop",
+    "text": "Stop for now"
+  },
+  {
+    "id": "ui-title",
+    "text": "Oddlings"
+  },
+  {
+    "id": "ui-unmute",
+    "text": "Sound off"
+  },
+  {
+    "id": "ui-warmup",
+    "text": "Wake up the pad!"
+  },
+  {
+    "id": "ui-yourPals",
+    "text": "Your pals"
+  },
+  {
+    "id": "warmup-step-0",
+    "text": "0 / 5"
+  },
+  {
+    "id": "warmup-step-1",
+    "text": "1 / 5"
+  },
+  {
+    "id": "warmup-step-2",
+    "text": "2 / 5"
+  },
+  {
+    "id": "warmup-step-3",
+    "text": "3 / 5"
+  },
+  {
+    "id": "warmup-step-4",
+    "text": "4 / 5"
+  },
+  {
+    "id": "warmup-step-5",
+    "text": "5 / 5"
+  }
+]

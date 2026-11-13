@@ -1,0 +1,7031 @@
+{
+ "answer-add-0-0": {
+  "text": "zero plus zero makes zero",
+  "voice": "af_heart",
+  "file": "answer-add-0-0.m4a",
+  "ms": 1880,
+  "spoken": "Zero plus zero makes zero.",
+  "rev": "36ed0282"
+ },
+ "answer-add-0-1": {
+  "text": "zero plus one makes one",
+  "voice": "af_heart",
+  "file": "answer-add-0-1.m4a",
+  "ms": 1708,
+  "spoken": "Zero plus one makes one.",
+  "rev": "ac720aa1"
+ },
+ "answer-add-0-10": {
+  "text": "zero plus ten makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-0-10.m4a",
+  "ms": 1728,
+  "spoken": "Zero plus ten makes ten.",
+  "rev": "4bb388b8"
+ },
+ "answer-add-0-2": {
+  "text": "zero plus two makes two",
+  "voice": "af_heart",
+  "file": "answer-add-0-2.m4a",
+  "ms": 1660,
+  "spoken": "Zero plus two makes two.",
+  "rev": "a4c65810"
+ },
+ "answer-add-0-3": {
+  "text": "zero plus three makes three",
+  "voice": "af_heart",
+  "file": "answer-add-0-3.m4a",
+  "ms": 1686,
+  "spoken": "Zero plus three makes three.",
+  "rev": "bc6ae4b6"
+ },
+ "answer-add-0-4": {
+  "text": "zero plus four makes four",
+  "voice": "af_heart",
+  "file": "answer-add-0-4.m4a",
+  "ms": 1670,
+  "spoken": "Zero plus four makes four.",
+  "rev": "8150563d"
+ },
+ "answer-add-0-5": {
+  "text": "zero plus five makes five",
+  "voice": "af_heart",
+  "file": "answer-add-0-5.m4a",
+  "ms": 1922,
+  "spoken": "Zero plus five makes five.",
+  "rev": "3a48c60b"
+ },
+ "answer-add-0-6": {
+  "text": "zero plus six makes six",
+  "voice": "af_heart",
+  "file": "answer-add-0-6.m4a",
+  "ms": 1801,
+  "spoken": "Zero plus six makes six.",
+  "rev": "da13372a"
+ },
+ "answer-add-0-7": {
+  "text": "zero plus seven makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-0-7.m4a",
+  "ms": 1878,
+  "spoken": "Zero plus seven makes seven.",
+  "rev": "ad86efed"
+ },
+ "answer-add-0-8": {
+  "text": "zero plus eight makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-0-8.m4a",
+  "ms": 1748,
+  "spoken": "Zero plus eight makes eight.",
+  "rev": "0f97e4ba"
+ },
+ "answer-add-0-9": {
+  "text": "zero plus nine makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-0-9.m4a",
+  "ms": 1798,
+  "spoken": "Zero plus nine makes nine.",
+  "rev": "bebe4f74"
+ },
+ "answer-add-1-0": {
+  "text": "one plus zero makes one",
+  "voice": "af_heart",
+  "file": "answer-add-1-0.m4a",
+  "ms": 1586,
+  "spoken": "One plus zero makes one.",
+  "rev": "bbd775c9"
+ },
+ "answer-add-1-1": {
+  "text": "one plus one makes two",
+  "voice": "af_heart",
+  "file": "answer-add-1-1.m4a",
+  "ms": 1522,
+  "spoken": "One plus one makes two.",
+  "rev": "81570c52"
+ },
+ "answer-add-1-10": {
+  "text": "one plus ten makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-1-10.m4a",
+  "ms": 1784,
+  "spoken": "One plus ten makes eleven.",
+  "rev": "ed57dcbb"
+ },
+ "answer-add-1-2": {
+  "text": "one plus two makes three",
+  "voice": "af_heart",
+  "file": "answer-add-1-2.m4a",
+  "ms": 1491,
+  "spoken": "One plus two makes three.",
+  "rev": "47a20e88"
+ },
+ "answer-add-1-3": {
+  "text": "one plus three makes four",
+  "voice": "af_heart",
+  "file": "answer-add-1-3.m4a",
+  "ms": 1540,
+  "spoken": "One plus three makes four.",
+  "rev": "f7510852"
+ },
+ "answer-add-1-4": {
+  "text": "one plus four makes five",
+  "voice": "af_heart",
+  "file": "answer-add-1-4.m4a",
+  "ms": 1625,
+  "spoken": "One plus four makes five.",
+  "rev": "922267b3"
+ },
+ "answer-add-1-5": {
+  "text": "one plus five makes six",
+  "voice": "af_heart",
+  "file": "answer-add-1-5.m4a",
+  "ms": 1712,
+  "spoken": "One plus five makes six.",
+  "rev": "e06b7869"
+ },
+ "answer-add-1-6": {
+  "text": "one plus six makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-1-6.m4a",
+  "ms": 1610,
+  "spoken": "One plus six makes seven.",
+  "rev": "76bef6aa"
+ },
+ "answer-add-1-7": {
+  "text": "one plus seven makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-1-7.m4a",
+  "ms": 1648,
+  "spoken": "One plus seven makes eight.",
+  "rev": "a9a2582a"
+ },
+ "answer-add-1-8": {
+  "text": "one plus eight makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-1-8.m4a",
+  "ms": 1556,
+  "spoken": "One plus eight makes nine.",
+  "rev": "4eccf97c"
+ },
+ "answer-add-1-9": {
+  "text": "one plus nine makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-1-9.m4a",
+  "ms": 1659,
+  "spoken": "One plus nine makes ten.",
+  "rev": "16f6d26d"
+ },
+ "answer-add-10-0": {
+  "text": "ten plus zero makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-10-0.m4a",
+  "ms": 1630,
+  "spoken": "Ten plus zero makes ten.",
+  "rev": "e8e0dd85"
+ },
+ "answer-add-10-1": {
+  "text": "ten plus one makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-10-1.m4a",
+  "ms": 1705,
+  "spoken": "Ten plus one makes eleven.",
+  "rev": "6b707779"
+ },
+ "answer-add-10-10": {
+  "text": "ten plus ten makes twenty",
+  "voice": "af_heart",
+  "file": "answer-add-10-10.m4a",
+  "ms": 1712,
+  "spoken": "Ten plus ten makes twenty.",
+  "rev": "e3e83731"
+ },
+ "answer-add-10-2": {
+  "text": "ten plus two makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-10-2.m4a",
+  "ms": 1657,
+  "spoken": "Ten plus two makes twelve.",
+  "rev": "801fe208"
+ },
+ "answer-add-10-3": {
+  "text": "ten plus three makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-10-3.m4a",
+  "ms": 1776,
+  "spoken": "Ten plus three makes thirteen.",
+  "rev": "969dbe50"
+ },
+ "answer-add-10-4": {
+  "text": "ten plus four makes fourteen",
+  "voice": "af_heart",
+  "file": "answer-add-10-4.m4a",
+  "ms": 1725,
+  "spoken": "Ten plus four makes fourteen.",
+  "rev": "f5319780"
+ },
+ "answer-add-10-5": {
+  "text": "ten plus five makes fifteen",
+  "voice": "af_heart",
+  "file": "answer-add-10-5.m4a",
+  "ms": 1787,
+  "spoken": "Ten plus five makes fifteen.",
+  "rev": "0454689b"
+ },
+ "answer-add-10-6": {
+  "text": "ten plus six makes sixteen",
+  "voice": "af_heart",
+  "file": "answer-add-10-6.m4a",
+  "ms": 1707,
+  "spoken": "Ten plus six makes sixteen.",
+  "rev": "2ed65a81"
+ },
+ "answer-add-10-7": {
+  "text": "ten plus seven makes seventeen",
+  "voice": "af_heart",
+  "file": "answer-add-10-7.m4a",
+  "ms": 1999,
+  "spoken": "Ten plus seven makes seventeen.",
+  "rev": "ce1c1f27"
+ },
+ "answer-add-10-8": {
+  "text": "ten plus eight makes eighteen",
+  "voice": "af_heart",
+  "file": "answer-add-10-8.m4a",
+  "ms": 1752,
+  "spoken": "Ten plus eight makes eighteen.",
+  "rev": "b0d569c3"
+ },
+ "answer-add-10-9": {
+  "text": "ten plus nine makes nineteen",
+  "voice": "af_heart",
+  "file": "answer-add-10-9.m4a",
+  "ms": 1956,
+  "spoken": "Ten plus nine makes nineteen.",
+  "rev": "b6cca008"
+ },
+ "answer-add-2-0": {
+  "text": "two plus zero makes two",
+  "voice": "af_heart",
+  "file": "answer-add-2-0.m4a",
+  "ms": 1566,
+  "spoken": "Two plus zero makes two.",
+  "rev": "6de82ee0"
+ },
+ "answer-add-2-1": {
+  "text": "two plus one makes three",
+  "voice": "af_heart",
+  "file": "answer-add-2-1.m4a",
+  "ms": 1502,
+  "spoken": "Two plus one makes three.",
+  "rev": "56d33911"
+ },
+ "answer-add-2-10": {
+  "text": "two plus ten makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-2-10.m4a",
+  "ms": 1661,
+  "spoken": "Two plus ten makes twelve.",
+  "rev": "5ed53c50"
+ },
+ "answer-add-2-2": {
+  "text": "two plus two makes four",
+  "voice": "af_heart",
+  "file": "answer-add-2-2.m4a",
+  "ms": 1449,
+  "spoken": "Two plus two makes four.",
+  "rev": "e6fd0116"
+ },
+ "answer-add-2-3": {
+  "text": "two plus three makes five",
+  "voice": "af_heart",
+  "file": "answer-add-2-3.m4a",
+  "ms": 1582,
+  "spoken": "Two plus three makes five.",
+  "rev": "7de6d2e4"
+ },
+ "answer-add-2-4": {
+  "text": "two plus four makes six",
+  "voice": "af_heart",
+  "file": "answer-add-2-4.m4a",
+  "ms": 1540,
+  "spoken": "Two plus four makes six.",
+  "rev": "4ced49a9"
+ },
+ "answer-add-2-5": {
+  "text": "two plus five makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-2-5.m4a",
+  "ms": 1608,
+  "spoken": "Two plus five makes seven.",
+  "rev": "ee2ebbe1"
+ },
+ "answer-add-2-6": {
+  "text": "two plus six makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-2-6.m4a",
+  "ms": 1515,
+  "spoken": "Two plus six makes eight.",
+  "rev": "52712cf7"
+ },
+ "answer-add-2-7": {
+  "text": "two plus seven makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-2-7.m4a",
+  "ms": 1591,
+  "spoken": "Two plus seven makes nine.",
+  "rev": "484feeee"
+ },
+ "answer-add-2-8": {
+  "text": "two plus eight makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-2-8.m4a",
+  "ms": 1528,
+  "spoken": "Two plus eight makes ten.",
+  "rev": "643a9bf2"
+ },
+ "answer-add-2-9": {
+  "text": "two plus nine makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-2-9.m4a",
+  "ms": 1933,
+  "spoken": "Two plus nine makes eleven.",
+  "rev": "4033819c"
+ },
+ "answer-add-3-0": {
+  "text": "three plus zero makes three",
+  "voice": "af_heart",
+  "file": "answer-add-3-0.m4a",
+  "ms": 1618,
+  "spoken": "Three plus zero makes three.",
+  "rev": "ad8a7cc4"
+ },
+ "answer-add-3-1": {
+  "text": "three plus one makes four",
+  "voice": "af_heart",
+  "file": "answer-add-3-1.m4a",
+  "ms": 1577,
+  "spoken": "Three plus one makes four.",
+  "rev": "aab24876"
+ },
+ "answer-add-3-10": {
+  "text": "three plus ten makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-3-10.m4a",
+  "ms": 1784,
+  "spoken": "Three plus ten makes thirteen.",
+  "rev": "da9f7403"
+ },
+ "answer-add-3-2": {
+  "text": "three plus two makes five",
+  "voice": "af_heart",
+  "file": "answer-add-3-2.m4a",
+  "ms": 1599,
+  "spoken": "Three plus two makes five.",
+  "rev": "6051fd8a"
+ },
+ "answer-add-3-3": {
+  "text": "three plus three makes six",
+  "voice": "af_heart",
+  "file": "answer-add-3-3.m4a",
+  "ms": 1598,
+  "spoken": "Three plus three makes six.",
+  "rev": "e601d3db"
+ },
+ "answer-add-3-4": {
+  "text": "three plus four makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-3-4.m4a",
+  "ms": 1621,
+  "spoken": "Three plus four makes seven.",
+  "rev": "e71ea03e"
+ },
+ "answer-add-3-5": {
+  "text": "three plus five makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-3-5.m4a",
+  "ms": 1659,
+  "spoken": "Three plus five makes eight.",
+  "rev": "b0d14c7e"
+ },
+ "answer-add-3-6": {
+  "text": "three plus six makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-3-6.m4a",
+  "ms": 1627,
+  "spoken": "Three plus six makes nine.",
+  "rev": "a3a548c2"
+ },
+ "answer-add-3-7": {
+  "text": "three plus seven makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-3-7.m4a",
+  "ms": 1633,
+  "spoken": "Three plus seven makes ten.",
+  "rev": "7b6dcfd7"
+ },
+ "answer-add-3-8": {
+  "text": "three plus eight makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-3-8.m4a",
+  "ms": 1798,
+  "spoken": "Three plus eight makes eleven.",
+  "rev": "1dce6d91"
+ },
+ "answer-add-3-9": {
+  "text": "three plus nine makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-3-9.m4a",
+  "ms": 1773,
+  "spoken": "Three plus nine makes twelve.",
+  "rev": "12183454"
+ },
+ "answer-add-4-0": {
+  "text": "four plus zero makes four",
+  "voice": "af_heart",
+  "file": "answer-add-4-0.m4a",
+  "ms": 1666,
+  "spoken": "Four plus zero makes four.",
+  "rev": "c694ead4"
+ },
+ "answer-add-4-1": {
+  "text": "four plus one makes five",
+  "voice": "af_heart",
+  "file": "answer-add-4-1.m4a",
+  "ms": 1688,
+  "spoken": "Four plus one makes five.",
+  "rev": "257b3ca1"
+ },
+ "answer-add-4-10": {
+  "text": "four plus ten makes fourteen",
+  "voice": "af_heart",
+  "file": "answer-add-4-10.m4a",
+  "ms": 1794,
+  "spoken": "Four plus ten makes fourteen.",
+  "rev": "492cb07e"
+ },
+ "answer-add-4-2": {
+  "text": "four plus two makes six",
+  "voice": "af_heart",
+  "file": "answer-add-4-2.m4a",
+  "ms": 1599,
+  "spoken": "Four plus two makes six.",
+  "rev": "64aad7a4"
+ },
+ "answer-add-4-3": {
+  "text": "four plus three makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-4-3.m4a",
+  "ms": 1639,
+  "spoken": "Four plus three makes seven.",
+  "rev": "23fbda77"
+ },
+ "answer-add-4-4": {
+  "text": "four plus four makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-4-4.m4a",
+  "ms": 1610,
+  "spoken": "Four plus four makes eight.",
+  "rev": "7e375c11"
+ },
+ "answer-add-4-5": {
+  "text": "four plus five makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-4-5.m4a",
+  "ms": 1652,
+  "spoken": "Four plus five makes nine.",
+  "rev": "154a7c32"
+ },
+ "answer-add-4-6": {
+  "text": "four plus six makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-4-6.m4a",
+  "ms": 1668,
+  "spoken": "Four plus six makes ten.",
+  "rev": "d7efa04c"
+ },
+ "answer-add-4-7": {
+  "text": "four plus seven makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-4-7.m4a",
+  "ms": 1917,
+  "spoken": "Four plus seven makes eleven.",
+  "rev": "00a06e2b"
+ },
+ "answer-add-4-8": {
+  "text": "four plus eight makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-4-8.m4a",
+  "ms": 1740,
+  "spoken": "Four plus eight makes twelve.",
+  "rev": "5a9f3ac2"
+ },
+ "answer-add-4-9": {
+  "text": "four plus nine makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-4-9.m4a",
+  "ms": 1888,
+  "spoken": "Four plus nine makes thirteen.",
+  "rev": "0c1e6bb1"
+ },
+ "answer-add-5-0": {
+  "text": "five plus zero makes five",
+  "voice": "af_heart",
+  "file": "answer-add-5-0.m4a",
+  "ms": 1799,
+  "spoken": "Five plus zero makes five.",
+  "rev": "44eedd5a"
+ },
+ "answer-add-5-1": {
+  "text": "five plus one makes six",
+  "voice": "af_heart",
+  "file": "answer-add-5-1.m4a",
+  "ms": 1676,
+  "spoken": "Five plus one makes six.",
+  "rev": "6642821b"
+ },
+ "answer-add-5-10": {
+  "text": "five plus ten makes fifteen",
+  "voice": "af_heart",
+  "file": "answer-add-5-10.m4a",
+  "ms": 1815,
+  "spoken": "Five plus ten makes fifteen.",
+  "rev": "26b812c6"
+ },
+ "answer-add-5-2": {
+  "text": "five plus two makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-5-2.m4a",
+  "ms": 1583,
+  "spoken": "Five plus two makes seven.",
+  "rev": "3602eb8d"
+ },
+ "answer-add-5-3": {
+  "text": "five plus three makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-5-3.m4a",
+  "ms": 1605,
+  "spoken": "Five plus three makes eight.",
+  "rev": "ed05e675"
+ },
+ "answer-add-5-4": {
+  "text": "five plus four makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-5-4.m4a",
+  "ms": 1669,
+  "spoken": "Five plus four makes nine.",
+  "rev": "5e4c0dc1"
+ },
+ "answer-add-5-5": {
+  "text": "five plus five makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-5-5.m4a",
+  "ms": 1729,
+  "spoken": "Five plus five makes ten.",
+  "rev": "91dde3e3"
+ },
+ "answer-add-5-6": {
+  "text": "five plus six makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-5-6.m4a",
+  "ms": 1752,
+  "spoken": "Five plus six makes eleven.",
+  "rev": "5ba59d7a"
+ },
+ "answer-add-5-7": {
+  "text": "five plus seven makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-5-7.m4a",
+  "ms": 1822,
+  "spoken": "Five plus seven makes twelve.",
+  "rev": "325d52c1"
+ },
+ "answer-add-5-8": {
+  "text": "five plus eight makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-5-8.m4a",
+  "ms": 1810,
+  "spoken": "Five plus eight makes thirteen.",
+  "rev": "af3be257"
+ },
+ "answer-add-5-9": {
+  "text": "five plus nine makes fourteen",
+  "voice": "af_heart",
+  "file": "answer-add-5-9.m4a",
+  "ms": 1917,
+  "spoken": "Five plus nine makes fourteen.",
+  "rev": "b0f83a2c"
+ },
+ "answer-add-6-0": {
+  "text": "six plus zero makes six",
+  "voice": "af_heart",
+  "file": "answer-add-6-0.m4a",
+  "ms": 1768,
+  "spoken": "Six plus zero makes six.",
+  "rev": "7ff68708"
+ },
+ "answer-add-6-1": {
+  "text": "six plus one makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-6-1.m4a",
+  "ms": 1678,
+  "spoken": "Six plus one makes seven.",
+  "rev": "eccd6c2e"
+ },
+ "answer-add-6-10": {
+  "text": "six plus ten makes sixteen",
+  "voice": "af_heart",
+  "file": "answer-add-6-10.m4a",
+  "ms": 1812,
+  "spoken": "Six plus ten makes sixteen.",
+  "rev": "10e312d9"
+ },
+ "answer-add-6-2": {
+  "text": "six plus two makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-6-2.m4a",
+  "ms": 1541,
+  "spoken": "Six plus two makes eight.",
+  "rev": "67773e38"
+ },
+ "answer-add-6-3": {
+  "text": "six plus three makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-6-3.m4a",
+  "ms": 1635,
+  "spoken": "Six plus three makes nine.",
+  "rev": "96c5f7c2"
+ },
+ "answer-add-6-4": {
+  "text": "six plus four makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-6-4.m4a",
+  "ms": 1661,
+  "spoken": "Six plus four makes ten.",
+  "rev": "5ae9b1fc"
+ },
+ "answer-add-6-5": {
+  "text": "six plus five makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-6-5.m4a",
+  "ms": 1887,
+  "spoken": "Six plus five makes eleven.",
+  "rev": "15455f14"
+ },
+ "answer-add-6-6": {
+  "text": "six plus six makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-6-6.m4a",
+  "ms": 1772,
+  "spoken": "Six plus six makes twelve.",
+  "rev": "603748b0"
+ },
+ "answer-add-6-7": {
+  "text": "six plus seven makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-6-7.m4a",
+  "ms": 1956,
+  "spoken": "Six plus seven makes thirteen.",
+  "rev": "d4064b41"
+ },
+ "answer-add-6-8": {
+  "text": "six plus eight makes fourteen",
+  "voice": "af_heart",
+  "file": "answer-add-6-8.m4a",
+  "ms": 1816,
+  "spoken": "Six plus eight makes fourteen.",
+  "rev": "fe4e7133"
+ },
+ "answer-add-6-9": {
+  "text": "six plus nine makes fifteen",
+  "voice": "af_heart",
+  "file": "answer-add-6-9.m4a",
+  "ms": 1858,
+  "spoken": "Six plus nine makes fifteen.",
+  "rev": "a00007bc"
+ },
+ "answer-add-7-0": {
+  "text": "seven plus zero makes seven",
+  "voice": "af_heart",
+  "file": "answer-add-7-0.m4a",
+  "ms": 1815,
+  "spoken": "Seven plus zero makes seven.",
+  "rev": "9dc53718"
+ },
+ "answer-add-7-1": {
+  "text": "seven plus one makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-7-1.m4a",
+  "ms": 1696,
+  "spoken": "Seven plus one makes eight.",
+  "rev": "cd6fb924"
+ },
+ "answer-add-7-10": {
+  "text": "seven plus ten makes seventeen",
+  "voice": "af_heart",
+  "file": "answer-add-7-10.m4a",
+  "ms": 2135,
+  "spoken": "Seven plus ten makes seventeen.",
+  "rev": "cf81ecd2"
+ },
+ "answer-add-7-2": {
+  "text": "seven plus two makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-7-2.m4a",
+  "ms": 1752,
+  "spoken": "Seven plus two makes nine.",
+  "rev": "d4bf16fd"
+ },
+ "answer-add-7-3": {
+  "text": "seven plus three makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-7-3.m4a",
+  "ms": 1682,
+  "spoken": "Seven plus three makes ten.",
+  "rev": "a9c9a4e6"
+ },
+ "answer-add-7-4": {
+  "text": "seven plus four makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-7-4.m4a",
+  "ms": 1864,
+  "spoken": "Seven plus four makes eleven.",
+  "rev": "4a0e86ac"
+ },
+ "answer-add-7-5": {
+  "text": "seven plus five makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-7-5.m4a",
+  "ms": 1929,
+  "spoken": "Seven plus five makes twelve.",
+  "rev": "e0b01859"
+ },
+ "answer-add-7-6": {
+  "text": "seven plus six makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-7-6.m4a",
+  "ms": 1880,
+  "spoken": "Seven plus six makes thirteen.",
+  "rev": "f3bc3d5d"
+ },
+ "answer-add-7-7": {
+  "text": "seven plus seven makes fourteen",
+  "voice": "af_heart",
+  "file": "answer-add-7-7.m4a",
+  "ms": 1990,
+  "spoken": "Seven plus seven makes fourteen.",
+  "rev": "29a728cd"
+ },
+ "answer-add-7-8": {
+  "text": "seven plus eight makes fifteen",
+  "voice": "af_heart",
+  "file": "answer-add-7-8.m4a",
+  "ms": 1849,
+  "spoken": "Seven plus eight makes fifteen.",
+  "rev": "1735021b"
+ },
+ "answer-add-7-9": {
+  "text": "seven plus nine makes sixteen",
+  "voice": "af_heart",
+  "file": "answer-add-7-9.m4a",
+  "ms": 1960,
+  "spoken": "Seven plus nine makes sixteen.",
+  "rev": "17b7dbde"
+ },
+ "answer-add-8-0": {
+  "text": "eight plus zero makes eight",
+  "voice": "af_heart",
+  "file": "answer-add-8-0.m4a",
+  "ms": 1575,
+  "spoken": "Eight plus zero makes eight.",
+  "rev": "7bd754e9"
+ },
+ "answer-add-8-1": {
+  "text": "eight plus one makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-8-1.m4a",
+  "ms": 1593,
+  "spoken": "Eight plus one makes nine.",
+  "rev": "24ffdfb8"
+ },
+ "answer-add-8-10": {
+  "text": "eight plus ten makes eighteen",
+  "voice": "af_heart",
+  "file": "answer-add-8-10.m4a",
+  "ms": 1674,
+  "spoken": "Eight plus ten makes eighteen.",
+  "rev": "f1905004"
+ },
+ "answer-add-8-2": {
+  "text": "eight plus two makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-8-2.m4a",
+  "ms": 1480,
+  "spoken": "Eight plus two makes ten.",
+  "rev": "d902e49b"
+ },
+ "answer-add-8-3": {
+  "text": "eight plus three makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-8-3.m4a",
+  "ms": 1692,
+  "spoken": "Eight plus three makes eleven.",
+  "rev": "a7aabbd5"
+ },
+ "answer-add-8-4": {
+  "text": "eight plus four makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-8-4.m4a",
+  "ms": 1652,
+  "spoken": "Eight plus four makes twelve.",
+  "rev": "eee28652"
+ },
+ "answer-add-8-5": {
+  "text": "eight plus five makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-8-5.m4a",
+  "ms": 1798,
+  "spoken": "Eight plus five makes thirteen.",
+  "rev": "b4629faf"
+ },
+ "answer-add-8-6": {
+  "text": "eight plus six makes fourteen",
+  "voice": "af_heart",
+  "file": "answer-add-8-6.m4a",
+  "ms": 1719,
+  "spoken": "Eight plus six makes fourteen.",
+  "rev": "753ae49f"
+ },
+ "answer-add-8-7": {
+  "text": "eight plus seven makes fifteen",
+  "voice": "af_heart",
+  "file": "answer-add-8-7.m4a",
+  "ms": 1765,
+  "spoken": "Eight plus seven makes fifteen.",
+  "rev": "90dd3e0b"
+ },
+ "answer-add-8-8": {
+  "text": "eight plus eight makes sixteen",
+  "voice": "af_heart",
+  "file": "answer-add-8-8.m4a",
+  "ms": 1641,
+  "spoken": "Eight plus eight makes sixteen.",
+  "rev": "16332924"
+ },
+ "answer-add-8-9": {
+  "text": "eight plus nine makes seventeen",
+  "voice": "af_heart",
+  "file": "answer-add-8-9.m4a",
+  "ms": 1970,
+  "spoken": "Eight plus nine makes seventeen.",
+  "rev": "201a8b7a"
+ },
+ "answer-add-9-0": {
+  "text": "nine plus zero makes nine",
+  "voice": "af_heart",
+  "file": "answer-add-9-0.m4a",
+  "ms": 1756,
+  "spoken": "Nine plus zero makes nine.",
+  "rev": "39cb3040"
+ },
+ "answer-add-9-1": {
+  "text": "nine plus one makes ten",
+  "voice": "af_heart",
+  "file": "answer-add-9-1.m4a",
+  "ms": 1612,
+  "spoken": "Nine plus one makes ten.",
+  "rev": "9fb1248f"
+ },
+ "answer-add-9-10": {
+  "text": "nine plus ten makes nineteen",
+  "voice": "af_heart",
+  "file": "answer-add-9-10.m4a",
+  "ms": 1850,
+  "spoken": "Nine plus ten makes nineteen.",
+  "rev": "ee7a7587"
+ },
+ "answer-add-9-2": {
+  "text": "nine plus two makes eleven",
+  "voice": "af_heart",
+  "file": "answer-add-9-2.m4a",
+  "ms": 1733,
+  "spoken": "Nine plus two makes eleven.",
+  "rev": "05f24200"
+ },
+ "answer-add-9-3": {
+  "text": "nine plus three makes twelve",
+  "voice": "af_heart",
+  "file": "answer-add-9-3.m4a",
+  "ms": 1722,
+  "spoken": "Nine plus three makes twelve.",
+  "rev": "94803b78"
+ },
+ "answer-add-9-4": {
+  "text": "nine plus four makes thirteen",
+  "voice": "af_heart",
+  "file": "answer-add-9-4.m4a",
+  "ms": 1813,
+  "spoken": "Nine plus four makes thirteen.",
+  "rev": "cbea4660"
+ },
+ "answer-add-9-5": {
+  "text": "nine plus five makes fourteen",
+  "voice": "af_heart",
+  "file": "answer-add-9-5.m4a",
+  "ms": 1865,
+  "spoken": "Nine plus five makes fourteen.",
+  "rev": "c5fa6ca1"
+ },
+ "answer-add-9-6": {
+  "text": "nine plus six makes fifteen",
+  "voice": "af_heart",
+  "file": "answer-add-9-6.m4a",
+  "ms": 1847,
+  "spoken": "Nine plus six makes fifteen.",
+  "rev": "8048a6cb"
+ },
+ "answer-add-9-7": {
+  "text": "nine plus seven makes sixteen",
+  "voice": "af_heart",
+  "file": "answer-add-9-7.m4a",
+  "ms": 1880,
+  "spoken": "Nine plus seven makes sixteen.",
+  "rev": "92a1db29"
+ },
+ "answer-add-9-8": {
+  "text": "nine plus eight makes seventeen",
+  "voice": "af_heart",
+  "file": "answer-add-9-8.m4a",
+  "ms": 1931,
+  "spoken": "Nine plus eight makes seventeen.",
+  "rev": "ee1df3e1"
+ },
+ "answer-add-9-9": {
+  "text": "nine plus nine makes eighteen",
+  "voice": "af_heart",
+  "file": "answer-add-9-9.m4a",
+  "ms": 1853,
+  "spoken": "Nine plus nine makes eighteen.",
+  "rev": "a3967f1e"
+ },
+ "answer-dots-1-dice": {
+  "text": "one",
+  "voice": "af_heart",
+  "file": "answer-dots-1-dice.m4a",
+  "ms": 606,
+  "spoken": "One.",
+  "ending": "!",
+  "rev": "7cfd8ff9"
+ },
+ "answer-dots-1-scattered": {
+  "text": "one",
+  "voice": "af_heart",
+  "file": "answer-dots-1-scattered.m4a",
+  "ms": 606,
+  "spoken": "One.",
+  "ending": "!",
+  "rev": "20281f60"
+ },
+ "answer-dots-2-dice": {
+  "text": "two",
+  "voice": "af_heart",
+  "file": "answer-dots-2-dice.m4a",
+  "ms": 622,
+  "spoken": "Two.",
+  "rev": "f2f5b3bf"
+ },
+ "answer-dots-2-scattered": {
+  "text": "two",
+  "voice": "af_heart",
+  "file": "answer-dots-2-scattered.m4a",
+  "ms": 622,
+  "spoken": "Two.",
+  "rev": "ed42c351"
+ },
+ "answer-dots-3-dice": {
+  "text": "three",
+  "voice": "af_heart",
+  "file": "answer-dots-3-dice.m4a",
+  "ms": 665,
+  "spoken": "Three.",
+  "rev": "6a748d2f"
+ },
+ "answer-dots-3-scattered": {
+  "text": "three",
+  "voice": "af_heart",
+  "file": "answer-dots-3-scattered.m4a",
+  "ms": 665,
+  "spoken": "Three.",
+  "rev": "b4316714"
+ },
+ "answer-dots-4-dice": {
+  "text": "four",
+  "voice": "af_heart",
+  "file": "answer-dots-4-dice.m4a",
+  "ms": 652,
+  "spoken": "Four.",
+  "rev": "c2c6c958"
+ },
+ "answer-dots-4-scattered": {
+  "text": "four",
+  "voice": "af_heart",
+  "file": "answer-dots-4-scattered.m4a",
+  "ms": 652,
+  "spoken": "Four.",
+  "rev": "354e91f2"
+ },
+ "answer-dots-5-dice": {
+  "text": "five",
+  "voice": "af_heart",
+  "file": "answer-dots-5-dice.m4a",
+  "ms": 693,
+  "spoken": "Five.",
+  "rev": "1fa37446"
+ },
+ "answer-dots-5-scattered": {
+  "text": "five",
+  "voice": "af_heart",
+  "file": "answer-dots-5-scattered.m4a",
+  "ms": 693,
+  "spoken": "Five.",
+  "rev": "bfad3e60"
+ },
+ "answer-frame-0": {
+  "text": "zero",
+  "voice": "af_heart",
+  "file": "answer-frame-0.m4a",
+  "ms": 679,
+  "spoken": "Zero.",
+  "rev": "e63fcf87"
+ },
+ "answer-frame-1": {
+  "text": "one",
+  "voice": "af_heart",
+  "file": "answer-frame-1.m4a",
+  "ms": 606,
+  "spoken": "One.",
+  "ending": "!",
+  "rev": "fa5f2725"
+ },
+ "answer-frame-10": {
+  "text": "ten",
+  "voice": "af_heart",
+  "file": "answer-frame-10.m4a",
+  "ms": 613,
+  "spoken": "Ten.",
+  "rev": "cde7d2f5"
+ },
+ "answer-frame-2": {
+  "text": "two",
+  "voice": "af_heart",
+  "file": "answer-frame-2.m4a",
+  "ms": 622,
+  "spoken": "Two.",
+  "rev": "ac8f939b"
+ },
+ "answer-frame-3": {
+  "text": "three",
+  "voice": "af_heart",
+  "file": "answer-frame-3.m4a",
+  "ms": 665,
+  "spoken": "Three.",
+  "rev": "6dce9e1a"
+ },
+ "answer-frame-4": {
+  "text": "four",
+  "voice": "af_heart",
+  "file": "answer-frame-4.m4a",
+  "ms": 652,
+  "spoken": "Four.",
+  "rev": "8e92a8f5"
+ },
+ "answer-frame-5": {
+  "text": "five",
+  "voice": "af_heart",
+  "file": "answer-frame-5.m4a",
+  "ms": 693,
+  "spoken": "Five.",
+  "rev": "46f95c39"
+ },
+ "answer-frame-6": {
+  "text": "six",
+  "voice": "af_heart",
+  "file": "answer-frame-6.m4a",
+  "ms": 685,
+  "spoken": "Six.",
+  "rev": "24550fda"
+ },
+ "answer-frame-7": {
+  "text": "seven",
+  "voice": "af_heart",
+  "file": "answer-frame-7.m4a",
+  "ms": 654,
+  "spoken": "Seven.",
+  "rev": "17f04351"
+ },
+ "answer-frame-8": {
+  "text": "eight",
+  "voice": "af_heart",
+  "file": "answer-frame-8.m4a",
+  "ms": 663,
+  "spoken": "Eight.",
+  "rev": "93406c10"
+ },
+ "answer-frame-9": {
+  "text": "nine",
+  "voice": "af_heart",
+  "file": "answer-frame-9.m4a",
+  "ms": 695,
+  "spoken": "Nine.",
+  "rev": "49afea10"
+ },
+ "answer-miss-0-0": {
+  "text": "zero plus zero makes zero",
+  "voice": "af_heart",
+  "file": "answer-miss-0-0.m4a",
+  "ms": 1880,
+  "spoken": "Zero plus zero makes zero.",
+  "rev": "6b65e439"
+ },
+ "answer-miss-0-1": {
+  "text": "zero plus one makes one",
+  "voice": "af_heart",
+  "file": "answer-miss-0-1.m4a",
+  "ms": 1708,
+  "spoken": "Zero plus one makes one.",
+  "rev": "33fa784f"
+ },
+ "answer-miss-0-10": {
+  "text": "zero plus ten makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-0-10.m4a",
+  "ms": 1728,
+  "spoken": "Zero plus ten makes ten.",
+  "rev": "f59036c0"
+ },
+ "answer-miss-0-2": {
+  "text": "zero plus two makes two",
+  "voice": "af_heart",
+  "file": "answer-miss-0-2.m4a",
+  "ms": 1660,
+  "spoken": "Zero plus two makes two.",
+  "rev": "95557e60"
+ },
+ "answer-miss-0-3": {
+  "text": "zero plus three makes three",
+  "voice": "af_heart",
+  "file": "answer-miss-0-3.m4a",
+  "ms": 1686,
+  "spoken": "Zero plus three makes three.",
+  "rev": "65cb205c"
+ },
+ "answer-miss-0-4": {
+  "text": "zero plus four makes four",
+  "voice": "af_heart",
+  "file": "answer-miss-0-4.m4a",
+  "ms": 1670,
+  "spoken": "Zero plus four makes four.",
+  "rev": "b54ca4c4"
+ },
+ "answer-miss-0-5": {
+  "text": "zero plus five makes five",
+  "voice": "af_heart",
+  "file": "answer-miss-0-5.m4a",
+  "ms": 1922,
+  "spoken": "Zero plus five makes five.",
+  "rev": "96eb89bd"
+ },
+ "answer-miss-0-6": {
+  "text": "zero plus six makes six",
+  "voice": "af_heart",
+  "file": "answer-miss-0-6.m4a",
+  "ms": 1801,
+  "spoken": "Zero plus six makes six.",
+  "rev": "51227c07"
+ },
+ "answer-miss-0-7": {
+  "text": "zero plus seven makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-0-7.m4a",
+  "ms": 1878,
+  "spoken": "Zero plus seven makes seven.",
+  "rev": "ad40f75a"
+ },
+ "answer-miss-0-8": {
+  "text": "zero plus eight makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-0-8.m4a",
+  "ms": 1748,
+  "spoken": "Zero plus eight makes eight.",
+  "rev": "3a532fe9"
+ },
+ "answer-miss-0-9": {
+  "text": "zero plus nine makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-0-9.m4a",
+  "ms": 1798,
+  "spoken": "Zero plus nine makes nine.",
+  "rev": "a5ff58ac"
+ },
+ "answer-miss-1-1": {
+  "text": "one plus zero makes one",
+  "voice": "af_heart",
+  "file": "answer-miss-1-1.m4a",
+  "ms": 1586,
+  "spoken": "One plus zero makes one.",
+  "rev": "f5e5a1e0"
+ },
+ "answer-miss-1-10": {
+  "text": "one plus nine makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-1-10.m4a",
+  "ms": 1659,
+  "spoken": "One plus nine makes ten.",
+  "rev": "a4531742"
+ },
+ "answer-miss-1-2": {
+  "text": "one plus one makes two",
+  "voice": "af_heart",
+  "file": "answer-miss-1-2.m4a",
+  "ms": 1522,
+  "spoken": "One plus one makes two.",
+  "rev": "23213413"
+ },
+ "answer-miss-1-3": {
+  "text": "one plus two makes three",
+  "voice": "af_heart",
+  "file": "answer-miss-1-3.m4a",
+  "ms": 1491,
+  "spoken": "One plus two makes three.",
+  "rev": "6f1110ae"
+ },
+ "answer-miss-1-4": {
+  "text": "one plus three makes four",
+  "voice": "af_heart",
+  "file": "answer-miss-1-4.m4a",
+  "ms": 1540,
+  "spoken": "One plus three makes four.",
+  "rev": "64233138"
+ },
+ "answer-miss-1-5": {
+  "text": "one plus four makes five",
+  "voice": "af_heart",
+  "file": "answer-miss-1-5.m4a",
+  "ms": 1625,
+  "spoken": "One plus four makes five.",
+  "rev": "16a5be7c"
+ },
+ "answer-miss-1-6": {
+  "text": "one plus five makes six",
+  "voice": "af_heart",
+  "file": "answer-miss-1-6.m4a",
+  "ms": 1712,
+  "spoken": "One plus five makes six.",
+  "rev": "71b06dbb"
+ },
+ "answer-miss-1-7": {
+  "text": "one plus six makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-1-7.m4a",
+  "ms": 1610,
+  "spoken": "One plus six makes seven.",
+  "rev": "2c1e7ebf"
+ },
+ "answer-miss-1-8": {
+  "text": "one plus seven makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-1-8.m4a",
+  "ms": 1648,
+  "spoken": "One plus seven makes eight.",
+  "rev": "b3c023c3"
+ },
+ "answer-miss-1-9": {
+  "text": "one plus eight makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-1-9.m4a",
+  "ms": 1556,
+  "spoken": "One plus eight makes nine.",
+  "rev": "218d055a"
+ },
+ "answer-miss-10-10": {
+  "text": "ten plus zero makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-10-10.m4a",
+  "ms": 1630,
+  "spoken": "Ten plus zero makes ten.",
+  "rev": "32211d3e"
+ },
+ "answer-miss-2-10": {
+  "text": "two plus eight makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-2-10.m4a",
+  "ms": 1528,
+  "spoken": "Two plus eight makes ten.",
+  "rev": "0bbc18e0"
+ },
+ "answer-miss-2-2": {
+  "text": "two plus zero makes two",
+  "voice": "af_heart",
+  "file": "answer-miss-2-2.m4a",
+  "ms": 1566,
+  "spoken": "Two plus zero makes two.",
+  "rev": "1a5d397d"
+ },
+ "answer-miss-2-3": {
+  "text": "two plus one makes three",
+  "voice": "af_heart",
+  "file": "answer-miss-2-3.m4a",
+  "ms": 1502,
+  "spoken": "Two plus one makes three.",
+  "rev": "b975126d"
+ },
+ "answer-miss-2-4": {
+  "text": "two plus two makes four",
+  "voice": "af_heart",
+  "file": "answer-miss-2-4.m4a",
+  "ms": 1449,
+  "spoken": "Two plus two makes four.",
+  "rev": "d2a322ce"
+ },
+ "answer-miss-2-5": {
+  "text": "two plus three makes five",
+  "voice": "af_heart",
+  "file": "answer-miss-2-5.m4a",
+  "ms": 1582,
+  "spoken": "Two plus three makes five.",
+  "rev": "1e4de887"
+ },
+ "answer-miss-2-6": {
+  "text": "two plus four makes six",
+  "voice": "af_heart",
+  "file": "answer-miss-2-6.m4a",
+  "ms": 1540,
+  "spoken": "Two plus four makes six.",
+  "rev": "bf9b6c24"
+ },
+ "answer-miss-2-7": {
+  "text": "two plus five makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-2-7.m4a",
+  "ms": 1608,
+  "spoken": "Two plus five makes seven.",
+  "rev": "f096e461"
+ },
+ "answer-miss-2-8": {
+  "text": "two plus six makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-2-8.m4a",
+  "ms": 1515,
+  "spoken": "Two plus six makes eight.",
+  "rev": "7a7d60c3"
+ },
+ "answer-miss-2-9": {
+  "text": "two plus seven makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-2-9.m4a",
+  "ms": 1591,
+  "spoken": "Two plus seven makes nine.",
+  "rev": "a9dc5593"
+ },
+ "answer-miss-3-10": {
+  "text": "three plus seven makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-3-10.m4a",
+  "ms": 1633,
+  "spoken": "Three plus seven makes ten.",
+  "rev": "2dd75158"
+ },
+ "answer-miss-3-3": {
+  "text": "three plus zero makes three",
+  "voice": "af_heart",
+  "file": "answer-miss-3-3.m4a",
+  "ms": 1618,
+  "spoken": "Three plus zero makes three.",
+  "rev": "f54d95a1"
+ },
+ "answer-miss-3-4": {
+  "text": "three plus one makes four",
+  "voice": "af_heart",
+  "file": "answer-miss-3-4.m4a",
+  "ms": 1577,
+  "spoken": "Three plus one makes four.",
+  "rev": "5d73b651"
+ },
+ "answer-miss-3-5": {
+  "text": "three plus two makes five",
+  "voice": "af_heart",
+  "file": "answer-miss-3-5.m4a",
+  "ms": 1599,
+  "spoken": "Three plus two makes five.",
+  "rev": "1af6c03c"
+ },
+ "answer-miss-3-6": {
+  "text": "three plus three makes six",
+  "voice": "af_heart",
+  "file": "answer-miss-3-6.m4a",
+  "ms": 1598,
+  "spoken": "Three plus three makes six.",
+  "rev": "43f7e277"
+ },
+ "answer-miss-3-7": {
+  "text": "three plus four makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-3-7.m4a",
+  "ms": 1621,
+  "spoken": "Three plus four makes seven.",
+  "rev": "12e0cd6c"
+ },
+ "answer-miss-3-8": {
+  "text": "three plus five makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-3-8.m4a",
+  "ms": 1659,
+  "spoken": "Three plus five makes eight.",
+  "rev": "5c88c8ef"
+ },
+ "answer-miss-3-9": {
+  "text": "three plus six makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-3-9.m4a",
+  "ms": 1627,
+  "spoken": "Three plus six makes nine.",
+  "rev": "7c36f625"
+ },
+ "answer-miss-4-10": {
+  "text": "four plus six makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-4-10.m4a",
+  "ms": 1668,
+  "spoken": "Four plus six makes ten.",
+  "rev": "fe48dead"
+ },
+ "answer-miss-4-4": {
+  "text": "four plus zero makes four",
+  "voice": "af_heart",
+  "file": "answer-miss-4-4.m4a",
+  "ms": 1666,
+  "spoken": "Four plus zero makes four.",
+  "rev": "e828f6fb"
+ },
+ "answer-miss-4-5": {
+  "text": "four plus one makes five",
+  "voice": "af_heart",
+  "file": "answer-miss-4-5.m4a",
+  "ms": 1688,
+  "spoken": "Four plus one makes five.",
+  "rev": "522c0fa3"
+ },
+ "answer-miss-4-6": {
+  "text": "four plus two makes six",
+  "voice": "af_heart",
+  "file": "answer-miss-4-6.m4a",
+  "ms": 1599,
+  "spoken": "Four plus two makes six.",
+  "rev": "98399c37"
+ },
+ "answer-miss-4-7": {
+  "text": "four plus three makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-4-7.m4a",
+  "ms": 1639,
+  "spoken": "Four plus three makes seven.",
+  "rev": "2d67900e"
+ },
+ "answer-miss-4-8": {
+  "text": "four plus four makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-4-8.m4a",
+  "ms": 1610,
+  "spoken": "Four plus four makes eight.",
+  "rev": "88da2e17"
+ },
+ "answer-miss-4-9": {
+  "text": "four plus five makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-4-9.m4a",
+  "ms": 1652,
+  "spoken": "Four plus five makes nine.",
+  "rev": "e3ca7b1e"
+ },
+ "answer-miss-5-10": {
+  "text": "five plus five makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-5-10.m4a",
+  "ms": 1729,
+  "spoken": "Five plus five makes ten.",
+  "rev": "1c6dab57"
+ },
+ "answer-miss-5-5": {
+  "text": "five plus zero makes five",
+  "voice": "af_heart",
+  "file": "answer-miss-5-5.m4a",
+  "ms": 1799,
+  "spoken": "Five plus zero makes five.",
+  "rev": "ff176c0f"
+ },
+ "answer-miss-5-6": {
+  "text": "five plus one makes six",
+  "voice": "af_heart",
+  "file": "answer-miss-5-6.m4a",
+  "ms": 1676,
+  "spoken": "Five plus one makes six.",
+  "rev": "dcb1f803"
+ },
+ "answer-miss-5-7": {
+  "text": "five plus two makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-5-7.m4a",
+  "ms": 1583,
+  "spoken": "Five plus two makes seven.",
+  "rev": "4b0fd4ed"
+ },
+ "answer-miss-5-8": {
+  "text": "five plus three makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-5-8.m4a",
+  "ms": 1605,
+  "spoken": "Five plus three makes eight.",
+  "rev": "cb8b0901"
+ },
+ "answer-miss-5-9": {
+  "text": "five plus four makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-5-9.m4a",
+  "ms": 1669,
+  "spoken": "Five plus four makes nine.",
+  "rev": "1e087b01"
+ },
+ "answer-miss-6-10": {
+  "text": "six plus four makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-6-10.m4a",
+  "ms": 1661,
+  "spoken": "Six plus four makes ten.",
+  "rev": "1c1c4a55"
+ },
+ "answer-miss-6-6": {
+  "text": "six plus zero makes six",
+  "voice": "af_heart",
+  "file": "answer-miss-6-6.m4a",
+  "ms": 1768,
+  "spoken": "Six plus zero makes six.",
+  "rev": "b9c9d5a2"
+ },
+ "answer-miss-6-7": {
+  "text": "six plus one makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-6-7.m4a",
+  "ms": 1678,
+  "spoken": "Six plus one makes seven.",
+  "rev": "a203fea2"
+ },
+ "answer-miss-6-8": {
+  "text": "six plus two makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-6-8.m4a",
+  "ms": 1541,
+  "spoken": "Six plus two makes eight.",
+  "rev": "8ff3eb94"
+ },
+ "answer-miss-6-9": {
+  "text": "six plus three makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-6-9.m4a",
+  "ms": 1635,
+  "spoken": "Six plus three makes nine.",
+  "rev": "c0855323"
+ },
+ "answer-miss-7-10": {
+  "text": "seven plus three makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-7-10.m4a",
+  "ms": 1682,
+  "spoken": "Seven plus three makes ten.",
+  "rev": "ac3884fb"
+ },
+ "answer-miss-7-7": {
+  "text": "seven plus zero makes seven",
+  "voice": "af_heart",
+  "file": "answer-miss-7-7.m4a",
+  "ms": 1815,
+  "spoken": "Seven plus zero makes seven.",
+  "rev": "a94168a8"
+ },
+ "answer-miss-7-8": {
+  "text": "seven plus one makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-7-8.m4a",
+  "ms": 1696,
+  "spoken": "Seven plus one makes eight.",
+  "rev": "e1b30f9a"
+ },
+ "answer-miss-7-9": {
+  "text": "seven plus two makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-7-9.m4a",
+  "ms": 1752,
+  "spoken": "Seven plus two makes nine.",
+  "rev": "9eafa120"
+ },
+ "answer-miss-8-10": {
+  "text": "eight plus two makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-8-10.m4a",
+  "ms": 1480,
+  "spoken": "Eight plus two makes ten.",
+  "rev": "b6fb8050"
+ },
+ "answer-miss-8-8": {
+  "text": "eight plus zero makes eight",
+  "voice": "af_heart",
+  "file": "answer-miss-8-8.m4a",
+  "ms": 1575,
+  "spoken": "Eight plus zero makes eight.",
+  "rev": "384f25a6"
+ },
+ "answer-miss-8-9": {
+  "text": "eight plus one makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-8-9.m4a",
+  "ms": 1593,
+  "spoken": "Eight plus one makes nine.",
+  "rev": "1a8c8f6f"
+ },
+ "answer-miss-9-10": {
+  "text": "nine plus one makes ten",
+  "voice": "af_heart",
+  "file": "answer-miss-9-10.m4a",
+  "ms": 1612,
+  "spoken": "Nine plus one makes ten.",
+  "rev": "37429150"
+ },
+ "answer-miss-9-9": {
+  "text": "nine plus zero makes nine",
+  "voice": "af_heart",
+  "file": "answer-miss-9-9.m4a",
+  "ms": 1756,
+  "spoken": "Nine plus zero makes nine.",
+  "rev": "0e2f17e0"
+ },
+ "answer-sub-0-0": {
+  "text": "zero take away zero makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-0-0.m4a",
+  "ms": 2352,
+  "spoken": "Zero take away zero makes zero.",
+  "rev": "7eac3688"
+ },
+ "answer-sub-1-0": {
+  "text": "one take away zero makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-1-0.m4a",
+  "ms": 1990,
+  "spoken": "One take away zero makes one.",
+  "rev": "bc28266d"
+ },
+ "answer-sub-1-1": {
+  "text": "one take away one makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-1-1.m4a",
+  "ms": 1870,
+  "spoken": "One take away one makes zero.",
+  "rev": "e91e11c6"
+ },
+ "answer-sub-10-0": {
+  "text": "ten take away zero makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-10-0.m4a",
+  "ms": 1917,
+  "spoken": "Ten take away zero makes ten.",
+  "rev": "094198dd"
+ },
+ "answer-sub-10-1": {
+  "text": "ten take away one makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-10-1.m4a",
+  "ms": 1830,
+  "spoken": "Ten take away one makes nine.",
+  "rev": "d3a6d4a6"
+ },
+ "answer-sub-10-10": {
+  "text": "ten take away ten makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-10-10.m4a",
+  "ms": 1888,
+  "spoken": "Ten take away ten makes zero.",
+  "rev": "4bd3afff"
+ },
+ "answer-sub-10-2": {
+  "text": "ten take away two makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-10-2.m4a",
+  "ms": 1794,
+  "spoken": "Ten take away two makes eight.",
+  "rev": "88d03aaf"
+ },
+ "answer-sub-10-3": {
+  "text": "ten take away three makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-10-3.m4a",
+  "ms": 1966,
+  "spoken": "Ten take away three makes seven.",
+  "rev": "b4422a16"
+ },
+ "answer-sub-10-4": {
+  "text": "ten take away four makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-10-4.m4a",
+  "ms": 1873,
+  "spoken": "Ten take away four makes six.",
+  "rev": "131b6a97"
+ },
+ "answer-sub-10-5": {
+  "text": "ten take away five makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-10-5.m4a",
+  "ms": 2051,
+  "spoken": "Ten take away five makes five.",
+  "rev": "d30f50ad"
+ },
+ "answer-sub-10-6": {
+  "text": "ten take away six makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-10-6.m4a",
+  "ms": 1889,
+  "spoken": "Ten take away six makes four.",
+  "rev": "97d2849f"
+ },
+ "answer-sub-10-7": {
+  "text": "ten take away seven makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-10-7.m4a",
+  "ms": 2067,
+  "spoken": "Ten take away seven makes three.",
+  "rev": "a81daaed"
+ },
+ "answer-sub-10-8": {
+  "text": "ten take away eight makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-10-8.m4a",
+  "ms": 1789,
+  "spoken": "Ten take away eight makes two.",
+  "rev": "24de62bf"
+ },
+ "answer-sub-10-9": {
+  "text": "ten take away nine makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-10-9.m4a",
+  "ms": 1865,
+  "spoken": "Ten take away nine makes one.",
+  "rev": "098ec74c"
+ },
+ "answer-sub-11-1": {
+  "text": "eleven take away one makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-11-1.m4a",
+  "ms": 1817,
+  "spoken": "Eleven take away one makes ten.",
+  "rev": "1b37df44"
+ },
+ "answer-sub-11-10": {
+  "text": "eleven take away ten makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-11-10.m4a",
+  "ms": 1905,
+  "spoken": "Eleven take away ten makes one.",
+  "rev": "83420cd7"
+ },
+ "answer-sub-11-2": {
+  "text": "eleven take away two makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-11-2.m4a",
+  "ms": 1885,
+  "spoken": "Eleven take away two makes nine.",
+  "rev": "f1b9d93b"
+ },
+ "answer-sub-11-3": {
+  "text": "eleven take away three makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-11-3.m4a",
+  "ms": 1942,
+  "spoken": "Eleven take away three makes eight.",
+  "rev": "851bcb3c"
+ },
+ "answer-sub-11-4": {
+  "text": "eleven take away four makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-11-4.m4a",
+  "ms": 1959,
+  "spoken": "Eleven take away four makes seven.",
+  "rev": "729151f9"
+ },
+ "answer-sub-11-5": {
+  "text": "eleven take away five makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-11-5.m4a",
+  "ms": 2047,
+  "spoken": "Eleven take away five makes six.",
+  "rev": "aed3d68b"
+ },
+ "answer-sub-11-6": {
+  "text": "eleven take away six makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-11-6.m4a",
+  "ms": 2076,
+  "spoken": "Eleven take away six makes five.",
+  "rev": "6078868f"
+ },
+ "answer-sub-11-7": {
+  "text": "eleven take away seven makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-11-7.m4a",
+  "ms": 1958,
+  "spoken": "Eleven take away seven makes four.",
+  "rev": "35cc8b88"
+ },
+ "answer-sub-11-8": {
+  "text": "eleven take away eight makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-11-8.m4a",
+  "ms": 1836,
+  "spoken": "Eleven take away eight makes three.",
+  "rev": "a787169e"
+ },
+ "answer-sub-11-9": {
+  "text": "eleven take away nine makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-11-9.m4a",
+  "ms": 1937,
+  "spoken": "Eleven take away nine makes two.",
+  "rev": "615cbbe0"
+ },
+ "answer-sub-12-10": {
+  "text": "twelve take away ten makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-12-10.m4a",
+  "ms": 1832,
+  "spoken": "Twelve take away ten makes two.",
+  "rev": "8a4e1632"
+ },
+ "answer-sub-12-2": {
+  "text": "twelve take away two makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-12-2.m4a",
+  "ms": 1770,
+  "spoken": "Twelve take away two makes ten.",
+  "rev": "e20bff7a"
+ },
+ "answer-sub-12-3": {
+  "text": "twelve take away three makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-12-3.m4a",
+  "ms": 1927,
+  "spoken": "Twelve take away three makes nine.",
+  "rev": "975439ff"
+ },
+ "answer-sub-12-4": {
+  "text": "twelve take away four makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-12-4.m4a",
+  "ms": 1834,
+  "spoken": "Twelve take away four makes eight.",
+  "rev": "a7c3c013"
+ },
+ "answer-sub-12-5": {
+  "text": "twelve take away five makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-12-5.m4a",
+  "ms": 1952,
+  "spoken": "Twelve take away five makes seven.",
+  "rev": "24e94514"
+ },
+ "answer-sub-12-6": {
+  "text": "twelve take away six makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-12-6.m4a",
+  "ms": 1915,
+  "spoken": "Twelve take away six makes six.",
+  "rev": "7065243a"
+ },
+ "answer-sub-12-7": {
+  "text": "twelve take away seven makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-12-7.m4a",
+  "ms": 2016,
+  "spoken": "Twelve take away seven makes five.",
+  "rev": "47b1c417"
+ },
+ "answer-sub-12-8": {
+  "text": "twelve take away eight makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-12-8.m4a",
+  "ms": 1791,
+  "spoken": "Twelve take away eight makes four.",
+  "rev": "c87df547"
+ },
+ "answer-sub-12-9": {
+  "text": "twelve take away nine makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-12-9.m4a",
+  "ms": 1856,
+  "spoken": "Twelve take away nine makes three.",
+  "rev": "9e5275da"
+ },
+ "answer-sub-13-10": {
+  "text": "thirteen take away ten makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-13-10.m4a",
+  "ms": 1939,
+  "spoken": "Thirteen take away ten makes three.",
+  "rev": "d933bab0"
+ },
+ "answer-sub-13-3": {
+  "text": "thirteen take away three makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-13-3.m4a",
+  "ms": 1973,
+  "spoken": "Thirteen take away three makes ten.",
+  "rev": "ac46beca"
+ },
+ "answer-sub-13-4": {
+  "text": "thirteen take away four makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-13-4.m4a",
+  "ms": 2060,
+  "spoken": "Thirteen take away four makes nine.",
+  "rev": "d9eb7ed2"
+ },
+ "answer-sub-13-5": {
+  "text": "thirteen take away five makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-13-5.m4a",
+  "ms": 2044,
+  "spoken": "Thirteen take away five makes eight.",
+  "rev": "cd24e5b2"
+ },
+ "answer-sub-13-6": {
+  "text": "thirteen take away six makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-13-6.m4a",
+  "ms": 2019,
+  "spoken": "Thirteen take away six makes seven.",
+  "rev": "0909ac41"
+ },
+ "answer-sub-13-7": {
+  "text": "thirteen take away seven makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-13-7.m4a",
+  "ms": 2101,
+  "spoken": "Thirteen take away seven makes six.",
+  "rev": "915af50e"
+ },
+ "answer-sub-13-8": {
+  "text": "thirteen take away eight makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-13-8.m4a",
+  "ms": 2016,
+  "spoken": "Thirteen take away eight makes five.",
+  "rev": "a02b3a51"
+ },
+ "answer-sub-13-9": {
+  "text": "thirteen take away nine makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-13-9.m4a",
+  "ms": 1943,
+  "spoken": "Thirteen take away nine makes four.",
+  "rev": "677238bc"
+ },
+ "answer-sub-14-10": {
+  "text": "fourteen take away ten makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-14-10.m4a",
+  "ms": 2047,
+  "spoken": "Fourteen take away ten makes four.",
+  "rev": "bbf5e369"
+ },
+ "answer-sub-14-4": {
+  "text": "fourteen take away four makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-14-4.m4a",
+  "ms": 2009,
+  "spoken": "Fourteen take away four makes ten.",
+  "rev": "d39f8da3"
+ },
+ "answer-sub-14-5": {
+  "text": "fourteen take away five makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-14-5.m4a",
+  "ms": 2126,
+  "spoken": "Fourteen take away five makes nine.",
+  "rev": "283f6f6e"
+ },
+ "answer-sub-14-6": {
+  "text": "fourteen take away six makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-14-6.m4a",
+  "ms": 2024,
+  "spoken": "Fourteen take away six makes eight.",
+  "rev": "bd49d1c3"
+ },
+ "answer-sub-14-7": {
+  "text": "fourteen take away seven makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-14-7.m4a",
+  "ms": 2127,
+  "spoken": "Fourteen take away seven makes seven.",
+  "rev": "96d1867c"
+ },
+ "answer-sub-14-8": {
+  "text": "fourteen take away eight makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-14-8.m4a",
+  "ms": 1997,
+  "spoken": "Fourteen take away eight makes six.",
+  "rev": "2f9c3c57"
+ },
+ "answer-sub-14-9": {
+  "text": "fourteen take away nine makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-14-9.m4a",
+  "ms": 2173,
+  "spoken": "Fourteen take away nine makes five.",
+  "rev": "7a4b3f62"
+ },
+ "answer-sub-15-10": {
+  "text": "fifteen take away ten makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-15-10.m4a",
+  "ms": 2071,
+  "spoken": "Fifteen take away ten makes five.",
+  "rev": "17c565e5"
+ },
+ "answer-sub-15-5": {
+  "text": "fifteen take away five makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-15-5.m4a",
+  "ms": 2059,
+  "spoken": "Fifteen take away five makes ten.",
+  "rev": "964dcc76"
+ },
+ "answer-sub-15-6": {
+  "text": "fifteen take away six makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-15-6.m4a",
+  "ms": 2103,
+  "spoken": "Fifteen take away six makes nine.",
+  "rev": "cb9114e7"
+ },
+ "answer-sub-15-7": {
+  "text": "fifteen take away seven makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-15-7.m4a",
+  "ms": 2148,
+  "spoken": "Fifteen take away seven makes eight.",
+  "rev": "d5d543ca"
+ },
+ "answer-sub-15-8": {
+  "text": "fifteen take away eight makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-15-8.m4a",
+  "ms": 2040,
+  "spoken": "Fifteen take away eight makes seven.",
+  "rev": "b9a4927d"
+ },
+ "answer-sub-15-9": {
+  "text": "fifteen take away nine makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-15-9.m4a",
+  "ms": 2055,
+  "spoken": "Fifteen take away nine makes six.",
+  "rev": "60f9b258"
+ },
+ "answer-sub-16-10": {
+  "text": "sixteen take away ten makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-16-10.m4a",
+  "ms": 2055,
+  "spoken": "Sixteen take away ten makes six.",
+  "rev": "3c9c7bf3"
+ },
+ "answer-sub-16-6": {
+  "text": "sixteen take away six makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-16-6.m4a",
+  "ms": 2086,
+  "spoken": "Sixteen take away six makes ten.",
+  "rev": "b486fb7b"
+ },
+ "answer-sub-16-7": {
+  "text": "sixteen take away seven makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-16-7.m4a",
+  "ms": 2169,
+  "spoken": "Sixteen take away seven makes nine.",
+  "rev": "252a3073"
+ },
+ "answer-sub-16-8": {
+  "text": "sixteen take away eight makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-16-8.m4a",
+  "ms": 1947,
+  "spoken": "Sixteen take away eight makes eight.",
+  "rev": "32c631e6"
+ },
+ "answer-sub-16-9": {
+  "text": "sixteen take away nine makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-16-9.m4a",
+  "ms": 2082,
+  "spoken": "Sixteen take away nine makes seven.",
+  "rev": "9fa122d5"
+ },
+ "answer-sub-17-10": {
+  "text": "seventeen take away ten makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-17-10.m4a",
+  "ms": 2210,
+  "spoken": "Seventeen take away ten makes seven.",
+  "rev": "a217f254"
+ },
+ "answer-sub-17-7": {
+  "text": "seventeen take away seven makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-17-7.m4a",
+  "ms": 2302,
+  "spoken": "Seventeen take away seven makes ten.",
+  "rev": "49f2d852"
+ },
+ "answer-sub-17-8": {
+  "text": "seventeen take away eight makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-17-8.m4a",
+  "ms": 2236,
+  "spoken": "Seventeen take away eight makes nine.",
+  "rev": "505bdc40"
+ },
+ "answer-sub-17-9": {
+  "text": "seventeen take away nine makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-17-9.m4a",
+  "ms": 2228,
+  "spoken": "Seventeen take away nine makes eight.",
+  "rev": "9912d5c6"
+ },
+ "answer-sub-18-10": {
+  "text": "eighteen take away ten makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-18-10.m4a",
+  "ms": 1936,
+  "spoken": "Eighteen take away ten makes eight.",
+  "rev": "423ce4ae"
+ },
+ "answer-sub-18-8": {
+  "text": "eighteen take away eight makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-18-8.m4a",
+  "ms": 1915,
+  "spoken": "Eighteen take away eight makes ten.",
+  "rev": "2c89d2fd"
+ },
+ "answer-sub-18-9": {
+  "text": "eighteen take away nine makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-18-9.m4a",
+  "ms": 2061,
+  "spoken": "Eighteen take away nine makes nine.",
+  "rev": "1bc1b641"
+ },
+ "answer-sub-19-10": {
+  "text": "nineteen take away ten makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-19-10.m4a",
+  "ms": 2074,
+  "spoken": "Nineteen take away ten makes nine.",
+  "rev": "57f20e31"
+ },
+ "answer-sub-19-9": {
+  "text": "nineteen take away nine makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-19-9.m4a",
+  "ms": 2029,
+  "spoken": "Nineteen take away nine makes ten.",
+  "rev": "0a42861d"
+ },
+ "answer-sub-2-0": {
+  "text": "two take away zero makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-2-0.m4a",
+  "ms": 1863,
+  "spoken": "Two take away zero makes two.",
+  "rev": "dc0225b0"
+ },
+ "answer-sub-2-1": {
+  "text": "two take away one makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-2-1.m4a",
+  "ms": 1610,
+  "spoken": "Two take away one makes one.",
+  "rev": "225f85f7"
+ },
+ "answer-sub-2-2": {
+  "text": "two take away two makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-2-2.m4a",
+  "ms": 1661,
+  "spoken": "Two take away two makes zero.",
+  "rev": "b8c2ec50"
+ },
+ "answer-sub-20-10": {
+  "text": "twenty take away ten makes ten",
+  "voice": "af_heart",
+  "file": "answer-sub-20-10.m4a",
+  "ms": 1891,
+  "spoken": "Twenty take away ten makes ten.",
+  "rev": "66c8e308"
+ },
+ "answer-sub-3-0": {
+  "text": "three take away zero makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-3-0.m4a",
+  "ms": 2003,
+  "spoken": "Three take away zero makes three.",
+  "rev": "01ee0de2"
+ },
+ "answer-sub-3-1": {
+  "text": "three take away one makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-3-1.m4a",
+  "ms": 1589,
+  "spoken": "Three take away one makes two.",
+  "rev": "ca9b1d2f"
+ },
+ "answer-sub-3-2": {
+  "text": "three take away two makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-3-2.m4a",
+  "ms": 1685,
+  "spoken": "Three take away two makes one.",
+  "rev": "2ab3cf5f"
+ },
+ "answer-sub-3-3": {
+  "text": "three take away three makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-3-3.m4a",
+  "ms": 1846,
+  "spoken": "Three take away three makes zero.",
+  "rev": "4d903ecb"
+ },
+ "answer-sub-4-0": {
+  "text": "four take away zero makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-4-0.m4a",
+  "ms": 1948,
+  "spoken": "Four take away zero makes four.",
+  "rev": "aa464eb6"
+ },
+ "answer-sub-4-1": {
+  "text": "four take away one makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-4-1.m4a",
+  "ms": 1761,
+  "spoken": "Four take away one makes three.",
+  "rev": "e0e32d53"
+ },
+ "answer-sub-4-2": {
+  "text": "four take away two makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-4-2.m4a",
+  "ms": 1736,
+  "spoken": "Four take away two makes two.",
+  "rev": "a6937263"
+ },
+ "answer-sub-4-3": {
+  "text": "four take away three makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-4-3.m4a",
+  "ms": 1796,
+  "spoken": "Four take away three makes one.",
+  "rev": "dcf2f527"
+ },
+ "answer-sub-4-4": {
+  "text": "four take away four makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-4-4.m4a",
+  "ms": 1922,
+  "spoken": "Four take away four makes zero.",
+  "rev": "11352de3"
+ },
+ "answer-sub-5-0": {
+  "text": "five take away zero makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-5-0.m4a",
+  "ms": 2023,
+  "spoken": "Five take away zero makes five.",
+  "rev": "e08f0ff1"
+ },
+ "answer-sub-5-1": {
+  "text": "five take away one makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-5-1.m4a",
+  "ms": 1747,
+  "spoken": "Five take away one makes four.",
+  "rev": "985c110a"
+ },
+ "answer-sub-5-2": {
+  "text": "five take away two makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-5-2.m4a",
+  "ms": 1804,
+  "spoken": "Five take away two makes three.",
+  "rev": "4ef614b2"
+ },
+ "answer-sub-5-3": {
+  "text": "five take away three makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-5-3.m4a",
+  "ms": 1835,
+  "spoken": "Five take away three makes two.",
+  "rev": "f8af7d03"
+ },
+ "answer-sub-5-4": {
+  "text": "five take away four makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-5-4.m4a",
+  "ms": 1794,
+  "spoken": "Five take away four makes one.",
+  "rev": "b83ec54e"
+ },
+ "answer-sub-5-5": {
+  "text": "five take away five makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-5-5.m4a",
+  "ms": 1934,
+  "spoken": "Five take away five makes zero.",
+  "rev": "2b695a6e"
+ },
+ "answer-sub-6-0": {
+  "text": "six take away zero makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-6-0.m4a",
+  "ms": 2027,
+  "spoken": "Six take away zero makes six.",
+  "rev": "8050e847"
+ },
+ "answer-sub-6-1": {
+  "text": "six take away one makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-6-1.m4a",
+  "ms": 1810,
+  "spoken": "Six take away one makes five.",
+  "rev": "b7ed10c6"
+ },
+ "answer-sub-6-2": {
+  "text": "six take away two makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-6-2.m4a",
+  "ms": 1746,
+  "spoken": "Six take away two makes four.",
+  "rev": "7485e289"
+ },
+ "answer-sub-6-3": {
+  "text": "six take away three makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-6-3.m4a",
+  "ms": 1793,
+  "spoken": "Six take away three makes three.",
+  "rev": "a75191f3"
+ },
+ "answer-sub-6-4": {
+  "text": "six take away four makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-6-4.m4a",
+  "ms": 1835,
+  "spoken": "Six take away four makes two.",
+  "rev": "63e1f076"
+ },
+ "answer-sub-6-5": {
+  "text": "six take away five makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-6-5.m4a",
+  "ms": 1858,
+  "spoken": "Six take away five makes one.",
+  "rev": "c746908b"
+ },
+ "answer-sub-6-6": {
+  "text": "six take away six makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-6-6.m4a",
+  "ms": 1907,
+  "spoken": "Six take away six makes zero.",
+  "rev": "25c9e229"
+ },
+ "answer-sub-7-0": {
+  "text": "seven take away zero makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-7-0.m4a",
+  "ms": 2239,
+  "spoken": "Seven take away zero makes seven.",
+  "rev": "ddd99a42"
+ },
+ "answer-sub-7-1": {
+  "text": "seven take away one makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-7-1.m4a",
+  "ms": 1800,
+  "spoken": "Seven take away one makes six.",
+  "rev": "b6dd3ad2"
+ },
+ "answer-sub-7-2": {
+  "text": "seven take away two makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-7-2.m4a",
+  "ms": 1983,
+  "spoken": "Seven take away two makes five.",
+  "rev": "6a92b313"
+ },
+ "answer-sub-7-3": {
+  "text": "seven take away three makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-7-3.m4a",
+  "ms": 1899,
+  "spoken": "Seven take away three makes four.",
+  "rev": "689195d9"
+ },
+ "answer-sub-7-4": {
+  "text": "seven take away four makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-7-4.m4a",
+  "ms": 1899,
+  "spoken": "Seven take away four makes three.",
+  "rev": "763f4e01"
+ },
+ "answer-sub-7-5": {
+  "text": "seven take away five makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-7-5.m4a",
+  "ms": 1950,
+  "spoken": "Seven take away five makes two.",
+  "rev": "69cd5b24"
+ },
+ "answer-sub-7-6": {
+  "text": "seven take away six makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-7-6.m4a",
+  "ms": 1942,
+  "spoken": "Seven take away six makes one.",
+  "rev": "b375af3a"
+ },
+ "answer-sub-7-7": {
+  "text": "seven take away seven makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-7-7.m4a",
+  "ms": 2066,
+  "spoken": "Seven take away seven makes zero.",
+  "rev": "617316c5"
+ },
+ "answer-sub-8-0": {
+  "text": "eight take away zero makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-8-0.m4a",
+  "ms": 1980,
+  "spoken": "Eight take away zero makes eight.",
+  "rev": "f82257ce"
+ },
+ "answer-sub-8-1": {
+  "text": "eight take away one makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-8-1.m4a",
+  "ms": 1694,
+  "spoken": "Eight take away one makes seven.",
+  "rev": "d2e9dbaa"
+ },
+ "answer-sub-8-2": {
+  "text": "eight take away two makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-8-2.m4a",
+  "ms": 1725,
+  "spoken": "Eight take away two makes six.",
+  "rev": "ff6530c4"
+ },
+ "answer-sub-8-3": {
+  "text": "eight take away three makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-8-3.m4a",
+  "ms": 1835,
+  "spoken": "Eight take away three makes five.",
+  "rev": "764f6b07"
+ },
+ "answer-sub-8-4": {
+  "text": "eight take away four makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-8-4.m4a",
+  "ms": 1648,
+  "spoken": "Eight take away four makes four.",
+  "rev": "ffc0a858"
+ },
+ "answer-sub-8-5": {
+  "text": "eight take away five makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-8-5.m4a",
+  "ms": 1784,
+  "spoken": "Eight take away five makes three.",
+  "rev": "58f7e681"
+ },
+ "answer-sub-8-6": {
+  "text": "eight take away six makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-8-6.m4a",
+  "ms": 1785,
+  "spoken": "Eight take away six makes two.",
+  "rev": "3b870967"
+ },
+ "answer-sub-8-7": {
+  "text": "eight take away seven makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-8-7.m4a",
+  "ms": 1757,
+  "spoken": "Eight take away seven makes one.",
+  "rev": "27aea885"
+ },
+ "answer-sub-8-8": {
+  "text": "eight take away eight makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-8-8.m4a",
+  "ms": 1732,
+  "spoken": "Eight take away eight makes zero.",
+  "rev": "b45192c3"
+ },
+ "answer-sub-9-0": {
+  "text": "nine take away zero makes nine",
+  "voice": "af_heart",
+  "file": "answer-sub-9-0.m4a",
+  "ms": 2014,
+  "spoken": "Nine take away zero makes nine.",
+  "rev": "f64976a5"
+ },
+ "answer-sub-9-1": {
+  "text": "nine take away one makes eight",
+  "voice": "af_heart",
+  "file": "answer-sub-9-1.m4a",
+  "ms": 1750,
+  "spoken": "Nine take away one makes eight.",
+  "rev": "791f4795"
+ },
+ "answer-sub-9-2": {
+  "text": "nine take away two makes seven",
+  "voice": "af_heart",
+  "file": "answer-sub-9-2.m4a",
+  "ms": 1833,
+  "spoken": "Nine take away two makes seven.",
+  "rev": "7d03e2ec"
+ },
+ "answer-sub-9-3": {
+  "text": "nine take away three makes six",
+  "voice": "af_heart",
+  "file": "answer-sub-9-3.m4a",
+  "ms": 1833,
+  "spoken": "Nine take away three makes six.",
+  "rev": "e0ecb2a0"
+ },
+ "answer-sub-9-4": {
+  "text": "nine take away four makes five",
+  "voice": "af_heart",
+  "file": "answer-sub-9-4.m4a",
+  "ms": 1884,
+  "spoken": "Nine take away four makes five.",
+  "rev": "a8656dab"
+ },
+ "answer-sub-9-5": {
+  "text": "nine take away five makes four",
+  "voice": "af_heart",
+  "file": "answer-sub-9-5.m4a",
+  "ms": 1905,
+  "spoken": "Nine take away five makes four.",
+  "rev": "364e15c4"
+ },
+ "answer-sub-9-6": {
+  "text": "nine take away six makes three",
+  "voice": "af_heart",
+  "file": "answer-sub-9-6.m4a",
+  "ms": 1883,
+  "spoken": "Nine take away six makes three.",
+  "rev": "022529b6"
+ },
+ "answer-sub-9-7": {
+  "text": "nine take away seven makes two",
+  "voice": "af_heart",
+  "file": "answer-sub-9-7.m4a",
+  "ms": 1936,
+  "spoken": "Nine take away seven makes two.",
+  "rev": "bc97d733"
+ },
+ "answer-sub-9-8": {
+  "text": "nine take away eight makes one",
+  "voice": "af_heart",
+  "file": "answer-sub-9-8.m4a",
+  "ms": 1784,
+  "spoken": "Nine take away eight makes one.",
+  "rev": "05995b44"
+ },
+ "answer-sub-9-9": {
+  "text": "nine take away nine makes zero",
+  "voice": "af_heart",
+  "file": "answer-sub-9-9.m4a",
+  "ms": 1925,
+  "spoken": "Nine take away nine makes zero.",
+  "rev": "0b9fb53b"
+ },
+ "correction-tap-0": {
+  "text": "Tap 0 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-0.m4a",
+  "ms": 1404,
+  "rev": "7aba1114"
+ },
+ "correction-tap-1": {
+  "text": "Tap 1 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-1.m4a",
+  "ms": 1265,
+  "rev": "6ceb38fa"
+ },
+ "correction-tap-10": {
+  "text": "Tap 10 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-10.m4a",
+  "ms": 1265,
+  "rev": "e369b120"
+ },
+ "correction-tap-11": {
+  "text": "Tap 11 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-11.m4a",
+  "ms": 1454,
+  "rev": "5b1eb087"
+ },
+ "correction-tap-12": {
+  "text": "Tap 12 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-12.m4a",
+  "ms": 1359,
+  "rev": "ac7ba5e5"
+ },
+ "correction-tap-13": {
+  "text": "Tap 13 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-13.m4a",
+  "ms": 1486,
+  "rev": "4465c1c7"
+ },
+ "correction-tap-14": {
+  "text": "Tap 14 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-14.m4a",
+  "ms": 1526,
+  "rev": "a34a1eea"
+ },
+ "correction-tap-15": {
+  "text": "Tap 15 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-15.m4a",
+  "ms": 1454,
+  "rev": "6b7e9e34"
+ },
+ "correction-tap-16": {
+  "text": "Tap 16 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-16.m4a",
+  "ms": 1510,
+  "rev": "a6d9c252"
+ },
+ "correction-tap-17": {
+  "text": "Tap 17 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-17.m4a",
+  "ms": 1636,
+  "rev": "a2bfc004"
+ },
+ "correction-tap-18": {
+  "text": "Tap 18 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-18.m4a",
+  "ms": 1453,
+  "rev": "c449e34f"
+ },
+ "correction-tap-19": {
+  "text": "Tap 19 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-19.m4a",
+  "ms": 1494,
+  "rev": "bc6d942e"
+ },
+ "correction-tap-2": {
+  "text": "Tap 2 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-2.m4a",
+  "ms": 1285,
+  "rev": "ed4722dd"
+ },
+ "correction-tap-20": {
+  "text": "Tap 20 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-20.m4a",
+  "ms": 1395,
+  "rev": "ef3143a5"
+ },
+ "correction-tap-3": {
+  "text": "Tap 3 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-3.m4a",
+  "ms": 1366,
+  "rev": "e7d933a6"
+ },
+ "correction-tap-4": {
+  "text": "Tap 4 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-4.m4a",
+  "ms": 1308,
+  "rev": "3ce37ccd"
+ },
+ "correction-tap-5": {
+  "text": "Tap 5 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-5.m4a",
+  "ms": 1320,
+  "rev": "e1e2e31e"
+ },
+ "correction-tap-6": {
+  "text": "Tap 6 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-6.m4a",
+  "ms": 1342,
+  "rev": "c113156e"
+ },
+ "correction-tap-7": {
+  "text": "Tap 7 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-7.m4a",
+  "ms": 1359,
+  "rev": "483c0b82"
+ },
+ "correction-tap-8": {
+  "text": "Tap 8 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-8.m4a",
+  "ms": 1326,
+  "rev": "2cbff09b"
+ },
+ "correction-tap-9": {
+  "text": "Tap 9 to go on.",
+  "voice": "af_heart",
+  "file": "correction-tap-9.m4a",
+  "ms": 1314,
+  "rev": "33fd96aa"
+ },
+ "fact-add-0-0": {
+  "text": "zero plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-0-0.m4a",
+  "ms": 1322,
+  "spoken": "Zero plus zero.",
+  "rev": "85ee2549"
+ },
+ "fact-add-0-1": {
+  "text": "zero plus one",
+  "voice": "af_heart",
+  "file": "fact-add-0-1.m4a",
+  "ms": 1199,
+  "spoken": "Zero plus one.",
+  "rev": "628cd93f"
+ },
+ "fact-add-0-10": {
+  "text": "zero plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-0-10.m4a",
+  "ms": 1271,
+  "spoken": "Zero plus ten.",
+  "rev": "cb2b23fc"
+ },
+ "fact-add-0-2": {
+  "text": "zero plus two",
+  "voice": "af_heart",
+  "file": "fact-add-0-2.m4a",
+  "ms": 1247,
+  "spoken": "Zero plus two.",
+  "rev": "c4912a7b"
+ },
+ "fact-add-0-3": {
+  "text": "zero plus three",
+  "voice": "af_heart",
+  "file": "fact-add-0-3.m4a",
+  "ms": 1283,
+  "spoken": "Zero plus three.",
+  "rev": "03001bc0"
+ },
+ "fact-add-0-4": {
+  "text": "zero plus four",
+  "voice": "af_heart",
+  "file": "fact-add-0-4.m4a",
+  "ms": 1280,
+  "spoken": "Zero plus four.",
+  "rev": "c9061821"
+ },
+ "fact-add-0-5": {
+  "text": "zero plus five",
+  "voice": "af_heart",
+  "file": "fact-add-0-5.m4a",
+  "ms": 1334,
+  "spoken": "Zero plus five.",
+  "rev": "558520b2"
+ },
+ "fact-add-0-6": {
+  "text": "zero plus six",
+  "voice": "af_heart",
+  "file": "fact-add-0-6.m4a",
+  "ms": 1277,
+  "spoken": "Zero plus six.",
+  "rev": "e49284b1"
+ },
+ "fact-add-0-7": {
+  "text": "zero plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-0-7.m4a",
+  "ms": 1323,
+  "spoken": "Zero plus seven.",
+  "rev": "f39151da"
+ },
+ "fact-add-0-8": {
+  "text": "zero plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-0-8.m4a",
+  "ms": 1219,
+  "spoken": "Zero plus eight.",
+  "rev": "d4d146df"
+ },
+ "fact-add-0-9": {
+  "text": "zero plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-0-9.m4a",
+  "ms": 1268,
+  "spoken": "Zero plus nine.",
+  "rev": "1b73ea1f"
+ },
+ "fact-add-1-0": {
+  "text": "one plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-1-0.m4a",
+  "ms": 1151,
+  "spoken": "One plus zero.",
+  "rev": "4ad1495a"
+ },
+ "fact-add-1-1": {
+  "text": "one plus one",
+  "voice": "af_heart",
+  "file": "fact-add-1-1.m4a",
+  "ms": 1043,
+  "spoken": "One plus one.",
+  "rev": "54889c3a"
+ },
+ "fact-add-1-10": {
+  "text": "one plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-1-10.m4a",
+  "ms": 1125,
+  "spoken": "One plus ten.",
+  "rev": "0496c1bd"
+ },
+ "fact-add-1-2": {
+  "text": "one plus two",
+  "voice": "af_heart",
+  "file": "fact-add-1-2.m4a",
+  "ms": 1096,
+  "spoken": "One plus two.",
+  "rev": "5a483ca5"
+ },
+ "fact-add-1-3": {
+  "text": "one plus three",
+  "voice": "af_heart",
+  "file": "fact-add-1-3.m4a",
+  "ms": 1125,
+  "spoken": "One plus three.",
+  "rev": "6b1eea69"
+ },
+ "fact-add-1-4": {
+  "text": "one plus four",
+  "voice": "af_heart",
+  "file": "fact-add-1-4.m4a",
+  "ms": 1115,
+  "spoken": "One plus four.",
+  "rev": "a378dd11"
+ },
+ "fact-add-1-5": {
+  "text": "one plus five",
+  "voice": "af_heart",
+  "file": "fact-add-1-5.m4a",
+  "ms": 1198,
+  "spoken": "One plus five.",
+  "rev": "014e6418"
+ },
+ "fact-add-1-6": {
+  "text": "one plus six",
+  "voice": "af_heart",
+  "file": "fact-add-1-6.m4a",
+  "ms": 1145,
+  "spoken": "One plus six.",
+  "rev": "30bc1cbf"
+ },
+ "fact-add-1-7": {
+  "text": "one plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-1-7.m4a",
+  "ms": 1154,
+  "spoken": "One plus seven.",
+  "rev": "b69f64ab"
+ },
+ "fact-add-1-8": {
+  "text": "one plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-1-8.m4a",
+  "ms": 1086,
+  "spoken": "One plus eight.",
+  "rev": "be1a4277"
+ },
+ "fact-add-1-9": {
+  "text": "one plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-1-9.m4a",
+  "ms": 1121,
+  "spoken": "One plus nine.",
+  "rev": "0cea0dcb"
+ },
+ "fact-add-10-0": {
+  "text": "ten plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-10-0.m4a",
+  "ms": 1135,
+  "spoken": "Ten plus zero.",
+  "rev": "c56b6524"
+ },
+ "fact-add-10-1": {
+  "text": "ten plus one",
+  "voice": "af_heart",
+  "file": "fact-add-10-1.m4a",
+  "ms": 1049,
+  "spoken": "Ten plus one.",
+  "rev": "4349dc8b"
+ },
+ "fact-add-10-10": {
+  "text": "ten plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-10-10.m4a",
+  "ms": 1099,
+  "spoken": "Ten plus ten.",
+  "rev": "baee291d"
+ },
+ "fact-add-10-2": {
+  "text": "ten plus two",
+  "voice": "af_heart",
+  "file": "fact-add-10-2.m4a",
+  "ms": 1064,
+  "spoken": "Ten plus two.",
+  "rev": "4cea10b9"
+ },
+ "fact-add-10-3": {
+  "text": "ten plus three",
+  "voice": "af_heart",
+  "file": "fact-add-10-3.m4a",
+  "ms": 1114,
+  "spoken": "Ten plus three.",
+  "rev": "7fd2a368"
+ },
+ "fact-add-10-4": {
+  "text": "ten plus four",
+  "voice": "af_heart",
+  "file": "fact-add-10-4.m4a",
+  "ms": 1088,
+  "spoken": "Ten plus four.",
+  "rev": "44cb660c"
+ },
+ "fact-add-10-5": {
+  "text": "ten plus five",
+  "voice": "af_heart",
+  "file": "fact-add-10-5.m4a",
+  "ms": 1164,
+  "spoken": "Ten plus five.",
+  "rev": "7db1bd2e"
+ },
+ "fact-add-10-6": {
+  "text": "ten plus six",
+  "voice": "af_heart",
+  "file": "fact-add-10-6.m4a",
+  "ms": 1117,
+  "spoken": "Ten plus six.",
+  "rev": "18fcda1f"
+ },
+ "fact-add-10-7": {
+  "text": "ten plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-10-7.m4a",
+  "ms": 1144,
+  "spoken": "Ten plus seven.",
+  "rev": "394e44b9"
+ },
+ "fact-add-10-8": {
+  "text": "ten plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-10-8.m4a",
+  "ms": 1024,
+  "spoken": "Ten plus eight.",
+  "rev": "25966cca"
+ },
+ "fact-add-10-9": {
+  "text": "ten plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-10-9.m4a",
+  "ms": 1114,
+  "spoken": "Ten plus nine.",
+  "rev": "666ed8cc"
+ },
+ "fact-add-2-0": {
+  "text": "two plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-2-0.m4a",
+  "ms": 1067,
+  "spoken": "Two plus zero.",
+  "rev": "3e9bb64d"
+ },
+ "fact-add-2-1": {
+  "text": "two plus one",
+  "voice": "af_heart",
+  "file": "fact-add-2-1.m4a",
+  "ms": 1021,
+  "spoken": "Two plus one.",
+  "rev": "92d5fb47"
+ },
+ "fact-add-2-10": {
+  "text": "two plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-2-10.m4a",
+  "ms": 1012,
+  "spoken": "Two plus ten.",
+  "rev": "07dd2654"
+ },
+ "fact-add-2-2": {
+  "text": "two plus two",
+  "voice": "af_heart",
+  "file": "fact-add-2-2.m4a",
+  "ms": 1043,
+  "spoken": "Two plus two.",
+  "rev": "47a512ed"
+ },
+ "fact-add-2-3": {
+  "text": "two plus three",
+  "voice": "af_heart",
+  "file": "fact-add-2-3.m4a",
+  "ms": 1050,
+  "spoken": "Two plus three.",
+  "rev": "02e20ec5"
+ },
+ "fact-add-2-4": {
+  "text": "two plus four",
+  "voice": "af_heart",
+  "file": "fact-add-2-4.m4a",
+  "ms": 1034,
+  "spoken": "Two plus four.",
+  "rev": "a31288f2"
+ },
+ "fact-add-2-5": {
+  "text": "two plus five",
+  "voice": "af_heart",
+  "file": "fact-add-2-5.m4a",
+  "ms": 1126,
+  "spoken": "Two plus five.",
+  "rev": "8f7de2db"
+ },
+ "fact-add-2-6": {
+  "text": "two plus six",
+  "voice": "af_heart",
+  "file": "fact-add-2-6.m4a",
+  "ms": 1090,
+  "spoken": "Two plus six.",
+  "rev": "c3208396"
+ },
+ "fact-add-2-7": {
+  "text": "two plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-2-7.m4a",
+  "ms": 1063,
+  "spoken": "Two plus seven.",
+  "rev": "53a56217"
+ },
+ "fact-add-2-8": {
+  "text": "two plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-2-8.m4a",
+  "ms": 990,
+  "spoken": "Two plus eight.",
+  "rev": "27a7e18c"
+ },
+ "fact-add-2-9": {
+  "text": "two plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-2-9.m4a",
+  "ms": 1070,
+  "spoken": "Two plus nine.",
+  "rev": "6bedb5a2"
+ },
+ "fact-add-3-0": {
+  "text": "three plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-3-0.m4a",
+  "ms": 1186,
+  "spoken": "Three plus zero.",
+  "rev": "d6332023"
+ },
+ "fact-add-3-1": {
+  "text": "three plus one",
+  "voice": "af_heart",
+  "file": "fact-add-3-1.m4a",
+  "ms": 1125,
+  "spoken": "Three plus one.",
+  "rev": "a60b78a0"
+ },
+ "fact-add-3-10": {
+  "text": "three plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-3-10.m4a",
+  "ms": 1149,
+  "spoken": "Three plus ten.",
+  "rev": "f2709527"
+ },
+ "fact-add-3-2": {
+  "text": "three plus two",
+  "voice": "af_heart",
+  "file": "fact-add-3-2.m4a",
+  "ms": 1138,
+  "spoken": "Three plus two.",
+  "rev": "9e9c6831"
+ },
+ "fact-add-3-3": {
+  "text": "three plus three",
+  "voice": "af_heart",
+  "file": "fact-add-3-3.m4a",
+  "ms": 1177,
+  "spoken": "Three plus three.",
+  "rev": "4b3acf8c"
+ },
+ "fact-add-3-4": {
+  "text": "three plus four",
+  "voice": "af_heart",
+  "file": "fact-add-3-4.m4a",
+  "ms": 1088,
+  "spoken": "Three plus four.",
+  "rev": "4f8ffe4f"
+ },
+ "fact-add-3-5": {
+  "text": "three plus five",
+  "voice": "af_heart",
+  "file": "fact-add-3-5.m4a",
+  "ms": 1176,
+  "spoken": "Three plus five.",
+  "rev": "6976ed28"
+ },
+ "fact-add-3-6": {
+  "text": "three plus six",
+  "voice": "af_heart",
+  "file": "fact-add-3-6.m4a",
+  "ms": 1124,
+  "spoken": "Three plus six.",
+  "rev": "d8cc3b93"
+ },
+ "fact-add-3-7": {
+  "text": "three plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-3-7.m4a",
+  "ms": 1189,
+  "spoken": "Three plus seven.",
+  "rev": "2af5be08"
+ },
+ "fact-add-3-8": {
+  "text": "three plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-3-8.m4a",
+  "ms": 1121,
+  "spoken": "Three plus eight.",
+  "rev": "d9f0ee5c"
+ },
+ "fact-add-3-9": {
+  "text": "three plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-3-9.m4a",
+  "ms": 1121,
+  "spoken": "Three plus nine.",
+  "rev": "51398c27"
+ },
+ "fact-add-4-0": {
+  "text": "four plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-4-0.m4a",
+  "ms": 1179,
+  "spoken": "Four plus zero.",
+  "rev": "6e42e2b8"
+ },
+ "fact-add-4-1": {
+  "text": "four plus one",
+  "voice": "af_heart",
+  "file": "fact-add-4-1.m4a",
+  "ms": 1079,
+  "spoken": "Four plus one.",
+  "rev": "fb324877"
+ },
+ "fact-add-4-10": {
+  "text": "four plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-4-10.m4a",
+  "ms": 1119,
+  "spoken": "Four plus ten.",
+  "rev": "8f532d13"
+ },
+ "fact-add-4-2": {
+  "text": "four plus two",
+  "voice": "af_heart",
+  "file": "fact-add-4-2.m4a",
+  "ms": 1099,
+  "spoken": "Four plus two.",
+  "rev": "e78467f7"
+ },
+ "fact-add-4-3": {
+  "text": "four plus three",
+  "voice": "af_heart",
+  "file": "fact-add-4-3.m4a",
+  "ms": 1155,
+  "spoken": "Four plus three.",
+  "rev": "38dd0d71"
+ },
+ "fact-add-4-4": {
+  "text": "four plus four",
+  "voice": "af_heart",
+  "file": "fact-add-4-4.m4a",
+  "ms": 1112,
+  "spoken": "Four plus four.",
+  "rev": "578660cf"
+ },
+ "fact-add-4-5": {
+  "text": "four plus five",
+  "voice": "af_heart",
+  "file": "fact-add-4-5.m4a",
+  "ms": 1199,
+  "spoken": "Four plus five.",
+  "rev": "1a8ee3a5"
+ },
+ "fact-add-4-6": {
+  "text": "four plus six",
+  "voice": "af_heart",
+  "file": "fact-add-4-6.m4a",
+  "ms": 1171,
+  "spoken": "Four plus six.",
+  "rev": "c64134de"
+ },
+ "fact-add-4-7": {
+  "text": "four plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-4-7.m4a",
+  "ms": 1186,
+  "spoken": "Four plus seven.",
+  "rev": "e91c5969"
+ },
+ "fact-add-4-8": {
+  "text": "four plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-4-8.m4a",
+  "ms": 1092,
+  "spoken": "Four plus eight.",
+  "rev": "f8c3a47f"
+ },
+ "fact-add-4-9": {
+  "text": "four plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-4-9.m4a",
+  "ms": 1142,
+  "spoken": "Four plus nine.",
+  "rev": "924a1aa6"
+ },
+ "fact-add-5-0": {
+  "text": "five plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-5-0.m4a",
+  "ms": 1225,
+  "spoken": "Five plus zero.",
+  "rev": "770e929b"
+ },
+ "fact-add-5-1": {
+  "text": "five plus one",
+  "voice": "af_heart",
+  "file": "fact-add-5-1.m4a",
+  "ms": 1136,
+  "spoken": "Five plus one.",
+  "rev": "0a8ab95f"
+ },
+ "fact-add-5-10": {
+  "text": "five plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-5-10.m4a",
+  "ms": 1194,
+  "spoken": "Five plus ten.",
+  "rev": "3b389e9e"
+ },
+ "fact-add-5-2": {
+  "text": "five plus two",
+  "voice": "af_heart",
+  "file": "fact-add-5-2.m4a",
+  "ms": 1163,
+  "spoken": "Five plus two.",
+  "rev": "c0515f6b"
+ },
+ "fact-add-5-3": {
+  "text": "five plus three",
+  "voice": "af_heart",
+  "file": "fact-add-5-3.m4a",
+  "ms": 1176,
+  "spoken": "Five plus three.",
+  "rev": "86b8db9e"
+ },
+ "fact-add-5-4": {
+  "text": "five plus four",
+  "voice": "af_heart",
+  "file": "fact-add-5-4.m4a",
+  "ms": 1183,
+  "spoken": "Five plus four.",
+  "rev": "b7665ece"
+ },
+ "fact-add-5-5": {
+  "text": "five plus five",
+  "voice": "af_heart",
+  "file": "fact-add-5-5.m4a",
+  "ms": 1301,
+  "spoken": "Five plus five.",
+  "rev": "83851a8e"
+ },
+ "fact-add-5-6": {
+  "text": "five plus six",
+  "voice": "af_heart",
+  "file": "fact-add-5-6.m4a",
+  "ms": 1211,
+  "spoken": "Five plus six.",
+  "rev": "be005b0b"
+ },
+ "fact-add-5-7": {
+  "text": "five plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-5-7.m4a",
+  "ms": 1215,
+  "spoken": "Five plus seven.",
+  "rev": "52d01ee9"
+ },
+ "fact-add-5-8": {
+  "text": "five plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-5-8.m4a",
+  "ms": 1157,
+  "spoken": "Five plus eight.",
+  "rev": "654de389"
+ },
+ "fact-add-5-9": {
+  "text": "five plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-5-9.m4a",
+  "ms": 1200,
+  "spoken": "Five plus nine.",
+  "rev": "805fc91b"
+ },
+ "fact-add-6-0": {
+  "text": "six plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-6-0.m4a",
+  "ms": 1222,
+  "spoken": "Six plus zero.",
+  "rev": "062aaf9b"
+ },
+ "fact-add-6-1": {
+  "text": "six plus one",
+  "voice": "af_heart",
+  "file": "fact-add-6-1.m4a",
+  "ms": 1119,
+  "spoken": "Six plus one.",
+  "rev": "aa08cf5d"
+ },
+ "fact-add-6-10": {
+  "text": "six plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-6-10.m4a",
+  "ms": 1193,
+  "spoken": "Six plus ten.",
+  "rev": "472a2ea5"
+ },
+ "fact-add-6-2": {
+  "text": "six plus two",
+  "voice": "af_heart",
+  "file": "fact-add-6-2.m4a",
+  "ms": 1156,
+  "spoken": "Six plus two.",
+  "rev": "e1ca8fb2"
+ },
+ "fact-add-6-3": {
+  "text": "six plus three",
+  "voice": "af_heart",
+  "file": "fact-add-6-3.m4a",
+  "ms": 1198,
+  "spoken": "Six plus three.",
+  "rev": "2a825e4f"
+ },
+ "fact-add-6-4": {
+  "text": "six plus four",
+  "voice": "af_heart",
+  "file": "fact-add-6-4.m4a",
+  "ms": 1163,
+  "spoken": "Six plus four.",
+  "rev": "e78019fd"
+ },
+ "fact-add-6-5": {
+  "text": "six plus five",
+  "voice": "af_heart",
+  "file": "fact-add-6-5.m4a",
+  "ms": 1251,
+  "spoken": "Six plus five.",
+  "rev": "0b5dab32"
+ },
+ "fact-add-6-6": {
+  "text": "six plus six",
+  "voice": "af_heart",
+  "file": "fact-add-6-6.m4a",
+  "ms": 1200,
+  "spoken": "Six plus six.",
+  "rev": "0e3ebeaf"
+ },
+ "fact-add-6-7": {
+  "text": "six plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-6-7.m4a",
+  "ms": 1218,
+  "spoken": "Six plus seven.",
+  "rev": "b58b37c0"
+ },
+ "fact-add-6-8": {
+  "text": "six plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-6-8.m4a",
+  "ms": 1147,
+  "spoken": "Six plus eight.",
+  "rev": "5a4aa3ee"
+ },
+ "fact-add-6-9": {
+  "text": "six plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-6-9.m4a",
+  "ms": 1151,
+  "spoken": "Six plus nine.",
+  "rev": "dc320eb5"
+ },
+ "fact-add-7-0": {
+  "text": "seven plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-7-0.m4a",
+  "ms": 1275,
+  "spoken": "Seven plus zero.",
+  "rev": "9a45c2b8"
+ },
+ "fact-add-7-1": {
+  "text": "seven plus one",
+  "voice": "af_heart",
+  "file": "fact-add-7-1.m4a",
+  "ms": 1172,
+  "spoken": "Seven plus one.",
+  "rev": "1a364fb5"
+ },
+ "fact-add-7-10": {
+  "text": "seven plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-7-10.m4a",
+  "ms": 1207,
+  "spoken": "Seven plus ten.",
+  "rev": "c116f23f"
+ },
+ "fact-add-7-2": {
+  "text": "seven plus two",
+  "voice": "af_heart",
+  "file": "fact-add-7-2.m4a",
+  "ms": 1209,
+  "spoken": "Seven plus two.",
+  "rev": "5da6d51f"
+ },
+ "fact-add-7-3": {
+  "text": "seven plus three",
+  "voice": "af_heart",
+  "file": "fact-add-7-3.m4a",
+  "ms": 1213,
+  "spoken": "Seven plus three.",
+  "rev": "198619c4"
+ },
+ "fact-add-7-4": {
+  "text": "seven plus four",
+  "voice": "af_heart",
+  "file": "fact-add-7-4.m4a",
+  "ms": 1211,
+  "spoken": "Seven plus four.",
+  "rev": "290fbe9e"
+ },
+ "fact-add-7-5": {
+  "text": "seven plus five",
+  "voice": "af_heart",
+  "file": "fact-add-7-5.m4a",
+  "ms": 1308,
+  "spoken": "Seven plus five.",
+  "rev": "2b71034c"
+ },
+ "fact-add-7-6": {
+  "text": "seven plus six",
+  "voice": "af_heart",
+  "file": "fact-add-7-6.m4a",
+  "ms": 1222,
+  "spoken": "Seven plus six.",
+  "rev": "06ae5cdc"
+ },
+ "fact-add-7-7": {
+  "text": "seven plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-7-7.m4a",
+  "ms": 1255,
+  "spoken": "Seven plus seven.",
+  "rev": "f2f2e326"
+ },
+ "fact-add-7-8": {
+  "text": "seven plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-7-8.m4a",
+  "ms": 1175,
+  "spoken": "Seven plus eight.",
+  "rev": "409f1962"
+ },
+ "fact-add-7-9": {
+  "text": "seven plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-7-9.m4a",
+  "ms": 1225,
+  "spoken": "Seven plus nine.",
+  "rev": "6246c804"
+ },
+ "fact-add-8-0": {
+  "text": "eight plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-8-0.m4a",
+  "ms": 1125,
+  "spoken": "Eight plus zero.",
+  "rev": "42399a16"
+ },
+ "fact-add-8-1": {
+  "text": "eight plus one",
+  "voice": "af_heart",
+  "file": "fact-add-8-1.m4a",
+  "ms": 1048,
+  "spoken": "Eight plus one.",
+  "rev": "8093168b"
+ },
+ "fact-add-8-10": {
+  "text": "eight plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-8-10.m4a",
+  "ms": 1097,
+  "spoken": "Eight plus ten.",
+  "rev": "febb05ce"
+ },
+ "fact-add-8-2": {
+  "text": "eight plus two",
+  "voice": "af_heart",
+  "file": "fact-add-8-2.m4a",
+  "ms": 1092,
+  "spoken": "Eight plus two.",
+  "rev": "10ae80ac"
+ },
+ "fact-add-8-3": {
+  "text": "eight plus three",
+  "voice": "af_heart",
+  "file": "fact-add-8-3.m4a",
+  "ms": 1136,
+  "spoken": "Eight plus three.",
+  "rev": "146505d9"
+ },
+ "fact-add-8-4": {
+  "text": "eight plus four",
+  "voice": "af_heart",
+  "file": "fact-add-8-4.m4a",
+  "ms": 1087,
+  "spoken": "Eight plus four.",
+  "rev": "30e19d5d"
+ },
+ "fact-add-8-5": {
+  "text": "eight plus five",
+  "voice": "af_heart",
+  "file": "fact-add-8-5.m4a",
+  "ms": 1182,
+  "spoken": "Eight plus five.",
+  "rev": "2d5e0baa"
+ },
+ "fact-add-8-6": {
+  "text": "eight plus six",
+  "voice": "af_heart",
+  "file": "fact-add-8-6.m4a",
+  "ms": 1139,
+  "spoken": "Eight plus six.",
+  "rev": "53776c11"
+ },
+ "fact-add-8-7": {
+  "text": "eight plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-8-7.m4a",
+  "ms": 1141,
+  "spoken": "Eight plus seven.",
+  "rev": "219821ac"
+ },
+ "fact-add-8-8": {
+  "text": "eight plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-8-8.m4a",
+  "ms": 1068,
+  "spoken": "Eight plus eight.",
+  "rev": "9f713cc8"
+ },
+ "fact-add-8-9": {
+  "text": "eight plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-8-9.m4a",
+  "ms": 1091,
+  "spoken": "Eight plus nine.",
+  "rev": "f02a3a5f"
+ },
+ "fact-add-9-0": {
+  "text": "nine plus zero",
+  "voice": "af_heart",
+  "file": "fact-add-9-0.m4a",
+  "ms": 1202,
+  "spoken": "Nine plus zero.",
+  "rev": "45e6514c"
+ },
+ "fact-add-9-1": {
+  "text": "nine plus one",
+  "voice": "af_heart",
+  "file": "fact-add-9-1.m4a",
+  "ms": 1133,
+  "spoken": "Nine plus one.",
+  "rev": "6e1b9532"
+ },
+ "fact-add-9-10": {
+  "text": "nine plus ten",
+  "voice": "af_heart",
+  "file": "fact-add-9-10.m4a",
+  "ms": 1172,
+  "spoken": "Nine plus ten.",
+  "rev": "bbcd8b8f"
+ },
+ "fact-add-9-2": {
+  "text": "nine plus two",
+  "voice": "af_heart",
+  "file": "fact-add-9-2.m4a",
+  "ms": 1178,
+  "spoken": "Nine plus two.",
+  "rev": "c90635a3"
+ },
+ "fact-add-9-3": {
+  "text": "nine plus three",
+  "voice": "af_heart",
+  "file": "fact-add-9-3.m4a",
+  "ms": 1191,
+  "spoken": "Nine plus three.",
+  "rev": "d6260277"
+ },
+ "fact-add-9-4": {
+  "text": "nine plus four",
+  "voice": "af_heart",
+  "file": "fact-add-9-4.m4a",
+  "ms": 1181,
+  "spoken": "Nine plus four.",
+  "rev": "258d36b9"
+ },
+ "fact-add-9-5": {
+  "text": "nine plus five",
+  "voice": "af_heart",
+  "file": "fact-add-9-5.m4a",
+  "ms": 1278,
+  "spoken": "Nine plus five.",
+  "rev": "97cf0c56"
+ },
+ "fact-add-9-6": {
+  "text": "nine plus six",
+  "voice": "af_heart",
+  "file": "fact-add-9-6.m4a",
+  "ms": 1205,
+  "spoken": "Nine plus six.",
+  "rev": "265ff071"
+ },
+ "fact-add-9-7": {
+  "text": "nine plus seven",
+  "voice": "af_heart",
+  "file": "fact-add-9-7.m4a",
+  "ms": 1216,
+  "spoken": "Nine plus seven.",
+  "rev": "68544652"
+ },
+ "fact-add-9-8": {
+  "text": "nine plus eight",
+  "voice": "af_heart",
+  "file": "fact-add-9-8.m4a",
+  "ms": 1131,
+  "spoken": "Nine plus eight.",
+  "rev": "849dce99"
+ },
+ "fact-add-9-9": {
+  "text": "nine plus nine",
+  "voice": "af_heart",
+  "file": "fact-add-9-9.m4a",
+  "ms": 1184,
+  "spoken": "Nine plus nine.",
+  "rev": "a5f075ce"
+ },
+ "fact-dots-1-dice": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-1-dice.m4a",
+  "ms": 1061,
+  "rev": "9d794a68"
+ },
+ "fact-dots-1-scattered": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-1-scattered.m4a",
+  "ms": 1061,
+  "rev": "f787dd22"
+ },
+ "fact-dots-2-dice": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-2-dice.m4a",
+  "ms": 1061,
+  "rev": "8dd6e702"
+ },
+ "fact-dots-2-scattered": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-2-scattered.m4a",
+  "ms": 1061,
+  "rev": "74346ef5"
+ },
+ "fact-dots-3-dice": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-3-dice.m4a",
+  "ms": 1061,
+  "rev": "58facbde"
+ },
+ "fact-dots-3-scattered": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-3-scattered.m4a",
+  "ms": 1061,
+  "rev": "f65ac87f"
+ },
+ "fact-dots-4-dice": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-4-dice.m4a",
+  "ms": 1061,
+  "rev": "7b95f923"
+ },
+ "fact-dots-4-scattered": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-4-scattered.m4a",
+  "ms": 1061,
+  "rev": "acb43beb"
+ },
+ "fact-dots-5-dice": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-5-dice.m4a",
+  "ms": 1061,
+  "rev": "5f607e46"
+ },
+ "fact-dots-5-scattered": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-dots-5-scattered.m4a",
+  "ms": 1061,
+  "rev": "e4de3f58"
+ },
+ "fact-frame-0": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-0.m4a",
+  "ms": 1061,
+  "rev": "40fdeba7"
+ },
+ "fact-frame-1": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-1.m4a",
+  "ms": 1061,
+  "rev": "b2441573"
+ },
+ "fact-frame-10": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-10.m4a",
+  "ms": 1061,
+  "rev": "af97ca29"
+ },
+ "fact-frame-2": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-2.m4a",
+  "ms": 1061,
+  "rev": "817ae465"
+ },
+ "fact-frame-3": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-3.m4a",
+  "ms": 1061,
+  "rev": "e99107de"
+ },
+ "fact-frame-4": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-4.m4a",
+  "ms": 1061,
+  "rev": "88b06d6c"
+ },
+ "fact-frame-5": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-5.m4a",
+  "ms": 1061,
+  "rev": "97319785"
+ },
+ "fact-frame-6": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-6.m4a",
+  "ms": 1061,
+  "rev": "e169645e"
+ },
+ "fact-frame-7": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-7.m4a",
+  "ms": 1061,
+  "rev": "e579ce89"
+ },
+ "fact-frame-8": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-8.m4a",
+  "ms": 1061,
+  "rev": "23d24425"
+ },
+ "fact-frame-9": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "fact-frame-9.m4a",
+  "ms": 1061,
+  "rev": "bdb709e1"
+ },
+ "fact-miss-0-0": {
+  "text": "zero plus what makes zero",
+  "voice": "af_heart",
+  "file": "fact-miss-0-0.m4a",
+  "ms": 1765,
+  "spoken": "Zero plus what makes zero.",
+  "rev": "3bd39e88"
+ },
+ "fact-miss-0-1": {
+  "text": "zero plus what makes one",
+  "voice": "af_heart",
+  "file": "fact-miss-0-1.m4a",
+  "ms": 1677,
+  "spoken": "Zero plus what makes one.",
+  "rev": "5b6d825c"
+ },
+ "fact-miss-0-10": {
+  "text": "zero plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-0-10.m4a",
+  "ms": 1709,
+  "spoken": "Zero plus what makes ten.",
+  "rev": "e78ec739"
+ },
+ "fact-miss-0-2": {
+  "text": "zero plus what makes two",
+  "voice": "af_heart",
+  "file": "fact-miss-0-2.m4a",
+  "ms": 1679,
+  "spoken": "Zero plus what makes two.",
+  "rev": "3f5841dc"
+ },
+ "fact-miss-0-3": {
+  "text": "zero plus what makes three",
+  "voice": "af_heart",
+  "file": "fact-miss-0-3.m4a",
+  "ms": 1684,
+  "spoken": "Zero plus what makes three.",
+  "rev": "dc721481"
+ },
+ "fact-miss-0-4": {
+  "text": "zero plus what makes four",
+  "voice": "af_heart",
+  "file": "fact-miss-0-4.m4a",
+  "ms": 1680,
+  "spoken": "Zero plus what makes four.",
+  "rev": "f75fd983"
+ },
+ "fact-miss-0-5": {
+  "text": "zero plus what makes five",
+  "voice": "af_heart",
+  "file": "fact-miss-0-5.m4a",
+  "ms": 1766,
+  "spoken": "Zero plus what makes five.",
+  "rev": "04857375"
+ },
+ "fact-miss-0-6": {
+  "text": "zero plus what makes six",
+  "voice": "af_heart",
+  "file": "fact-miss-0-6.m4a",
+  "ms": 1736,
+  "spoken": "Zero plus what makes six.",
+  "rev": "b309560f"
+ },
+ "fact-miss-0-7": {
+  "text": "zero plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-0-7.m4a",
+  "ms": 1760,
+  "spoken": "Zero plus what makes seven.",
+  "rev": "fd842b97"
+ },
+ "fact-miss-0-8": {
+  "text": "zero plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-0-8.m4a",
+  "ms": 1673,
+  "spoken": "Zero plus what makes eight.",
+  "rev": "04dce47a"
+ },
+ "fact-miss-0-9": {
+  "text": "zero plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-0-9.m4a",
+  "ms": 1742,
+  "spoken": "Zero plus what makes nine.",
+  "rev": "23d4810e"
+ },
+ "fact-miss-1-1": {
+  "text": "one plus what makes one",
+  "voice": "af_heart",
+  "file": "fact-miss-1-1.m4a",
+  "ms": 1534,
+  "spoken": "One plus what makes one.",
+  "rev": "55606f5c"
+ },
+ "fact-miss-1-10": {
+  "text": "one plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-1-10.m4a",
+  "ms": 1495,
+  "spoken": "One plus what makes ten.",
+  "rev": "427c0b71"
+ },
+ "fact-miss-1-2": {
+  "text": "one plus what makes two",
+  "voice": "af_heart",
+  "file": "fact-miss-1-2.m4a",
+  "ms": 1491,
+  "spoken": "One plus what makes two.",
+  "rev": "080a4b57"
+ },
+ "fact-miss-1-3": {
+  "text": "one plus what makes three",
+  "voice": "af_heart",
+  "file": "fact-miss-1-3.m4a",
+  "ms": 1490,
+  "spoken": "One plus what makes three.",
+  "rev": "cd1c9954"
+ },
+ "fact-miss-1-4": {
+  "text": "one plus what makes four",
+  "voice": "af_heart",
+  "file": "fact-miss-1-4.m4a",
+  "ms": 1468,
+  "spoken": "One plus what makes four.",
+  "rev": "d01b1b57"
+ },
+ "fact-miss-1-5": {
+  "text": "one plus what makes five",
+  "voice": "af_heart",
+  "file": "fact-miss-1-5.m4a",
+  "ms": 1578,
+  "spoken": "One plus what makes five.",
+  "rev": "e4e9feea"
+ },
+ "fact-miss-1-6": {
+  "text": "one plus what makes six",
+  "voice": "af_heart",
+  "file": "fact-miss-1-6.m4a",
+  "ms": 1502,
+  "spoken": "One plus what makes six.",
+  "rev": "894ad915"
+ },
+ "fact-miss-1-7": {
+  "text": "one plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-1-7.m4a",
+  "ms": 1563,
+  "spoken": "One plus what makes seven.",
+  "rev": "6b83226c"
+ },
+ "fact-miss-1-8": {
+  "text": "one plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-1-8.m4a",
+  "ms": 1509,
+  "spoken": "One plus what makes eight.",
+  "rev": "ef79df08"
+ },
+ "fact-miss-1-9": {
+  "text": "one plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-1-9.m4a",
+  "ms": 1547,
+  "spoken": "One plus what makes nine.",
+  "rev": "4a843ed9"
+ },
+ "fact-miss-10-10": {
+  "text": "ten plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-10-10.m4a",
+  "ms": 1483,
+  "spoken": "Ten plus what makes ten.",
+  "rev": "c3313d0e"
+ },
+ "fact-miss-2-10": {
+  "text": "two plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-2-10.m4a",
+  "ms": 1487,
+  "spoken": "Two plus what makes ten.",
+  "rev": "49a2340a"
+ },
+ "fact-miss-2-2": {
+  "text": "two plus what makes two",
+  "voice": "af_heart",
+  "file": "fact-miss-2-2.m4a",
+  "ms": 1444,
+  "spoken": "Two plus what makes two.",
+  "rev": "a2bc01dd"
+ },
+ "fact-miss-2-3": {
+  "text": "two plus what makes three",
+  "voice": "af_heart",
+  "file": "fact-miss-2-3.m4a",
+  "ms": 1444,
+  "spoken": "Two plus what makes three.",
+  "rev": "80788bec"
+ },
+ "fact-miss-2-4": {
+  "text": "two plus what makes four",
+  "voice": "af_heart",
+  "file": "fact-miss-2-4.m4a",
+  "ms": 1449,
+  "spoken": "Two plus what makes four.",
+  "rev": "dcd4984b"
+ },
+ "fact-miss-2-5": {
+  "text": "two plus what makes five",
+  "voice": "af_heart",
+  "file": "fact-miss-2-5.m4a",
+  "ms": 1566,
+  "spoken": "Two plus what makes five.",
+  "rev": "32e9f9e5"
+ },
+ "fact-miss-2-6": {
+  "text": "two plus what makes six",
+  "voice": "af_heart",
+  "file": "fact-miss-2-6.m4a",
+  "ms": 1457,
+  "spoken": "Two plus what makes six.",
+  "rev": "66eb0172"
+ },
+ "fact-miss-2-7": {
+  "text": "two plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-2-7.m4a",
+  "ms": 1513,
+  "spoken": "Two plus what makes seven.",
+  "rev": "be4e6aa3"
+ },
+ "fact-miss-2-8": {
+  "text": "two plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-2-8.m4a",
+  "ms": 1490,
+  "spoken": "Two plus what makes eight.",
+  "rev": "09ace6d2"
+ },
+ "fact-miss-2-9": {
+  "text": "two plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-2-9.m4a",
+  "ms": 1508,
+  "spoken": "Two plus what makes nine.",
+  "rev": "efa7731f"
+ },
+ "fact-miss-3-10": {
+  "text": "three plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-3-10.m4a",
+  "ms": 1571,
+  "spoken": "Three plus what makes ten.",
+  "rev": "306c7e5d"
+ },
+ "fact-miss-3-3": {
+  "text": "three plus what makes three",
+  "voice": "af_heart",
+  "file": "fact-miss-3-3.m4a",
+  "ms": 1586,
+  "spoken": "Three plus what makes three.",
+  "rev": "81848152"
+ },
+ "fact-miss-3-4": {
+  "text": "three plus what makes four",
+  "voice": "af_heart",
+  "file": "fact-miss-3-4.m4a",
+  "ms": 1588,
+  "spoken": "Three plus what makes four.",
+  "rev": "641159c4"
+ },
+ "fact-miss-3-5": {
+  "text": "three plus what makes five",
+  "voice": "af_heart",
+  "file": "fact-miss-3-5.m4a",
+  "ms": 1621,
+  "spoken": "Three plus what makes five.",
+  "rev": "4c18c338"
+ },
+ "fact-miss-3-6": {
+  "text": "three plus what makes six",
+  "voice": "af_heart",
+  "file": "fact-miss-3-6.m4a",
+  "ms": 1602,
+  "spoken": "Three plus what makes six.",
+  "rev": "e416af81"
+ },
+ "fact-miss-3-7": {
+  "text": "three plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-3-7.m4a",
+  "ms": 1635,
+  "spoken": "Three plus what makes seven.",
+  "rev": "f2dea759"
+ },
+ "fact-miss-3-8": {
+  "text": "three plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-3-8.m4a",
+  "ms": 1599,
+  "spoken": "Three plus what makes eight.",
+  "rev": "5a6e7044"
+ },
+ "fact-miss-3-9": {
+  "text": "three plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-3-9.m4a",
+  "ms": 1621,
+  "spoken": "Three plus what makes nine.",
+  "rev": "74d3f701"
+ },
+ "fact-miss-4-10": {
+  "text": "four plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-4-10.m4a",
+  "ms": 1572,
+  "spoken": "Four plus what makes ten.",
+  "rev": "2b61b97c"
+ },
+ "fact-miss-4-4": {
+  "text": "four plus what makes four",
+  "voice": "af_heart",
+  "file": "fact-miss-4-4.m4a",
+  "ms": 1567,
+  "spoken": "Four plus what makes four.",
+  "rev": "46ba8884"
+ },
+ "fact-miss-4-5": {
+  "text": "four plus what makes five",
+  "voice": "af_heart",
+  "file": "fact-miss-4-5.m4a",
+  "ms": 1621,
+  "spoken": "Four plus what makes five.",
+  "rev": "bcb09dc5"
+ },
+ "fact-miss-4-6": {
+  "text": "four plus what makes six",
+  "voice": "af_heart",
+  "file": "fact-miss-4-6.m4a",
+  "ms": 1552,
+  "spoken": "Four plus what makes six.",
+  "rev": "e2abb2ad"
+ },
+ "fact-miss-4-7": {
+  "text": "four plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-4-7.m4a",
+  "ms": 1636,
+  "spoken": "Four plus what makes seven.",
+  "rev": "3e40c349"
+ },
+ "fact-miss-4-8": {
+  "text": "four plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-4-8.m4a",
+  "ms": 1593,
+  "spoken": "Four plus what makes eight.",
+  "rev": "92a69a1c"
+ },
+ "fact-miss-4-9": {
+  "text": "four plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-4-9.m4a",
+  "ms": 1622,
+  "spoken": "Four plus what makes nine.",
+  "rev": "b164f606"
+ },
+ "fact-miss-5-10": {
+  "text": "five plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-5-10.m4a",
+  "ms": 1569,
+  "spoken": "Five plus what makes ten.",
+  "rev": "d0914fd3"
+ },
+ "fact-miss-5-5": {
+  "text": "five plus what makes five",
+  "voice": "af_heart",
+  "file": "fact-miss-5-5.m4a",
+  "ms": 1643,
+  "spoken": "Five plus what makes five.",
+  "rev": "d6dc8001"
+ },
+ "fact-miss-5-6": {
+  "text": "five plus what makes six",
+  "voice": "af_heart",
+  "file": "fact-miss-5-6.m4a",
+  "ms": 1602,
+  "spoken": "Five plus what makes six.",
+  "rev": "32014466"
+ },
+ "fact-miss-5-7": {
+  "text": "five plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-5-7.m4a",
+  "ms": 1672,
+  "spoken": "Five plus what makes seven.",
+  "rev": "f63bf0f4"
+ },
+ "fact-miss-5-8": {
+  "text": "five plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-5-8.m4a",
+  "ms": 1597,
+  "spoken": "Five plus what makes eight.",
+  "rev": "cba82d65"
+ },
+ "fact-miss-5-9": {
+  "text": "five plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-5-9.m4a",
+  "ms": 1617,
+  "spoken": "Five plus what makes nine.",
+  "rev": "571e85da"
+ },
+ "fact-miss-6-10": {
+  "text": "six plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-6-10.m4a",
+  "ms": 1560,
+  "spoken": "Six plus what makes ten.",
+  "rev": "34795043"
+ },
+ "fact-miss-6-6": {
+  "text": "six plus what makes six",
+  "voice": "af_heart",
+  "file": "fact-miss-6-6.m4a",
+  "ms": 1589,
+  "spoken": "Six plus what makes six.",
+  "rev": "e5f96919"
+ },
+ "fact-miss-6-7": {
+  "text": "six plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-6-7.m4a",
+  "ms": 1663,
+  "spoken": "Six plus what makes seven.",
+  "rev": "9c776556"
+ },
+ "fact-miss-6-8": {
+  "text": "six plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-6-8.m4a",
+  "ms": 1595,
+  "spoken": "Six plus what makes eight.",
+  "rev": "5636c282"
+ },
+ "fact-miss-6-9": {
+  "text": "six plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-6-9.m4a",
+  "ms": 1659,
+  "spoken": "Six plus what makes nine.",
+  "rev": "8817e3af"
+ },
+ "fact-miss-7-10": {
+  "text": "seven plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-7-10.m4a",
+  "ms": 1710,
+  "spoken": "Seven plus what makes ten.",
+  "rev": "65fbf95f"
+ },
+ "fact-miss-7-7": {
+  "text": "seven plus what makes seven",
+  "voice": "af_heart",
+  "file": "fact-miss-7-7.m4a",
+  "ms": 1744,
+  "spoken": "Seven plus what makes seven.",
+  "rev": "40c537b1"
+ },
+ "fact-miss-7-8": {
+  "text": "seven plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-7-8.m4a",
+  "ms": 1745,
+  "spoken": "Seven plus what makes eight.",
+  "rev": "48c81dbb"
+ },
+ "fact-miss-7-9": {
+  "text": "seven plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-7-9.m4a",
+  "ms": 1764,
+  "spoken": "Seven plus what makes nine.",
+  "rev": "e715073c"
+ },
+ "fact-miss-8-10": {
+  "text": "eight plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-8-10.m4a",
+  "ms": 1440,
+  "spoken": "Eight plus what makes ten.",
+  "rev": "a31080a2"
+ },
+ "fact-miss-8-8": {
+  "text": "eight plus what makes eight",
+  "voice": "af_heart",
+  "file": "fact-miss-8-8.m4a",
+  "ms": 1513,
+  "spoken": "Eight plus what makes eight.",
+  "rev": "9bfb09f4"
+ },
+ "fact-miss-8-9": {
+  "text": "eight plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-8-9.m4a",
+  "ms": 1513,
+  "spoken": "Eight plus what makes nine.",
+  "rev": "afaf8da1"
+ },
+ "fact-miss-9-10": {
+  "text": "nine plus what makes ten",
+  "voice": "af_heart",
+  "file": "fact-miss-9-10.m4a",
+  "ms": 1545,
+  "spoken": "Nine plus what makes ten.",
+  "rev": "09a7e7f3"
+ },
+ "fact-miss-9-9": {
+  "text": "nine plus what makes nine",
+  "voice": "af_heart",
+  "file": "fact-miss-9-9.m4a",
+  "ms": 1562,
+  "spoken": "Nine plus what makes nine.",
+  "rev": "3e02b748"
+ },
+ "fact-sub-0-0": {
+  "text": "zero take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-0-0.m4a",
+  "ms": 1499,
+  "spoken": "Zero take away zero.",
+  "rev": "b7265bd4"
+ },
+ "fact-sub-1-0": {
+  "text": "one take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-1-0.m4a",
+  "ms": 1349,
+  "spoken": "One take away zero.",
+  "rev": "608f538b"
+ },
+ "fact-sub-1-1": {
+  "text": "one take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-1-1.m4a",
+  "ms": 1326,
+  "spoken": "One take away one.",
+  "rev": "d538098e"
+ },
+ "fact-sub-10-0": {
+  "text": "ten take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-10-0.m4a",
+  "ms": 1435,
+  "spoken": "Ten take away zero.",
+  "rev": "0f0f0024"
+ },
+ "fact-sub-10-1": {
+  "text": "ten take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-10-1.m4a",
+  "ms": 1363,
+  "spoken": "Ten take away one.",
+  "rev": "856c9ce0"
+ },
+ "fact-sub-10-10": {
+  "text": "ten take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-10-10.m4a",
+  "ms": 1323,
+  "spoken": "Ten take away ten.",
+  "rev": "b6304aa8"
+ },
+ "fact-sub-10-2": {
+  "text": "ten take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-10-2.m4a",
+  "ms": 1317,
+  "spoken": "Ten take away two.",
+  "rev": "1dc8b81d"
+ },
+ "fact-sub-10-3": {
+  "text": "ten take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-10-3.m4a",
+  "ms": 1395,
+  "spoken": "Ten take away three.",
+  "rev": "c62a0652"
+ },
+ "fact-sub-10-4": {
+  "text": "ten take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-10-4.m4a",
+  "ms": 1382,
+  "spoken": "Ten take away four.",
+  "rev": "e2f9972f"
+ },
+ "fact-sub-10-5": {
+  "text": "ten take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-10-5.m4a",
+  "ms": 1459,
+  "spoken": "Ten take away five.",
+  "rev": "390b6e61"
+ },
+ "fact-sub-10-6": {
+  "text": "ten take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-10-6.m4a",
+  "ms": 1339,
+  "spoken": "Ten take away six.",
+  "rev": "eda4c7fe"
+ },
+ "fact-sub-10-7": {
+  "text": "ten take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-10-7.m4a",
+  "ms": 1474,
+  "spoken": "Ten take away seven.",
+  "rev": "1878ed16"
+ },
+ "fact-sub-10-8": {
+  "text": "ten take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-10-8.m4a",
+  "ms": 1282,
+  "spoken": "Ten take away eight.",
+  "rev": "b416a809"
+ },
+ "fact-sub-10-9": {
+  "text": "ten take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-10-9.m4a",
+  "ms": 1386,
+  "spoken": "Ten take away nine.",
+  "rev": "05ce9e82"
+ },
+ "fact-sub-11-1": {
+  "text": "eleven take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-11-1.m4a",
+  "ms": 1412,
+  "spoken": "Eleven take away one.",
+  "rev": "b231d0b1"
+ },
+ "fact-sub-11-10": {
+  "text": "eleven take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-11-10.m4a",
+  "ms": 1488,
+  "spoken": "Eleven take away ten.",
+  "rev": "543efbc0"
+ },
+ "fact-sub-11-2": {
+  "text": "eleven take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-11-2.m4a",
+  "ms": 1449,
+  "spoken": "Eleven take away two.",
+  "rev": "e5490889"
+ },
+ "fact-sub-11-3": {
+  "text": "eleven take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-11-3.m4a",
+  "ms": 1495,
+  "spoken": "Eleven take away three.",
+  "rev": "57697e0e"
+ },
+ "fact-sub-11-4": {
+  "text": "eleven take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-11-4.m4a",
+  "ms": 1472,
+  "spoken": "Eleven take away four.",
+  "rev": "bb0f4e21"
+ },
+ "fact-sub-11-5": {
+  "text": "eleven take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-11-5.m4a",
+  "ms": 1580,
+  "spoken": "Eleven take away five.",
+  "rev": "c6fedab8"
+ },
+ "fact-sub-11-6": {
+  "text": "eleven take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-11-6.m4a",
+  "ms": 1493,
+  "spoken": "Eleven take away six.",
+  "rev": "2b6fbdc4"
+ },
+ "fact-sub-11-7": {
+  "text": "eleven take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-11-7.m4a",
+  "ms": 1541,
+  "spoken": "Eleven take away seven.",
+  "rev": "695eca7e"
+ },
+ "fact-sub-11-8": {
+  "text": "eleven take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-11-8.m4a",
+  "ms": 1446,
+  "spoken": "Eleven take away eight.",
+  "rev": "f1b2d06d"
+ },
+ "fact-sub-11-9": {
+  "text": "eleven take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-11-9.m4a",
+  "ms": 1484,
+  "spoken": "Eleven take away nine.",
+  "rev": "4256a21c"
+ },
+ "fact-sub-12-10": {
+  "text": "twelve take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-12-10.m4a",
+  "ms": 1433,
+  "spoken": "Twelve take away ten.",
+  "rev": "780639b0"
+ },
+ "fact-sub-12-2": {
+  "text": "twelve take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-12-2.m4a",
+  "ms": 1359,
+  "spoken": "Twelve take away two.",
+  "rev": "a0619510"
+ },
+ "fact-sub-12-3": {
+  "text": "twelve take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-12-3.m4a",
+  "ms": 1414,
+  "spoken": "Twelve take away three.",
+  "rev": "8b9b3988"
+ },
+ "fact-sub-12-4": {
+  "text": "twelve take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-12-4.m4a",
+  "ms": 1376,
+  "spoken": "Twelve take away four.",
+  "rev": "3d60eaf4"
+ },
+ "fact-sub-12-5": {
+  "text": "twelve take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-12-5.m4a",
+  "ms": 1477,
+  "spoken": "Twelve take away five.",
+  "rev": "3d84d627"
+ },
+ "fact-sub-12-6": {
+  "text": "twelve take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-12-6.m4a",
+  "ms": 1451,
+  "spoken": "Twelve take away six.",
+  "rev": "2fab98d3"
+ },
+ "fact-sub-12-7": {
+  "text": "twelve take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-12-7.m4a",
+  "ms": 1425,
+  "spoken": "Twelve take away seven.",
+  "rev": "22155b82"
+ },
+ "fact-sub-12-8": {
+  "text": "twelve take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-12-8.m4a",
+  "ms": 1361,
+  "spoken": "Twelve take away eight.",
+  "rev": "d27b086c"
+ },
+ "fact-sub-12-9": {
+  "text": "twelve take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-12-9.m4a",
+  "ms": 1401,
+  "spoken": "Twelve take away nine.",
+  "rev": "383c9f7b"
+ },
+ "fact-sub-13-10": {
+  "text": "thirteen take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-13-10.m4a",
+  "ms": 1554,
+  "spoken": "Thirteen take away ten.",
+  "rev": "f26da687"
+ },
+ "fact-sub-13-3": {
+  "text": "thirteen take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-13-3.m4a",
+  "ms": 1521,
+  "spoken": "Thirteen take away three.",
+  "rev": "4d140047"
+ },
+ "fact-sub-13-4": {
+  "text": "thirteen take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-13-4.m4a",
+  "ms": 1553,
+  "spoken": "Thirteen take away four.",
+  "rev": "0bb911ac"
+ },
+ "fact-sub-13-5": {
+  "text": "thirteen take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-13-5.m4a",
+  "ms": 1641,
+  "spoken": "Thirteen take away five.",
+  "rev": "60ba2c96"
+ },
+ "fact-sub-13-6": {
+  "text": "thirteen take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-13-6.m4a",
+  "ms": 1540,
+  "spoken": "Thirteen take away six.",
+  "rev": "250efe30"
+ },
+ "fact-sub-13-7": {
+  "text": "thirteen take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-13-7.m4a",
+  "ms": 1582,
+  "spoken": "Thirteen take away seven.",
+  "rev": "710638ae"
+ },
+ "fact-sub-13-8": {
+  "text": "thirteen take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-13-8.m4a",
+  "ms": 1503,
+  "spoken": "Thirteen take away eight.",
+  "rev": "067bf9ec"
+ },
+ "fact-sub-13-9": {
+  "text": "thirteen take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-13-9.m4a",
+  "ms": 1565,
+  "spoken": "Thirteen take away nine.",
+  "rev": "4e69fcda"
+ },
+ "fact-sub-14-10": {
+  "text": "fourteen take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-14-10.m4a",
+  "ms": 1616,
+  "spoken": "Fourteen take away ten.",
+  "rev": "d65538b0"
+ },
+ "fact-sub-14-4": {
+  "text": "fourteen take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-14-4.m4a",
+  "ms": 1633,
+  "spoken": "Fourteen take away four.",
+  "rev": "dcaae54b"
+ },
+ "fact-sub-14-5": {
+  "text": "fourteen take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-14-5.m4a",
+  "ms": 1713,
+  "spoken": "Fourteen take away five.",
+  "rev": "7594ef3b"
+ },
+ "fact-sub-14-6": {
+  "text": "fourteen take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-14-6.m4a",
+  "ms": 1671,
+  "spoken": "Fourteen take away six.",
+  "rev": "47c34c5e"
+ },
+ "fact-sub-14-7": {
+  "text": "fourteen take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-14-7.m4a",
+  "ms": 1691,
+  "spoken": "Fourteen take away seven.",
+  "rev": "3afb47bf"
+ },
+ "fact-sub-14-8": {
+  "text": "fourteen take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-14-8.m4a",
+  "ms": 1564,
+  "spoken": "Fourteen take away eight.",
+  "rev": "e8096053"
+ },
+ "fact-sub-14-9": {
+  "text": "fourteen take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-14-9.m4a",
+  "ms": 1619,
+  "spoken": "Fourteen take away nine.",
+  "rev": "aa1bdf0c"
+ },
+ "fact-sub-15-10": {
+  "text": "fifteen take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-15-10.m4a",
+  "ms": 1561,
+  "spoken": "Fifteen take away ten.",
+  "rev": "bf98fc4c"
+ },
+ "fact-sub-15-5": {
+  "text": "fifteen take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-15-5.m4a",
+  "ms": 1641,
+  "spoken": "Fifteen take away five.",
+  "rev": "baa3e8e3"
+ },
+ "fact-sub-15-6": {
+  "text": "fifteen take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-15-6.m4a",
+  "ms": 1622,
+  "spoken": "Fifteen take away six.",
+  "rev": "dfbc5b48"
+ },
+ "fact-sub-15-7": {
+  "text": "fifteen take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-15-7.m4a",
+  "ms": 1615,
+  "spoken": "Fifteen take away seven.",
+  "rev": "e5ed4b3e"
+ },
+ "fact-sub-15-8": {
+  "text": "fifteen take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-15-8.m4a",
+  "ms": 1511,
+  "spoken": "Fifteen take away eight.",
+  "rev": "a165e0dc"
+ },
+ "fact-sub-15-9": {
+  "text": "fifteen take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-15-9.m4a",
+  "ms": 1557,
+  "spoken": "Fifteen take away nine.",
+  "rev": "46ba4683"
+ },
+ "fact-sub-16-10": {
+  "text": "sixteen take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-16-10.m4a",
+  "ms": 1595,
+  "spoken": "Sixteen take away ten.",
+  "rev": "2db30551"
+ },
+ "fact-sub-16-6": {
+  "text": "sixteen take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-16-6.m4a",
+  "ms": 1595,
+  "spoken": "Sixteen take away six.",
+  "rev": "49af9d39"
+ },
+ "fact-sub-16-7": {
+  "text": "sixteen take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-16-7.m4a",
+  "ms": 1579,
+  "spoken": "Sixteen take away seven.",
+  "rev": "beb0c999"
+ },
+ "fact-sub-16-8": {
+  "text": "sixteen take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-16-8.m4a",
+  "ms": 1496,
+  "spoken": "Sixteen take away eight.",
+  "rev": "946d6736"
+ },
+ "fact-sub-16-9": {
+  "text": "sixteen take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-16-9.m4a",
+  "ms": 1554,
+  "spoken": "Sixteen take away nine.",
+  "rev": "d55e7fb2"
+ },
+ "fact-sub-17-10": {
+  "text": "seventeen take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-17-10.m4a",
+  "ms": 1711,
+  "spoken": "Seventeen take away ten.",
+  "rev": "31ee8e66"
+ },
+ "fact-sub-17-7": {
+  "text": "seventeen take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-17-7.m4a",
+  "ms": 1764,
+  "spoken": "Seventeen take away seven.",
+  "rev": "b6e6e66c"
+ },
+ "fact-sub-17-8": {
+  "text": "seventeen take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-17-8.m4a",
+  "ms": 1649,
+  "spoken": "Seventeen take away eight.",
+  "rev": "0e5e1490"
+ },
+ "fact-sub-17-9": {
+  "text": "seventeen take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-17-9.m4a",
+  "ms": 1689,
+  "spoken": "Seventeen take away nine.",
+  "rev": "b05dac0a"
+ },
+ "fact-sub-18-10": {
+  "text": "eighteen take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-18-10.m4a",
+  "ms": 1541,
+  "spoken": "Eighteen take away ten.",
+  "rev": "aebf2e66"
+ },
+ "fact-sub-18-8": {
+  "text": "eighteen take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-18-8.m4a",
+  "ms": 1473,
+  "spoken": "Eighteen take away eight.",
+  "rev": "83ea7a48"
+ },
+ "fact-sub-18-9": {
+  "text": "eighteen take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-18-9.m4a",
+  "ms": 1509,
+  "spoken": "Eighteen take away nine.",
+  "rev": "e1dd4c1e"
+ },
+ "fact-sub-19-10": {
+  "text": "nineteen take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-19-10.m4a",
+  "ms": 1574,
+  "spoken": "Nineteen take away ten.",
+  "rev": "6e7f3247"
+ },
+ "fact-sub-19-9": {
+  "text": "nineteen take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-19-9.m4a",
+  "ms": 1567,
+  "spoken": "Nineteen take away nine.",
+  "rev": "39e0258e"
+ },
+ "fact-sub-2-0": {
+  "text": "two take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-2-0.m4a",
+  "ms": 1325,
+  "spoken": "Two take away zero.",
+  "rev": "c4e7e3d6"
+ },
+ "fact-sub-2-1": {
+  "text": "two take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-2-1.m4a",
+  "ms": 1270,
+  "spoken": "Two take away one.",
+  "rev": "5bced7e8"
+ },
+ "fact-sub-2-2": {
+  "text": "two take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-2-2.m4a",
+  "ms": 1226,
+  "spoken": "Two take away two.",
+  "rev": "7c5a905b"
+ },
+ "fact-sub-20-10": {
+  "text": "twenty take away ten",
+  "voice": "af_heart",
+  "file": "fact-sub-20-10.m4a",
+  "ms": 1520,
+  "spoken": "Twenty take away ten.",
+  "rev": "b15a0283"
+ },
+ "fact-sub-3-0": {
+  "text": "three take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-3-0.m4a",
+  "ms": 1397,
+  "spoken": "Three take away zero.",
+  "rev": "d3b21cf3"
+ },
+ "fact-sub-3-1": {
+  "text": "three take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-3-1.m4a",
+  "ms": 1325,
+  "spoken": "Three take away one.",
+  "rev": "08b89d9b"
+ },
+ "fact-sub-3-2": {
+  "text": "three take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-3-2.m4a",
+  "ms": 1334,
+  "spoken": "Three take away two.",
+  "rev": "f9f69376"
+ },
+ "fact-sub-3-3": {
+  "text": "three take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-3-3.m4a",
+  "ms": 1361,
+  "spoken": "Three take away three.",
+  "rev": "ba642a0e"
+ },
+ "fact-sub-4-0": {
+  "text": "four take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-4-0.m4a",
+  "ms": 1409,
+  "spoken": "Four take away zero.",
+  "rev": "d1dab808"
+ },
+ "fact-sub-4-1": {
+  "text": "four take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-4-1.m4a",
+  "ms": 1308,
+  "spoken": "Four take away one.",
+  "rev": "52fa28b5"
+ },
+ "fact-sub-4-2": {
+  "text": "four take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-4-2.m4a",
+  "ms": 1335,
+  "spoken": "Four take away two.",
+  "rev": "43e9b4a0"
+ },
+ "fact-sub-4-3": {
+  "text": "four take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-4-3.m4a",
+  "ms": 1411,
+  "spoken": "Four take away three.",
+  "rev": "4c63a6be"
+ },
+ "fact-sub-4-4": {
+  "text": "four take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-4-4.m4a",
+  "ms": 1374,
+  "spoken": "Four take away four.",
+  "rev": "cc4a79c0"
+ },
+ "fact-sub-5-0": {
+  "text": "five take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-5-0.m4a",
+  "ms": 1430,
+  "spoken": "Five take away zero.",
+  "rev": "ea1f9a92"
+ },
+ "fact-sub-5-1": {
+  "text": "five take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-5-1.m4a",
+  "ms": 1356,
+  "spoken": "Five take away one.",
+  "rev": "3957522d"
+ },
+ "fact-sub-5-2": {
+  "text": "five take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-5-2.m4a",
+  "ms": 1398,
+  "spoken": "Five take away two.",
+  "rev": "a0660588"
+ },
+ "fact-sub-5-3": {
+  "text": "five take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-5-3.m4a",
+  "ms": 1386,
+  "spoken": "Five take away three.",
+  "rev": "b73da545"
+ },
+ "fact-sub-5-4": {
+  "text": "five take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-5-4.m4a",
+  "ms": 1428,
+  "spoken": "Five take away four.",
+  "rev": "1184ebfb"
+ },
+ "fact-sub-5-5": {
+  "text": "five take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-5-5.m4a",
+  "ms": 1485,
+  "spoken": "Five take away five.",
+  "rev": "cbcbba2d"
+ },
+ "fact-sub-6-0": {
+  "text": "six take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-6-0.m4a",
+  "ms": 1426,
+  "spoken": "Six take away zero.",
+  "rev": "1ddfae45"
+ },
+ "fact-sub-6-1": {
+  "text": "six take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-6-1.m4a",
+  "ms": 1276,
+  "spoken": "Six take away one.",
+  "rev": "01fb8d94"
+ },
+ "fact-sub-6-2": {
+  "text": "six take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-6-2.m4a",
+  "ms": 1327,
+  "spoken": "Six take away two.",
+  "rev": "43321560"
+ },
+ "fact-sub-6-3": {
+  "text": "six take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-6-3.m4a",
+  "ms": 1377,
+  "spoken": "Six take away three.",
+  "rev": "17f36dbe"
+ },
+ "fact-sub-6-4": {
+  "text": "six take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-6-4.m4a",
+  "ms": 1376,
+  "spoken": "Six take away four.",
+  "rev": "12709069"
+ },
+ "fact-sub-6-5": {
+  "text": "six take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-6-5.m4a",
+  "ms": 1435,
+  "spoken": "Six take away five.",
+  "rev": "eda64f52"
+ },
+ "fact-sub-6-6": {
+  "text": "six take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-6-6.m4a",
+  "ms": 1379,
+  "spoken": "Six take away six.",
+  "rev": "a65d16d1"
+ },
+ "fact-sub-7-0": {
+  "text": "seven take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-7-0.m4a",
+  "ms": 1443,
+  "spoken": "Seven take away zero.",
+  "rev": "6cff7a71"
+ },
+ "fact-sub-7-1": {
+  "text": "seven take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-7-1.m4a",
+  "ms": 1399,
+  "spoken": "Seven take away one.",
+  "rev": "763d4136"
+ },
+ "fact-sub-7-2": {
+  "text": "seven take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-7-2.m4a",
+  "ms": 1405,
+  "spoken": "Seven take away two.",
+  "rev": "af3e1d54"
+ },
+ "fact-sub-7-3": {
+  "text": "seven take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-7-3.m4a",
+  "ms": 1430,
+  "spoken": "Seven take away three.",
+  "rev": "ff40517d"
+ },
+ "fact-sub-7-4": {
+  "text": "seven take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-7-4.m4a",
+  "ms": 1431,
+  "spoken": "Seven take away four.",
+  "rev": "9a53cc0e"
+ },
+ "fact-sub-7-5": {
+  "text": "seven take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-7-5.m4a",
+  "ms": 1506,
+  "spoken": "Seven take away five.",
+  "rev": "dfe29b99"
+ },
+ "fact-sub-7-6": {
+  "text": "seven take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-7-6.m4a",
+  "ms": 1440,
+  "spoken": "Seven take away six.",
+  "rev": "850ef11f"
+ },
+ "fact-sub-7-7": {
+  "text": "seven take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-7-7.m4a",
+  "ms": 1452,
+  "spoken": "Seven take away seven.",
+  "rev": "b2537108"
+ },
+ "fact-sub-8-0": {
+  "text": "eight take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-8-0.m4a",
+  "ms": 1318,
+  "spoken": "Eight take away zero.",
+  "rev": "b0704b59"
+ },
+ "fact-sub-8-1": {
+  "text": "eight take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-8-1.m4a",
+  "ms": 1238,
+  "spoken": "Eight take away one.",
+  "rev": "8f74c7ef"
+ },
+ "fact-sub-8-2": {
+  "text": "eight take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-8-2.m4a",
+  "ms": 1250,
+  "spoken": "Eight take away two.",
+  "rev": "293b8d2c"
+ },
+ "fact-sub-8-3": {
+  "text": "eight take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-8-3.m4a",
+  "ms": 1286,
+  "spoken": "Eight take away three.",
+  "rev": "6af302d5"
+ },
+ "fact-sub-8-4": {
+  "text": "eight take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-8-4.m4a",
+  "ms": 1288,
+  "spoken": "Eight take away four.",
+  "rev": "19d9aa94"
+ },
+ "fact-sub-8-5": {
+  "text": "eight take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-8-5.m4a",
+  "ms": 1392,
+  "spoken": "Eight take away five.",
+  "rev": "3709c07b"
+ },
+ "fact-sub-8-6": {
+  "text": "eight take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-8-6.m4a",
+  "ms": 1322,
+  "spoken": "Eight take away six.",
+  "rev": "56a3bc06"
+ },
+ "fact-sub-8-7": {
+  "text": "eight take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-8-7.m4a",
+  "ms": 1344,
+  "spoken": "Eight take away seven.",
+  "rev": "01d253a2"
+ },
+ "fact-sub-8-8": {
+  "text": "eight take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-8-8.m4a",
+  "ms": 1290,
+  "spoken": "Eight take away eight.",
+  "rev": "51766e7c"
+ },
+ "fact-sub-9-0": {
+  "text": "nine take away zero",
+  "voice": "af_heart",
+  "file": "fact-sub-9-0.m4a",
+  "ms": 1389,
+  "spoken": "Nine take away zero.",
+  "rev": "667d0e67"
+ },
+ "fact-sub-9-1": {
+  "text": "nine take away one",
+  "voice": "af_heart",
+  "file": "fact-sub-9-1.m4a",
+  "ms": 1334,
+  "spoken": "Nine take away one.",
+  "rev": "f8601133"
+ },
+ "fact-sub-9-2": {
+  "text": "nine take away two",
+  "voice": "af_heart",
+  "file": "fact-sub-9-2.m4a",
+  "ms": 1337,
+  "spoken": "Nine take away two.",
+  "rev": "f6ddccdf"
+ },
+ "fact-sub-9-3": {
+  "text": "nine take away three",
+  "voice": "af_heart",
+  "file": "fact-sub-9-3.m4a",
+  "ms": 1383,
+  "spoken": "Nine take away three.",
+  "rev": "db269932"
+ },
+ "fact-sub-9-4": {
+  "text": "nine take away four",
+  "voice": "af_heart",
+  "file": "fact-sub-9-4.m4a",
+  "ms": 1386,
+  "spoken": "Nine take away four.",
+  "rev": "adccecf8"
+ },
+ "fact-sub-9-5": {
+  "text": "nine take away five",
+  "voice": "af_heart",
+  "file": "fact-sub-9-5.m4a",
+  "ms": 1466,
+  "spoken": "Nine take away five.",
+  "rev": "91ed9abf"
+ },
+ "fact-sub-9-6": {
+  "text": "nine take away six",
+  "voice": "af_heart",
+  "file": "fact-sub-9-6.m4a",
+  "ms": 1420,
+  "spoken": "Nine take away six.",
+  "rev": "bfad8058"
+ },
+ "fact-sub-9-7": {
+  "text": "nine take away seven",
+  "voice": "af_heart",
+  "file": "fact-sub-9-7.m4a",
+  "ms": 1446,
+  "spoken": "Nine take away seven.",
+  "rev": "d4297b37"
+ },
+ "fact-sub-9-8": {
+  "text": "nine take away eight",
+  "voice": "af_heart",
+  "file": "fact-sub-9-8.m4a",
+  "ms": 1358,
+  "spoken": "Nine take away eight.",
+  "rev": "a762f609"
+ },
+ "fact-sub-9-9": {
+  "text": "nine take away nine",
+  "voice": "af_heart",
+  "file": "fact-sub-9-9.m4a",
+  "ms": 1392,
+  "spoken": "Nine take away nine.",
+  "rev": "531c6220"
+ },
+ "friend-bix": {
+  "text": "Bix feels better!",
+  "voice": "af_heart",
+  "file": "friend-bix.m4a",
+  "ms": 1165,
+  "rev": "7ac1ed80"
+ },
+ "friend-domi": {
+  "text": "Domi feels better!",
+  "voice": "af_heart",
+  "file": "friend-domi.m4a",
+  "ms": 1272,
+  "rev": "f04a1e57"
+ },
+ "friend-fivel": {
+  "text": "Fivel feels better!",
+  "voice": "af_heart",
+  "file": "friend-fivel.m4a",
+  "ms": 1287,
+  "spoken": "Fyvel feels better!",
+  "rev": "72f26233"
+ },
+ "friend-inch": {
+  "text": "Inch feels better!",
+  "voice": "af_heart",
+  "file": "friend-inch.m4a",
+  "ms": 1113,
+  "rev": "0c31b417"
+ },
+ "friend-moss": {
+  "text": "Moss feels better!",
+  "voice": "af_heart",
+  "file": "friend-moss.m4a",
+  "ms": 1232,
+  "rev": "ed7b66f2"
+ },
+ "friend-nought": {
+  "text": "Nought feels better!",
+  "voice": "af_heart",
+  "file": "friend-nought.m4a",
+  "ms": 1183,
+  "rev": "462341ab"
+ },
+ "friend-tenny": {
+  "text": "Tenny feels better!",
+  "voice": "af_heart",
+  "file": "friend-tenny.m4a",
+  "ms": 1159,
+  "rev": "ec20c87e"
+ },
+ "friend-twoot": {
+  "text": "Twoot feels better!",
+  "voice": "af_heart",
+  "file": "friend-twoot.m4a",
+  "ms": 1176,
+  "spoken": "Twute feels better!",
+  "rev": "4c248df4"
+ },
+ "join-bix": {
+  "text": "Bix joins your team!",
+  "voice": "af_heart",
+  "file": "join-bix.m4a",
+  "ms": 1310,
+  "rev": "9222142c"
+ },
+ "join-domi": {
+  "text": "Domi joins your team!",
+  "voice": "af_heart",
+  "file": "join-domi.m4a",
+  "ms": 1433,
+  "rev": "4a5dd024"
+ },
+ "join-fivel": {
+  "text": "Fivel joins your team!",
+  "voice": "af_heart",
+  "file": "join-fivel.m4a",
+  "ms": 1453,
+  "spoken": "Fyvel joins your team!",
+  "rev": "8527dc8c"
+ },
+ "join-inch": {
+  "text": "Inch joins your team!",
+  "voice": "af_heart",
+  "file": "join-inch.m4a",
+  "ms": 1270,
+  "rev": "14fd7133"
+ },
+ "join-moss": {
+  "text": "Moss joins your team!",
+  "voice": "af_heart",
+  "file": "join-moss.m4a",
+  "ms": 1368,
+  "rev": "31bb4cac"
+ },
+ "join-nought": {
+  "text": "Nought joins your team!",
+  "voice": "af_heart",
+  "file": "join-nought.m4a",
+  "ms": 1328,
+  "rev": "32ac0d57"
+ },
+ "join-tenny": {
+  "text": "Tenny joins your team!",
+  "voice": "af_heart",
+  "file": "join-tenny.m4a",
+  "ms": 1408,
+  "rev": "2bb68733"
+ },
+ "join-twoot": {
+  "text": "Twoot joins your team!",
+  "voice": "af_heart",
+  "file": "join-twoot.m4a",
+  "ms": 1324,
+  "spoken": "Twute joins your team!",
+  "rev": "8fc268b5"
+ },
+ "name-bix": {
+  "text": "Bix",
+  "voice": "af_heart",
+  "file": "name-bix.m4a",
+  "ms": 660,
+  "spoken": "Bix.",
+  "rev": "37464d10"
+ },
+ "name-domi": {
+  "text": "Domi",
+  "voice": "af_heart",
+  "file": "name-domi.m4a",
+  "ms": 695,
+  "spoken": "Domi.",
+  "rev": "8a2a7b98"
+ },
+ "name-fivel": {
+  "text": "Fivel",
+  "voice": "af_heart",
+  "file": "name-fivel.m4a",
+  "ms": 679,
+  "spoken": "Fyvel.",
+  "rev": "32137772"
+ },
+ "name-inch": {
+  "text": "Inch",
+  "voice": "af_heart",
+  "file": "name-inch.m4a",
+  "ms": 669,
+  "spoken": "Inch.",
+  "rev": "fba10a7e"
+ },
+ "name-moss": {
+  "text": "Moss",
+  "voice": "af_heart",
+  "file": "name-moss.m4a",
+  "ms": 728,
+  "spoken": "Moss.",
+  "rev": "6811b521"
+ },
+ "name-nought": {
+  "text": "Nought",
+  "voice": "af_heart",
+  "file": "name-nought.m4a",
+  "ms": 673,
+  "spoken": "Nought.",
+  "rev": "78bb0e9f"
+ },
+ "name-tenny": {
+  "text": "Tenny",
+  "voice": "af_heart",
+  "file": "name-tenny.m4a",
+  "ms": 662,
+  "spoken": "Tenny.",
+  "rev": "eaa1c01d"
+ },
+ "name-twoot": {
+  "text": "Twoot",
+  "voice": "af_heart",
+  "file": "name-twoot.m4a",
+  "ms": 697,
+  "spoken": "Twute.",
+  "rev": "1506a424"
+ },
+ "new-facts-0": {
+  "text": "0 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-0.m4a",
+  "ms": 1175,
+  "rev": "a28bd6e7"
+ },
+ "new-facts-1": {
+  "text": "1 new fact!",
+  "voice": "af_heart",
+  "file": "new-facts-1.m4a",
+  "ms": 1079,
+  "rev": "5395544e"
+ },
+ "new-facts-10": {
+  "text": "10 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-10.m4a",
+  "ms": 1055,
+  "rev": "ad56a3e0"
+ },
+ "new-facts-11": {
+  "text": "11 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-11.m4a",
+  "ms": 1226,
+  "rev": "173cb4b5"
+ },
+ "new-facts-12": {
+  "text": "12 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-12.m4a",
+  "ms": 1140,
+  "rev": "b1ee7df4"
+ },
+ "new-facts-13": {
+  "text": "13 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-13.m4a",
+  "ms": 1253,
+  "rev": "2b24bcfa"
+ },
+ "new-facts-14": {
+  "text": "14 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-14.m4a",
+  "ms": 1267,
+  "rev": "a211f849"
+ },
+ "new-facts-15": {
+  "text": "15 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-15.m4a",
+  "ms": 1265,
+  "rev": "13021ca6"
+ },
+ "new-facts-16": {
+  "text": "16 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-16.m4a",
+  "ms": 1229,
+  "rev": "d336af36"
+ },
+ "new-facts-17": {
+  "text": "17 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-17.m4a",
+  "ms": 1354,
+  "rev": "6f812398"
+ },
+ "new-facts-18": {
+  "text": "18 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-18.m4a",
+  "ms": 1239,
+  "rev": "6580e7b6"
+ },
+ "new-facts-19": {
+  "text": "19 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-19.m4a",
+  "ms": 1319,
+  "rev": "41ed8dc8"
+ },
+ "new-facts-2": {
+  "text": "2 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-2.m4a",
+  "ms": 1020,
+  "rev": "1dea75a5"
+ },
+ "new-facts-20": {
+  "text": "20 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-20.m4a",
+  "ms": 1158,
+  "rev": "f7e354cc"
+ },
+ "new-facts-3": {
+  "text": "3 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-3.m4a",
+  "ms": 1007,
+  "rev": "a7068fb3"
+ },
+ "new-facts-4": {
+  "text": "4 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-4.m4a",
+  "ms": 1033,
+  "rev": "6025c6ca"
+ },
+ "new-facts-5": {
+  "text": "5 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-5.m4a",
+  "ms": 1103,
+  "rev": "cc100659"
+ },
+ "new-facts-6": {
+  "text": "6 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-6.m4a",
+  "ms": 1114,
+  "rev": "dd350307"
+ },
+ "new-facts-7": {
+  "text": "7 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-7.m4a",
+  "ms": 1152,
+  "rev": "91b21252"
+ },
+ "new-facts-8": {
+  "text": "8 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-8.m4a",
+  "ms": 1031,
+  "rev": "f1abda29"
+ },
+ "new-facts-9": {
+  "text": "9 new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-9.m4a",
+  "ms": 1128,
+  "rev": "a1e80456"
+ },
+ "number-0": {
+  "text": "zero",
+  "voice": "af_heart",
+  "file": "number-0.m4a",
+  "ms": 679,
+  "spoken": "Zero.",
+  "rev": "1e799eda"
+ },
+ "number-1": {
+  "text": "one",
+  "voice": "af_heart",
+  "file": "number-1.m4a",
+  "ms": 606,
+  "spoken": "One.",
+  "ending": "!",
+  "rev": "bf5bb443"
+ },
+ "number-10": {
+  "text": "ten",
+  "voice": "af_heart",
+  "file": "number-10.m4a",
+  "ms": 613,
+  "spoken": "Ten.",
+  "rev": "26c0006c"
+ },
+ "number-11": {
+  "text": "eleven",
+  "voice": "af_heart",
+  "file": "number-11.m4a",
+  "ms": 702,
+  "spoken": "Eleven.",
+  "rev": "2524552b"
+ },
+ "number-12": {
+  "text": "twelve",
+  "voice": "af_heart",
+  "file": "number-12.m4a",
+  "ms": 712,
+  "spoken": "Twelve.",
+  "rev": "25e25117"
+ },
+ "number-13": {
+  "text": "thirteen",
+  "voice": "af_heart",
+  "file": "number-13.m4a",
+  "ms": 807,
+  "spoken": "Thirteen.",
+  "rev": "46402b18"
+ },
+ "number-14": {
+  "text": "fourteen",
+  "voice": "af_heart",
+  "file": "number-14.m4a",
+  "ms": 838,
+  "spoken": "Fourteen.",
+  "rev": "655fa821"
+ },
+ "number-15": {
+  "text": "fifteen",
+  "voice": "af_heart",
+  "file": "number-15.m4a",
+  "ms": 802,
+  "spoken": "Fifteen.",
+  "rev": "46b2a63e"
+ },
+ "number-16": {
+  "text": "sixteen",
+  "voice": "af_heart",
+  "file": "number-16.m4a",
+  "ms": 848,
+  "spoken": "Sixteen.",
+  "rev": "5c40cd11"
+ },
+ "number-17": {
+  "text": "seventeen",
+  "voice": "af_heart",
+  "file": "number-17.m4a",
+  "ms": 941,
+  "spoken": "Seventeen.",
+  "rev": "d55e5772"
+ },
+ "number-18": {
+  "text": "eighteen",
+  "voice": "af_heart",
+  "file": "number-18.m4a",
+  "ms": 783,
+  "spoken": "Eighteen.",
+  "rev": "7934bc6e"
+ },
+ "number-19": {
+  "text": "nineteen",
+  "voice": "af_heart",
+  "file": "number-19.m4a",
+  "ms": 860,
+  "spoken": "Nineteen.",
+  "rev": "a07046f7"
+ },
+ "number-2": {
+  "text": "two",
+  "voice": "af_heart",
+  "file": "number-2.m4a",
+  "ms": 622,
+  "spoken": "Two.",
+  "rev": "9a354211"
+ },
+ "number-20": {
+  "text": "twenty",
+  "voice": "af_heart",
+  "file": "number-20.m4a",
+  "ms": 779,
+  "spoken": "Twenty.",
+  "rev": "bbe3eb42"
+ },
+ "number-3": {
+  "text": "three",
+  "voice": "af_heart",
+  "file": "number-3.m4a",
+  "ms": 665,
+  "spoken": "Three.",
+  "rev": "5524a549"
+ },
+ "number-4": {
+  "text": "four",
+  "voice": "af_heart",
+  "file": "number-4.m4a",
+  "ms": 652,
+  "spoken": "Four.",
+  "rev": "3a3e33b4"
+ },
+ "number-5": {
+  "text": "five",
+  "voice": "af_heart",
+  "file": "number-5.m4a",
+  "ms": 693,
+  "spoken": "Five.",
+  "rev": "1ebb5119"
+ },
+ "number-6": {
+  "text": "six",
+  "voice": "af_heart",
+  "file": "number-6.m4a",
+  "ms": 685,
+  "spoken": "Six.",
+  "rev": "45d3b9d8"
+ },
+ "number-7": {
+  "text": "seven",
+  "voice": "af_heart",
+  "file": "number-7.m4a",
+  "ms": 654,
+  "spoken": "Seven.",
+  "rev": "91041db4"
+ },
+ "number-8": {
+  "text": "eight",
+  "voice": "af_heart",
+  "file": "number-8.m4a",
+  "ms": 663,
+  "spoken": "Eight.",
+  "rev": "94292df1"
+ },
+ "number-9": {
+  "text": "nine",
+  "voice": "af_heart",
+  "file": "number-9.m4a",
+  "ms": 695,
+  "spoken": "Nine.",
+  "rev": "295ff82d"
+ },
+ "praise-0": {
+  "text": "You worked it out!",
+  "voice": "af_heart",
+  "file": "praise-0.m4a",
+  "ms": 1101,
+  "rev": "4b6a331f"
+ },
+ "praise-1": {
+  "text": "You kept trying!",
+  "voice": "af_heart",
+  "file": "praise-1.m4a",
+  "ms": 1101,
+  "rev": "98f93583"
+ },
+ "praise-2": {
+  "text": "You found a way!",
+  "voice": "af_heart",
+  "file": "praise-2.m4a",
+  "ms": 1038,
+  "rev": "fb73fe07"
+ },
+ "praise-3": {
+  "text": "Good counting!",
+  "voice": "af_heart",
+  "file": "praise-3.m4a",
+  "ms": 1031,
+  "rev": "da057e41"
+ },
+ "praise-4": {
+  "text": "You gave it a go!",
+  "voice": "af_heart",
+  "file": "praise-4.m4a",
+  "ms": 1115,
+  "rev": "a5fb5b55"
+ },
+ "praise-5": {
+  "text": "You took your time.",
+  "voice": "af_heart",
+  "file": "praise-5.m4a",
+  "ms": 1135,
+  "rev": "e7150257"
+ },
+ "review-facts-0": {
+  "text": "0 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-0.m4a",
+  "ms": 1617,
+  "rev": "433bd5d9"
+ },
+ "review-facts-1": {
+  "text": "1 fact grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-1.m4a",
+  "ms": 1393,
+  "rev": "ce0f9dc4"
+ },
+ "review-facts-10": {
+  "text": "10 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-10.m4a",
+  "ms": 1462,
+  "rev": "52545877"
+ },
+ "review-facts-11": {
+  "text": "11 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-11.m4a",
+  "ms": 1622,
+  "rev": "c00e87a5"
+ },
+ "review-facts-12": {
+  "text": "12 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-12.m4a",
+  "ms": 1530,
+  "rev": "b69291f5"
+ },
+ "review-facts-13": {
+  "text": "13 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-13.m4a",
+  "ms": 1598,
+  "rev": "bc094f46"
+ },
+ "review-facts-14": {
+  "text": "14 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-14.m4a",
+  "ms": 1655,
+  "rev": "c3ff745b"
+ },
+ "review-facts-15": {
+  "text": "15 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-15.m4a",
+  "ms": 1630,
+  "rev": "ece170e9"
+ },
+ "review-facts-16": {
+  "text": "16 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-16.m4a",
+  "ms": 1690,
+  "rev": "202730ed"
+ },
+ "review-facts-17": {
+  "text": "17 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-17.m4a",
+  "ms": 1757,
+  "rev": "8593a65b"
+ },
+ "review-facts-18": {
+  "text": "18 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-18.m4a",
+  "ms": 1574,
+  "rev": "3f05f14c"
+ },
+ "review-facts-19": {
+  "text": "19 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-19.m4a",
+  "ms": 1674,
+  "rev": "829535c3"
+ },
+ "review-facts-2": {
+  "text": "2 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-2.m4a",
+  "ms": 1413,
+  "rev": "cda70b41"
+ },
+ "review-facts-20": {
+  "text": "20 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-20.m4a",
+  "ms": 1501,
+  "rev": "6e00905c"
+ },
+ "review-facts-3": {
+  "text": "3 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-3.m4a",
+  "ms": 1467,
+  "rev": "57335238"
+ },
+ "review-facts-4": {
+  "text": "4 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-4.m4a",
+  "ms": 1541,
+  "rev": "83bfbf0d"
+ },
+ "review-facts-5": {
+  "text": "5 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-5.m4a",
+  "ms": 1485,
+  "rev": "7a6fad29"
+ },
+ "review-facts-6": {
+  "text": "6 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-6.m4a",
+  "ms": 1516,
+  "rev": "67f6b691"
+ },
+ "review-facts-7": {
+  "text": "7 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-7.m4a",
+  "ms": 1586,
+  "rev": "410cded6"
+ },
+ "review-facts-8": {
+  "text": "8 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-8.m4a",
+  "ms": 1440,
+  "rev": "f41464b9"
+ },
+ "review-facts-9": {
+  "text": "9 facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-9.m4a",
+  "ms": 1522,
+  "rev": "338629d0"
+ },
+ "story-ring-0": {
+  "text": "Stop! Look at the ground.",
+  "voice": "af_heart",
+  "file": "story-ring-0.m4a",
+  "ms": 1507,
+  "rev": "2ec4de92"
+ },
+ "story-welcome-0": {
+  "text": "Oh! A new face. Hello.",
+  "voice": "af_heart",
+  "file": "story-welcome-0.m4a",
+  "ms": 1695,
+  "rev": "11200dc6"
+ },
+ "story-welcome-1": {
+  "text": "I am Moss. I keep the Count Book.",
+  "voice": "af_heart",
+  "file": "story-welcome-1.m4a",
+  "ms": 2276,
+  "rev": "1a7f0b8c"
+ },
+ "story-welcome-2": {
+  "text": "We had six buns. Now we have five.",
+  "voice": "af_heart",
+  "file": "story-welcome-2.m4a",
+  "ms": 2456,
+  "rev": "01e87e4f"
+ },
+ "story-welcome-3": {
+  "text": "The count is wrong. It makes us muddled.",
+  "voice": "af_heart",
+  "file": "story-welcome-3.m4a",
+  "ms": 2404,
+  "rev": "171f28b0"
+ },
+ "story-welcome-4": {
+  "text": "Pick a pal. Go and help.",
+  "voice": "af_heart",
+  "file": "story-welcome-4.m4a",
+  "ms": 1538,
+  "rev": "dc961710"
+ },
+ "tap-0": {
+  "text": "Tap 0",
+  "voice": "af_heart",
+  "file": "tap-0.m4a",
+  "ms": 863,
+  "spoken": "Tap 0.",
+  "rev": "2edf8e66"
+ },
+ "tap-1": {
+  "text": "Tap 1",
+  "voice": "af_heart",
+  "file": "tap-1.m4a",
+  "ms": 780,
+  "spoken": "Tap 1.",
+  "rev": "e7b7ca72"
+ },
+ "tap-10": {
+  "text": "Tap 10",
+  "voice": "af_heart",
+  "file": "tap-10.m4a",
+  "ms": 827,
+  "spoken": "Tap 10.",
+  "rev": "f9eb4f3f"
+ },
+ "tap-11": {
+  "text": "Tap 11",
+  "voice": "af_heart",
+  "file": "tap-11.m4a",
+  "ms": 886,
+  "spoken": "Tap 11.",
+  "rev": "46d6cc8f"
+ },
+ "tap-12": {
+  "text": "Tap 12",
+  "voice": "af_heart",
+  "file": "tap-12.m4a",
+  "ms": 928,
+  "spoken": "Tap 12.",
+  "rev": "8ebdfaae"
+ },
+ "tap-13": {
+  "text": "Tap 13",
+  "voice": "af_heart",
+  "file": "tap-13.m4a",
+  "ms": 1011,
+  "spoken": "Tap 13.",
+  "rev": "14b20798"
+ },
+ "tap-14": {
+  "text": "Tap 14",
+  "voice": "af_heart",
+  "file": "tap-14.m4a",
+  "ms": 991,
+  "spoken": "Tap 14.",
+  "rev": "65846ee2"
+ },
+ "tap-15": {
+  "text": "Tap 15",
+  "voice": "af_heart",
+  "file": "tap-15.m4a",
+  "ms": 991,
+  "spoken": "Tap 15.",
+  "rev": "682f1b51"
+ },
+ "tap-16": {
+  "text": "Tap 16",
+  "voice": "af_heart",
+  "file": "tap-16.m4a",
+  "ms": 1031,
+  "spoken": "Tap 16.",
+  "rev": "91bd49c7"
+ },
+ "tap-17": {
+  "text": "Tap 17",
+  "voice": "af_heart",
+  "file": "tap-17.m4a",
+  "ms": 1130,
+  "spoken": "Tap 17.",
+  "rev": "6e667f18"
+ },
+ "tap-18": {
+  "text": "Tap 18",
+  "voice": "af_heart",
+  "file": "tap-18.m4a",
+  "ms": 961,
+  "spoken": "Tap 18.",
+  "rev": "1133186c"
+ },
+ "tap-19": {
+  "text": "Tap 19",
+  "voice": "af_heart",
+  "file": "tap-19.m4a",
+  "ms": 1045,
+  "spoken": "Tap 19.",
+  "rev": "d43ed079"
+ },
+ "tap-2": {
+  "text": "Tap 2",
+  "voice": "af_heart",
+  "file": "tap-2.m4a",
+  "ms": 826,
+  "spoken": "Tap 2.",
+  "rev": "36d49845"
+ },
+ "tap-20": {
+  "text": "Tap 20",
+  "voice": "af_heart",
+  "file": "tap-20.m4a",
+  "ms": 926,
+  "spoken": "Tap 20.",
+  "rev": "3b233f97"
+ },
+ "tap-3": {
+  "text": "Tap 3",
+  "voice": "af_heart",
+  "file": "tap-3.m4a",
+  "ms": 852,
+  "spoken": "Tap 3.",
+  "rev": "59bdb460"
+ },
+ "tap-4": {
+  "text": "Tap 4",
+  "voice": "af_heart",
+  "file": "tap-4.m4a",
+  "ms": 815,
+  "spoken": "Tap 4.",
+  "rev": "f18f7edc"
+ },
+ "tap-5": {
+  "text": "Tap 5",
+  "voice": "af_heart",
+  "file": "tap-5.m4a",
+  "ms": 905,
+  "spoken": "Tap 5.",
+  "rev": "d80940d2"
+ },
+ "tap-6": {
+  "text": "Tap 6",
+  "voice": "af_heart",
+  "file": "tap-6.m4a",
+  "ms": 881,
+  "spoken": "Tap 6.",
+  "rev": "e031a979"
+ },
+ "tap-7": {
+  "text": "Tap 7",
+  "voice": "af_heart",
+  "file": "tap-7.m4a",
+  "ms": 859,
+  "spoken": "Tap 7.",
+  "rev": "2d6c89fe"
+ },
+ "tap-8": {
+  "text": "Tap 8",
+  "voice": "af_heart",
+  "file": "tap-8.m4a",
+  "ms": 826,
+  "spoken": "Tap 8.",
+  "rev": "37daa5f3"
+ },
+ "tap-9": {
+  "text": "Tap 9",
+  "voice": "af_heart",
+  "file": "tap-9.m4a",
+  "ms": 851,
+  "spoken": "Tap 9.",
+  "rev": "bbe5e931"
+ },
+ "ui-assetError": {
+  "text": "A picture could not load.",
+  "voice": "af_heart",
+  "file": "ui-assetError.m4a",
+  "ms": 1424,
+  "rev": "3679990a"
+ },
+ "ui-camp": {
+  "text": "Good stopping place.",
+  "voice": "af_heart",
+  "file": "ui-camp.m4a",
+  "ms": 1291,
+  "rev": "79c9d736"
+ },
+ "ui-choose": {
+  "text": "Pick a pal.",
+  "voice": "af_heart",
+  "file": "ui-choose.m4a",
+  "ms": 824,
+  "rev": "726a126b"
+ },
+ "ui-clear": {
+  "text": "The muddle is gone!",
+  "voice": "af_heart",
+  "file": "ui-clear.m4a",
+  "ms": 1186,
+  "rev": "694d3ae0"
+ },
+ "ui-close": {
+  "text": "Back",
+  "voice": "af_heart",
+  "file": "ui-close.m4a",
+  "ms": 639,
+  "spoken": "Back.",
+  "rev": "fc82e19a"
+ },
+ "ui-comingSoon": {
+  "text": "More here soon.",
+  "voice": "af_heart",
+  "file": "ui-comingSoon.m4a",
+  "ms": 1078,
+  "rev": "65de4169"
+ },
+ "ui-correct": {
+  "text": "You worked it out!",
+  "voice": "af_heart",
+  "file": "ui-correct.m4a",
+  "ms": 1101,
+  "rev": "ca8acd5b"
+ },
+ "ui-gateClosed": {
+  "text": "The gate is shut.\nHelp the pals on the path.",
+  "voice": "af_heart",
+  "file": "ui-gateClosed.m4a",
+  "ms": 2691,
+  "rev": "da61e0e2"
+ },
+ "ui-gateOpen": {
+  "text": "The path is clear!",
+  "voice": "af_heart",
+  "file": "ui-gateOpen.m4a",
+  "ms": 1129,
+  "rev": "c4439ae5"
+ },
+ "ui-gateSoon": {
+  "text": "A new path will come soon.",
+  "voice": "af_heart",
+  "file": "ui-gateSoon.m4a",
+  "ms": 1571,
+  "rev": "e069e490"
+ },
+ "ui-grownups": {
+  "text": "For grown-ups",
+  "voice": "af_heart",
+  "file": "ui-grownups.m4a",
+  "ms": 985,
+  "spoken": "For grown-ups.",
+  "rev": "6f36cbc2"
+ },
+ "ui-hint": {
+  "text": "Show me",
+  "voice": "af_heart",
+  "file": "ui-hint.m4a",
+  "ms": 719,
+  "spoken": "Show me.",
+  "rev": "3edff26e"
+ },
+ "ui-hold": {
+  "text": "Hold to open.",
+  "voice": "af_heart",
+  "file": "ui-hold.m4a",
+  "ms": 1123,
+  "rev": "17b32f65"
+ },
+ "ui-howMany": {
+  "text": "How many dots?",
+  "voice": "af_heart",
+  "file": "ui-howMany.m4a",
+  "ms": 1061,
+  "rev": "8fd74f19"
+ },
+ "ui-keepGoing": {
+  "text": "Keep going",
+  "voice": "af_heart",
+  "file": "ui-keepGoing.m4a",
+  "ms": 891,
+  "spoken": "Keep going.",
+  "rev": "9a1b825f"
+ },
+ "ui-loading": {
+  "text": "Waking up the vale…",
+  "voice": "af_heart",
+  "file": "ui-loading.m4a",
+  "ms": 1201,
+  "spoken": "Waking up the vale.",
+  "rev": "afbb114f"
+ },
+ "ui-map": {
+  "text": "Pebble Path",
+  "voice": "af_heart",
+  "file": "ui-map.m4a",
+  "ms": 913,
+  "spoken": "Pebble Path.",
+  "rev": "24a27baf"
+ },
+ "ui-mute": {
+  "text": "Sound on",
+  "voice": "af_heart",
+  "file": "ui-mute.m4a",
+  "ms": 830,
+  "spoken": "Sound on.",
+  "rev": "4213a08c"
+ },
+ "ui-next": {
+  "text": "Next",
+  "voice": "af_heart",
+  "file": "ui-next.m4a",
+  "ms": 684,
+  "spoken": "Next.",
+  "rev": "271cca34"
+ },
+ "ui-pick": {
+  "text": "Pick",
+  "voice": "af_heart",
+  "file": "ui-pick.m4a",
+  "ms": 643,
+  "spoken": "Pick.",
+  "rev": "9e7a860b"
+ },
+ "ui-play": {
+  "text": "Play",
+  "voice": "af_heart",
+  "file": "ui-play.m4a",
+  "ms": 625,
+  "spoken": "Play.",
+  "rev": "6d248af4"
+ },
+ "ui-practice": {
+  "text": "You helped a pal today.",
+  "voice": "af_heart",
+  "file": "ui-practice.m4a",
+  "ms": 1351,
+  "rev": "e063ddb3"
+ },
+ "ui-quick": {
+  "text": "A big hop!",
+  "voice": "af_heart",
+  "file": "ui-quick.m4a",
+  "ms": 914,
+  "rev": "8317d4e6"
+ },
+ "ui-saveError": {
+  "text": "Tap to keep your place.",
+  "voice": "af_heart",
+  "file": "ui-saveError.m4a",
+  "ms": 1304,
+  "rev": "9abb953a"
+ },
+ "ui-saving": {
+  "text": "Keeping your place…",
+  "voice": "af_heart",
+  "file": "ui-saving.m4a",
+  "ms": 1115,
+  "spoken": "Keeping your place.",
+  "rev": "ba072ea6"
+ },
+ "ui-stop": {
+  "text": "Stop for now",
+  "voice": "af_heart",
+  "file": "ui-stop.m4a",
+  "ms": 1072,
+  "spoken": "Stop for now.",
+  "rev": "ca313761"
+ },
+ "ui-title": {
+  "text": "Oddlings",
+  "voice": "af_heart",
+  "file": "ui-title.m4a",
+  "ms": 834,
+  "spoken": "Oddlings.",
+  "rev": "da0745d1"
+ },
+ "ui-unmute": {
+  "text": "Sound off",
+  "voice": "af_heart",
+  "file": "ui-unmute.m4a",
+  "ms": 844,
+  "spoken": "Sound off.",
+  "rev": "27e103a7"
+ },
+ "ui-warmup": {
+  "text": "Wake up the pad!",
+  "voice": "af_heart",
+  "file": "ui-warmup.m4a",
+  "ms": 1055,
+  "rev": "38b10c16"
+ },
+ "warmup-step-0": {
+  "text": "0 / 5",
+  "voice": "af_heart",
+  "file": "warmup-step-0.m4a",
+  "ms": 1414,
+  "spoken": "0 / 5.",
+  "rev": "1394c326"
+ },
+ "warmup-step-1": {
+  "text": "1 / 5",
+  "voice": "af_heart",
+  "file": "warmup-step-1.m4a",
+  "ms": 1259,
+  "spoken": "1 / 5.",
+  "rev": "fd298818"
+ },
+ "warmup-step-2": {
+  "text": "2 / 5",
+  "voice": "af_heart",
+  "file": "warmup-step-2.m4a",
+  "ms": 1220,
+  "spoken": "2 / 5.",
+  "rev": "5f44ab1b"
+ },
+ "warmup-step-3": {
+  "text": "3 / 5",
+  "voice": "af_heart",
+  "file": "warmup-step-3.m4a",
+  "ms": 1294,
+  "spoken": "3 / 5.",
+  "rev": "26b4479a"
+ },
+ "warmup-step-4": {
+  "text": "4 / 5",
+  "voice": "af_heart",
+  "file": "warmup-step-4.m4a",
+  "ms": 1302,
+  "spoken": "4 / 5.",
+  "rev": "a6d96edc"
+ },
+ "warmup-step-5": {
+  "text": "5 / 5",
+  "voice": "af_heart",
+  "file": "warmup-step-5.m4a",
+  "ms": 1277,
+  "spoken": "5 / 5.",
+  "rev": "11eac895"
+ },
+ "new-facts-many": {
+  "text": "So many new facts!",
+  "voice": "af_heart",
+  "file": "new-facts-many.m4a",
+  "ms": 1241,
+  "rev": "9f42158c"
+ },
+ "review-facts-many": {
+  "text": "So many facts grew strong!",
+  "voice": "af_heart",
+  "file": "review-facts-many.m4a",
+  "ms": 1589,
+  "rev": "80c8ab3a"
+ },
+ "ui-clearKey": {
+  "text": "Clear",
+  "voice": "af_heart",
+  "file": "ui-clearKey.m4a",
+  "ms": 629,
+  "spoken": "Clear.",
+  "rev": "cdd360cd"
+ },
+ "ui-go": {
+  "text": "Go",
+  "voice": "af_heart",
+  "file": "ui-go.m4a",
+  "ms": 644,
+  "spoken": "Go.",
+  "rev": "ed0d3713"
+ },
+ "ui-sideways": {
+  "text": "Turn me sideways",
+  "voice": "af_heart",
+  "file": "ui-sideways.m4a",
+  "ms": 1162,
+  "spoken": "Turn me sideways.",
+  "rev": "e8ee4121"
+ },
+ "pal-bix": {
+  "text": "Bix knows dots.",
+  "voice": "af_heart",
+  "file": "pal-bix.m4a",
+  "ms": 1252,
+  "rev": "37fffa34"
+ },
+ "pal-domi": {
+  "text": "Domi knows doubles.",
+  "voice": "af_heart",
+  "file": "pal-domi.m4a",
+  "ms": 1411,
+  "rev": "05d34d18"
+ },
+ "pal-fivel": {
+  "text": "Fivel knows five.",
+  "voice": "af_heart",
+  "file": "pal-fivel.m4a",
+  "ms": 1321,
+  "spoken": "Fyvel knows five.",
+  "rev": "b4984e77"
+ },
+ "pal-inch": {
+  "text": "Inch can count on.",
+  "voice": "af_heart",
+  "file": "pal-inch.m4a",
+  "ms": 1212,
+  "rev": "48aa3c02"
+ },
+ "pal-tenny": {
+  "text": "Tenny knows tens.",
+  "voice": "af_heart",
+  "file": "pal-tenny.m4a",
+  "ms": 1178,
+  "rev": "a324bf7a"
+ },
+ "pal-twoot": {
+  "text": "Twoot knows twos.",
+  "voice": "af_heart",
+  "file": "pal-twoot.m4a",
+  "ms": 1126,
+  "spoken": "Twute knows twos.",
+  "rev": "7ba86b06"
+ },
+ "ui-bePal": {
+  "text": "Be my pal",
+  "voice": "af_heart",
+  "file": "ui-bePal.m4a",
+  "ms": 954,
+  "spoken": "Be my pal.",
+  "rev": "d468241a"
+ },
+ "ui-yourPals": {
+  "text": "Your pals",
+  "voice": "af_heart",
+  "file": "ui-yourPals.m4a",
+  "ms": 913,
+  "spoken": "Your pals.",
+  "rev": "96509a31"
+ },
+ "muddle-bix": {
+  "text": "Bix is in a muddle!\nFill the dots to help.",
+  "voice": "af_heart",
+  "file": "muddle-bix.m4a",
+  "ms": 2638,
+  "rev": "c8283bef"
+ },
+ "muddle-domi": {
+  "text": "Domi is in a muddle!\nFill the dots to help.",
+  "voice": "af_heart",
+  "file": "muddle-domi.m4a",
+  "ms": 2824,
+  "rev": "ae15da70"
+ },
+ "muddle-fivel": {
+  "text": "Fivel is in a muddle!\nFill the dots to help.",
+  "voice": "af_heart",
+  "file": "muddle-fivel.m4a",
+  "ms": 2823,
+  "spoken": "Fyvel is in a muddle!\nFill the dots to help.",
+  "rev": "4def7cb3"
+ },
+ "muddle-inch": {
+  "text": "Inch is in a muddle!\nFill the dots to help.",
+  "voice": "af_heart",
+  "file": "muddle-inch.m4a",
+  "ms": 2701,
+  "rev": "0120c0ff"
+ },
+ "muddle-tenny": {
+  "text": "Tenny is in a muddle!\nFill the dots to help.",
+  "voice": "af_heart",
+  "file": "muddle-tenny.m4a",
+  "ms": 2730,
+  "rev": "b6b26d26"
+ },
+ "muddle-twoot": {
+  "text": "Twoot is in a muddle!\nFill the dots to help.",
+  "voice": "af_heart",
+  "file": "muddle-twoot.m4a",
+  "ms": 2670,
+  "spoken": "Twute is in a muddle!\nFill the dots to help.",
+  "rev": "c825583a"
+ },
+ "cleared-stops-1": {
+  "text": "You cleared 1 stop!",
+  "voice": "af_heart",
+  "file": "cleared-stops-1.m4a",
+  "ms": 1291,
+  "rev": "b476749b"
+ },
+ "cleared-stops-2": {
+  "text": "You cleared 2 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-2.m4a",
+  "ms": 1350,
+  "rev": "e7356632"
+ },
+ "cleared-stops-3": {
+  "text": "You cleared 3 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-3.m4a",
+  "ms": 1396,
+  "rev": "0adf6b2b"
+ },
+ "cleared-stops-4": {
+  "text": "You cleared 4 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-4.m4a",
+  "ms": 1406,
+  "rev": "ad6be03e"
+ },
+ "cleared-stops-5": {
+  "text": "You cleared 5 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-5.m4a",
+  "ms": 1466,
+  "rev": "266743ad"
+ },
+ "cleared-stops-6": {
+  "text": "You cleared 6 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-6.m4a",
+  "ms": 1421,
+  "rev": "cd7aa41d"
+ },
+ "cleared-stops-7": {
+  "text": "You cleared 7 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-7.m4a",
+  "ms": 1498,
+  "rev": "87771bd1"
+ },
+ "cleared-stops-8": {
+  "text": "You cleared 8 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-8.m4a",
+  "ms": 1368,
+  "rev": "e15d56fb"
+ },
+ "cleared-stops-9": {
+  "text": "You cleared 9 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-9.m4a",
+  "ms": 1412,
+  "rev": "074903c3"
+ },
+ "muddle-again-bix": {
+  "text": "Bix is in a muddle again!",
+  "voice": "af_heart",
+  "file": "muddle-again-bix.m4a",
+  "ms": 1536,
+  "rev": "c022087c"
+ },
+ "muddle-again-domi": {
+  "text": "Domi is in a muddle again!",
+  "voice": "af_heart",
+  "file": "muddle-again-domi.m4a",
+  "ms": 1681,
+  "rev": "a178c1e5"
+ },
+ "muddle-again-fivel": {
+  "text": "Fivel is in a muddle again!",
+  "voice": "af_heart",
+  "file": "muddle-again-fivel.m4a",
+  "ms": 1751,
+  "spoken": "Fyvel is in a muddle again!",
+  "rev": "36b14e75"
+ },
+ "muddle-again-inch": {
+  "text": "Inch is in a muddle again!",
+  "voice": "af_heart",
+  "file": "muddle-again-inch.m4a",
+  "ms": 1679,
+  "rev": "821751ac"
+ },
+ "muddle-again-tenny": {
+  "text": "Tenny is in a muddle again!",
+  "voice": "af_heart",
+  "file": "muddle-again-tenny.m4a",
+  "ms": 1641,
+  "rev": "c40004ff"
+ },
+ "muddle-again-twoot": {
+  "text": "Twoot is in a muddle again!",
+  "voice": "af_heart",
+  "file": "muddle-again-twoot.m4a",
+  "ms": 1606,
+  "spoken": "Twute is in a muddle again!",
+  "rev": "7b27f8aa"
+ },
+ "story-ring-1": {
+  "text": "A ring mark. Right here.",
+  "voice": "af_heart",
+  "file": "story-ring-1.m4a",
+  "ms": 1596,
+  "rev": "af4b864f"
+ },
+ "story-ring-2": {
+  "text": "A bun sat here. Now it is gone.",
+  "voice": "af_heart",
+  "file": "story-ring-2.m4a",
+  "ms": 2301,
+  "rev": "430ff01b"
+ },
+ "story-ring-3": {
+  "text": "Who made the ring? Odd. Very odd.",
+  "voice": "af_heart",
+  "file": "story-ring-3.m4a",
+  "ms": 2243,
+  "rev": "d1d8fca1"
+ },
+ "joined-pals-2": {
+  "text": "2 pals join your team!",
+  "voice": "af_heart",
+  "file": "joined-pals-2.m4a",
+  "ms": 1518,
+  "rev": "0500ec0c"
+ },
+ "joined-pals-3": {
+  "text": "3 pals join your team!",
+  "voice": "af_heart",
+  "file": "joined-pals-3.m4a",
+  "ms": 1538,
+  "rev": "4ff3b59a"
+ },
+ "joined-pals-4": {
+  "text": "4 pals join your team!",
+  "voice": "af_heart",
+  "file": "joined-pals-4.m4a",
+  "ms": 1574,
+  "rev": "edd7e333"
+ },
+ "joined-pals-5": {
+  "text": "5 pals join your team!",
+  "voice": "af_heart",
+  "file": "joined-pals-5.m4a",
+  "ms": 1616,
+  "rev": "4e71e9d0"
+ },
+ "better-bix": {
+  "text": "Bix is getting better!",
+  "voice": "af_heart",
+  "file": "better-bix.m4a",
+  "ms": 1375,
+  "rev": "bb5cec91"
+ },
+ "better-domi": {
+  "text": "Domi is getting better!",
+  "voice": "af_heart",
+  "file": "better-domi.m4a",
+  "ms": 1445,
+  "rev": "73250502"
+ },
+ "better-fivel": {
+  "text": "Fivel is getting better!",
+  "voice": "af_heart",
+  "file": "better-fivel.m4a",
+  "ms": 1495,
+  "spoken": "Fyvel is getting better!",
+  "rev": "68bb5f40"
+ },
+ "better-inch": {
+  "text": "Inch is getting better!",
+  "voice": "af_heart",
+  "file": "better-inch.m4a",
+  "ms": 1349,
+  "rev": "51bd5a1c"
+ },
+ "better-tenny": {
+  "text": "Tenny is getting better!",
+  "voice": "af_heart",
+  "file": "better-tenny.m4a",
+  "ms": 1406,
+  "rev": "d00a6425"
+ },
+ "better-twoot": {
+  "text": "Twoot is getting better!",
+  "voice": "af_heart",
+  "file": "better-twoot.m4a",
+  "ms": 1337,
+  "spoken": "Twute is getting better!",
+  "rev": "b1a1d828"
+ },
+ "area-twinFalls": {
+  "text": "Twin Falls",
+  "voice": "af_heart",
+  "file": "area-twinFalls.m4a",
+  "ms": 967,
+  "spoken": "Twin Falls.",
+  "rev": "5646447f"
+ },
+ "cleared-stops-10": {
+  "text": "You cleared 10 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-10.m4a",
+  "ms": 1391,
+  "rev": "151c0f2f"
+ },
+ "cleared-stops-11": {
+  "text": "You cleared 11 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-11.m4a",
+  "ms": 1526,
+  "rev": "85686dec"
+ },
+ "cleared-stops-12": {
+  "text": "You cleared 12 stops!",
+  "voice": "af_heart",
+  "file": "cleared-stops-12.m4a",
+  "ms": 1452,
+  "rev": "9f8d57a1"
+ },
+ "story-den-0": {
+  "text": "Look! A den behind the falls.",
+  "voice": "af_heart",
+  "file": "story-den-0.m4a",
+  "ms": 1887,
+  "rev": "e54f6093"
+ },
+ "story-den-1": {
+  "text": "Ring marks. All over the walls.",
+  "voice": "af_heart",
+  "file": "story-den-1.m4a",
+  "ms": 2037,
+  "rev": "faaed8bc"
+ },
+ "story-den-2": {
+  "text": "And a page from the Count Book!",
+  "voice": "af_heart",
+  "file": "story-den-2.m4a",
+  "ms": 1637,
+  "rev": "08114143"
+ },
+ "story-den-3": {
+  "text": "It counts past nine. Ten. Eleven. Twelve.",
+  "voice": "af_heart",
+  "file": "story-den-3.m4a",
+  "ms": 3392,
+  "rev": "4e2a423f"
+ },
+ "story-den-4": {
+  "text": "Why did the counts stop at nine?",
+  "voice": "af_heart",
+  "file": "story-den-4.m4a",
+  "ms": 1658,
+  "rev": "acc0670b"
+ },
+ "story-falls-0": {
+  "text": "Hoo! You made it to Twin Falls.",
+  "voice": "af_heart",
+  "file": "story-falls-0.m4a",
+  "ms": 1896,
+  "rev": "36efa2c1"
+ },
+ "story-falls-1": {
+  "text": "We have two of everything here.",
+  "voice": "af_heart",
+  "file": "story-falls-1.m4a",
+  "ms": 1583,
+  "rev": "71ce5ba2"
+ },
+ "story-falls-2": {
+  "text": "Two falls. Two trees. Two big rocks.",
+  "voice": "af_heart",
+  "file": "story-falls-2.m4a",
+  "ms": 2748,
+  "rev": "14ba52b6"
+ },
+ "story-falls-3": {
+  "text": "But our counts come out wrong too.",
+  "voice": "af_heart",
+  "file": "story-falls-3.m4a",
+  "ms": 1755,
+  "rev": "71178fbe"
+ },
+ "story-falls-4": {
+  "text": "Help my pals. Then look for clues.",
+  "voice": "af_heart",
+  "file": "story-falls-4.m4a",
+  "ms": 2297,
+  "rev": "5fb97a1d"
+ },
+ "story-mist-0": {
+  "text": "Shh. Look at the falls.",
+  "voice": "af_heart",
+  "file": "story-mist-0.m4a",
+  "ms": 1923,
+  "rev": "7c2484e8"
+ },
+ "story-mist-1": {
+  "text": "A round shape, in the mist.",
+  "voice": "af_heart",
+  "file": "story-mist-1.m4a",
+  "ms": 1599,
+  "rev": "eec1c812"
+ },
+ "story-mist-2": {
+  "text": "It looks at us. It looks sad.",
+  "voice": "af_heart",
+  "file": "story-mist-2.m4a",
+  "ms": 1780,
+  "rev": "5cd846bb"
+ },
+ "story-mist-3": {
+  "text": "Wait! Do not go!",
+  "voice": "af_heart",
+  "file": "story-mist-3.m4a",
+  "ms": 1208,
+  "rev": "f9ca51a3"
+ },
+ "story-mist-4": {
+  "text": "It is gone. We must find it.",
+  "voice": "af_heart",
+  "file": "story-mist-4.m4a",
+  "ms": 1950,
+  "rev": "c5556eb5"
+ }
+}
