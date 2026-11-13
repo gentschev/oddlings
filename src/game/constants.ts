@@ -31,6 +31,8 @@ export const LAYOUT = {
   title: { titleX: 640, titleY: 188, titleSize: 150, playX: 640, playY: 558, playW: 320, playH: 112, playFont: 56,
     grownX: 1090, grownY: 732, grownW: 306, shadowOffset: 7, outline: 9, angle: -3,
     offline: { x: 32, y: 708, width: 560, height: 56, font: 26, padding: 12, icon: 30, gap: 12, stroke: 3 },
+    homeScreen: { x: 32, y: 768, width: 560, height: 28, font: 22, padding: 2 },
+    testBadge: { x: 32, y: 20, width: 390, height: 76, font: 22, padding: 8 },
     },
   choose: { headingY: 100, cardY: 382, cardW: 360, cardH: 350, xs: [230, 640, 1050],
     creatureY: 370, creatureW: 320, nameY: 525, pickY: 686, pickW: 288 },

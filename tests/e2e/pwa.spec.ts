@@ -38,8 +38,11 @@ test('production shell and parent page load offline after worker activation', as
   await expect(page.locator('link[rel="manifest"]')).toHaveAttribute('href', './manifest.webmanifest');
 });
 
-test('the title updates to ready when every indexed voice is stored and the worker controls it', async ({ page, context }) => {
+test('the title updates to ready when every indexed voice is stored and the worker controls it', async ({ page, context, browserName }) => {
   test.skip(process.env.ODDLINGS_PREVIEW !== '1', 'Needs the production worker');
+  // Playwright intercepts a worker's requests only in Chromium. On WebKit the real index
+  // is used, and the game was seen to store all 900 clips there.
+  test.skip(browserName !== 'chromium', 'Needs request interception inside workers');
   // A tiny catalogue checks real cache status without downloading 900 recordings.
   await context.route('**/assets/speech/index.json', route => route.fulfill({ json: {
     'ui-play': { file: 'ui-play.m4a', rev: '11111111' }, 'ui-next': { file: 'ui-next.m4a', rev: '11111111' },

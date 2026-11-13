@@ -1,6 +1,7 @@
 // Static production checks. Does not start a server or browser.
 import { readFile, readdir, access } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
+import { runInNewContext } from 'node:vm';
 
 const root = resolve('dist');
 function relative(value) {
@@ -17,6 +18,10 @@ for (const name of ['index.html', 'parent.html']) {
   for (const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)) await reference(match[1], path);
 }
 const manifest = JSON.parse(await readFile(resolve(root, 'manifest.webmanifest'), 'utf8'));
+const channel = manifest.name === 'Oddlings Test' && manifest.short_name === 'Odd Test' ? 'next'
+  : manifest.name === 'Oddlings' && manifest.short_name === 'Oddlings' ? 'main' : undefined;
+if (!channel) throw new Error('Unknown channel manifest');
+const suffix = channel === 'next' ? '-next' : '';
 for (const path of [manifest.start_url, manifest.scope]) relative(path);
 if (manifest.display !== 'fullscreen' || manifest.orientation !== 'landscape') throw new Error('Incorrect app display');
 for (const icon of manifest.icons) {
@@ -46,7 +51,25 @@ for (const name of speechWorkers) {
     await reference(match[1], resolve(root, 'assets', script.name)); linked = true;
   }
   if (!linked) throw new Error(`No relative module reference to speech worker: ${name}`);
+  // Execute the built bootstrap with fake worker ports, without a browser or network.
+  const opened = [], code = await readFile(resolve(root, 'assets', name), 'utf8');
+  let finish;
+  const completed = new Promise(resolve => { finish = resolve; });
+  const sandbox = { URL, Response, setTimeout, clearTimeout, performance: { now: () => 0 },
+    caches: { open: async name => { opened.push(name); return { match: async () => undefined }; } },
+    fetch: async () => Response.json({}), postMessage: message => { if (message.done) finish(); } };
+  runInNewContext(code, sandbox);
+  sandbox.onmessage({ data: { type: 'warm', base: 'https://example.test/sub-path/', ids: [] } });
+  let timer;
+  try { await Promise.race([completed, new Promise((_, reject) => { timer = setTimeout(() => reject(Error('Worker probe did not finish')), 5000); })]); }
+  finally { clearTimeout(timer); }
+  if (opened.length !== 1 || opened[0] !== `oddlings-speech-v1${suffix}`) throw new Error('Speech worker uses the wrong channel cache');
 }
+for (const name of ['oddlings-speech-v1', 'oddlings-speech-index-v1']) {
+  if (!sw.includes(`cacheName:"${name}${suffix}"`)) throw new Error(`Missing channel runtime cache: ${name}${suffix}`);
+  if (channel === 'next' && sw.includes(`cacheName:"${name}"`)) throw new Error(`Next worker uses main cache: ${name}`);
+}
+if (channel === 'next' && !sw.includes('suffix:self.registration.scope+"-next"')) throw new Error('Next precache is not isolated');
 if (!precache.some(p => p.endsWith('.ttf')) || !precache.some(p => p.includes('assets/art/'))) throw new Error('Art and fonts must be precached');
 if (/url:["']assets\/(?:art|fonts)\/[^"']+["'],revision:null/.test(sw)) throw new Error('Unhashed public assets must have content revisions');
 for (const path of precache) {
@@ -54,5 +77,11 @@ for (const path of precache) {
   if (path.includes('assets/speech/')) throw new Error('Speech must not be precached');
   await access(resolve(root, path));
 }
-for (const match of sw.matchAll(/["']([^"']*workbox-[^"']+\.js)["']/g)) await reference(match[1], resolve(root, 'sw.js'));
-console.log(`Production files verified: both pages, manifest, service and speech workers, icons and ${precache.length} relative precache entries. Speech is excluded.`);
+for (const match of sw.matchAll(/["']([^"']*workbox-[A-Za-z0-9_-]+(?:\.js)?)["']/g)) {
+  const path = match[1].endsWith('.js') ? match[1] : `${match[1]}.js`;
+  await reference(path, resolve(root, 'sw.js'));
+  const runtime = await readFile(resolve(root, path), 'utf8');
+  if (!runtime.includes(`"workbox-expiration${suffix}"`)) throw new Error('Wrong channel expiry database');
+  if (channel === 'next' && /["']workbox-expiration["']/.test(runtime)) throw new Error('Next worker uses main expiry database');
+}
+console.log(`Production files verified (${channel}): both pages, manifest, isolated storage names, workers, icons and ${precache.length} relative precache entries. Speech is excluded.`);

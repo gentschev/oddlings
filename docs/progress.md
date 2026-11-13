@@ -570,3 +570,34 @@ is injected. Playwright discovers 18 tests; browser tests were not run.
 The reviewer still needs to measure the real download time and run the production
 cache/offline tests. No browser or network was used, no audio was regenerated and no
 commit was made. The existing bundle-size warning remains nonfatal.
+
+### 2026-11-13: M15, isolated test channel and Home Screen prompt
+
+Builds select main or next through `ODDLINGS_CHANNEL`. Main keeps its deployed names;
+next suffixes save, backup, database, session and cache names with `-next`. This includes
+Workbox's fixed expiry database and generated precache. Its modified runtime gets a new
+content hash. An empty next store can read and migrate a copy of main progress without
+writing, repairing, creating or upgrading main storage. Existing test saves and backups
+block automatic copying. The next parent page offers a confirmed copy again and reports
+when no valid source exists. The next title, parent header and manifest identify the
+test version, and the hook exposes the channel.
+
+iPhone, iPod and iPad browser tabs, including an iPadOS Mac identity, get an unspoken
+Home Screen prompt under offline status. Installed launches and other platforms hide
+it. The parent page explains the steps and Safari's retention rule. The owner promotes
+changes through the next branch and test address before approving main. Public prose
+uses roles, and README attribution uses the project name.
+
+Verified: `pnpm lint && pnpm test` passes with 259 tests, including 24 new channel,
+read-only source, build-isolation, detection and layout cases. Tests pin main names,
+preserve source bytes during copying and migration, and keep resets and backup cleanup
+inside their channel. Main, next and final main builds pass. Static checks verify both
+manifest names, runtime caches, expiry databases, relative worker references and 36
+precache entries. A fake worker probe checks the bundled worker's actual cache name.
+`dist/` is the main build. The original browser tests are unchanged; discovery finds
+20 tests including two new install-prompt cases with screenshot steps.
+
+Not verified: browser tests or screenshots, real Safari flags and Home Screen launch,
+and two deployed sibling sites copying progress on one origin. No browser or network
+was used, no audio was regenerated and no commit was made. The existing bundle-size
+warning remains nonfatal.

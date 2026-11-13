@@ -1,44 +1,22 @@
 import type { Save } from '../core/types';
-import { SaveStorage, type SaveBackend } from './saveStorage';
+import { SaveStorage } from './saveStorage';
 import { canVisitArea, getArea } from '../core/areas';
 import { currentStop, syncPath } from '../core/path';
+import { CHANNEL, STORAGE_NAMES, storageNames } from './channel';
+import { channelBackend, copyMainSave } from './channelStorage';
+import { indexedBackend, localBackend, readIndexedValue } from './browserStorage';
 
-const STORE = 'save';
-function database(): Promise<IDBDatabase> {
-  return new Promise((resolve, reject) => {
-    const request = indexedDB.open('oddlings', 1);
-    request.onupgradeneeded = () => request.result.createObjectStore(STORE);
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error);
-  });
+const backends = [indexedBackend(STORAGE_NAMES.database, STORAGE_NAMES.store), localBackend].map(backend => channelBackend(backend, CHANNEL));
+const storage = new SaveStorage(backends);
+const mainNames = storageNames('main');
+const mainSources = [{ get: (key: string) => readIndexedValue(mainNames.database, mainNames.store, key) }, { get: localBackend.get }];
+export async function copyProgressFromMain(): Promise<Save | undefined> {
+  return copyMainSave(CHANNEL, mainSources, backends, storage, true);
 }
-async function request<T>(mode: IDBTransactionMode, run: (store: IDBObjectStore) => IDBRequest<T>): Promise<T> {
-  const db = await database();
-  try {
-    return await new Promise<T>((resolve, reject) => {
-      const tx = db.transaction(STORE, mode);
-      const operation = run(tx.objectStore(STORE));
-      tx.oncomplete = () => resolve(operation.result);
-      tx.onerror = () => reject(tx.error);
-      tx.onabort = () => reject(tx.error);
-      operation.onerror = () => reject(operation.error);
-    });
-  } finally { db.close(); }
-}
-const primary: SaveBackend = {
-  get: key => request('readonly', store => store.get(key)),
-  set: async (key, value) => { await request('readwrite', store => store.put(value, key)); },
-  remove: async key => { await request('readwrite', store => store.delete(key)); },
-  keys: async () => (await request('readonly', store => store.getAllKeys())).map(String),
-};
-const local: SaveBackend = {
-  get: async key => localStorage.getItem(key) ?? undefined,
-  set: async (key, value) => localStorage.setItem(key, value),
-  remove: async key => localStorage.removeItem(key),
-  keys: async () => Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i)!).filter(Boolean),
-};
-const storage = new SaveStorage([primary, local]);
 export async function loadSave(fresh: boolean): Promise<Save> {
+  if (!fresh) {
+    try { await copyMainSave(CHANNEL, mainSources, backends, storage); } catch { /* Unavailable storage still permits ordinary play. */ }
+  }
   const save = await storage.load(fresh);
   if (!canVisitArea(save, save.map.area)) save.map.area = 1;
   syncPath(save, Date.now(), save.map.area);

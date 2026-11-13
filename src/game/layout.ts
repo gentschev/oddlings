@@ -13,6 +13,11 @@ export function titleOfflineLayout() {
     label: { x: l.x + l.padding + l.icon + l.gap, y: l.y,
       width: l.width - l.padding * 2 - l.icon - l.gap, height: l.height } };
 }
+export function titleNoticesLayout() {
+  const { homeScreen, testBadge } = LAYOUT.title;
+  return { homeScreen: { x: homeScreen.x, y: homeScreen.y, width: homeScreen.width, height: homeScreen.height },
+    testBadge: { x: testBadge.x, y: testBadge.y, width: testBadge.width, height: testBadge.height } };
+}
 export function contains(outer: Rect, inner: Rect): boolean {
   return inner.x >= outer.x && inner.y >= outer.y && inner.x + inner.width <= outer.x + outer.width
     && inner.y + inner.height <= outer.y + outer.height;

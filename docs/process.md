@@ -281,6 +281,11 @@ Rules that came out of the first playtest:
 
 ## Deploying
 
+- Changes go to the `next` branch and the test address at `/oddlings-next/` first. Build
+  that bundle with `ODDLINGS_CHANNEL=next pnpm build` for the second Pages site. Test it
+  there before moving changes to `main`. Only promote when the owner says so.
+- Main builds use `pnpm build` with no channel override and run at `/oddlings/`. The
+  test build has its own storage and can copy main progress without changing the source.
 - The game is a static site on GitHub Pages: https://gentschev.github.io/oddlings/.
   A push to `main` runs lint, unit tests and the build, then deploys.
 - The repository is public because Pages is not available for private repositories on

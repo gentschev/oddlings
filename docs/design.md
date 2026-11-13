@@ -49,6 +49,16 @@ worker controls the page. A partial or failed pass stays visibly unready. The st
 updates while the title is open, is never spoken, and is not a button. Development and
 browsers without service workers show no status.
 
+An iPhone, iPod or iPad browser tab, including iPadOS with a Mac identity, shows one
+unspoken line below the status: "Add to Home Screen to keep progress". Home Screen
+launches hide it. Other platforms show nothing. The parent page explains Share, Add to
+Home Screen, then opening the new icon. Safari clears stored data after a week of Safari
+use without a visit; a Home Screen game is kept.
+
+The next channel adds an unspoken "Test version" label and build version at the top
+left. Main has no test label. The installed test app is named Oddlings Test, with the
+short name Odd Test, and the next parent header says Test version.
+
 ### Choose a partner (first run only)
 Three Oddlings: Tenny, Domi, Inch. Tap one to hear its name and see its pattern move. Tap
 "Pick" to choose. The other two can be befriended later; nothing is lost by the choice.
@@ -205,6 +215,21 @@ stay in this browser on this device. Shared devices share one player's progress.
 Clearing browser data or changing devices starts again, and Export makes a backup file.
 Game files come from GitHub Pages, whose host sees the device's internet address during
 downloads. Fully downloaded files work without a connection.
+
+The next parent page has "Copy progress from the main game" with an inline confirmation.
+It replaces only test progress and reports when no valid main save exists.
+
+## Release channels
+
+`ODDLINGS_CHANNEL` selects main by default or next at build time. Main keeps all deployed
+storage names. Next adds `-next` to save keys, dated backup keys, IndexedDB database and
+store names, session keys, voice caches, expiry metadata and the precache name. Worker
+and page code use the same channel. Fresh resets and backup cleanup only see their own
+keys. The two sibling sites can share an origin without sharing progress or caches.
+An empty next store copies a valid main save once, then migrates and writes the copy
+under next names. The source is read only, without creating or upgrading its database,
+healing its save or changing its bytes. Existing test saves and backups block automatic
+copying. A manual copy requires the parent confirmation. Main never copies test progress.
 
 ## Feel
 

@@ -6,7 +6,10 @@ import { BUILD_VERSION } from '../platform/version';
 import { offlineSettingsText, storageNotice } from './offlineInfo';
 import { createSave, exportSave, importSave } from '../core/save';
 import type { Save } from '../core/types';
-import { getRestoreStatus, loadSave, storeSave } from '../platform/storage';
+import { copyProgressFromMain, getRestoreStatus, loadSave, storeSave } from '../platform/storage';
+import { CHANNEL } from '../platform/channel';
+import { homeScreenPromptNeeded } from '../platform/homeScreen';
+import { channelCopyControls, homeScreenSection } from './platformInfo';
 import { recoveryBanner } from './recovery';
 import { LEVELS, parentModel } from './model';
 import type { FactView, ParentModel } from './model';
@@ -17,6 +20,10 @@ let pendingImport: Save | null = null;
 let busy = false;
 let currentSave: Save;
 document.querySelector('#build-version')!.textContent = `Build ${BUILD_VERSION}`;
+if (CHANNEL === 'next') {
+  document.querySelector('#parent-mode')!.textContent = 'Test version';
+  document.title = `Test version · ${document.title}`;
+}
 function showOfflineStatus(): void {
   const line = document.querySelector<HTMLElement>('#offline-status');
   if (!line) return;
@@ -104,9 +111,10 @@ function render(vm: ParentModel): void {
       <p id="action-status" role="status" aria-live="polite"></p>
       <label class="sound-control"><input id="sound" type="checkbox" ${vm.sound ? 'checked' : ''}/> Sound <span id="sound-label">${vm.sound ? 'on' : 'off'}</span></label>
       <div class="data-actions"><button id="export">Export save as JSON</button><label class="file-label" for="import">Choose a save to import<input id="import" type="file" accept=".json,application/json"/></label></div>
+      ${channelCopyControls(CHANNEL)}
       <div id="import-preview" hidden class="detail"></div>
       <details class="reset-panel"><summary>Reset progress</summary><p>This replaces all progress, sessions and settings with a fresh save. Export first if you want to keep a copy.</p><form id="reset-form"><label for="reset-word">Type RESET to enable the reset button</label><input id="reset-word" autocomplete="off" autocapitalize="characters" spellcheck="false"/><button id="reset" class="danger" type="submit" disabled>Reset all progress</button></form></details>
-    </section>${storageNotice()}`;
+    </section>${homeScreenSection(homeScreenPromptNeeded())}${storageNotice()}`;
   showOfflineStatus();
 }
 function showStatus(message: string, error = false): void {
@@ -172,6 +180,15 @@ main.addEventListener('click', event => {
   if (!target) return;
   if (target.dataset.fact) showFact(target.dataset.fact);
   if (target.dataset.skill) showSkill(target.dataset.skill);
+  if (CHANNEL === 'next' && target.id === 'copy-main') document.querySelector<HTMLElement>('#copy-main-preview')!.hidden = false;
+  if (CHANNEL === 'next' && target.id === 'cancel-copy-main') document.querySelector<HTMLElement>('#copy-main-preview')!.hidden = true;
+  if (CHANNEL === 'next' && target.id === 'confirm-copy-main') void action(async () => {
+    document.querySelector<HTMLElement>('#copy-main-preview')!.hidden = true;
+    const copied = await copyProgressFromMain();
+    if (!copied) { showStatus('There is no progress to copy from the main game.'); return; }
+    await refresh(); showStatus('Progress copied from the main game. The main game was not changed.');
+    document.querySelector('#settings')!.scrollIntoView({ block: 'start' });
+  });
   if (target.id === 'export') void action(async () => {
     const latest = await loadSave(false);
     const url = URL.createObjectURL(new Blob([exportSave(latest)], { type: 'application/json' }));

@@ -1,3 +1,5 @@
+import { STORAGE_NAMES } from './channel';
+
 interface WakeHandle { released: boolean; release(): Promise<void> }
 export interface PlayFeatures {
   visible(): boolean;
@@ -50,11 +52,12 @@ export function initDeviceSupport(isTitle: () => boolean): void {
   try { document.addEventListener('visibilitychange', () => support?.visibilityChanged()); } catch { /* Unsupported document. */ }
   try { document.addEventListener('contextmenu', event => event.preventDefault()); } catch { /* Optional gesture guard. */ }
   try {
-    if (!history.state?.oddlingsGuard) history.pushState({ oddlingsGuard: true }, '', location.href);
+    const guard = STORAGE_NAMES.historyGuard;
+    if (!history.state?.[guard]) history.pushState({ [guard]: true }, '', location.href);
     window.addEventListener('popstate', event => {
       try {
-        if (isTitle()) { if (!event?.state?.oddlingsGuard) history.back(); }
-        else history.pushState({ oddlingsGuard: true }, '', location.href);
+        if (isTitle()) { if (!event?.state?.[guard]) history.back(); }
+        else history.pushState({ [guard]: true }, '', location.href);
       } catch { /* History can be unavailable in a restricted web view. */ }
     });
   } catch { /* History is optional. */ }

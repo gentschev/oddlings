@@ -7,14 +7,19 @@ import { STRINGS } from './strings';
 import { nextParentChallenge } from '../core/story/parentGate';
 import { requestPlayFeatures } from '../platform/device';
 import { offlineDisplay, offlineStatus } from '../platform/offlineStatus';
-import { centre, titleOfflineLayout } from './layout';
-import { OFFLINE_TEXT } from './strings';
+import { centre, titleNoticesLayout, titleOfflineLayout } from './layout';
+import { OFFLINE_TEXT, PLATFORM_TEXT } from './strings';
+import { CHANNEL, STORAGE_NAMES } from '../platform/channel';
+import { BUILD_VERSION } from '../platform/version';
+import { homeScreenPromptNeeded } from '../platform/homeScreen';
 
 export class TitleScene extends BaseScene {
   private gate: { a: number; b: number; entered: string } | null = null;
   private offlineText = '';
+  private notices: string[] = [];
   protected details(): Record<string, unknown> {
-    return { gate: this.gate, offlineText: this.offlineText, onScreen: [...this.onScreen, ...(this.offlineText ? [this.offlineText] : [])] };
+    return { gate: this.gate, offlineText: this.offlineText, notices: this.notices,
+      onScreen: [...this.onScreen, ...(this.offlineText ? [this.offlineText] : []), ...this.notices] };
   }
   constructor(runtime: Runtime) { super('title', runtime); }
   create(): void {
@@ -36,6 +41,18 @@ export class TitleScene extends BaseScene {
     // is the gate; a child who taps this sees a sum she cannot do and a Back button.
     this.button('grownups', l.grownX, l.grownY, l.grownW, STRINGS.grownups, () => this.parentGate(), INK.cream);
     this.offlineIndicator();
+    this.platformNotices();
+  }
+  private platformNotices(): void {
+    this.notices = [];
+    const layout = titleNoticesLayout(), title = LAYOUT.title;
+    const add = (value: string, key: 'homeScreen' | 'testBadge') => {
+      const r = layout[key], style = title[key]; this.notices.push(value);
+      text(this, r.x, r.y, value, style.font).setOrigin(0).setPadding(style.padding)
+        .setBackgroundColor(PALETTE.cream).setFixedSize(r.width, r.height);
+    };
+    if (CHANNEL === 'next') add(`${PLATFORM_TEXT.test}\n${BUILD_VERSION}`, 'testBadge');
+    if (homeScreenPromptNeeded()) add(PLATFORM_TEXT.homeScreen, 'homeScreen');
   }
   private offlineIndicator(): void {
     const l = LAYOUT.title.offline, layout = titleOfflineLayout(), p = centre(layout.icon);
@@ -61,11 +78,11 @@ export class TitleScene extends BaseScene {
     if (this.modal) return;
     let previous = this.runtime.parentGateIndex;
     try {
-      const stored = sessionStorage.getItem('oddlings-parent-challenge');
+      const stored = sessionStorage.getItem(STORAGE_NAMES.challenge);
       if (stored !== null && Number.isInteger(Number(stored)) && Number(stored) >= 0) previous = Number(stored);
     } catch { /* The in-memory sequence works when session storage is blocked. */ }
     const challenge = nextParentChallenge(previous);
-    try { sessionStorage.setItem('oddlings-parent-challenge', String(challenge.index)); } catch { /* Optional. */ }
+    try { sessionStorage.setItem(STORAGE_NAMES.challenge, String(challenge.index)); } catch { /* Optional. */ }
     this.runtime.parentGateIndex = challenge.index;
     this.gate = { a: challenge.a, b: challenge.b, entered: '' };
     this.modal = true;

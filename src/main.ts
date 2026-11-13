@@ -20,6 +20,7 @@ import { initDeviceSupport } from './platform/device';
 import { startOfflineSupport } from './platform/offline';
 import { offlineSnapshot, offlineStatus } from './platform/offlineStatus';
 import { BUILD_VERSION } from './platform/version';
+import { CHANNEL } from './platform/channel';
 import { STRINGS } from './game/strings';
 import './font.css';
 import './style.css';
@@ -64,7 +65,7 @@ startOfflineSupport(launched, () => runtime.save);
 let controlledTime: number | null = null;
 let advancedMs = 0;
 window.__oddlings = {
-  state: () => ({ ...runtime.snapshot(), canvas: CANVAS, flags, seed, version: BUILD_VERSION, offline: offlineSnapshot(offlineStatus.get()),
+  state: () => ({ ...runtime.snapshot(), canvas: CANVAS, flags, seed, channel: CHANNEL, version: BUILD_VERSION, offline: offlineSnapshot(offlineStatus.get()),
     randomState: runtime.rng.state(), clock: advancedMs,
     profile: { name: save.profile.name, partner: save.team.partner, tapBaseline: save.profile.tapBaseline },
     area: save.map.area, team: [...save.team.friends], helped: [...save.team.helped], clearedSpots: [...save.map.clearedSpots],

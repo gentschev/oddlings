@@ -1,5 +1,7 @@
+import { STORAGE_NAMES } from './channel';
+
 /** Shared by the worker, warm-up and the playback fallback. */
-export const SPEECH_CACHE = 'oddlings-speech-v1';
+export const SPEECH_CACHE = STORAGE_NAMES.speech;
 export function validRecording(response: Response | undefined): response is Response {
   return !!response && response.status === 200 && !response.headers.get('content-type')?.includes('text/html');
 }

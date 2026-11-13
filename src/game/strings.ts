@@ -4,6 +4,8 @@ import { SPOKEN_COUNT_LIMIT } from './constants';
 /** Download status is for the grown-up and has no speech clips. */
 export const OFFLINE_TEXT = { getting: (stored: number, total: number) => `Getting voices ${stored} / ${total}`,
   ready: 'Ready to play offline' } as const;
+/** Platform notices are never spoken. */
+export const PLATFORM_TEXT = { test: 'Test version', homeScreen: 'Add to Home Screen to keep progress' } as const;
 
 export const STRINGS = {
   yourPals: 'Your pals', bePal: 'Be my pal',
