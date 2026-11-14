@@ -128,6 +128,15 @@ Voice lines are generated offline with Kokoro and committed as `.m4a` files. See
   an old recording in the device cache because the clip kept its name and the browser was
   allowed to reuse its copy for ten minutes. Clips now carry a content hash in their
   address.
+- Sounds written without a vowel are spelled out. "Shh" was read as the letters S, H, H.
+  Feeding the engine the bare sound as phonemes gave a vowel on each side of it, and a
+  single word recorded alone was unreliable. A real word inside a sentence ("Hush. Look at
+  the falls.") is read correctly, so the line was changed.
+- The engine barely pauses after an exclamation mark inside a line. Measured gaps were 0
+  to 110 ms, against 120 to 350 ms after a full stop, so "Wait! Do not go!" ran together.
+  Other punctuation after the mark made no difference. The generator now records such a
+  line in parts and joins them with a fixed silence. Measuring the silent gaps inside
+  clips (decode, then look for quiet stretches) is a third check that needs no listener.
 - A full regeneration of about 850 lines takes around an hour on the Mac. Unchanged lines
   are skipped, so normal runs take seconds.
 
@@ -229,6 +238,13 @@ Failures we hit and what fixed them:
   back with eleven stones, and the stop list was bent to fit. Decide the stops from the
   curriculum first (one per fact set, plus story stops), then demand that exact number
   of stones.
+- **A landmark on the trail reads as a stop.** The Twin Falls map was asked for a camp
+  "off the trail". The trail came back broken: it stopped beside the campfire and started
+  again behind the tent, so the picture said the tent was the next place to go, and the
+  owner tapped it and got stuck. The brief for the redraw asked for one unbroken trail
+  through the stops in order, a strip of grass between the trail and anything that is not
+  a stop, no dead ends and no branches, and told the model to trace the trail by eye from
+  start to gate. Check that trace yourself on every map.
 - **Positions are estimates until seen in the game.** Terra measures stone centres,
   panels and eyes with a script and draws a numbered overlay to check them
   (`art/map-stops.py`, `art/map-stops-check.png`). Layout code reads the manifest;
@@ -274,6 +290,14 @@ Rules that came out of the first playtest:
   Where the number of steps is not known, no steps are drawn. (The owner's instruction
   after the path ran out before the gate opened.)
 
+- Every movement the game makes by itself says why. Fact sets can pass before their stop
+  is reached, so the travelling pal sometimes hops over finished stops. After an
+  encounter the reward screen said so; after a story stop nothing did, and the owner saw
+  the pal "bounce ahead three stops for some reason". The walkthrough probe now logs the
+  marker index at every map visit, which is how the jump was reproduced.
+- A playtester may be on an older build than the one being discussed. An installed app
+  takes a close and reopen to update. Ask for the build code on the title screen (test
+  channel) or parent page before chasing a report that cannot be reproduced.
 - Every story beat shows the thing it talks about.
 - Every locked thing shows how close it is to opening and what to do about it.
 - Every character trait stated in text ("Twoot knows twos") needs a visible consequence

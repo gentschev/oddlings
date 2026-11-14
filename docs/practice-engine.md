@@ -17,7 +17,7 @@ Strength of evidence is stated because some of it is thin for 6 year olds.
 | Teach with pictures when recall checks show a need; measure speed as recall evidence | IES 2021; McNeil et al. 2025; Baroody's phases | Expert consensus; experiments are mixed |
 | Response time recorded on every answer, never shown, no countdown | IES 2021 recommends timed work on mastered content against the child's own record. The claim that timing causes anxiety has no experimental support, and there is no grade 1 experiment either way | Moderate |
 | Small teaching windows among known facts, with more recall checks when accuracy is high | Drill-ratio studies; Rosenshine | Weak to moderate; the numbers are conventions |
-| On a miss: show the answer, child enters it, fact returns after 2 to 3 others | IES 2021 | Strong |
+| On a miss: model and second try, then the worked answer if needed; fact returns after 2 to 3 others | IES 2021 for feedback and return; the extra try is our choice | Strong for feedback and return |
 | Rewards are earned and report progress; none per answer | Deci, Koestner and Ryan 1999 | Strong for the general effect |
 | Ten frames, dot patterns and number lines used for hints and corrections, then faded | IES 2021 on representations | No trial isolates these for fact fluency |
 
@@ -149,6 +149,22 @@ answers on 3 distinct days.
   on or after `dueAt` moves it up one step and sets the next `dueAt`. A first-try-correct
   answer before `dueAt` changes nothing except statistics. A wrong answer sends it back
   to `learning` with `streak = 0` and `lapses + 1`.
+
+A wrong first answer is the only scored response. It changes the fact, entry checks,
+set streaks and response log once, and schedules one retry. It also counts once toward
+the encounter's answered count. The first try alone supplies hint use, hidden state
+and latency.
+
+The second try keeps the same question with its picture model visible. The card says
+"Look and try again." and the first wrong button is dimmed and disabled. Input opens
+after the normal question delay; a tap can interrupt the spoken line. This applies to
+plain, modeled and counting questions. Show me is disabled because the model is up.
+A right second answer gets "You worked it out!" and a hop, then the next question.
+A different wrong second answer shows and reads the worked answer. The card then says
+"Tap n to go on." and accepts only the correct button. That correction tap moves on.
+Neither extra try changes a fact, response log, entry check, set streak, retry or meter.
+Only first-try correct answers clear puffs. The missed fact returns as a scored retry,
+where a first-try correct answer can clear a puff.
 
 Within a session, a fact that was just missed or just introduced is put on a retry queue:
 shown again after 2 to 3 other questions, then again after about 6 more, then once more in
@@ -321,6 +337,8 @@ do not add to this history. Migrations are pure functions
 The 30-day simulation exposed places where rules above collide. These resolutions are part
 of the specification.
 
+- **Three tries.** A miss now gives a modeled second try before the worked-answer
+  correction. Only the first answer is scored; extra tries never clear puffs.
 - **Accuracy target.** The 80 to 90% target applies to days on which new facts are being
   learned. Once everything open is mastered, sessions are all review and accuracy will sit
   above 95%; the engine never manufactures errors.

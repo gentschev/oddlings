@@ -166,7 +166,7 @@ Den, with wall marks and the whole page clear of the dialogue:
 Wall marks sparkle on line two. The page is outlined and pulses on line three.
 
 Mist, with a faint round shape in front of the falls:
-1. "Shh. Look at the falls."
+1. "Hush. Look at the falls."
 2. "A round shape, in the mist."
 3. "It looks at us. It looks sad."
 4. "Wait! Do not go!"

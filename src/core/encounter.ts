@@ -1,4 +1,4 @@
-import { AUTO_MODEL_MS, ENCOUNTER_LENGTH, HINT_PULSE_MS, MUDDLE_MOVE } from './constants';
+import { ANSWER_MAX, AUTO_MODEL_MS, ENCOUNTER_LENGTH, HINT_PULSE_MS, MUDDLE_MOVE } from './constants';
 import { explanationForFact, getFact, setsForFact } from './curriculum/sets';
 import { applyAnswer } from './learner';
 import { learningWindowSize, planEncounter, presentationMode, windowFacts } from './planner';
@@ -10,7 +10,8 @@ import type { Save, Slot } from './types';
 
 export interface Encounter {
   id: string;
-  phase: 'question' | 'correction' | 'complete';
+  phase: 'question' | 'second' | 'correction' | 'complete';
+  wrongAnswer: number | null;
   slots: Slot[];
   index: number;
   meter: number;
@@ -33,7 +34,7 @@ export function startEncounter(save: Save, now: number, rng: Random, length: num
   session.encounters++;
   const slots = planEncounter(save, now, rng, length, reviewOnly);
   const encounter: Encounter = { id: `${session.id}/encounter-${session.encounters}`,
-    phase: 'question', slots, index: 0, meter: length, initialMeter: length,
+    phase: 'question', wrongAnswer: null, slots, index: 0, meter: length, initialMeter: length,
     shownAt: now, hintUsed: false, hidden: false, modelVisible: false, hintPulsing: false,
     answered: 0, unknownAnswered: 0, reviewOnly, placementConfirmations: 0 };
   showQuestion(save, encounter, now);
@@ -51,7 +52,7 @@ export function advanceEncounterTime(encounter: Encounter, now: number): void {
   encounter.hintPulsing = elapsed >= HINT_PULSE_MS && !encounter.modelVisible;
   if (elapsed >= AUTO_MODEL_MS && !encounter.modelVisible) revealHint(encounter);
 }
-export function markEncounterHidden(encounter: Encounter): void { encounter.hidden = true; }
+export function markEncounterHidden(encounter: Encounter): void { if (encounter.phase === 'question') encounter.hidden = true; }
 
 function showQuestion(save: Save, encounter: Encounter, now: number): void {
   let slot = currentSlot(encounter);
@@ -72,6 +73,7 @@ function showQuestion(save: Save, encounter: Encounter, now: number): void {
   if (slot.source !== 'placement' && slot.source !== 'retry' && state.stage === 'review' && state.dueAt !== null && state.dueAt > now) slot.source = 'known';
   if (slot.source === 'new' && state.stage !== 'new') slot.source = state.stage === 'review' ? 'known' : 'learning';
   slot.mode = presentationMode(save, slot.factId, slot.source === 'placement');
+  encounter.wrongAnswer = null;
   encounter.shownAt = now;
   encounter.hintUsed = false;
   encounter.hidden = false;
@@ -118,11 +120,22 @@ function nextQuestion(save: Save, encounter: Encounter, now: number, rng: Random
   showQuestion(save, encounter, now);
 }
 
-/** The correction tap is acknowledgement, never another scored response. */
+/** Extra tries help finish the question without adding scored evidence. */
+export function disabledAnswers(encounter: Encounter): number[] {
+  if (encounter.phase === 'second') return encounter.wrongAnswer === null ? [] : [encounter.wrongAnswer];
+  if (encounter.phase === 'correction') return Array.from({ length: ANSWER_MAX + 1 }, (_, n) => n).filter(n => n !== getFact(currentSlot(encounter).factId).answer);
+  return [];
+}
 export function submitAnswer(save: Save, encounter: Encounter, answer: number, now: number, localDate: string, rng: Random) {
   if (encounter.phase === 'complete') return { accepted: false, correction: false, fast: false };
   const slot = currentSlot(encounter);
   const fact = getFact(slot.factId);
+  if (encounter.phase === 'second') {
+    if (answer === encounter.wrongAnswer) return { accepted: false, correction: false, fast: false };
+    if (answer === fact.answer) nextQuestion(save, encounter, now, rng);
+    else encounter.phase = 'correction';
+    return { accepted: true, correction: false, fast: false };
+  }
   if (encounter.phase === 'correction') {
     if (answer !== fact.answer) return { accepted: false, correction: true, fast: false };
     nextQuestion(save, encounter, now, rng);
@@ -149,8 +162,10 @@ export function submitAnswer(save: Save, encounter: Encounter, answer: number, n
   recordSetStreak(save, save.responses.at(-1)!);
   encounter.answered++;
   if (answer !== fact.answer) {
-    encounter.phase = 'correction';
+    encounter.phase = 'second';
+    encounter.wrongAnswer = answer;
     encounter.modelVisible = true;
+    encounter.hintPulsing = false;
   } else {
     // Keep the final puff until every planned question has had a turn. Otherwise
     // fast reviews can clear the encounter before any learning slot is reached.
@@ -162,7 +177,7 @@ export function submitAnswer(save: Save, encounter: Encounter, answer: number, n
 }
 export function encounterSnapshot(encounter: Encounter) {
   const slot = currentSlot(encounter);
-  return { scene: 'encounter', phase: encounter.phase, question: getFact(slot.factId),
+  return { scene: 'encounter', phase: encounter.phase, disabledAnswers: disabledAnswers(encounter), question: getFact(slot.factId),
     correctAnswer: getFact(slot.factId).answer, meter: encounter.meter,
     onScreen: { mode: slot.mode, modelVisible: encounter.modelVisible, hintPulsing: encounter.hintPulsing,
       correctionAnswer: encounter.phase === 'correction' ? getFact(slot.factId).answer : null,

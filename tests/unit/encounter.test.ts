@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  advanceEncounterTime, consumeRetry, currentSession, currentSlot, encounterSnapshot, getFact,
+  advanceEncounterTime, consumeRetry, currentSession, currentSlot, disabledAnswers, encounterSnapshot, getFact,
   markEncounterHidden, readyRetries, revealHint, scheduleRetry, seededRandom, startEncounter, submitAnswer,
 } from '../../src/core';
 import { fixture, masterSet } from './helpers';
@@ -37,12 +37,17 @@ describe('encounter turns', () => {
     submitAnswer(save, encounter, getFact(currentSlot(encounter).factId).answer, 6000, '2026-11-12', rng);
     expect(encounter.meter).toBe(5);
   });
-  it('records a miss once, shows the worked answer, and requires its correction without reducing the meter', () => {
+  it('records a miss once, offers a modeled second try, then requires a correction without reducing the meter', () => {
     const save = fixture(); const rng = seededRandom(1);
     const encounter = startEncounter(save, 0, rng);
     const id = currentSlot(encounter).factId; const correct = getFact(id).answer;
     submitAnswer(save, encounter, correct + 1, 1000, '2026-11-12', rng);
-    expect(encounter.phase).toBe('correction'); expect(encounter.meter).toBe(8);
+    expect(encounter.phase).toBe('second'); expect(encounter.meter).toBe(8);
+    expect(encounterSnapshot(encounter).onScreen.correctionAnswer).toBeNull();
+    expect(disabledAnswers(encounter)).toEqual([correct + 1]);
+    expect(submitAnswer(save, encounter, correct + 1, 1200, '2026-11-12', rng).accepted).toBe(false);
+    submitAnswer(save, encounter, correct + 2, 1400, '2026-11-12', rng);
+    expect(encounter.phase).toBe('correction');
     expect(encounterSnapshot(encounter).onScreen.correctionAnswer).toBe(correct);
     expect(encounterSnapshot(encounter).onScreen.workedExample?.result).toBe(correct);
     expect(submitAnswer(save, encounter, correct + 1, 1500, '2026-11-12', rng).accepted).toBe(false);

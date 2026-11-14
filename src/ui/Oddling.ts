@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import manifest from '../../public/assets/art/manifest.json';
 import { addition, frame, type Fact } from '../core';
 import { INK, MOTION, TIMING, UI } from '../game/constants';
+import { muddleStroke } from './patternStroke';
 import { oddlingPattern, type PatternDrawing, type PatternMode } from './oddlingPattern';
 
 import type { CharacterId, Rect } from '../game/layout';
@@ -18,6 +19,7 @@ export class Oddling {
   private readonly pattern: Phaser.GameObjects.Graphics;
   private readonly lids: Phaser.GameObjects.Graphics;
   private readonly scale: number;
+  private readonly emptyStroke: number;
   private hopAt = -Infinity;
   private hopHeight: number = MOTION.hop;
   private tiltAt = -Infinity;
@@ -30,6 +32,7 @@ export class Oddling {
     this.root = scene.add.container(x, y);
     this.body = scene.add.container(0, 0); this.root.add(this.body);
     this.scale = width / meta.width; this.body.setScale(this.scale);
+    this.emptyStroke = muddleStroke(this.scale, width);
     this.image = scene.add.image(0, 0, id); this.body.add(this.image);
     this.pattern = scene.add.graphics().setPosition(-meta.width / 2, -meta.height / 2);
     this.body.add(this.pattern);
@@ -57,10 +60,20 @@ export class Oddling {
     const g = this.pattern; g.clear();
     this.mode = this.silhouette ? 'hidden' : drawing.mode;
     if (this.silhouette) return;
-    for (const tile of drawing.tiles) g.lineStyle(tile.stroke, INK.navy).strokeRoundedRect(tile.x, tile.y, tile.width, tile.height, tile.corner);
+    for (const tile of drawing.tiles) {
+      const stroke = drawing.mode === 'muddled' ? this.emptyStroke : tile.stroke;
+      const inset = drawing.mode === 'muddled' ? stroke / 2 : 0;
+      g.lineStyle(stroke, INK.navy).strokeRoundedRect(tile.x + inset, tile.y + inset,
+        tile.width - inset * 2, tile.height - inset * 2, tile.corner);
+    }
     for (const dot of drawing.circles) {
       if (dot.fill) g.fillStyle(dot.colour).fillCircle(dot.x, dot.y, dot.fillRadius ?? dot.radius);
-      if (dot.outline) g.lineStyle(dot.outline, INK.navy).strokeCircle(dot.x, dot.y, dot.radius);
+      if (dot.outline) {
+        const stroke = drawing.mode === 'muddled' ? this.emptyStroke : dot.outline;
+        // Keep the outline inside the resting mark, including on small map sprites.
+        const radius = drawing.mode === 'muddled' ? dot.radius - stroke / 2 : dot.radius;
+        g.lineStyle(stroke, INK.navy).strokeCircle(dot.x, dot.y, radius);
+      }
     }
     for (const line of drawing.lines) g.lineStyle(line.width, line.colour).lineBetween(line.x1, line.y1, line.x2, line.y2);
   }

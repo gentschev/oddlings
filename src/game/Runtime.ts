@@ -6,7 +6,7 @@ import type { PathChange } from '../core/path';
 
 export class Runtime {
   pathChange?: PathChange;
-  arrivalJoined?: { area: number; pals: FriendId[] };
+  arrivalJoined?: { area: number; pals: FriendId[]; from: 'area' | 'story' };
   parentGateIndex = -1;
   elapsed = 0;
   delta = 0;

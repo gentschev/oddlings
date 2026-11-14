@@ -633,3 +633,34 @@ Browser tests and screenshots were not run. The reviewer still needs to check th
 new pips, outlines, tags and early cloud frames. The `ui-quick` recording needs updating
 outside this task. No audio was regenerated, no network was used and no commit was made.
 The existing bundle-size warning remains nonfatal.
+
+### 2026-11-13: M17, second tries and explained path skips
+
+A wrong first answer now opens a modeled second try with "Look and try again." The
+first wrong button and Show me are disabled. A right second try gets "You worked it
+out!" and a hop; another wrong answer opens the worked-answer correction. Only the
+first answer changes learning evidence, response counts, placement, retries or meter.
+Automatic path skips pop the crossed stars and show a singular or plural spoken banner.
+It lasts at least two seconds, waits for speech, and can be dismissed without blocking
+the next stop. Joining panels follow it. Area arrivals and walks started by a tap do
+not show the banner. Muddled outlines now stay at least 3 screen px on encounter and
+reward pals, and 1 px on small map pals. Inset strokes keep the marks apart.
+
+Verified: `pnpm lint && pnpm test` passes all 324 unit tests, including first-try-only
+evidence, both extra-try routes, skip counts, fake-clock speech ordering, cancellation
+and scaled renderer strokes. The thirty-day simulation is unchanged: 2,856 scored
+questions, all sets accurate by day 22. The moved Twin Falls coordinates pass the layout
+tests without edits. `pnpm build` and production artifact checks pass. `pnpm speech:lines`
+exports 903 lines: only `ui-tryAgain`, `ui-knowThese` and `ui-knowThis` were added; all
+existing exported lines match the starting tree. Checksums confirm the 949 protected
+art, recording and related files are unchanged. The existing bundle-size warning remains.
+
+Playwright discovers 26 tests, including both wrong-answer routes and singular/plural
+skip banners. The screenshot script now captures the second try and skip banners and
+passes its syntax check. Browser tests, screenshots and tablet/audio checks were not
+run because no browser is available or allowed. The three new clips need recording
+outside this task. No audio was regenerated and no commit was made. Encounter probes
+can use `phase`, `disabledAnswers`, `inputAccepted`, `modelVisible`, `feedback`, `meter`
+and `responses`, with controls `answer-0` to `answer-20` and `hint`. Map probes get
+`banner`, `passedOver`, `onScreen`, `markerIndex` and `animating`; the banner has no
+control or modal target.

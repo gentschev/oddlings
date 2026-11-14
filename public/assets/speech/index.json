@@ -6081,15 +6081,17 @@
   "text": "Stop! Look at the ground.",
   "voice": "af_heart",
   "file": "story-ring-0.m4a",
-  "ms": 1507,
-  "rev": "2ec4de92"
+  "ms": 1964,
+  "parts": 2,
+  "rev": "38df347e"
  },
  "story-welcome-0": {
   "text": "Oh! A new face. Hello.",
   "voice": "af_heart",
   "file": "story-welcome-0.m4a",
-  "ms": 1695,
-  "rev": "11200dc6"
+  "ms": 2271,
+  "parts": 2,
+  "rev": "8530945f"
  },
  "story-welcome-1": {
   "text": "I am Moss. I keep the Count Book.",
@@ -6654,45 +6656,51 @@
   "text": "Bix is in a muddle!\nFill the dots to help.",
   "voice": "af_heart",
   "file": "muddle-bix.m4a",
-  "ms": 2638,
-  "rev": "c8283bef"
+  "ms": 2777,
+  "parts": 2,
+  "rev": "d4d6cf05"
  },
  "muddle-domi": {
   "text": "Domi is in a muddle!\nFill the dots to help.",
   "voice": "af_heart",
   "file": "muddle-domi.m4a",
-  "ms": 2824,
-  "rev": "ae15da70"
+  "ms": 2968,
+  "parts": 2,
+  "rev": "4bfdb863"
  },
  "muddle-fivel": {
   "text": "Fivel is in a muddle!\nFill the dots to help.",
   "voice": "af_heart",
   "file": "muddle-fivel.m4a",
-  "ms": 2823,
+  "ms": 2992,
   "spoken": "Fyvel is in a muddle!\nFill the dots to help.",
-  "rev": "4def7cb3"
+  "parts": 2,
+  "rev": "52710567"
  },
  "muddle-inch": {
   "text": "Inch is in a muddle!\nFill the dots to help.",
   "voice": "af_heart",
   "file": "muddle-inch.m4a",
-  "ms": 2701,
-  "rev": "0120c0ff"
+  "ms": 2823,
+  "parts": 2,
+  "rev": "7477a5c4"
  },
  "muddle-tenny": {
   "text": "Tenny is in a muddle!\nFill the dots to help.",
   "voice": "af_heart",
   "file": "muddle-tenny.m4a",
-  "ms": 2730,
-  "rev": "b6b26d26"
+  "ms": 2864,
+  "parts": 2,
+  "rev": "283bebdc"
  },
  "muddle-twoot": {
   "text": "Twoot is in a muddle!\nFill the dots to help.",
   "voice": "af_heart",
   "file": "muddle-twoot.m4a",
-  "ms": 2670,
+  "ms": 2895,
   "spoken": "Twute is in a muddle!\nFill the dots to help.",
-  "rev": "c825583a"
+  "parts": 2,
+  "rev": "8542ad2b"
  },
  "cleared-stops-1": {
   "text": "You cleared 1 stop!",
@@ -6927,8 +6935,9 @@
   "text": "Look! A den behind the falls.",
   "voice": "af_heart",
   "file": "story-den-0.m4a",
-  "ms": 1887,
-  "rev": "e54f6093"
+  "ms": 2358,
+  "parts": 2,
+  "rev": "8a715d61"
  },
  "story-den-1": {
   "text": "Ring marks. All over the walls.",
@@ -6962,8 +6971,9 @@
   "text": "Hoo! You made it to Twin Falls.",
   "voice": "af_heart",
   "file": "story-falls-0.m4a",
-  "ms": 1896,
-  "rev": "36efa2c1"
+  "ms": 2461,
+  "parts": 2,
+  "rev": "8c356b95"
  },
  "story-falls-1": {
   "text": "We have two of everything here.",
@@ -6994,11 +7004,11 @@
   "rev": "5fb97a1d"
  },
  "story-mist-0": {
-  "text": "Shh. Look at the falls.",
+  "text": "Hush. Look at the falls.",
   "voice": "af_heart",
   "file": "story-mist-0.m4a",
-  "ms": 1923,
-  "rev": "7c2484e8"
+  "ms": 1490,
+  "rev": "5654e328"
  },
  "story-mist-1": {
   "text": "A round shape, in the mist.",
@@ -7018,8 +7028,9 @@
   "text": "Wait! Do not go!",
   "voice": "af_heart",
   "file": "story-mist-3.m4a",
-  "ms": 1208,
-  "rev": "f9ca51a3"
+  "ms": 1862,
+  "parts": 2,
+  "rev": "fabec2e7"
  },
  "story-mist-4": {
   "text": "It is gone. We must find it.",
@@ -7027,5 +7038,26 @@
   "file": "story-mist-4.m4a",
   "ms": 1950,
   "rev": "c5556eb5"
+ },
+ "ui-knowThese": {
+  "text": "You already know these!",
+  "voice": "af_heart",
+  "file": "ui-knowThese.m4a",
+  "ms": 1334,
+  "rev": "28d02ff4"
+ },
+ "ui-knowThis": {
+  "text": "You already know this one!",
+  "voice": "af_heart",
+  "file": "ui-knowThis.m4a",
+  "ms": 1346,
+  "rev": "fb82f1cf"
+ },
+ "ui-tryAgain": {
+  "text": "Look and try again.",
+  "voice": "af_heart",
+  "file": "ui-tryAgain.m4a",
+  "ms": 1319,
+  "rev": "bf68283c"
  }
 }

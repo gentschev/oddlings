@@ -8,6 +8,9 @@ export const OFFLINE_TEXT = { getting: (stored: number, total: number) => `Getti
 export const PLATFORM_TEXT = { test: 'Test version', homeScreen: 'Add to Home Screen to keep progress' } as const;
 
 export const STRINGS = {
+  tryAgain: 'Look and try again.',
+  knowThese: 'You already know these!',
+  knowThis: 'You already know this one!',
   yourPals: 'Your pals', bePal: 'Be my pal',
   title: 'Oddlings', map: 'Pebble Path', play: 'Play', grownups: 'For grown-ups', campIcon: '⌂',
   sideways: 'Turn me sideways', parentQuestion: (a: number, b: number) => `What is ${a} × ${b}?`, go: 'Go', clearKey: 'Clear',

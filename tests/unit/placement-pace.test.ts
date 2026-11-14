@@ -31,7 +31,7 @@ describe('entry checks per set', () => {
     if (second) submitAnswer(save, e, getFact(currentSlot(e).factId).answer, e.shownAt + 1000, 'day', random);
     const missed = currentSlot(e).factId;
     submitAnswer(save, e, 99, e.shownAt + 1000, 'day', random);
-    expect(e.phase).toBe('correction'); expect(save.facts[missed]!.stage).toBe('learning');
+    expect(e.phase).toBe('second'); expect(save.facts[missed]!.stage).toBe('learning');
     submitAnswer(save, e, getFact(missed).answer, e.shownAt + 1000, 'day', random);
     let gap = 0;
     while (currentSlot(e).source !== 'placement') {

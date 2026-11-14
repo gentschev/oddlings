@@ -42,7 +42,7 @@ export const LAYOUT = {
     starOffset: 34, starPoints: 5, starInner: 8, starOuter: 17, starStroke: 2, gateStroke: 6, gatePulseAlpha: 0.3,
     ringSegments: 96, progressRadius: 48, progressScaleY: 0.62, progressStroke: 10,
     tagW: 100, withinTagW: 160, tagH: 34, tagOffsetY: 52, tagOffsetsX: [0, 0, 0, 0, 0, 0, 0, -36, 0, 0, 0], tagFont: 20, tagCell: 13, tagDot: 4,
-    homeSignW: 72, homeSignH: 44 },
+    homeSignW: 72, homeSignH: 44, bannerX: 700, bannerY: 66, bannerFont: 36 },
   encounter: { partnerX: 170, wildX: 1110, feetY: 430, creatureW: 240,
     cloudRatio: 0.45, cloudAlpha: 0.85, cloudGap: 16, cloudMinScale: 0.55,
     meterY: 45, meterGap: 62, slotW: 44, dotW: 26,
@@ -80,6 +80,8 @@ export const MOTION = { breath: 0.018, bob: 4, hop: 38, quickHop: 72, tilt: 9,
   panelInset: 0.08, segmentRadius: 20, demoSteps: 10, hintPulse: 0.06 } as const;
 /** Pip spacing is shared by picture models and the pals' source-image panels. */
 export const PATTERN = { margin: 6, gap: 4, fitSteps: 32, panelMargin: 0.04, pipRadius: 1 / 6,
+  // Empty marks keep these logical-pixel strokes even on small, breathing sprites.
+  outlineScreen: 3, outlineMap: 1, mapMaxWidth: 88,
   dividerGap: 8, dividerStroke: 3, outline: 5, segmentOutline: 3, cross: 4, minDotCross: 3, dotCross: 1 / 3, capacity: 10, dieCapacity: 6,
   pairLeft: 0.3, pairRight: 0.7, tileWidth: 5.4, tileHeight: 2.2, tileGap: 0.08,
   tileStroke: 0.06, tileCorner: 0.1, tileDot: 0.33, tileCrossInset: 0.18, tileCrossStroke: 0.09,
@@ -99,7 +101,7 @@ export const PARENT_GATE = { width: 800, height: 680, x: 640, y: 400, questionY:
   closeX: 956, closeY: 142, closeW: 136, font: 48, keyFont: 32, digits: 2 } as const;
 
 /** Path progress animation runs concurrently, then walks in a bounded time. */
-export const PATH_TIMING = { rings: 600, starGap: 60, star: 220, walkBudget: 1800 } as const;
+export const PATH_TIMING = { rings: 600, starGap: 60, star: 220, walkBudget: 1800, passedStarScale: 1.4, passedStar: 140, banner: 2000, bannerDismiss: 80 } as const;
 
 /** Per-map presentation data. New maps add rows here without changing scene logic. */
 export const MAP_LAYOUT = {

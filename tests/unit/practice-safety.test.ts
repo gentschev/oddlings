@@ -13,7 +13,7 @@ it('does not pass a check or a set streak in 200 encounters of random pad taps',
       expect(++turns).toBeLessThan(2000);
       const fact = getFact(currentSlot(encounter).factId), answer = Math.floor(child.next() * 21);
       submitAnswer(save, encounter, answer, now += 1200, 'day', random);
-      if (encounter.phase === 'correction') submitAnswer(save, encounter, fact.answer, now += 1000, 'day', random);
+      if (encounter.phase === 'second' || encounter.phase === 'correction') submitAnswer(save, encounter, fact.answer, now += 1000, 'day', random);
     }
     expect(Object.values(save.practice.checks ?? {}).some(c => c.status === 'passed')).toBe(false);
     expect(Object.values(save.facts).some(f => f.provisional)).toBe(false);

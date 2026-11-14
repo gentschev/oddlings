@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import { centre, encounterLayout } from './layout';
 import { factSpeechId } from './speechLines';
-import { advanceEncounterTime, currentSlot, explanationForFact, getFact, markEncounterHidden, revealHint,
+import { advanceEncounterTime, currentSlot, disabledAnswers, explanationForFact, getFact, markEncounterHidden, revealHint,
   encounterPals, improvingStop, markHelped, palIntroduction, pathStops, stopIntroduction, syncPath, type PathStop, practiceProgress, practiceSnapshot, startEncounter, submitAnswer, type Encounter, type Fact, type PracticeSnapshot, ODDLING_PATTERNS } from '../core';
 import { type FriendId } from '../core/story/characters';
 import { areaForStop, getArea, getStop, type SkillStop } from '../core/areas';
@@ -59,6 +59,7 @@ export class EncounterScene extends BaseScene {
       presentation: this.displayedMode,
       modelVisible: this.previousModel, hintPulsing: this.encounter.hintPulsing,
       phase: this.introActive ? 'intro' : this.encounter.phase, inputAccepted: this.accepting && !this.busy && !this.modal,
+      disabledAnswers: this.pad.buttons.flatMap((b, n) => b.control.enabled ? [] : [n]),
       intro: this.introActive, friendRestored: this.friendRestored,
       meter: this.encounter.meter, initialMeter: this.encounter.initialMeter,
       slots: slotStates(this.encounter.initialMeter, this.encounter.meter),
@@ -142,7 +143,7 @@ export class EncounterScene extends BaseScene {
   private renderQuestion(): void {
     const e = this.encounter, l = LAYOUT.encounter;
     this.accepting = false; this.pad.enable(false); this.hint.enable(false);
-    this.model?.destroy(); this.model = undefined;
+    if (e.phase === 'question') { this.model?.destroy(); this.model = undefined; this.previousModel = false; }
     this.displayed = getFact(currentSlot(e).factId);
     this.displayedMode = currentSlot(e).mode;
     const isCount = this.displayed.operation === 'dots' || this.displayed.operation === 'frame';
@@ -150,18 +151,18 @@ export class EncounterScene extends BaseScene {
       .setText(questionText(this.displayed, e.phase === 'correction')).setAlpha(0);
     this.question.setFixedSize(l.questionW, l.questionH).setAlign('center')
       .setY(isCount || e.modelVisible ? l.questionY : l.cardY);
-    this.speak(factSpeechId(this.displayed, e.phase === 'correction'));
-    this.message.setText(e.phase === 'correction' ? STRINGS.correction(this.displayed.answer) : '');
+    this.speak(e.phase === 'second' ? 'ui-tryAgain' : factSpeechId(this.displayed, e.phase === 'correction'));
+    this.message.setText(e.phase === 'correction' ? STRINGS.correction(this.displayed.answer) : e.phase === 'second' ? STRINGS.tryAgain : '');
     this.pad.highlight(e.phase === 'correction' ? this.displayed.answer : null);
-    this.previousModel = false;
+    this.pad.enable(false);
     if (e.modelVisible || this.displayed.operation === 'dots' || this.displayed.operation === 'frame') this.showModel();
     else this.partner.showFact(this.displayed, false);
     this.onScreen = [this.question.text, this.message.text];
     this.tweens.add({ targets: this.question, alpha: 1, duration: TIMING.question });
     this.time.delayedCall(TIMING.question, () => {
       // Do not include feedback, transitions or card entry in response latency.
-      e.shownAt = this.runtime.now();
-      this.accepting = true; this.pad.enable(true); this.pad.highlight(e.phase === 'correction' ? this.displayed.answer : null);
+      if (e.phase === 'question') e.shownAt = this.runtime.now();
+      this.accepting = true; this.pad.acceptExcept(disabledAnswers(e));
       this.hint.enable(e.phase === 'question');
     });
     this.card.setVisible(true); this.question.setVisible(true); this.message.setVisible(true);
@@ -179,7 +180,7 @@ export class EncounterScene extends BaseScene {
   private answer(answer: number): void {
     if (!this.accepting || this.busy || this.modal) return;
     this.runtime.audio.play('tap', answer);
-    const e = this.encounter;
+    const e = this.encounter, second = e.phase === 'second';
     const result = submitAnswer(this.runtime.save, e, answer, this.runtime.now(), this.runtime.localDate(), this.runtime.rng);
     this.meter.sync(e.meter);
     if (!result.accepted) { this.partner.tilt(this.runtime.elapsed); return; }
@@ -195,7 +196,7 @@ export class EncounterScene extends BaseScene {
     this.question.setText(questionText(this.displayed, true));
     if (e.phase === 'complete') this.cleared();
     else {
-      const index = e.answered % PRAISE_LINES.length;
+      const index = second ? 0 : e.answered % PRAISE_LINES.length;
       this.message.setText(result.fast ? STRINGS.quick : PRAISE_LINES[index]!);
       this.onScreen = [this.question.text, this.message.text];
       this.speak(result.fast ? 'ui-quick' : `praise-${index}`);

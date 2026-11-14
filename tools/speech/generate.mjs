@@ -36,6 +36,13 @@ const spokenText = (text) => closed(Object.entries(PRONUNCIATION)
 // and keep the first clean one. The ending used is stored in the index as `ending`.
 const ENDINGS = ['!', '.', '?', ','];
 const withEnding = (spoken, mark) => spoken.replace(/[.!?]$/, mark);
+// The engine leaves almost no gap after an exclamation mark inside a line: measured 0 to
+// 110 ms, against 120 to 350 ms after a full stop, so "Wait! Do not go!" ran together. Other
+// punctuation after the mark (an ellipsis, a dash, a full stop) did not change that. Such a
+// line is recorded in parts, split after each inner exclamation mark, and the parts are
+// joined with a fixed silence. The number of parts is stored in the index as `parts`.
+const PAUSE_MS = 220;      // added between parts, on top of the trimmed margins (about 120 ms)
+const partsOf = (spoken) => spoken.split(/(?<=!)\s+/);
 
 // Kokoro pads each clip with about 0.35 s of silence before the speech and 0.5 s after. The
 // lead makes every line start late and the tail makes waits longer than the words. Keep a
@@ -63,6 +70,7 @@ const todo = lines.filter((l) => {
   const prev = index[l.id];
   // Entries without a length predate silence trimming and are made again.
   return !(prev && prev.text === l.text && (prev.spoken ?? prev.text) === spokenText(l.text)
+    && (prev.parts ?? 1) === partsOf(spokenText(l.text)).length
     && prev.voice === (l.voice ?? DEFAULT_VOICE) && typeof prev.ms === 'number' && existsSync(join(outDir, prev.file)));
 });
 console.log(`${lines.length} lines, ${todo.length} to generate`);
@@ -77,7 +85,13 @@ if (todo.length) {
     // Writes the compressed file and returns the clip. The hiss check reads the finished
     // file, the same way tools/speech/tails.mjs does, so the two always agree.
     const make = async (text) => {
-      const clip = trimSilence(await tts.generate(text, { voice, speed: SPEED }));
+      const pieces = [];
+      for (const part of partsOf(text)) pieces.push(trimSilence(await tts.generate(part, { voice, speed: SPEED })));
+      const rate = pieces[0].sampling_rate, gap = Math.round(rate * PAUSE_MS / 1000);
+      const joined = new Float32Array(pieces.reduce((sum, p) => sum + p.audio.length, 0) + gap * (pieces.length - 1));
+      let at = 0;
+      for (const p of pieces) { joined.set(p.audio, at); at += p.audio.length + gap; }
+      const clip = pieces.length === 1 ? pieces[0] : new pieces[0].constructor(joined, rate);
       await clip.save(wav);
       execFileSync('afconvert', ['-f', 'm4af', '-d', 'aac', '-b', '48000', wav, join(outDir, file)]);
       rmSync(wav);
@@ -97,7 +111,8 @@ if (todo.length) {
     rmSync(join(outDir, 'hiss-check.wav'), { force: true });
     // ms is the spoken length; the game uses it to wait for a line before starting the next.
     const ms = Math.round(audio.audio.length / audio.sampling_rate * 1000);
-    index[line.id] = { text: line.text, voice, file, ms, ...(spoken !== line.text ? { spoken } : {}), ...(ending ? { ending } : {}) };
+    index[line.id] = { text: line.text, voice, file, ms, ...(spoken !== line.text ? { spoken } : {}), ...(ending ? { ending } : {}),
+      ...(partsOf(spoken).length > 1 ? { parts: partsOf(spoken).length } : {}) };
     if (++n % 25 === 0) { console.log(`${n}/${todo.length}`); writeFileSync(indexPath, JSON.stringify(index, null, 1)); }
   }
 }

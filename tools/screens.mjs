@@ -72,6 +72,8 @@ async function encounter(p, name) {
     if (s.presentation === 'plain' && !s.modelVisible && !plain) { await shot(p, 'question-plain'); plain = true; }
     if (!corrected && !deliberateMiss) {
       await click(p, `answer-${(s.correctAnswer + 1) % 21}`, 400);
+      await shot(p, 'second-try');
+      await click(p, `answer-${(s.correctAnswer + 2) % 21}`, 400);
       await shot(p, 'wrong-answer-correction'); corrected = true; deliberateMiss = true;
     } else {
       await click(p, `answer-${s.correctAnswer}`, s.phase === 'correction' ? 400 : 220);
@@ -112,6 +114,7 @@ async function captureAll() {
   for (let n = 0; n < 30; n++) {
     const map = await ready(page, 'map');
     await shot(page, `path-${n}`);
+    if (map.banner) await shot(page, `known-skip-banner-${n}`);
     const stop = map.stops.find(s => s.state === 'current');
     if (stop.type === 'gate') { completedPath = true; break; }
     await click(page, stop.id);
@@ -135,6 +138,7 @@ async function captureAll() {
   let completedTwin = false;
   for (let n = 0; n < 30; n++) {
     const map = await ready(page, 'map'); await shot(page, `twin-falls-path-${n}`);
+    if (map.banner) await shot(page, `twin-falls-known-skip-banner-${n}`);
     const stop = map.stops.find(s => s.state === 'current');
     if (stop.type === 'gate') { completedTwin = true; break; }
     await click(page, stop.id);
@@ -191,6 +195,8 @@ async function captureAll() {
     }
     await shot(p, `model-${name}`);
     await click(p, `answer-${(s.correctAnswer + 1) % 21}`, 400);
+    await shot(p, `second-try-${name}`);
+    await click(p, `answer-${(s.correctAnswer + 2) % 21}`, 400);
     await shot(p, `correction-${name}`);
     await gallery.close();
   }

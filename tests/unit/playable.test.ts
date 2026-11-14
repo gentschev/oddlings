@@ -16,7 +16,7 @@ describe('replay practice', () => {
       expect(encounter.slots.every(s => ids.includes(s.factId))).toBe(true);
       expect(slot.source).not.toBe('placement');
       submitAnswer(save, encounter, 20, NOW + i * 1000, '2026-11-12', rng);
-      expect(encounter.phase).toBe('correction');
+      expect(encounter.phase).toBe('second');
       submitAnswer(save, encounter, getFact(slot.factId).answer, NOW + i * 1000 + 500, '2026-11-12', rng);
     }
     expect(encounter.slots.length).toBeGreaterThan(6);

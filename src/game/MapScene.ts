@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { areaGateOpen, currentSession, currentStop, gatePracticePal, pathStops, WARMUP_TAPS, type PathStop } from '../core';
+import { areaGateOpen, currentSession, currentStop, gatePracticePal, pathStops, WARMUP_TAPS, passedOverStops, type PathStop } from '../core';
 import type { FriendId } from '../core/story/characters';
 import { getArea, gateWalked, nextArea, previousArea, visitArea, walkGate } from '../core/areas';
 import { earlierAreaNeedsHelp, syncPath } from '../core/path';
@@ -21,11 +21,17 @@ export class MapScene extends BaseScene {
   private stones: StoneVisual[] = [];
   private animating = false;
   private motion = 0;
+  private banner?: Phaser.GameObjects.Text;
+  private bannerText = '';
+  private bannerTapArmed = false;
+  private passedOver = 0;
+  private announcement = 0;
   private arrivalPals: FriendId[] = [];
+  private joinedShown = false;
   constructor(runtime: Runtime) { super('map', runtime); }
   protected details(): Record<string, unknown> {
     const save = this.runtime.save, area = getArea(this.area), entry = mapEntryRect(this.area);
-    return { arrivalJoined: this.arrivalPals, speechId: this.speechId, area: this.area, background: area.mapBackground, entry: entry ? { ...entry, id: area.entryId, needsHelp: earlierAreaNeedsHelp(save, this.runtime.now(), this.area) } : null, markerIndex: this.markerIndex, animating: this.animating, sound: save.settings.sound,
+    return { banner: this.bannerText, passedOver: this.passedOver, arrivalJoined: this.arrivalPals, speechId: this.speechId, area: this.area, background: area.mapBackground, entry: entry ? { ...entry, id: area.entryId, needsHelp: earlierAreaNeedsHelp(save, this.runtime.now(), this.area) } : null, markerIndex: this.markerIndex, animating: this.animating, sound: save.settings.sound,
       nextStop: currentStop(save, this.area)?.id ?? area.gateId, home: mapHomeRect(this.area),
       stops: [...pathStops(save, this.runtime.now(), this.area).map((s, i) => ({ ...s, ...mapStopLayout(i, this.area).point,
         tag: s.set ? STOP_TAGS[s.set] : null, completed: s.completed, next: s.state === 'current',
@@ -36,10 +42,24 @@ export class MapScene extends BaseScene {
         needsHelp: false, pal: null, set: null, tag: null }] };
   }
   create(): void {
-    this.begin(); this.area = this.runtime.save.map.area; const area = getArea(this.area), style = mapStyle(this.area); this.nativeRings = style.nativeRings; this.background(area.mapBackground); this.stones = []; this.animating = false; this.motion++;
+    this.begin(); this.banner = undefined; this.bannerText = ''; this.bannerTapArmed = false; this.passedOver = 0; this.joinedShown = false; this.announcement++;
+    const dismiss = () => {
+      if (!this.bannerText || !this.bannerTapArmed) return;
+      this.cancelArrival(); this.interruptSpeech();
+      const generation = this.announcement;
+      // Let the same tap activate a map control before offering the join panel.
+      this.time.delayedCall(PATH_TIMING.bannerDismiss, () => {
+        if (generation === this.announcement && !this.busy && !this.modal) this.showJoined();
+      });
+    };
+    this.input.on('pointerdown', dismiss);
+    this.events.once('shutdown', () => this.input.off('pointerdown', dismiss));
+    this.area = this.runtime.save.map.area; const area = getArea(this.area), style = mapStyle(this.area); this.nativeRings = style.nativeRings; this.background(area.mapBackground); this.stones = []; this.animating = false; this.motion++;
     const save = this.runtime.save, l = LAYOUT.map, states = pathStops(save, this.runtime.now(), this.area);
     const change = this.runtime.pathChange?.area === this.area ? this.runtime.pathChange : undefined; this.runtime.pathChange = undefined;
-    this.arrivalPals = this.runtime.arrivalJoined?.area === this.area ? this.runtime.arrivalJoined.pals : [];
+    const arrival = this.runtime.arrivalJoined?.area === this.area ? this.runtime.arrivalJoined : undefined;
+    const enteredArea = arrival?.from === 'area';
+    this.arrivalPals = arrival?.pals ?? [];
     this.runtime.arrivalJoined = undefined;
     this.onScreen = [area.name];
     text(this, l.headingX, l.headingY, area.name, UI.subheadingFont).setBackgroundColor(PALETTE.cream);
@@ -50,7 +70,7 @@ export class MapScene extends BaseScene {
       soundIcon(this, mute, !save.settings.sound, icon); void this.runtime.persist();
     }, INK.cream, UI.buttonFont, true);
     const icon = soundIcon(this, mute, !save.settings.sound); this.controls.push(mute.control);
-    this.bookButton(style.bookX, style.bookY, () => this.go('oddbook', { returnTo: 'map' }));
+    this.bookButton(style.bookX, style.bookY, () => { this.cancelArrival(); this.go('oddbook', { returnTo: 'map' }); });
     this.home();
     for (let i = 0; i < area.stops.length; i++) {
       const stop = area.stops[i]!, state = states[i]!, layout = mapStopLayout(i, this.area), p = layout.point;
@@ -81,7 +101,7 @@ export class MapScene extends BaseScene {
       const hit = centre(layout.touch);
       this.add.zone(hit.x, hit.y, layout.touch.width, layout.touch.height).setInteractive({ useHandCursor: enabled }).on('pointerdown', () => {
         if (!enabled || this.busy || this.modal) return;
-        this.interruptSpeech();
+        this.cancelArrival(); this.interruptSpeech();
         if (stop.type === 'skill' && currentSession(save).warmupTaps < WARMUP_TAPS) { this.go('warmup'); return; }
         this.walkTo(i, () => this.go(stop.type === 'skill' ? 'encounter' : 'story', { stop }));
       });
@@ -94,7 +114,16 @@ export class MapScene extends BaseScene {
     const marker = mapMarkerRect((save.team.partner ?? 'tenny') as FriendId, this.markerIndex, this.area), p = centre(marker);
     this.pal((save.team.partner ?? 'tenny') as FriendId, p.x, p.y, marker.width);
     const changed = change && states.some((s, i) => s.state !== change.before[i]!.state || this.ringValue(s) !== this.ringValue(change.before[i]!));
-    if (changed || this.markerIndex === -1) this.animatePath(target, () => this.showArrival());
+    if (changed || this.markerIndex === -1) {
+      const before = this.markerIndex;
+      this.passedOver = !enteredArea && change ? passedOverStops(before, target, change.before) : 0;
+      this.animatePath(target, () => this.showArrival(), index => {
+        if (!this.passedOver || index <= before || index >= target || !(change?.before[index]?.type === 'skill' || change?.before[index]?.completed)) return;
+        const star = this.stones[index]!.star;
+        this.tweens.killTweensOf(star);
+        this.tweens.add({ targets: star, scale: PATH_TIMING.passedStarScale, duration: PATH_TIMING.passedStar, yoyo: true });
+      });
+    }
     else { this.placeMarker(target); this.finishVisuals(); this.showArrival(); }
   }
   private ringValue(s: PathStop): number { return s.completed ? 1 : s.state === 'locked' ? 0 : s.progress; }
@@ -137,7 +166,7 @@ export class MapScene extends BaseScene {
     const sign = text(this, p.x, p.y, STRINGS.campIcon, UI.buttonFont);
     this.tweens.add({ targets: sign, scale: l.pulseScale, duration: TIMING.pattern, yoyo: true, repeat: -1 });
     this.add.zone(p.x, p.y, r.width, r.height).setInteractive({ useHandCursor: true }).on('pointerdown', () => {
-      if (!this.busy && !this.modal) this.go('camp');
+      if (!this.busy && !this.modal) { this.cancelArrival(); this.go('camp'); }
     });
     this.controls.push({ id: 'home', ...p, width: r.width, height: r.height, enabled: true });
   }
@@ -146,20 +175,43 @@ export class MapScene extends BaseScene {
     if (!visitArea(save, number)) return;
     const change = syncPath(save, this.runtime.now(), number);
     this.runtime.pathChange = change;
-    this.runtime.arrivalJoined = { area: number, pals: change.joined };
+    this.runtime.arrivalJoined = { area: number, pals: change.joined, from: 'area' };
     this.saveThen(() => this.go('map'));
   }
+  private cancelArrival(): void {
+    this.announcement++;
+    this.banner?.destroy(); this.banner = undefined;
+    this.onScreen = this.onScreen.filter(line => line !== this.bannerText);
+    this.bannerText = ''; this.bannerTapArmed = false;
+  }
   private showArrival(): void {
-    const first = this.arrivalPals[0];
-    if (!first) return;
-    // The heading finishes before this automatic announcement, even after an animation skip.
-    this.busy = true;
+    if (!this.passedOver && !this.arrivalPals.length) return;
+    const generation = this.announcement;
+    if (!this.passedOver) this.busy = true;
+    // The heading finishes first, even when a tap skips the path animation.
     this.afterSpeech(0, () => {
-      this.busy = false;
-      const many = this.arrivalPals.length > 1;
-      this.panel(many ? STRINGS.palsJoin(this.arrivalPals.length) : STRINGS.join(STRINGS.names[first]));
-      this.speak(many ? `joined-pals-${this.arrivalPals.length}` : `join-${first}`);
+      if (generation !== this.announcement) return;
+      if (!this.passedOver) { this.busy = false; this.showJoined(); return; }
+      const many = this.passedOver > 1, l = LAYOUT.map;
+      this.bannerText = many ? STRINGS.knowThese : STRINGS.knowThis;
+      this.onScreen.push(this.bannerText);
+      this.banner = text(this, l.bannerX, l.bannerY, this.bannerText, l.bannerFont).setBackgroundColor(PALETTE.cream);
+      this.speak(many ? 'ui-knowThese' : 'ui-knowThis');
+      // The tap that skips movement must not also dismiss the newly shown banner.
+      this.time.delayedCall(0, () => { if (generation === this.announcement) this.bannerTapArmed = true; });
+      this.afterSpeech(PATH_TIMING.banner, () => {
+        if (generation !== this.announcement) return;
+        this.cancelArrival(); this.showJoined();
+      });
     });
+  }
+  private showJoined(): void {
+    const first = this.arrivalPals[0];
+    if (!first || this.joinedShown || this.busy || this.modal) return;
+    const many = this.arrivalPals.length > 1;
+    this.panel(many ? STRINGS.palsJoin(this.arrivalPals.length) : STRINGS.join(STRINGS.names[first]));
+    this.speak(many ? `joined-pals-${this.arrivalPals.length}` : `join-${first}`);
+    this.joinedShown = true;
   }
   private entry(): void {
     const rect = mapEntryRect(this.area), previous = previousArea(this.area), area = getArea(this.area);
@@ -174,7 +226,7 @@ export class MapScene extends BaseScene {
     }
     this.add.zone(p.x, p.y, rect.width, rect.height).setInteractive({ useHandCursor: true }).on('pointerdown', () => {
       if (this.busy || this.modal) return;
-      this.interruptSpeech(); this.walkTo(-1, () => this.changeArea(previous.number));
+      this.cancelArrival(); this.interruptSpeech(); this.walkTo(-1, () => this.changeArea(previous.number));
     });
     this.controls.push({ id: area.entryId!, ...p, width: rect.width, height: rect.height, enabled: true });
   }
@@ -192,7 +244,7 @@ export class MapScene extends BaseScene {
     };
     this.add.zone(p.x, p.y, UI.minTouch, UI.minTouch).setInteractive({ useHandCursor: true }).on('pointerdown', () => {
       if (this.busy || this.modal) return;
-      this.interruptSpeech();
+      this.cancelArrival(); this.interruptSpeech();
       if (!areaGateOpen(save, this.area)) { this.panel(STRINGS.gateClosed); return; }
       if (gateWalked(save, this.area)) {
         if (next) this.walkTo(area.stops.length, () => this.changeArea(next.number));
@@ -225,7 +277,7 @@ export class MapScene extends BaseScene {
       s.star.setAlpha(s.complete ? 1 : 0).setScale(1);
     }
   }
-  private animatePath(target: number, arrive: () => void): void {
+  private animatePath(target: number, arrive: () => void, landed: (index: number) => void): void {
     this.animating = true; this.busy = true;
     const skip = this.add.zone(CANVAS.width / 2, CANVAS.height / 2, CANVAS.width, CANVAS.height).setInteractive();
     this.controls.push({ id: 'path-skip', x: CANVAS.width / 2, y: CANVAS.height / 2, ...CANVAS, enabled: true });
@@ -248,10 +300,10 @@ export class MapScene extends BaseScene {
       if (!this.animating) return;
       this.busy = false;
       const distance = Math.max(1, Math.abs(target - this.markerIndex));
-      this.walkTo(target, finish, Math.min(TIMING.hop, PATH_TIMING.walkBudget / distance));
+      this.walkTo(target, finish, Math.min(TIMING.hop, PATH_TIMING.walkBudget / distance), landed);
     });
   }
-  private walkTo(target: number, arrive: () => void, duration: number = TIMING.hop): void {
+  private walkTo(target: number, arrive: () => void, duration: number = TIMING.hop, landed?: (index: number) => void): void {
     this.busy = true;
     const marker = this.pals[this.pals.length - 1]!, generation = this.motion;
     const step = () => {
@@ -260,7 +312,7 @@ export class MapScene extends BaseScene {
       this.markerIndex += Math.sign(target - this.markerIndex);
       const p = centre(mapMarkerRect(marker.id, this.markerIndex, this.area));
       marker.hop(this.runtime.elapsed); this.runtime.audio.play('hop');
-      this.tweens.add({ targets: marker.root, x: p.x, y: p.y, duration, onComplete: step });
+      this.tweens.add({ targets: marker.root, x: p.x, y: p.y, duration, onComplete: () => { if (generation !== this.motion) return; landed?.(this.markerIndex); step(); } });
     };
     step();
   }

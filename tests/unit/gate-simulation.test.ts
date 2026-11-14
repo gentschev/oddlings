@@ -23,7 +23,7 @@ it('simulates the visible path for always-right, 95% and 85% children', () => {
         const fact = getFact(currentSlot(encounter).factId), correct = child.next() < probability;
         now += probability === 1 ? 2500 : probability === 0.95 ? 4000 : 5000; questions++;
         submitAnswer(save, encounter, fact.answer + Number(!correct), now, `day-${Math.floor(now / DAY_MS)}`, planning);
-        if (encounter.phase === 'correction') { now += 1500; submitAnswer(save, encounter, fact.answer, now, 'day', planning); }
+        if (encounter.phase === 'second' || encounter.phase === 'correction') { now += 1500; submitAnswer(save, encounter, fact.answer, now, 'day', planning); }
       }
       syncPath(save, now);
     }

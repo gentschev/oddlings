@@ -129,3 +129,22 @@ include both areas. Browser review is still required outside the sandbox.
 Next: area 3, The Tenwood, then area 4, Teen Hills. Each adds registry data, background
 art, map geometry data and its story clues. The character art stays the same. Growth,
 music and the remaining playtest requests stay on the later list.
+
+## Owner's session on the test address (2026-11-13, Twin Falls)
+
+What was reported:
+- A wrong answer should not show the answer at once. Suggested: a hint on the second try,
+  the answer on the third.
+- The Twin Falls trail did not connect past the tent. The tent read as the next stop and
+  the real next stop (the den story) was missed.
+- After the den story the travelling pal hopped over about three stops with no reason
+  given.
+- "Shh" was spoken as letters. "Wait! Do not go!" had no pause after "Wait".
+- Two pals appeared to have no pips during a question.
+
+Done (M17): three tries (first scored, second with the picture model, third shows the
+answer); the map redrawn with one unbroken trail that goes around the camp; a spoken line
+when the pal passes stops the child already knows; "Hush" in place of "Shh"; a fixed pause
+after an exclamation mark inside a line; bolder empty outlines on a muddled pal. The
+missing pips could not be reproduced on the current build and may have been an older
+installed build. See `docs/progress.md`.

@@ -85,3 +85,6 @@ export const PLACEMENT_RECHECK_GAP = 2;
 export const PLACEMENT_MISS_LIMIT = 2;
 /** Confirmed due facts needed to show a cloud on an already completed stop. */
 export const STOP_HELP_DUE = 3;
+
+/** Largest answer on the current number pad. */
+export const ANSWER_MAX = 20;

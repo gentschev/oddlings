@@ -86,7 +86,9 @@ export class StoryScene extends BaseScene {
       if (this.line < lines.length) {
         line.setText(lines[this.line]!); this.onScreen = [lines[this.line]!, STRINGS.next]; this.speak(`story-${this.stop.beat}-${this.line}`);
       } else {
-        this.runtime.pathChange = seeStory(this.runtime.save, this.stop, this.runtime.now());
+        const change = seeStory(this.runtime.save, this.stop, this.runtime.now());
+        this.runtime.pathChange = change;
+        this.runtime.arrivalJoined = { area: change.area, pals: change.joined, from: 'story' };
         this.saveThen(() => this.go('map'));
       }
     });

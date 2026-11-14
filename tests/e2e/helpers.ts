@@ -9,6 +9,7 @@ export interface Snapshot {
   entry: { id: string; needsHelp: boolean } | null;
   gate?: { a: number; b: number; entered: string }; scene: string; busy: boolean; modal: boolean; clock: number; selected?: string;
   correctAnswer: number; inputAccepted: boolean; taps: number; meter: number; initialMeter: number;
+  disabledAnswers: number[]; banner: string; passedOver: number;
   phase: string; factId: string; questionText: string; question: { text: string }; onScreen: string[]; presentation: string;
   modelVisible: boolean; hintPulsing: boolean; responses: number;
   intro: boolean; slots: boolean[]; friendRestored: boolean; speechId: string; feedback: string;
@@ -87,6 +88,9 @@ export async function finishEncounter(page: Page, wrong = false): Promise<void> 
     if (wrong && !missed) {
       const responses = s.responses, meter = s.meter, id = s.factId;
       await click(page, `answer-${(s.correctAnswer + 1) % 21}`, 400);
+      const second = await state(page);
+      expect(second).toMatchObject({ phase: 'second', meter, modelVisible: true, factId: id, responses: responses + 1, disabledAnswers: [(s.correctAnswer + 1) % 21] });
+      await click(page, `answer-${(s.correctAnswer + 2) % 21}`, 400);
       const correction = await state(page);
       expect(correction).toMatchObject({ phase: 'correction', meter, modelVisible: true, factId: id, responses: responses + 1 });
       await click(page, `answer-${correction.correctAnswer}`, 400);

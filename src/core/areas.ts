@@ -56,7 +56,7 @@ export const AREAS = [
         'It counts past nine. Ten. Eleven. Twelve.', 'Why did the counts stop at nine?',
       ] },
       mist: { speaker: 'twoot', background: 'bg-twin-falls-encounter', clue: 'mist-shape', lines: [
-        'Shh. Look at the falls.', 'A round shape, in the mist.', 'It looks at us. It looks sad.',
+        'Hush. Look at the falls.', 'A round shape, in the mist.', 'It looks at us. It looks sad.',
         'Wait! Do not go!', 'It is gone. We must find it.',
       ] },
     } },

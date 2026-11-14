@@ -46,7 +46,7 @@ it('runs a child for thirty ten-minute days through the curriculum in teaching o
           expect(save.facts[slot.factId]!.dueAt).toBe(previousDue);
           expect(save.facts[slot.factId]!.ladder).toBe(previousLadder);
         }
-        if (encounter.phase === 'correction') {
+        if (encounter.phase === 'second' || encounter.phase === 'correction') {
           now += 1500;
           submitAnswer(save, encounter, getFact(slot.factId).answer, now, `day-${day + 1}`, planning);
         }

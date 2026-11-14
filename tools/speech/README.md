@@ -43,6 +43,9 @@ The on-screen text is never changed. Before a line goes to the speech engine:
   (check a respelling with `node tools/speech/phonemes.mjs Twoot Twute`).
 - The line is closed as a sentence: first letter capitalised, an ellipsis or a missing end
   mark replaced by a full stop. Unclosed short lines picked up stray sounds ("three-uh").
+- A line with an exclamation mark inside it ("Wait! Do not go!") is recorded in parts,
+  split after each inner exclamation mark, and joined with a fixed silence (`PAUSE_MS`).
+  The engine leaves almost no gap there by itself. The index stores the count as `parts`.
 - If the finished clip ends in a hiss the words do not call for, the generator tries other
   end marks (`!`, `.`, `?`, `,`) and keeps the first clean one. The mark used is stored in
   the index as `ending`. This is what fixes "How many?" sounding like "how manies".

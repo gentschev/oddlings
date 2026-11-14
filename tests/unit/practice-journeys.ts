@@ -39,7 +39,7 @@ export function practiceJourney(kind: Child, limit = 160, targetArea = 1) {
       now += kind === 'slow' ? 6000 : 1200; questions++;
       submitAnswer(save, encounter, fact.answer + Number(!correct), now, 'day-1', planning);
       exposures.set(fact.id, seen + 1);
-      if (encounter.phase === 'correction') { now += 1000; submitAnswer(save, encounter, fact.answer, now, 'day-1', planning); }
+      if (encounter.phase === 'second' || encounter.phase === 'correction') { now += 1000; submitAnswer(save, encounter, fact.answer, now, 'day-1', planning); }
     }
     if (guard >= 400) throw new Error(`Encounter failed to finish for ${kind}`);
     syncPath(save, now, save.map.area);

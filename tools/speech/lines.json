@@ -3301,7 +3301,7 @@
   },
   {
     "id": "story-mist-0",
-    "text": "Shh. Look at the falls."
+    "text": "Hush. Look at the falls."
   },
   {
     "id": "story-mist-1",
@@ -3512,6 +3512,14 @@
     "text": "Keep going"
   },
   {
+    "id": "ui-knowThese",
+    "text": "You already know these!"
+  },
+  {
+    "id": "ui-knowThis",
+    "text": "You already know this one!"
+  },
+  {
     "id": "ui-loading",
     "text": "Waking up the vale…"
   },
@@ -3562,6 +3570,10 @@
   {
     "id": "ui-title",
     "text": "Oddlings"
+  },
+  {
+    "id": "ui-tryAgain",
+    "text": "Look and try again."
   },
   {
     "id": "ui-unmute",

@@ -54,6 +54,9 @@ export class AnswerPad {
     });
   }
   enable(enabled: boolean): void { for (const b of this.buttons) b.enable(enabled); }
+  acceptExcept(disabled: readonly number[]): void {
+    this.buttons.forEach((button, n) => button.enable(!disabled.includes(n)));
+  }
   highlight(answer: number | null): void {
     for (let n = 0; n < this.buttons.length; n++) {
       this.buttons[n]!.setAlpha(answer === null || n === answer ? 1 : 0.55);

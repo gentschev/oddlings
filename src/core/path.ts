@@ -106,3 +106,10 @@ export function offerCamp(save: Save, now: number): boolean {
 export function earlierAreaNeedsHelp(save: Save, now: number, area = save.map.area): boolean {
   return AREAS.filter(a => a.number < area).some(a => pathStops(save, now, a.number).some(s => s.needsHelp));
 }
+
+/** The new current stop has passed all intervening skills, including newly passed sets.
+ * An unseen story cannot be crossed. Neither end of the move counts as a skip. */
+export function passedOverStops(before: number, target: number, states: readonly Pick<PathStop, 'completed' | 'type'>[]): number {
+  if (before < 0 || target <= before + 1) return 0;
+  return states.slice(before + 1, target).filter(s => s.type === 'skill' || s.completed).length;
+}

@@ -104,7 +104,13 @@ completes. Domi has no area 1 stop and joins in area 2 unless chosen as the star
 
 On return from changed practice, rings grow, new stars appear in order, and the marker
 hops to the new current stop. This uses the game clock, lasts under about three seconds,
-and any tap skips it. A single encounter can complete several skills.
+and any tap skips it. A single encounter can complete several skills. On an automatic
+move across completed skills, each crossed star pops as the marker lands. On arrival a
+nonmodal banner reads "You already know this one!" or "You already know these!" It
+stays for at least two seconds and until its speech and gap finish, on the game clock.
+Any tap dismisses it and can still activate a stop. A joining panel waits for the banner.
+One-step moves, walks started by tapping a stop or gate, and arrivals through either
+area arch do not show it.
 
 A gate opens when its area's skill and story stones are complete. While shut it says
 "The gate is shut." and "Help the pals on the path." Walking through an earlier gate
@@ -138,7 +144,10 @@ Layout (landscape):
 - Left: partner Oddling. Right: muddled Oddling with a small wobbly scribble above its
   head. The scribble is about 45% of its width and clears the face and pattern panel.
   The muddled pal shows its own resting marks as empty navy outlines, with outlined
-  tiles for Tenny. Those marks keep the same positions when earned dots fill them.
+  tiles for Tenny and outlined segments for Inch. Empty strokes stay at least 3 px wide
+  on encounter and reward pals, and 1 px on small map pals, including breathing. The
+  strokes sit inside the marks so small outlines do not merge. Those marks keep the
+  same positions when earned dots fill them.
 - Top centre: one 44 px cream circle with a navy outline per point of initial work.
   Earned coral dots fill the circles from the left. The engine's meter counts work left.
 - Centre: the question card. Large numerals. Example: `7 + 3 = ?`
@@ -178,10 +187,15 @@ Turn flow:
    The card shows and reads "That was quick!"
 4. **Correct**: partner does a move, one dot pops in. The card shows the effort line
    that the voice reads. The scribble above the friend shrinks as the meter falls.
-5. **Wrong**: no buzzer, no red X. The partner tilts its head. The card shows the fact
-   worked out on the partner's own pattern (ten frame fills, domino pips, number line
-   hops), the right answer is shown and voiced, then the child taps the right answer to
-   go on. The same fact comes back within the next 2 to 4 questions.
+5. **Wrong first try**: no buzzer, no red X. The partner tilts and makes a gentle hmm.
+   The model appears and stays. The card repeats the question with "Look and try again."
+   and reads that line. The first wrong button is dimmed and disabled; Show me is
+   disabled. After the usual question delay the child can tap again, even during speech.
+   A right second try gets "You worked it out!", a hop and the next question. A different
+   wrong second try shows and reads the worked answer, then asks "Tap n to go on."
+   Only the right button is accepted in that correction. Only the first answer is
+   scored or logged. Neither extra try clears an earned-dot slot or changes learning
+   evidence. The missed fact comes back as a scored retry after other questions.
 6. When no work remains, the earned dots fly to the friend in a short stagger, under
    700 ms. Then its empty outlines fill, its cloud pops, and it hops. Only the clear
    line is spoken after the final answer. If the engine adds work, the last earned dot
