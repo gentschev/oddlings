@@ -21,6 +21,7 @@ import { startOfflineSupport } from './platform/offline';
 import { offlineSnapshot, offlineStatus } from './platform/offlineStatus';
 import { BUILD_VERSION } from './platform/version';
 import { CHANNEL } from './platform/channel';
+import { RENDER_SCALE } from './platform/renderScale';
 import { STRINGS } from './game/strings';
 import './font.css';
 import './style.css';
@@ -45,9 +46,11 @@ const scenes = [new BootScene(runtime), new TitleScene(runtime), new ChoosePartn
   new MapScene(runtime), new EncounterScene(runtime), new RewardScene(runtime), new WarmupScene(runtime),
   new StoryScene(runtime), new CampScene(runtime), new OddbookScene(runtime)];
 const game = new Phaser.Game({
-  type: Phaser.AUTO, parent: 'game', width: CANVAS.width, height: CANVAS.height,
+  type: Phaser.AUTO, parent: 'game', width: CANVAS.width * RENDER_SCALE, height: CANVAS.height * RENDER_SCALE,
   backgroundColor: PALETTE.cream, banner: false, audio: { noAudio: true },
   scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH },
+  // Applies to power-of-two textures only: the padded pal art (see ui/mipTexture.ts).
+  render: { mipmapFilter: 'LINEAR_MIPMAP_LINEAR' },
   scene: scenes,
 });
 game.events.on(Phaser.Core.Events.PRE_STEP, (_time: number, delta: number) => {
@@ -65,7 +68,7 @@ startOfflineSupport(launched, () => runtime.save);
 let controlledTime: number | null = null;
 let advancedMs = 0;
 window.__oddlings = {
-  state: () => ({ ...runtime.snapshot(), canvas: CANVAS, flags, seed, channel: CHANNEL, version: BUILD_VERSION, offline: offlineSnapshot(offlineStatus.get()),
+  state: () => ({ ...runtime.snapshot(), canvas: CANVAS, renderScale: RENDER_SCALE, flags, seed, channel: CHANNEL, version: BUILD_VERSION, offline: offlineSnapshot(offlineStatus.get()),
     randomState: runtime.rng.state(), clock: advancedMs,
     profile: { name: save.profile.name, partner: save.team.partner, tapBaseline: save.profile.tapBaseline },
     area: save.map.area, team: [...save.team.friends], helped: [...save.team.helped], clearedSpots: [...save.map.clearedSpots],

@@ -1,12 +1,13 @@
 import Phaser from 'phaser';
 import { answerRects, centre } from '../game/layout';
 import { FONT, INK, LAYOUT, PALETTE, SCENERY, TIMING, UI } from '../game/constants';
+import { RENDER_SCALE } from '../platform/renderScale';
 
 export interface Control { id: string; x: number; y: number; width: number; height: number; enabled: boolean }
 export function text(scene: Phaser.Scene, x: number, y: number, value: string, size: number = UI.bodyFont,
   colour: string = PALETTE.navy): Phaser.GameObjects.Text {
   return scene.add.text(x, y, value, { fontFamily: FONT, fontSize: size, fontStyle: 'bold', color: colour,
-    padding: { left: 4, right: 4, top: 4, bottom: 4 } }).setOrigin(0.5);
+    padding: { left: 4, right: 4, top: 4, bottom: 4 } }).setOrigin(0.5).setResolution(RENDER_SCALE);
 }
 export function plate(scene: Phaser.Scene, x: number, y: number, w: number, h: number,
   colour: number = INK.cream): Phaser.GameObjects.Graphics {

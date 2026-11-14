@@ -664,3 +664,32 @@ can use `phase`, `disabledAnswers`, `inputAccepted`, `modelVisible`, `feedback`,
 and `responses`, with controls `answer-0` to `answer-20` and `hint`. Map probes get
 `banner`, `passedOver`, `onScreen`, `markerIndex` and `animating`; the banner has no
 control or modal target.
+
+### 2026-11-14: Sharp small pals (orchestrator)
+
+The owner reported that the small pals on the path look pixelated, most of all while they
+animate. Reproduced in a close-up screenshot at a device scale factor of 2. Two causes:
+
+- Pal art is 640 px wide and is drawn 58 to 72 px wide on the maps. The renderer sampled
+  it without mipmaps, so outlines broke up and changed from frame to frame as a pal
+  breathed. Phaser builds mipmaps only for power-of-two textures. `BootScene` now copies
+  each pal and prop image into a padded power-of-two canvas texture
+  (`src/ui/mipTexture.ts`) whose default frame is the art, and the game config sets
+  `mipmapFilter: 'LINEAR_MIPMAP_LINEAR'`. Display sizes and manifest coordinates are
+  unchanged.
+- The canvas was always 1280 x 800 and the browser stretched it to the screen. It is now
+  created at the screen's own pixel count, up to twice the logical size
+  (`src/platform/renderScale.ts`, `RENDER` in `src/game/constants.ts`). Every scene
+  camera zooms by that factor in `BaseScene.begin`, and text is rendered at the same
+  resolution. Layout, control positions and `state()` stay in logical pixels;
+  `state().renderScale` reports the factor.
+
+Verified: lint, 331 unit tests, production build, 27 browser tests on Chromium and 26 on
+WebKit (one Chromium-only), including a new test at device scale factor 2
+(`tests/e2e/sharp.spec.ts`) that checks the canvas size and that taps land. Screenshots
+at 1.5 and 2 of both kinds of screen looked right. The Playwright suite limit went from
+120 s to 300 s because 27 tests no longer fit.
+
+Not verified: frame rate on the tablet with the larger canvas, and memory there (the
+padded textures use about 33 MB of graphics memory, up from about 11 MB).
+

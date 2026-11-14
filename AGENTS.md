@@ -41,7 +41,11 @@ docs/
    randomness are passed in. Every rule in `docs/practice-engine.md` has a unit test.
 2. Tunable numbers live in `src/core/constants.ts` with a comment on each. No magic numbers
    in scenes either: layout and timing constants go in `src/game/constants.ts`.
-3. Logical canvas is 1280 x 800, scaled to fit, landscape. Touch targets at least 88 px.
+3. Logical canvas is 1280 x 800, scaled to fit, landscape. Lay everything out in those
+   units. The real canvas is larger on dense screens (`src/platform/renderScale.ts`) and
+   each scene camera zooms to match, so never read sizes from the canvas or the camera.
+   Create text through `text()` in `src/ui/Controls.ts` so it gets the same resolution.
+   Touch targets at least 88 px.
    Use pointer events; the game must work with touch only and with mouse only.
 4. Test hooks, always present (they are harmless in production):
    - `window.__oddlings.state()` returns a JSON snapshot: current scene, and for the

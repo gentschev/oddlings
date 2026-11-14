@@ -1,9 +1,13 @@
 import manifest from '../../public/assets/art/manifest.json';
 import { text } from '../ui/Controls';
+import { padForMipmaps } from '../ui/mipTexture';
 import { BaseScene } from './BaseScene';
 import { CANVAS, UI } from './constants';
 import { STRINGS } from './strings';
 import type { Runtime } from './Runtime';
+
+/** Loader key prefix for art that is copied into a padded texture before use. */
+const RAW = 'raw:';
 
 export class BootScene extends BaseScene {
   constructor(runtime: Runtime) { super('boot', runtime); }
@@ -12,8 +16,12 @@ export class BootScene extends BaseScene {
     this.onScreen = [STRINGS.loading];
     const label = text(this, CANVAS.width / 2, CANVAS.height / 2, STRINGS.loading, UI.titleFont);
     this.load.on('loaderror', () => label.setText(STRINGS.assetError));
-    for (const [id, meta] of Object.entries(manifest.characters)) this.load.image(id, `assets/art/${meta.file}`);
+    for (const [id, meta] of Object.entries(manifest.characters)) this.load.image(RAW + id, `assets/art/${meta.file}`);
     for (const [id, meta] of Object.entries(manifest.backgrounds)) this.load.image(id, `assets/art/${meta.file}`);
   }
-  create(): void { this.scene.start(this.runtime.skipIntro ? 'map' : 'title'); }
+  create(): void {
+    // Pals and props are drawn far below their native size on the maps.
+    for (const id of Object.keys(manifest.characters)) padForMipmaps(this.textures, RAW + id, id);
+    this.scene.start(this.runtime.skipIntro ? 'map' : 'title');
+  }
 }

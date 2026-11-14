@@ -74,6 +74,11 @@ Notes on the probes:
   only the last frame for that reason.
 - `ODDLINGS_PREVIEW=1 pnpm test:e2e` runs against the production build and includes the
   offline test. Run it before every deploy.
+- A 1280 x 800 screenshot at device scale factor 1 hides what a tablet shows. The tablet
+  has 1.5 to 2 physical pixels per logical pixel. For anything small or thin (map pals,
+  outlines, small text), also take a close-up with `deviceScaleFactor: 2` and look at it
+  enlarged. The pixelated map pals were plain in that crop and invisible in every
+  full-screen screenshot before it.
 
 ## Simulate the whole journey, not only the engine
 

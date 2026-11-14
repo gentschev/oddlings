@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import type { Fact, Model } from '../core';
 import { FONT, INK, PALETTE, UI } from '../game/constants';
+import { RENDER_SCALE } from '../platform/renderScale';
 
 import { dotCardGeometry, dotGeometry } from './patternGeometry';
 
@@ -77,7 +78,7 @@ export class NumberLine extends Phaser.GameObjects.Container {
     for (let n = 0; n <= 20; n++) {
       const xx = -length / 2 + n * step;
       g.lineBetween(xx, -UI.model.tick / 2, xx, UI.model.tick / 2);
-      this.add(scene.add.text(xx, UI.model.tick, String(n), { fontFamily: FONT, fontSize: 17, color: PALETTE.navy }).setOrigin(0.5, 0));
+      this.add(scene.add.text(xx, UI.model.tick, String(n), { fontFamily: FONT, fontSize: 17, color: PALETTE.navy }).setOrigin(0.5, 0).setResolution(RENDER_SCALE));
     }
     const change = fact.operation === 'miss' ? fact.answer : fact.b;
     const direction = fact.operation === 'sub' ? -1 : 1;

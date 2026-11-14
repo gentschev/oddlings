@@ -1,5 +1,7 @@
 /** Fixed logical tablet canvas. */
 export const CANVAS = { width: 1280, height: 800 } as const;
+/** Canvas pixels per logical pixel: upper limit (fill-rate on a tablet) and rounding step. */
+export const RENDER = { maxScale: 2, step: 0.25 } as const;
 /** Shared screenprint palette, also used for counters and celebrations. */
 export const PALETTE = { cream: '#FFF8EA', navy: '#1B2A4A', coral: '#F2543D', yellow: '#F9C22E', mint: '#5FD3A6', meadow: '#6AC7A1' } as const;
 export const INK = { cream: 0xfff8ea, navy: 0x1b2a4a, coral: 0xf2543d, yellow: 0xf9c22e, mint: 0x5fd3a6, meadow: 0x6ac7a1 } as const;

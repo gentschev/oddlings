@@ -7,6 +7,7 @@ import type { Runtime } from './Runtime';
 import { STRINGS } from './strings';
 import { centre, standingRect, groundTransform, backgroundMeta, mapTransform } from './layout';
 import { speechWait } from './speechTiming';
+import { RENDER_SCALE } from '../platform/renderScale';
 export { mapPoint } from './layout';
 
 export class BaseScene extends Phaser.Scene {
@@ -25,6 +26,8 @@ export class BaseScene extends Phaser.Scene {
     this.runtime.audio.stopSpeech();
     // Phaser 4 tweens otherwise read Date.now. Share the game delta with the hook.
     this.tweens.getDelta = () => this.runtime.delta;
+    // Scenes are laid out in logical pixels; the camera maps them onto the larger canvas.
+    this.cameras.main.setZoom(RENDER_SCALE).centerOn(CANVAS.width / 2, CANVAS.height / 2);
     this.cameras.main.fadeIn(TIMING.fade, ...FADE_RGB);
     this.runtime.snapshot = () => ({ scene: this.scene.key, onScreen: this.onScreen,
       controls: this.controls, busy: this.busy, modal: this.modal, ...this.details() });
