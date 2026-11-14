@@ -50,7 +50,7 @@ async function story(p, screenshot) {
     await click(p, 'next', 200); await ready(p);
   }
 }
-let modeled = false, plain = false, corrected = false, correct = false, cleared = false;
+let modeled = false, plain = false, corrected = false, correct = false, cleared = false, leaveCaptured = false;
 async function encounter(p, name) {
   await ready(p, 'encounter');
   if ((await state(p)).intro) {
@@ -68,6 +68,10 @@ async function encounter(p, name) {
     }
     if (s.phase === 'complete' && !cleared) { await shot(p, 'muddle-cleared'); cleared = true; }
     if (!s.inputAccepted) { await step(p, 200); await p.waitForTimeout(5); continue; }
+    if (!leaveCaptured && s.phase === 'question') {
+      await shot(p, 'encounter-back'); await click(p, 'back', 200); await shot(p, 'leave-check');
+      await click(p, 'leave-no', 200); await shot(p, 'leave-check-resumed'); leaveCaptured = true;
+    }
     if (s.presentation === 'modeled' && !modeled) { await shot(p, 'question-modeled'); modeled = true; }
     if (s.presentation === 'plain' && !s.modelVisible && !plain) { await shot(p, 'question-plain'); plain = true; }
     if (!corrected && !deliberateMiss) {
@@ -107,7 +111,9 @@ async function captureAll() {
     await click(page, id, 2400); await shot(page, `partner-${id}-pattern`);
   }
   await click(page, 'tenny'); await click(page, 'pick'); await warmup(page, true);
-  await shot(page, 'map-start');
+  await shot(page, 'map-start'); await shot(page, 'map-back');
+  await click(page, 'back'); await ready(page, 'title'); await shot(page, 'map-back-title');
+  await click(page, 'play'); await ready(page, 'map');
   await click(page, 'oddbook'); await ready(page, 'oddbook'); await shot(page, 'oddbook-first-pal');
   await click(page, 'back'); await ready(page, 'map');
   let completedPath = false;
@@ -134,6 +140,7 @@ async function captureAll() {
     await shot(page, 'twin-falls-arrival-new-pal'); await click(page, 'close');
     await shot(page, 'twin-falls-arrival-stars');
   }
+  await shot(page, 'twin-falls-map-back');
   if ((await state(page)).area !== 2) throw new Error('Gate one did not open Twin Falls');
   let completedTwin = false;
   for (let n = 0; n < 30; n++) {

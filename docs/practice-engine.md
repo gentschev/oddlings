@@ -170,6 +170,27 @@ Within a session, a fact that was just missed or just introduced is put on a ret
 shown again after 2 to 3 other questions, then again after about 6 more, then once more in
 a later encounter of the same session.
 
+## Dropped rounds
+
+Opening the leave check pauses input and hint clocks. Returning shifts the question's
+shown time by the paused duration, so hints still arrive at eight and twenty seconds
+of question time. The showing is marked hidden for timing: right or wrong still counts,
+but no latency or fast evidence is recorded. Extra tries keep the first answer's
+metadata and are still unscored.
+
+Leaving records nothing for the open question. All earlier fact changes, responses,
+entry checks, set streaks and retry scheduling remain. The round's dots are dropped;
+there is no reward, help-history entry, stop completion or join. The next round starts
+empty and the map marker stays where it was. A shown introduction is remembered until
+the pal's next cleared round, including when the unfinished round is dropped.
+
+Passed sets remain passed. Their rings show earned knowledge immediately, while the
+save's optional `map.deferredStops` holds any new stop completions from a dropped round.
+Load and story syncs leave those stops current. The next finished round in that area
+rechecks the conditions, applies the completions and joins once, and reports them through
+the ordinary reward and path animation. This prevents a silent jump or a lost joining
+announcement after leaving or reloading. Existing saves need no new required fields.
+
 ## Presentation modes
 
 - **modeled**: the question is shown with its picture model already visible (the ten frame
@@ -214,8 +235,9 @@ Skill mastery (taxonomy layer) is the lowest level among the skill's sets that a
 scope. Each area's skill stops follow its fact sets in teaching order. An area is
 reached when it is area one or its preceding gate has been walked through. `syncPath`
 records passed skills and seen story beats only in reached areas, in path order. An
-optional area scope keeps encounter rewards and map loading local. Entering a map runs
-that area's sync before its arrival animation and joining announcement. Completion is sticky. A story can visually lock later passed work until it
+optional area scope keeps encounter rewards and map loading local. Entering a new area runs
+its sync before the arrival animation and joining announcement. Deferred dropped-round
+completions wait for a finished round in that area. Completion is sticky. A story can visually lock later passed work until it
 is seen. Each built area opens its gate when all its own stops, including stories, are complete. Walking a gate
 records permanent access to the next built area. The learner model can pass sets in
 unreached areas; their stops do not complete and their pals do not join until the area
@@ -285,7 +307,7 @@ ids breaking ties. Shared facts seen in earlier sets do not disable this check o
 new set. Two first-try correct answers without help pass the check. One missed or helped
 probe gives a different, hardest remaining probe after two intervening scored questions.
 As before, a correct recheck passes; a second miss sends only this set to ordinary
-learning. Correction acknowledgement taps do not count towards the gap. Pending checks
+learning. Second tries and correction taps do not count towards the gap. Pending checks
 survive encounters and sessions. Later unseen sets still get their checks when available.
 
 On a pass, successful probes are confirmed. Other unseen facts become `review`,
@@ -322,7 +344,7 @@ at any time; camp is not a skill stop.
 
 One versioned JSON document (`version`, `profile`, `facts`, `team`, `map`, `story`,
 `sessions`, `responses`, `settings`). Stored in IndexedDB with a copy in localStorage,
-written after every encounter and every story beat. Version 2 replaces encounter-stop
+written after every finished or dropped encounter, every story beat and the map exit. Version 2 replaces encounter-stop
 ids with sticky skill stops. The version 1 migration validates the original data first,
 drops old map ids, runs path sync, and positions the marker at the current stop. It keeps
 the original team, partner, learner evidence, logs and settings. New pals are awarded by
@@ -337,6 +359,8 @@ do not add to this history. Migrations are pure functions
 The 30-day simulation exposed places where rules above collide. These resolutions are part
 of the specification.
 
+- **Dropped rounds.** Keep scored evidence, pause hint clocks during the leave check,
+  and defer new completions and joins until the next finished round.
 - **Three tries.** A miss now gives a modeled second try before the worked-answer
   correction. Only the first answer is scored; extra tries never clear puffs.
 - **Accuracy target.** The 80 to 90% target applies to days on which new facts are being

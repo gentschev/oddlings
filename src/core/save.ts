@@ -2,7 +2,7 @@ import { ACQUISITION_ENCOUNTERS, DEFAULT_TAP_BASELINE, FLUENT_DAYS, LATENCY_HIST
 import { FACTS, FACT_SETS, getFact, getSet } from './curriculum/sets';
 import { newFactState } from './learner';
 import type { Save } from './types';
-import { getArea, gateWalked, walkGate } from './areas';
+import { getArea, getStop, gateWalked, walkGate } from './areas';
 import { currentStop, syncPath } from './path';
 
 export function createSave(): Save {
@@ -79,6 +79,11 @@ function validateVersion(input: unknown, version: number): Save {
   if (version === SAVE_VERSION) strings(input.team.helped);
   count(input.map.area); strings(input.map.clearedSpots);
   if (input.map.position !== undefined && typeof input.map.position !== 'string') throw new Error('Invalid map position');
+  if (input.map.deferredStops !== undefined) {
+    strings(input.map.deferredStops);
+    if (new Set(input.map.deferredStops).size !== input.map.deferredStops.length
+      || input.map.deferredStops.some(id => getStop(id).type !== 'skill')) throw new Error('Invalid deferred stops');
+  }
   if (input.map.encounteredPals !== undefined) strings(input.map.encounteredPals);
   if (input.map.gatePracticeIndex !== undefined) count(input.map.gatePracticeIndex);
   strings(input.story.completedBeats); boolean(input.story.introComplete);

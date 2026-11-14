@@ -9,7 +9,7 @@ export interface Snapshot {
   entry: { id: string; needsHelp: boolean } | null;
   gate?: { a: number; b: number; entered: string }; scene: string; busy: boolean; modal: boolean; clock: number; selected?: string;
   correctAnswer: number; inputAccepted: boolean; taps: number; meter: number; initialMeter: number;
-  disabledAnswers: number[]; banner: string; passedOver: number;
+  leaving: boolean; pad: Snapshot['controls']; disabledAnswers: number[]; banner: string; passedOver: number;
   phase: string; factId: string; questionText: string; question: { text: string }; onScreen: string[]; presentation: string;
   modelVisible: boolean; hintPulsing: boolean; responses: number;
   intro: boolean; slots: boolean[]; friendRestored: boolean; speechId: string; feedback: string;

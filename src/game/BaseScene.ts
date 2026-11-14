@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import { getArea } from '../core/areas';
-import { Button, bookIcon, plate, soundIcon, text, type Control } from '../ui/Controls';
+import { Button, arrowIcon, bookIcon, plate, soundIcon, text, type Control } from '../ui/Controls';
 import { Oddling, type CharacterId } from '../ui/Oddling';
 import { CANVAS, FADE_RGB, INK, LAYOUT, SCENERY, TIMING, UI } from './constants';
 import type { Runtime } from './Runtime';
@@ -95,6 +95,16 @@ export class BaseScene extends Phaser.Scene {
       if (!this.busy && !this.modal) { this.runtime.audio.play('tap'); action(); }
     }, INK.cream, UI.buttonFont, true);
     bookIcon(this, b); this.controls.push(b.control); return b;
+  }
+  protected backButton(x: number, y: number, action: () => void, size: number = UI.minTouch): Button {
+    const b = new Button(this, 'back', x, y, size, size, '', () => {
+      if (this.busy || this.modal) return;
+      this.interruptSpeech(); this.runtime.audio.play('tap'); action();
+    }, INK.cream, UI.buttonFont, true);
+    // One arrow tap must not also reach a scene's tap-anywhere listener.
+    b.zone.on('pointerdown', (_pointer: Phaser.Input.Pointer, _x: number, _y: number,
+      event: Phaser.Types.Input.EventData) => event.stopPropagation());
+    arrowIcon(this, b); this.controls.push(b.control); return b;
   }
   protected pal(id: CharacterId, x: number, y: number, width: number): Oddling {
     const pal = new Oddling(this, id, x, y, width); this.pals.push(pal); return pal;

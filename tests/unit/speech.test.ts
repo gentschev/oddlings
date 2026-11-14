@@ -116,7 +116,7 @@ describe('offline speech catalogue', () => {
       expect(lines).toContainEqual({ id: area.nameSpeech, text: area.name });
       for (const [beat, story] of Object.entries(area.stories)) story.lines.forEach((text, i) => expect(lines).toContainEqual({ id: `story-${beat}-${i}`, text }));
     }
-    expect(lines.length).toBe(903);
+    expect(lines.length).toBe(905);
   });
   it('reads equations and corrections without giving away a counting question', () => {
     expect(factRead(getFact('add:7+3'))).toBe('seven plus three');

@@ -105,3 +105,11 @@ export function bookIcon(scene: Phaser.Scene, button: Button): void {
     .lineBetween(s * 0.17, -s * 0.17, s * 0.43, -s * 0.17);
   button.add(g);
 }
+
+/** A plain left arrow shares the stroke and size of the book and speaker icons. */
+export function arrowIcon(scene: Phaser.Scene, button: Button): void {
+  const g = scene.add.graphics(), s = SCENERY.iconSize;
+  g.lineStyle(SCENERY.iconStroke, INK.navy).lineBetween(s / 2, 0, -s / 2, 0)
+    .lineBetween(-s / 2, 0, 0, -s / 2).lineBetween(-s / 2, 0, 0, s / 2);
+  button.add(g);
+}

@@ -7059,5 +7059,20 @@
   "file": "ui-tryAgain.m4a",
   "ms": 1319,
   "rev": "bf68283c"
+ },
+ "ui-leaveAsk": {
+  "text": "Go back to the path?",
+  "voice": "af_heart",
+  "file": "ui-leaveAsk.m4a",
+  "ms": 1308,
+  "rev": "a9d05313"
+ },
+ "ui-leaveYes": {
+  "text": "Go back",
+  "voice": "af_heart",
+  "file": "ui-leaveYes.m4a",
+  "ms": 826,
+  "spoken": "Go back.",
+  "rev": "24fe856b"
  }
 }

@@ -59,7 +59,7 @@ export function syncPath(save: Save, now: number, area?: number): PathChange {
     return areaReached(save, number) && (area === undefined || area === number);
   });
   for (const stop of stops) {
-    if (save.map.clearedSpots.includes(stop.id)) continue;
+    if (save.map.clearedSpots.includes(stop.id) || save.map.deferredStops?.includes(stop.id)) continue;
     if (stop.type === 'story' ? save.story.completedBeats.includes(stop.beat) : setPassed(save, stop.set)) {
       save.map.clearedSpots.push(stop.id); completed.push(stop.id);
     }
@@ -69,6 +69,23 @@ export function syncPath(save: Save, now: number, area?: number): PathChange {
     save.team.friends.push(stop.pal); joined.push(stop.pal);
   }
   return { area: active, completed, joined, before, after: pathStops(save, now, active) };
+}
+/** Keep passed facts from a dropped round visible without awarding stops or pals yet. */
+export function deferPathCompletion(save: Save, area = save.map.area): void {
+  const pending = getArea(area).stops.filter(s => s.type === 'skill' && !save.map.clearedSpots.includes(s.id) && setPassed(save, s.set));
+  if (pending.length) save.map.deferredStops = [...new Set([...(save.map.deferredStops ?? []), ...pending.map(s => s.id)])];
+}
+/** A finished round owns the reward and animation for any deferred completions. */
+export function finishEncounterPath(save: Save, now: number, area = save.map.area): PathChange {
+  if (save.map.deferredStops) {
+    save.map.deferredStops = save.map.deferredStops.filter(id => areaForStop(id).number !== area);
+    if (!save.map.deferredStops.length) delete save.map.deferredStops;
+  }
+  return syncPath(save, now, area);
+}
+export function markIntroductionSeen(save: Save, pal: FriendId): void {
+  const seen = save.map.encounteredPals ??= [];
+  if (!seen.includes(pal)) seen.push(pal);
 }
 export function seeStory(save: Save, stop: StoryStop, now: number): PathChange {
   const before = pathStops(save, now);
@@ -83,8 +100,10 @@ export function encounterPals(save: Save, wild: FriendId): { wild: FriendId; hel
 /** Only a cleared muddle counts as having helped this pal before. */
 export function markHelped(save: Save, pal: FriendId): void {
   if (!save.team.helped.includes(pal)) save.team.helped.push(pal);
+  if (save.map.encounteredPals) save.map.encounteredPals = save.map.encounteredPals.filter(id => id !== pal);
 }
-export function palIntroduction(save: Save, pal: FriendId): 'first' | 'again' {
+export function palIntroduction(save: Save, pal: FriendId): 'first' | 'again' | 'none' {
+  if (save.map.encounteredPals?.includes(pal)) return 'none';
   return save.team.helped.includes(pal) ? 'again' : 'first';
 }
 export function stopIntroduction(save: Save, stop: SkillStop, now: number): 'first' | 'again' | 'none' {

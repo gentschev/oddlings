@@ -48,6 +48,7 @@ export function encounterLayout(partner: CharacterId, wild: CharacterId, initial
   const slots = Array.from({ length: initialMeter }, (_, i) => rectAt(l.cardX + (i - (initialMeter - 1) / 2) * l.meterGap, l.meterY, l.slotW, l.slotW));
   return {
     regions: {
+      back: rectAt(l.backX, l.backY, l.backW, l.backW),
       meter: rectAt(CANVAS.width / 2, l.meterY, (initialMeter - 1) * l.meterGap + l.slotW, l.slotW),
       partner: standingRect(partner, l.partnerX, l.feetY, l.creatureW),
       wild: wildRect,
@@ -103,6 +104,20 @@ export function mapStopLayout(index: number, area = 1) {
     ring: rectAt(p.x, p.y, radiusX * 2 + l.progressStroke, style.nativeRings ? radiusY * 2 + l.progressStroke : (radiusX * 2 + l.progressStroke) * l.progressScaleY),
     tag: rectAt(p.x + style.tagOffsetsX[index]!, p.y + style.tagOffsetsY[index]!, tagWidth, l.tagH),
     cloud: rectAt(p.x, p.y - l.cloudOffsetY, l.cloudW, l.cloudH) };
+}
+/** Navigation and notices use logical canvas bounds on every render scale. */
+export function mapHeaderLayout() {
+  const l = LAYOUT.map;
+  return { back: rectAt(l.backX, l.backY, l.backW, l.backW),
+    heading: rectAt(l.headingX, l.headingY, l.headingW, l.headingH),
+    banner: rectAt(l.bannerX, l.bannerY, l.bannerW, l.bannerH) };
+}
+export function leaveLayout() {
+  const l = LAYOUT.leave;
+  return { panel: rectAt(l.x, l.y, l.width, l.height),
+    prompt: rectAt(l.x, l.promptY, l.promptW, l.promptH),
+    yes: rectAt(l.yesX, l.buttonY, l.buttonW, l.buttonH),
+    no: rectAt(l.noX, l.buttonY, l.buttonW, l.buttonH) };
 }
 export function mapHomeRect(area = 1): Rect {
   const h = mapArt(area).home, t = mapTransform(area), p = mapPoint(h.x, h.y, area);

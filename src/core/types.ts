@@ -65,7 +65,7 @@ export interface Save {
   profile: { name: string; tapBaseline: number; tapHistory: number[] };
   facts: Record<string, FactState>;
   team: { partner: string | null; friends: string[]; helped: string[] };
-  map: { area: number; clearedSpots: string[]; position?: string; gatePracticeIndex?: number; encounteredPals?: string[] };
+  map: { area: number; clearedSpots: string[]; position?: string; gatePracticeIndex?: number; encounteredPals?: string[]; deferredStops?: string[] };
   story: { completedBeats: string[]; introComplete: boolean };
   sessions: Session[];
   responses: Response[];

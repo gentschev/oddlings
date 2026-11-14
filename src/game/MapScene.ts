@@ -5,7 +5,7 @@ import { getArea, gateWalked, nextArea, previousArea, visitArea, walkGate } from
 import { earlierAreaNeedsHelp, syncPath } from '../core/path';
 import { Button, plate, soundIcon, speechBubble, text } from '../ui/Controls';
 import { BaseScene, mapPoint } from './BaseScene';
-import { centre, mapArt, mapStyle, mapEntryRect, mapHomeRect, mapMarkerRect, mapStopLayout } from './layout';
+import { centre, mapArt, mapStyle, mapEntryRect, mapHomeRect, mapMarkerRect, mapStopLayout, mapHeaderLayout } from './layout';
 import { CANVAS, CENTER_X, INK, LAYOUT, PALETTE, PATH_TIMING, TIMING, UI } from './constants';
 import type { Runtime } from './Runtime';
 import { STOP_TAGS, STRINGS } from './strings';
@@ -16,6 +16,8 @@ interface StoneVisual {
 }
 export class MapScene extends BaseScene {
   private area = 1;
+  private back!: Button;
+  private heading?: Phaser.GameObjects.Text;
   private nativeRings = false;
   private markerIndex = 0;
   private stones: StoneVisual[] = [];
@@ -31,8 +33,8 @@ export class MapScene extends BaseScene {
   constructor(runtime: Runtime) { super('map', runtime); }
   protected details(): Record<string, unknown> {
     const save = this.runtime.save, area = getArea(this.area), entry = mapEntryRect(this.area);
-    return { banner: this.bannerText, passedOver: this.passedOver, arrivalJoined: this.arrivalPals, speechId: this.speechId, area: this.area, background: area.mapBackground, entry: entry ? { ...entry, id: area.entryId, needsHelp: earlierAreaNeedsHelp(save, this.runtime.now(), this.area) } : null, markerIndex: this.markerIndex, animating: this.animating, sound: save.settings.sound,
-      nextStop: currentStop(save, this.area)?.id ?? area.gateId, home: mapHomeRect(this.area),
+    return { onScreen: this.bannerText ? this.onScreen.filter(line => line !== area.name) : this.onScreen, banner: this.bannerText, passedOver: this.passedOver, arrivalJoined: this.arrivalPals, speechId: this.speechId, area: this.area, background: area.mapBackground, entry: entry ? { ...entry, id: area.entryId, needsHelp: earlierAreaNeedsHelp(save, this.runtime.now(), this.area) } : null, markerIndex: this.markerIndex, animating: this.animating, sound: save.settings.sound,
+      header: mapHeaderLayout(), nextStop: currentStop(save, this.area)?.id ?? area.gateId, home: mapHomeRect(this.area),
       stops: [...pathStops(save, this.runtime.now(), this.area).map((s, i) => ({ ...s, ...mapStopLayout(i, this.area).point,
         tag: s.set ? STOP_TAGS[s.set] : null, completed: s.completed, next: s.state === 'current',
         pulsing: s.state === 'current' || s.state === 'complete' && s.needsHelp })),
@@ -62,7 +64,9 @@ export class MapScene extends BaseScene {
     this.arrivalPals = arrival?.pals ?? [];
     this.runtime.arrivalJoined = undefined;
     this.onScreen = [area.name];
-    text(this, l.headingX, l.headingY, area.name, UI.subheadingFont).setBackgroundColor(PALETTE.cream);
+    // The reserved rectangle is for layout checks; the plate hugs the name, starting at its left edge.
+    this.heading = text(this, l.headingX - l.headingW / 2, l.headingY, area.name, UI.subheadingFont)
+      .setOrigin(0, 0.5).setBackgroundColor(PALETTE.cream);
     this.speak(area.nameSpeech);
     const mute = new Button(this, 'mute', l.muteX, l.muteY, l.muteW, l.muteW, '', () => {
       if (this.busy || this.modal) return;
@@ -124,7 +128,17 @@ export class MapScene extends BaseScene {
         this.tweens.add({ targets: star, scale: PATH_TIMING.passedStarScale, duration: PATH_TIMING.passedStar, yoyo: true });
       });
     }
-    else { this.placeMarker(target); this.finishVisuals(); this.showArrival(); }
+    else { this.placeMarker(this.markerIndex); this.finishVisuals(); this.showArrival(); }
+    // This sits above the animation's skip target, so its disabled hit area swallows taps.
+    this.back = this.backButton(l.backX, l.backY, () => {
+      this.cancelArrival(); this.saveThen(() => this.go('title'));
+    }, l.backW);
+    this.back.enable(!this.busy && !this.modal && !this.animating);
+  }
+  override update(): void {
+    super.update();
+    const enabled = !this.busy && !this.modal && !this.animating;
+    if (this.back && this.back.control.enabled !== enabled) this.back.enable(enabled);
   }
   private ringValue(s: PathStop): number { return s.completed ? 1 : s.state === 'locked' ? 0 : s.progress; }
   private drawRing(g: Phaser.GameObjects.Graphics, progress: number, rx: number, ry: number): void {
@@ -182,7 +196,7 @@ export class MapScene extends BaseScene {
     this.announcement++;
     this.banner?.destroy(); this.banner = undefined;
     this.onScreen = this.onScreen.filter(line => line !== this.bannerText);
-    this.bannerText = ''; this.bannerTapArmed = false;
+    this.bannerText = ''; this.bannerTapArmed = false; this.heading?.setVisible(true);
   }
   private showArrival(): void {
     if (!this.passedOver && !this.arrivalPals.length) return;
@@ -194,7 +208,8 @@ export class MapScene extends BaseScene {
       if (!this.passedOver) { this.busy = false; this.showJoined(); return; }
       const many = this.passedOver > 1, l = LAYOUT.map;
       this.bannerText = many ? STRINGS.knowThese : STRINGS.knowThis;
-      this.onScreen.push(this.bannerText);
+      this.onScreen.push(this.bannerText); this.heading?.setVisible(false);
+      // The plate hugs the line; `bannerW` and `bannerH` reserve its largest rectangle for layout checks.
       this.banner = text(this, l.bannerX, l.bannerY, this.bannerText, l.bannerFont).setBackgroundColor(PALETTE.cream);
       this.speak(many ? 'ui-knowThese' : 'ui-knowThis');
       // The tap that skips movement must not also dismiss the newly shown banner.

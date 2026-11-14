@@ -12,6 +12,7 @@ export interface Encounter {
   id: string;
   phase: 'question' | 'second' | 'correction' | 'complete';
   wrongAnswer: number | null;
+  pausedAt: number | null;
   slots: Slot[];
   index: number;
   meter: number;
@@ -34,7 +35,7 @@ export function startEncounter(save: Save, now: number, rng: Random, length: num
   session.encounters++;
   const slots = planEncounter(save, now, rng, length, reviewOnly);
   const encounter: Encounter = { id: `${session.id}/encounter-${session.encounters}`,
-    phase: 'question', wrongAnswer: null, slots, index: 0, meter: length, initialMeter: length,
+    phase: 'question', wrongAnswer: null, pausedAt: null, slots, index: 0, meter: length, initialMeter: length,
     shownAt: now, hintUsed: false, hidden: false, modelVisible: false, hintPulsing: false,
     answered: 0, unknownAnswered: 0, reviewOnly, placementConfirmations: 0 };
   showQuestion(save, encounter, now);
@@ -42,17 +43,29 @@ export function startEncounter(save: Save, now: number, rng: Random, length: num
 }
 export function currentSlot(encounter: Encounter): Slot { return encounter.slots[encounter.index]!; }
 export function revealHint(encounter: Encounter): void {
-  if (encounter.phase !== 'question') return;
+  if (encounter.phase !== 'question' || encounter.pausedAt !== null) return;
   encounter.hintUsed = true;
   encounter.modelVisible = true;
 }
 export function advanceEncounterTime(encounter: Encounter, now: number): void {
-  if (encounter.phase !== 'question') return;
+  if (encounter.phase !== 'question' || encounter.pausedAt !== null) return;
   const elapsed = now - encounter.shownAt;
   encounter.hintPulsing = elapsed >= HINT_PULSE_MS && !encounter.modelVisible;
   if (elapsed >= AUTO_MODEL_MS && !encounter.modelVisible) revealHint(encounter);
 }
 export function markEncounterHidden(encounter: Encounter): void { if (encounter.phase === 'question') encounter.hidden = true; }
+
+/** A leave check freezes hint time and excludes this showing from speed evidence. */
+export function pauseEncounter(encounter: Encounter, now: number): void {
+  if (encounter.pausedAt !== null || encounter.phase === 'complete') return;
+  markEncounterHidden(encounter);
+  encounter.pausedAt = now;
+}
+export function resumeEncounter(encounter: Encounter, now: number): void {
+  if (encounter.pausedAt === null) return;
+  if (encounter.phase === 'question') encounter.shownAt += Math.max(0, now - encounter.pausedAt);
+  encounter.pausedAt = null;
+}
 
 function showQuestion(save: Save, encounter: Encounter, now: number): void {
   let slot = currentSlot(encounter);
@@ -127,7 +140,7 @@ export function disabledAnswers(encounter: Encounter): number[] {
   return [];
 }
 export function submitAnswer(save: Save, encounter: Encounter, answer: number, now: number, localDate: string, rng: Random) {
-  if (encounter.phase === 'complete') return { accepted: false, correction: false, fast: false };
+  if (encounter.phase === 'complete' || encounter.pausedAt !== null) return { accepted: false, correction: false, fast: false };
   const slot = currentSlot(encounter);
   const fact = getFact(slot.factId);
   if (encounter.phase === 'second') {

@@ -8,6 +8,8 @@ export const OFFLINE_TEXT = { getting: (stored: number, total: number) => `Getti
 export const PLATFORM_TEXT = { test: 'Test version', homeScreen: 'Add to Home Screen to keep progress' } as const;
 
 export const STRINGS = {
+  leaveAsk: 'Go back to the path?',
+  leaveYes: 'Go back',
   tryAgain: 'Look and try again.',
   knowThese: 'You already know these!',
   knowThis: 'You already know this one!',

@@ -82,8 +82,8 @@ stay untappable until the story is seen. Encounters report changes only in their
 A skill stone stays current for as many encounters as its set needs. Review facts give
 one point and learning facts give their streak, capped at three, divided by four. The
 best rounded-up number of facts needed to pass are averaged. The ring is full exactly
-when the set is passed. It becomes complete on encounter end or load, and keeps its
-completion even if a later confirmation fails. A story completes when seen. The first
+when the set is passed. It becomes complete after a finished encounter or on load, except when a dropped round
+has deferred that completion. It keeps completion even if a later confirmation fails. A story completes when seen. The first
 incomplete stop in each area is current; everything after it stays locked. Passed work
 behind an unseen story is saved, but its stars appear only after that story is seen.
 
@@ -111,6 +111,14 @@ stays for at least two seconds and until its speech and gap finish, on the game 
 Any tap dismisses it and can still activate a stop. A joining panel waits for the banner.
 One-step moves, walks started by tapping a stop or gate, and arrivals through either
 area arch do not show it.
+
+A cream round arrow in the top-left corner returns to the start page with one tap and
+the usual fade. It saves the map before leaving and stops speech. The heading sits to
+its right. The arrow is disabled during path movement and modal panels; tapping that
+corner cannot skip the movement. During a skip banner it leaves for the start page,
+without also dismissing the banner or opening a join panel. Play keeps the same area,
+marker and session. The existing warm-up runs only if that session still needs it;
+returning to the start page does not start another session. Offline status keeps updating.
 
 A gate opens when its area's skill and story stones are complete. While shut it says
 "The gate is shut." and "Help the pals on the path." Walking through an earlier gate
@@ -158,13 +166,30 @@ seven. One tap answers. This keeps it retrieval (21 choices, no guessing from a 
 without typing. Buttons are at least 88 px on a 1280 x 800 canvas. For later content with
 answers above 20, a digit keypad with a "Go" button replaces it.
 
-Until the child clears a muddle with that pal, the card shows and reads two short lines: "Fivel is in a muddle!"
+A first meeting shows and reads two short lines: "Fivel is in a muddle!"
 and "Fill the dots to help." The pad stays hidden until the clip and a short gap finish,
 or the child taps anywhere. Silent play holds it briefly. Only pals whose muddles were
 cleared in an earlier encounter use "in a muddle again", including gate practice.
 Joining through placement does not count as being helped. Completed-stop replays that
 do not need help skip the intro.
 Response timing starts only after the first question is fully shown.
+
+A cream round arrow at the top left opens "Go back to the path?" over the question.
+It is hidden during the introduction, so the whole screen still advances that line.
+It becomes usable when question input opens and is disabled during answer feedback.
+The check has two equal cream buttons: "Go back" and "Keep going". Neither is selected
+by default. The pad, hint, speaker and arrow are disabled under the check. Hint clocks
+pause. Returning keeps the same question, phase and model; the answer still counts for
+accuracy, but that showing gives no speed evidence. Second tries and corrections keep
+their first-answer evidence unchanged.
+
+Leaving waits for the save queue, keeps all answers and drops only the round's earned
+dots. It gives no reward, completed stop, new pal, movement or skip banner. The marker
+stays put. A fresh round starts with empty slots. An introduction that has been shown
+is remembered until that pal's round is cleared. If the dropped round passed a set,
+the ring shows that progress, but its stop completion and join wait for the next finished
+round. This also survives reloads and story syncs. That later reward and map animation
+explain the completion and announce the pal, rather than silently moving the marker.
 
 Dice count pictures use a centred square card and standard faces for one through six,
 with pips on a three-by-three grid inside a margin. Scattered counts keep the wide card

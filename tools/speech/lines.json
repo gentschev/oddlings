@@ -3520,6 +3520,14 @@
     "text": "You already know this one!"
   },
   {
+    "id": "ui-leaveAsk",
+    "text": "Go back to the path?"
+  },
+  {
+    "id": "ui-leaveYes",
+    "text": "Go back"
+  },
+  {
     "id": "ui-loading",
     "text": "Waking up the vale…"
   },

@@ -693,3 +693,50 @@ at 1.5 and 2 of both kinds of screen looked right. The Playwright suite limit we
 Not verified: frame rate on the tablet with the larger canvas, and memory there (the
 padded textures use about 33 MB of graphics memory, up from about 11 MB).
 
+
+### 2026-11-14: M18, ways back
+
+The map has a cream arrow to the start page, with the heading moved right. During a
+skip banner the arrow saves and leaves once; it cannot also dismiss the banner or open
+a join panel. During movement its disabled hit target sits above the animation skip
+target. Play keeps the area, marker and session; the existing warm-up runs only when
+still needed. The encounter arrow is hidden during introductions and enabled when
+question input opens. Its leave check has equal cream choices. Keep going restores the
+same phase and model, freezes hint time during the check and excludes speed evidence.
+Leaving waits for saves, keeps earlier answers and drops the round without a reward.
+Shown introductions are remembered until that pal's round is cleared.
+
+Chosen completion rule: passed sets from a dropped round keep their earned ring progress,
+but optional saved deferred-stop ids hold completions and joins until the next finished
+round in that area. Load and story syncs respect this. The later reward announces joins
+and the ordinary map animation explains movement. Old saves need no new required fields.
+
+Verified: `pnpm lint && pnpm test` passes all 346 unit tests. New core and geometry cases
+cover paused hints, timing exclusion, second tries, corrections, retained answers, a
+last needed answer in a dropped round, deferred joins across reload, fresh round meters,
+intro history and both maps' header bounds. A tight prompt-width check led to a 40 px
+prompt. `pnpm build` and production artifact checks pass. `pnpm speech:lines` exports
+905 lines, adding only `ui-leaveAsk` and `ui-leaveYes`; all prior lines are unchanged.
+Checksums confirm the protected art, audio, render scale, mipmap boot path and process
+document are unchanged. The existing bundle-size warning remains nonfatal.
+
+Playwright discovers 34 tests, including seven new navigation cases and a dense-screen
+animation/banner case. `tools/screens.mjs` now captures map and encounter arrows, the
+leave check and its resumed question, and passes its syntax check. Browser tests,
+screenshots and tablet checks were not run because a browser is not available or allowed.
+The two new clips need recording outside this task. No audio was regenerated, no network
+was used and no commit was made. Encounter probes expose `leaving` and controls `back`,
+`leave-yes`, `leave-no`; while the check is open only the two choices are enabled.
+
+Orchestrator's browser pass on M18: 34 browser tests pass on Chromium and 33 on WebKit
+(one Chromium-only), hiss check 0 stray, the two new clips transcribe correctly. Three
+faults found in screenshots and fixed. The map heading and the skip banner had been given
+fixed-size cream plates much larger than their text, with the text at the top; both
+plates hug the text again and the reserved rectangles are kept for the layout tests
+only. The leave panel was shorter than the question card, which showed above and below
+it; the panel now covers the card exactly. In real time the two back routes take about
+one second, the same as the existing camp "Stop" exit: the time is the save, not the new
+code. `tools/screens.mjs` stops at its grown-ups step ("No active play in title") before
+it reaches the new screens; the screenshots for this pass came from
+`.codex-runs/probe16.mjs` and from `tests/e2e/path-banner.spec.ts`.
+

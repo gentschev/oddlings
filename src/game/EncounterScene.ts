@@ -1,11 +1,11 @@
 import Phaser from 'phaser';
-import { centre, encounterLayout } from './layout';
+import { centre, encounterLayout, leaveLayout } from './layout';
 import { factSpeechId } from './speechLines';
-import { advanceEncounterTime, currentSlot, disabledAnswers, explanationForFact, getFact, markEncounterHidden, revealHint,
-  encounterPals, improvingStop, markHelped, palIntroduction, pathStops, stopIntroduction, syncPath, type PathStop, practiceProgress, practiceSnapshot, startEncounter, submitAnswer, type Encounter, type Fact, type PracticeSnapshot, ODDLING_PATTERNS } from '../core';
+import { advanceEncounterTime, pauseEncounter, resumeEncounter, deferPathCompletion, finishEncounterPath, markIntroductionSeen, currentSlot, disabledAnswers, explanationForFact, getFact, markEncounterHidden, revealHint,
+  encounterPals, improvingStop, markHelped, palIntroduction, pathStops, stopIntroduction, type PathStop, practiceProgress, practiceSnapshot, startEncounter, submitAnswer, type Encounter, type Fact, type PracticeSnapshot, ODDLING_PATTERNS } from '../core';
 import { type FriendId } from '../core/story/characters';
 import { areaForStop, getArea, getStop, type SkillStop } from '../core/areas';
-import { AnswerPad, hintIcon, plate, text, type Button } from '../ui/Controls';
+import { AnswerPad, hintIcon, plate, text, Button } from '../ui/Controls';
 import { MuddleMeter } from '../ui/MuddleMeter';
 import { slotStates } from '../ui/muddleSlots';
 import { burst, burstAround, type Oddling } from '../ui/Oddling';
@@ -18,6 +18,8 @@ import { introWait } from './speechTiming';
 
 export class EncounterScene extends BaseScene {
   private encounter!: Encounter;
+  private back!: Button;
+  private leaving = false;
   private stop?: SkillStop;
   private helperId!: FriendId;
   private gate = false;
@@ -60,18 +62,18 @@ export class EncounterScene extends BaseScene {
       modelVisible: this.previousModel, hintPulsing: this.encounter.hintPulsing,
       phase: this.introActive ? 'intro' : this.encounter.phase, inputAccepted: this.accepting && !this.busy && !this.modal,
       disabledAnswers: this.pad.buttons.flatMap((b, n) => b.control.enabled ? [] : [n]),
-      intro: this.introActive, friendRestored: this.friendRestored,
+      leaving: this.leaving, leaveLayout: leaveLayout(), intro: this.introActive, friendRestored: this.friendRestored,
       meter: this.encounter.meter, initialMeter: this.encounter.initialMeter,
       slots: slotStates(this.encounter.initialMeter, this.encounter.meter),
       wild: this.wildId, partner: this.helperId, savedPartner: this.runtime.save.team.partner, partnerPattern: ODDLING_PATTERNS[this.helperId],
       helperPatternMode: this.partner.patternMode, wildPatternMode: this.wild.patternMode,
-      onScreen: this.introActive ? this.onScreen : this.encounter.phase === 'complete' ? [STRINGS.clear] :
+      onScreen: this.leaving ? [this.question.text, STRINGS.leaveAsk, STRINGS.leaveYes, STRINGS.keepGoing] : this.introActive ? this.onScreen : this.encounter.phase === 'complete' ? [STRINGS.clear] :
         [this.question.text, this.message.text, STRINGS.hint, ...this.pad.buttons.map(b => b.label.text)].filter(Boolean),
       layout: encounterLayout(this.helperId, this.wildId, this.encounter.initialMeter, this.previousModel),
       speechId: this.speechId, feedback: this.message.text, pad: this.pad.buttons.map(b => b.control) };
   }
   create(data: { stop?: SkillStop; gate?: boolean; wild?: FriendId }): void {
-    this.begin();
+    this.begin(); this.leaving = false;
     this.stop = data.stop; this.gate = data.gate === true;
     const area = data.stop ? areaForStop(data.stop.id) : getArea(this.runtime.save.map.area);
     this.backgroundKey = area.encounterBackground; this.ground(this.backgroundKey);
@@ -113,6 +115,8 @@ export class EncounterScene extends BaseScene {
     }, INK.yellow, UI.pad.height);
     hintIcon(this, this.hint);
     this.speakerButton = this.speaker(l.speakerX, l.speakerY, l.speakerW);
+    this.back = this.backButton(l.backX, l.backY, () => this.askLeave(), l.backW);
+    this.back.enable(false);
     if (this.introduction === 'none') this.renderQuestion();
     else this.introduce();
   }
@@ -120,6 +124,7 @@ export class EncounterScene extends BaseScene {
     const l = LAYOUT.encounter, id = `muddle-${this.introduction === 'again' ? 'again-' : ''}${this.wildId}`;
     const line = this.introduction === 'again' ? STRINGS.muddleAgain(STRINGS.names[this.wildId]) : STRINGS.muddle(STRINGS.names[this.wildId]);
     this.introActive = true; this.onScreen = [line];
+    this.back.setVisible(false);
     this.pad.enable(false); this.hint.enable(false); this.speakerButton.enable(false);
     this.question.setVisible(false); this.message.setVisible(false); this.tray.setVisible(false);
     this.hint.setVisible(false); this.speakerButton.setVisible(false);
@@ -130,6 +135,8 @@ export class EncounterScene extends BaseScene {
     const finish = (tapped: boolean) => {
       if (!this.introActive) return;
       this.introActive = false;
+      markIntroductionSeen(this.runtime.save, this.wildId);
+      this.back.setVisible(true);
       if (tapped) this.interruptSpeech();
       label.destroy(); target.destroy(); this.controls = this.controls.filter(c => c.id !== 'intro-continue');
       this.tray.setVisible(true); this.hint.setVisible(true); this.speakerButton.setVisible(true).enable(true);
@@ -142,7 +149,7 @@ export class EncounterScene extends BaseScene {
   }
   private renderQuestion(): void {
     const e = this.encounter, l = LAYOUT.encounter;
-    this.accepting = false; this.pad.enable(false); this.hint.enable(false);
+    this.accepting = false; this.pad.enable(false); this.hint.enable(false); this.back.enable(false);
     if (e.phase === 'question') { this.model?.destroy(); this.model = undefined; this.previousModel = false; }
     this.displayed = getFact(currentSlot(e).factId);
     this.displayedMode = currentSlot(e).mode;
@@ -163,10 +170,39 @@ export class EncounterScene extends BaseScene {
       // Do not include feedback, transitions or card entry in response latency.
       if (e.phase === 'question') e.shownAt = this.runtime.now();
       this.accepting = true; this.pad.acceptExcept(disabledAnswers(e));
-      this.hint.enable(e.phase === 'question');
+      this.hint.enable(e.phase === 'question'); this.back.enable(true);
     });
     this.card.setVisible(true); this.question.setVisible(true); this.message.setVisible(true);
 
+  }
+  private askLeave(): void {
+    if (!this.accepting || this.introActive || this.leaving || this.busy || this.modal) return;
+    const e = this.encounter, l = LAYOUT.leave, priorControls = this.controls, priorSpeech = this.speechId;
+    this.leaving = true; this.modal = true; this.accepting = false;
+    pauseEncounter(e, this.runtime.now());
+    this.pad.enable(false); this.hint.enable(false); this.speakerButton.enable(false); this.back.enable(false);
+    const root = this.add.container(0, 0);
+    root.add(this.add.rectangle(CANVAS.width / 2, CANVAS.height / 2, CANVAS.width, CANVAS.height, INK.navy, LAYOUT.panel.shade).setInteractive());
+    root.add(plate(this, l.x, l.y, l.width, l.height));
+    root.add(text(this, l.x, l.promptY, STRINGS.leaveAsk, l.promptFont)
+      .setFixedSize(l.promptW, l.promptH).setAlign('center'));
+    const close = (keepGoing: boolean) => {
+      this.interruptSpeech(); this.leaving = false; this.modal = false;
+      root.destroy(); this.controls = priorControls; this.speechId = priorSpeech;
+      if (keepGoing) {
+        resumeEncounter(e, this.runtime.now()); this.accepting = true;
+        this.pad.acceptExcept(disabledAnswers(e)); this.hint.enable(e.phase === 'question');
+        this.speakerButton.enable(true); this.back.enable(true);
+      } else {
+        deferPathCompletion(this.runtime.save);
+        this.runtime.pathChange = undefined; this.runtime.arrivalJoined = undefined;
+        this.saveThen(() => this.go('map'));
+      }
+    };
+    const yes = new Button(this, 'leave-yes', l.yesX, l.buttonY, l.buttonW, l.buttonH, STRINGS.leaveYes, () => close(false), INK.cream);
+    const no = new Button(this, 'leave-no', l.noX, l.buttonY, l.buttonW, l.buttonH, STRINGS.keepGoing, () => close(true), INK.cream);
+    root.add([yes, no]); this.controls = [this.back.control, yes.control, no.control];
+    this.speak('ui-leaveAsk');
   }
   private showModel(): void {
     if (this.model) return;
@@ -184,7 +220,7 @@ export class EncounterScene extends BaseScene {
     const result = submitAnswer(this.runtime.save, e, answer, this.runtime.now(), this.runtime.localDate(), this.runtime.rng);
     this.meter.sync(e.meter);
     if (!result.accepted) { this.partner.tilt(this.runtime.elapsed); return; }
-    this.accepting = false; this.pad.enable(false); this.hint.enable(false);
+    this.accepting = false; this.pad.enable(false); this.hint.enable(false); this.back.enable(false);
     if (result.correction) { this.renderQuestion(); return; }
     if (answer !== this.displayed.answer) {
       this.runtime.audio.play('hmm'); this.partner.tilt(this.runtime.elapsed);
@@ -225,7 +261,7 @@ export class EncounterScene extends BaseScene {
     text(this, l.cardX, l.clearY, STRINGS.clear, l.clearSize, PALETTE.navy);
     this.onScreen = [STRINGS.clear]; this.speak('ui-clear');
     markHelped(save, this.wildId);
-    const change = syncPath(save, this.runtime.now(), save.map.area); change.before = this.pathBefore;
+    const change = finishEncounterPath(save, this.runtime.now(), save.map.area); change.before = this.pathBefore;
     this.runtime.pathChange = change;
     const first = change.completed.map(getStop).find(s => s.type === 'skill');
     const friend = change.completed.length === 1 && first?.type === 'skill' ? first.pal : change.joined[0] ?? this.wildId;
